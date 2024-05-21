@@ -50,7 +50,7 @@ Citation
 
 If you use any Informfully code/repository in a scientific publication, we ask you to cite the following papers:
 
-* `Deliberative Diversity for News Recommendations - Operationalization and Experimental User Study <https://dl.acm.org/doi/10.1145/3604915.3608834>`, Heitz *et al.*, Proceedings of the 17th ACM Conference on Recommender Systems, 813–819, 2023.
+* `Deliberative Diversity for News Recommendations - Operationalization and Experimental User Study <https://dl.acm.org/doi/10.1145/3604915.3608834>`_, Heitz *et al.*, Proceedings of the 17th ACM Conference on Recommender Systems, 813–819, 2023.
 
 .. code-block:: console
 
@@ -62,7 +62,7 @@ If you use any Informfully code/repository in a scientific publication, we ask y
       year={2023}
    }
 
-* `Benefits of Diverse News Recommendations for Democracy: A User Study <https://www.tandfonline.com/doi/full/10.1080/21670811.2021.2021804>`, Heitz *et al.*, Digital Journalism, 10(10): 1710–1730, 2022.
+* `Benefits of Diverse News Recommendations for Democracy: A User Study <https://www.tandfonline.com/doi/full/10.1080/21670811.2021.2021804>`_, Heitz *et al.*, Digital Journalism, 10(10): 1710–1730, 2022.
 
 .. code-block:: console
 
@@ -81,12 +81,12 @@ Support
 -------
 
 Your are welcome to contribute to the Informfully ecosystem and become a part of your cummunity. Feel free to:
-* fork any of the `Informfully repositories <https://github.com/Informfully/Documentation>` and
+* fork any of the `Informfully repositories <https://github.com/Informfully/Documentation>`_ and
 * make changes and create pull requests.
 
-Please post your feature requests and bug reports in our `GitHub issues <https://github.com/Informfully/Documentation/issues>` section.
+Please post your feature requests and bug reports in our `GitHub issues <https://github.com/Informfully/Documentation/issues>`_ section.
 
 License
 -------
 
-Released under the `MIT Licence <https://github.com/Informfully/Documentation/blob/main/LICENSE>`. (Please note that the respective copyright licenses of third-party libraries and dependencies apply.)
+Released under the `MIT Licence <https://github.com/Informfully/Documentation/blob/main/LICENSE>`_. (Please note that the respective copyright licenses of third-party libraries and dependencies apply.)

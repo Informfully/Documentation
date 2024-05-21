@@ -16,7 +16,7 @@ Second, they iterate through the list and obtain the necessary information by sc
 
 Nowadays, RSS feeds are ubiquitous on any news website.
 The feeds can receive a list of news articles formatted as an XML file.
-The scraper gets this list and parses them with `Feedparser <https://github.com/kurtmckee/feedparser>`.
+The scraper gets this list and parses them with `Feedparser <https://github.com/kurtmckee/feedparser>`_.
 At this stage, useful information can already be extracted from the feed, such as the URL, the title, and a description.
 
 .. note::
