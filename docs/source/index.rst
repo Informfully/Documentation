@@ -1,9 +1,9 @@
+Informfully
+===========
+
 .. image:: img/logo_banner.png
    :width: 700
    :alt: Informfully banner logo
-
-Informfully - Documentation
-=========================
 
 **Informfully** is a open-source reproducibility platform for content distribution and conducting user experiments.
 Please visit the official `Informfully website <https://github.com/Informfully>`_ for more information.
