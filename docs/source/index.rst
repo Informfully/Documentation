@@ -1,13 +1,15 @@
-Informfully Documentation
+.. image:: img/logo_banner.png
+   :width: 700
+   :alt: Informfully banner logo
+
+Informfully - Documentation
 =========================
 
-**Informfully** is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
+**Informfully** is a open-source reproducibility platform for content distribution and conducting user experiments.
+Please visit the official `Informfully website <https://github.com/Informfully>`_ for more information.
 
-Check out the :doc:`setup` section for further information, including
-how to :ref:`installation` the project.
+This is combined and official Informfully Documentation for all `code repositories <https://github.com/orgs/Informfully/repositories>`_.
+For a tutorial on how to use Informfully, start with the :doc:`setup` section and the :ref:`installation` instructions for the project.
 
 .. note::
 
@@ -90,4 +92,4 @@ Please post your feature requests and bug reports in our `GitHub issues <https:/
 License
 -------
 
-Released under the `MIT Licence <https://github.com/Informfully/Documentation/blob/main/LICENSE>`_. (Please note that the respective copyright licenses of third-party libraries and dependencies apply.)
+Released under the `MIT License <https://github.com/Informfully/Documentation/blob/main/LICENSE>`_. (Please note that the respective copyright licenses of third-party libraries and dependencies apply.)

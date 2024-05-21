@@ -45,4 +45,4 @@ Your are welcome to contribute to the Informfully ecosystem and become a part of
 Please post your feature requests and bug reports in our [GitHub issues](https://github.com/Informfully/Documentation/issues) section.
 
 ## License
-Released under the [MIT Licence](LICENSE). (Please note that the respective copyright licenses of third-party libraries and dependencies apply.)
+Released under the [MIT License](LICENSE). (Please note that the respective copyright licenses of third-party libraries and dependencies apply.)
