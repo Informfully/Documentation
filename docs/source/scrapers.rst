@@ -1,12 +1,32 @@
 Scraper Pipeline
 ================
 
+Informfully is complemented by a dedicated content scraper.
+The entire content scraper pipeline is written in Python and uses MongoDB for persistent storage of news items.
+The individual scraper modules (called `scrape.py` or `scrape\_n.py` in the Figure below) are required to implement a scraping function `scrape()`.
+
+Despite the goal of the scrapers being the same for all outlets, the different formats, types of sources of information, and paywalls on news outlets rendered the task of having only one scraper very challenging
+Hence, the decision was made to have split scrapers, where one part consists of shared core functionalities of parsing HTML, and a second part of adjusting to particular news outlets.
+Specifically, the scrapers for each outlet consist of two parts.
+First, they get a list of the most recent articles with either URLs or an identifier for the API.
+Second, they iterate through the list and obtain the necessary information by scraping the HTML page or directly accessing the API if possible.
+
+Nowadays, RSS feeds are ubiquitous on any news website.
+The feeds can receive a list of news articles formatted as an XML file.
+The scraper gets this list and parses them with [Feedparser](https://github.com/kurtmckee/feedparser).
+At this stage, useful information can already be extracted from the feed, such as the URL, the title, and a description.
+
 Architecture Overview
 ---------------------
 
 .. image:: img/content_scraper.png
    :width: 700
    :alt: Overview of the scraper architecture
+
+By splitting the scraping task into independent modules, this allows for source-specific scrapers.
+The main program `main.py` will import all scraper modules and calls their `scrape()` function, expecting them to return a list of items.
+Functionalities shared among the scrapers are stored in a separate utility file (`utils.py`, e.g., a function to create an item object ensures uniformity in object field naming and default values).
+Before storing the items to the document collections, the scraper performs a series of cleaning steps (e.g., duplication detection and text normalization).
 
 File Structure
 --------------
