@@ -1,11 +1,11 @@
 # Documentation
 Informfully - Documentation
 
-Welcome to the [Informfully Platform](https://informfully.ch/)!
+Welcome to the [Informfully](https://informfully.ch/)!
 
-This is the combined, official Informfully Documentation for all [code repositories](https://github.com/orgs/Informfully/repositories).
+To view the documentation, please visit [Informfully at Read the Docs](https://informfully.readthedocs.io/). It it the combined and official Informfully Documentation for all [code repositories](https://github.com/orgs/Informfully/repositories).
 
-To view the documentation, please visit [Informfully at Read The Docs](https://informfully.readthedocs.io/).
+This repository here is identical to the online one and can be downloaded for local use.
 
 ## Citation
 If you use any Informfully code/repository in a scientific publication, we ask you to cite the following papers:
@@ -45,4 +45,4 @@ Your are welcome to contribute to the Informfully ecosystem and become a part of
   - fork any of the [Informfully repositories](https://github.com/Informfully/Documentation) and
   - make changes and create pull requests.
 
-Please post your feature requests and bug reports in our [GitHub issues](https://github.com/Informfully/Documentation/issues).
+Please post your feature requests and bug reports in our [GitHub issues](https://github.com/Informfully/Documentation/issues) section.
