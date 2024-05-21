@@ -81,6 +81,7 @@ Support
 -------
 
 Your are welcome to contribute to the Informfully ecosystem and become a part of your cummunity. Feel free to:
+
 * fork any of the `Informfully repositories <https://github.com/Informfully/Documentation>`_ and
 * make changes and create pull requests.
 
