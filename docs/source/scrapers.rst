@@ -46,18 +46,23 @@ By doing this, indexing can be used, improving the performance of queries.
 If we used non-existing fields to signify the absence of an attribute, we would have to use the `$exists` keyword to distinguish between articles that have a certain attribute.
 However, the `$exists` operator cannot use any index.
 
-Pipeline Overview
+Duplication Detection
 -----------------
 
-* Duplication Detection
 In addition to scraping websites, the pipeline includes duplicate detection.
 Sometimes it can happen that news outlets change a small portion of the article text and publish it again.
 Those duplicates are not desirable in our application, so we aim to detect and purge those duplicates.
 The detection is done by splitting the text of an article into single sentences, and then compare those sentences to every article that has been published in the last few days.
 If a large part of two articles is identical, the new article won't be added into the database as a new article.
 
-* Text Normalization
-...
+Text Normalization
+------------------
+ 
+Especially when directly scraped from the websites, news articles may contain idiosyncrasies such as spelling variants of words, formatting (numbers, dates, and headlines) as well as self-references (names of the publication).
+These anomalies may indicate the source of the article, which is undesirable.
+The goal of the normalization step is to remove them to ensure a uniform presentation for the app.
+The normalization process is implemented as a list of tuples.
+The first element in the tuple is a regular expression to detect the abnormalities, with the second element being the string of text that serves as the replacement.
 
 Database Manager
 ----------------

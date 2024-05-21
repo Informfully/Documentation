@@ -13,9 +13,6 @@ how to :ref:`installation` the project.
 
    This project is under active development.
 
-Project Overview
---------
-
 .. toctree::
    :maxdepth: 2
    :caption: Project Overview
@@ -23,17 +20,11 @@ Project Overview
    architecture
    experiment
 
-Mobile App
---------
-
 .. toctree::
    :maxdepth: 2
    :caption: Mobile App
 
    app
-   
-Administration Website
---------
 
 .. toctree::
    :maxdepth: 2
@@ -41,18 +32,12 @@ Administration Website
 
    web
 
-Database and Back End
---------
-
 .. toctree::
    :maxdepth: 2
    :caption: Database and Back End
 
    database
    scrapers
-
-Development and Deployment
---------
 
 .. toctree::
    :maxdepth: 2
