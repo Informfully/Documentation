@@ -18,7 +18,6 @@ Project Overview
 
 .. toctree::
    :maxdepth: 2
-   :hidden:
    :caption: Project Overview
 
    architecture
@@ -29,7 +28,6 @@ Mobile App
 
 .. toctree::
    :maxdepth: 2
-   :hidden:
    :caption: Mobile App
 
    app
@@ -39,7 +37,6 @@ Administration Website
 
 .. toctree::
    :maxdepth: 2
-   :hidden:
    :caption: Administration Website
 
    web
@@ -49,9 +46,8 @@ Database and Back End
 
 .. toctree::
    :maxdepth: 2
-   :hidden:
    :caption: Database and Back End
-   
+
    database
    scrapers
 
@@ -60,7 +56,6 @@ Development and Deployment
 
 .. toctree::
    :maxdepth: 2
-   :hidden:
    :caption: Development and Deployment
 
    dev

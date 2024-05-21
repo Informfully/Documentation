@@ -49,12 +49,15 @@ However, the `$exists` operator cannot use any index.
 Pipeline Overview
 -----------------
 
+* Duplication Detection
 In addition to scraping websites, the pipeline includes duplicate detection.
 Sometimes it can happen that news outlets change a small portion of the article text and publish it again.
 Those duplicates are not desirable in our application, so we aim to detect and purge those duplicates.
-
 The detection is done by splitting the text of an article into single sentences, and then compare those sentences to every article that has been published in the last few days.
 If a large part of two articles is identical, the new article won't be added into the database as a new article.
+
+* Text Normalization
+...
 
 Database Manager
 ----------------
