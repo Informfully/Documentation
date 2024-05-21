@@ -13,10 +13,38 @@ how to :ref:`installation` the project.
 
    This project is under active development.
 
-Contents
+Project Overview
 --------
 
 .. toctree::
 
-   usage
-   api
+   architecture
+   experiment
+
+Mobile App
+--------
+
+.. toctree::
+
+   app
+   
+Administration Website
+--------
+
+.. toctree::
+
+   web
+
+Database and Back End
+--------
+
+.. toctree::
+
+   database
+
+Development and Deployment
+--------
+
+.. toctree::
+
+   dev
