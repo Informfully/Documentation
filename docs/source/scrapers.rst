@@ -41,9 +41,10 @@ Scraper Collection
 Article Collection
 ------------------
 
-There are set default values for each field. By doing this, indexing can be used, improving the performance of queries.
-If we used non-existing fields to signify the absence of an attribute, we would have to use the "$exists" keyword to distinguish between articles that have a certain attribute.
-However, the $exists operator cannot use any index.
+There are set default values for each field.
+By doing this, indexing can be used, improving the performance of queries.
+If we used non-existing fields to signify the absence of an attribute, we would have to use the `$exists` keyword to distinguish between articles that have a certain attribute.
+However, the `$exists` operator cannot use any index.
 
 Pipeline Overview
 -----------------
@@ -58,7 +59,18 @@ If a large part of two articles is identical, the new article won't be added int
 Database Manager
 ----------------
 
-...
+This module simplifies to establish a connection the the MongoDB database.
+It retrieves the credentials as well as the SSH connection details from the `.env` file.
+To use the MongoManager, first import it with ``From mongomanager import MongoManager``.
+
+Then use the with keyword to open the connection. MongoManager will return a MongoClient object.
+If the configuration uses SSH, it will automatically close the connection once outside the with block.
+If it configured without SSH, the manager will simply create a `MongoClient` object with the given address.
+
+.. code-block:: console
+
+   with MongoManager() as db:
+      articles = db.articles.find({}).fetch()
 
 Logging Module
 --------------
