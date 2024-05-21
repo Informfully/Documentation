@@ -41,7 +41,7 @@ Database and Back End
 .. toctree::
 
    database
-   scraper
+   scrapers
 
 Development and Deployment
 --------
