@@ -4,6 +4,9 @@ Scraper Pipeline
 Informfully is complemented by a dedicated content scraper.
 The entire content scraper pipeline is written in Python and uses MongoDB for persistent storage of news items.
 The individual scraper modules (called `scrape.py` or `scrape\_n.py` in the Figure below) are required to implement a scraping function `scrape()`.
+There are two main parts to the scraper.
+The first part contains the scraper implementations that allow collecting/scraping online resources.
+The second part is the processing pipeline for text normalization, cleaning, and subsequent steps before storing them in the database.
 
 Despite the goal of the scrapers being the same for all outlets, the different formats, types of sources of information, and paywalls on news outlets rendered the task of having only one scraper very challenging
 Hence, the decision was made to have split scrapers, where one part consists of shared core functionalities of parsing HTML, and a second part of adjusting to particular news outlets.
@@ -15,6 +18,13 @@ Nowadays, RSS feeds are ubiquitous on any news website.
 The feeds can receive a list of news articles formatted as an XML file.
 The scraper gets this list and parses them with [Feedparser](https://github.com/kurtmckee/feedparser).
 At this stage, useful information can already be extracted from the feed, such as the URL, the title, and a description.
+
+.. note::
+
+   The scripts for the content scrapers can run on the same or a different server than the remainder of the Informfully back end.
+   Running the scripts is not controlled by any element of the back end.
+   Instead, the scrapers need to be part of a `cron job` running on the server.
+   Communication with the other components of the back end is limited to writing items to the pre-defined document collection.
 
 Architecture Overview
 ---------------------

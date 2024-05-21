@@ -37,12 +37,12 @@ If you use any Informfully code/repository in a scientific publication, we ask y
   }
   ```
 
-## License
-[MIT](LICENSE)
-
 ## Support
 Your are welcome to contribute to the Informfully ecosystem and become a part of your cummunity. Feel free to:
   - fork any of the [Informfully repositories](https://github.com/Informfully/Documentation) and
   - make changes and create pull requests.
 
 Please post your feature requests and bug reports in our [GitHub issues](https://github.com/Informfully/Documentation/issues) section.
+
+## License
+Released under the [MIT Licence](LICENSE). (Please note that the respective copyright licenses of third-party libraries and dependencies apply.)
