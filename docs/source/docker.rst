@@ -138,7 +138,7 @@ Explanation of the code:
 * The next set of instructions creates a folder called app and it copies the backend folder contents onto the image.
 * All dependencies of the bundle folder are installed, using the npm version of the base Docker image of phusion passenger.
 * A directory is created called /data/db from which MongoDB retrieves its database. The ownership permissions of the directory are set so MongoDb can access it.
-* Finally, the command mongod starts the MongoDB service.
+* Finally, the command ``mongod`` starts the MongoDB service.
 
 **Build Docker Image** To run the following commands, open Docker Desktop to start the Docker service (or use systemctl, etc. for Linux).
 Navigate to the back end folder on the command line and type the command docker ``build . -t`` informfullybackend which will locate the Dockerfile in the current directory and execute all commands written on that file.
@@ -157,7 +157,6 @@ Follow the next steps to get the Backend running:
 #.  Run the command ``passenger start`` inside of the opened Docker container. This will start the phusion passenger service. The back end will be running now
 
 In order to open the back end server, running on the container, from the host computer, open an internet browser and type ``localhost:8020`` (which is the host port that was defined above).
-
 The passenger's port 8080 of the container can be changed by editing the ``Passengerfile.json`` in the backend directory.
 Additionally, any other unused port can be used for the localhost (the left-hand side of ``-p 8020:8080``), instead of 8020.
 
