@@ -55,33 +55,31 @@ Explanation of the code:
 * ``CMD ["expo","start"]`` then executes the command line argument expo start to start the Expo server, after which a QR code is shown on the command prompt and users can access the Informfully application with Expo Go client on their iOS or Android phones
 
 **Build Docker Image** To run the following commands, open Docker Desktop to start the Docker service (or use systemctl, etc. for Linux).
-
 Navigate to the frontend folder on the command line and type the command ``docker build . -t informfullyfrontend`` which will locate the Dockerfile in the current directory and execute all commands written on that file.
 
-**Run Docker Container** ...
-
-Once the Docker image is built, a Docker container of it can be run by typing the command ``docker run -p 19000:19000 -p 19001:19001 -p 19002:19002 informfullyfrontend``.
+**Run Docker Container** Once the Docker image is built, a Docker container of it can be run by typing the command ``docker run -p 19000:19000 -p 19001:19001 -p 19002:19002 informfullyfrontend``.
 This will start a Docker container (and the Expo service will get started on it). The ``-p 19000:19000`` is used to open the port 19000 from the container to be used on the ``localhost:19000`` on the host computer.
-
 To access the Informfully application on an iOS or Android phone, scan the QR code shown in the command prompt.
 
 **Save Docker Image** To save the created Docker image, type in the command prompt ``docker save -o informfullyfrontend.tar informfullyfrontend``.
 
 **Load Docker Image** Transfer the Docker image on your server, or where the Docker image needs to be opened, and ensure Docker is installed.
 To open the image, start the Docker service and type the following command from the directory where the Docker image is located: ``docker load -i <path to image tar file>``.
-
 Please note that it may take a few minutes to load the file and no progress bar will be shown in the command line.
 
-**Troubleshooting** 
+.. note::
 
-* ``Access is denied' error while building Docker image``: This might be caused either by a missing permissions problem or by the project path being too long.
-To solve it, we moved temporarily our whole frontend folder directly under the ``C:\`` directory.
-This resolver the issues for us and allowed us to successfully generate the backend Docker image.
-* ``Cannot successfully connect phone to Expo service``: If a QR code has been generated, however the user is facing problems connecting to the running Meteor service on the container, make sure that
-1) all antivirus programs on the host machine have been disabled,
-2) the firewall on the host machine has been disabled,
-3) the phone and the host machine share the same wireless network, and
-4) the wireless network is public.
+    **Troubleshooting** 
+
+    ``Access is denied' error while building Docker image``: This might be caused either by a missing permissions problem or by the project path being too long.
+    To solve it, we moved temporarily our whole frontend folder directly under the ``C:\`` directory.
+    This resolver the issues for us and allowed us to successfully generate the backend Docker image.
+
+    ``Cannot successfully connect phone to Expo service``: If a QR code has been generated, however the user is facing problems connecting to the running Meteor service on the container, make sure that
+    1) all antivirus programs on the host machine have been disabled,
+    2) the firewall on the host machine has been disabled,
+    3) the phone and the host machine share the same wireless network, and
+    4) the wireless network is public.
 
 Setting Up the Back End
 -----------------------
@@ -128,6 +126,15 @@ Setting Up the Back End
     RUN sudo chown `id -u` /data/db/
 
     CMD ["mongod"]
+
+Explanation of the code:
+
+* The first set of instructions takes the base image of phusion passenger from the Docker repository. This image is configured with Node.js. More information can be found `here <https://github.com/phusion/passenger-docker>`_.
+* The next set of instructions are required to install the basic commands in order to download and configure the rest of the required software. Afterwards, MongoDB is installed.
+* The next set of instructions creates a folder called app and it copies the backend folder contents onto the image.
+* All dependencies of the bundle folder are installed, using the npm version of the base Docker image of phusion passenger.
+* A directory is created called /data/db from which MongoDB retrieves its database. The ownership permissions of the directory are set so MongoDb can access it.
+* Finally, the command mongod starts the MongoDB service.
 
 **Build Docker Image** To run the following commands, open Docker Desktop to start the Docker service (or use systemctl, etc. for Linux).
 Navigate to the back end folder on the command line and type the command docker ``build . -t`` informfullybackend which will locate the Dockerfile in the current directory and execute all commands written on that file.
