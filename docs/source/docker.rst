@@ -15,7 +15,9 @@ Next is a step-by-step guide for building and loading a Docker image for both th
 Setting Up the Front End
 ------------------------
 
-**Create Docker Image** ...
+This is the file that Docker uses to build the Docker image.
+It gives instructions to Docker on how to build the image and what to include in the image.
+To create a Dockerfile, open a text editor, such as Notepad on Windows, and type the following contents:
 
 .. code-block:: python
 
@@ -39,15 +41,47 @@ Setting Up the Front End
 
     CMD ["expo", "start"]
 
-**Build Docker Image** ...
+Explanation of the code:
+
+* ``FROM node:16.13.0-alpine`` imports a light-weight Linux distribution called Alpine with the Node.js v16.13.0 environment. This sets a base OS for the image on which the following processes and commands will operate on. We chose Node.js v16.13.0 as this was the local version of Node.js that we used to develop (`see here <https://informfully.readthedocs.io/en/latest/development.html>`_.
+* ``REACT_NATIVE_PACKAGER_HOSTNAME`` needs to be set equal to the ip address of the host machine, to which the iOS or Android phone will connect
+* ``EXPO_DEVTOOLS_LISTEN_ADDRESS`` should be left as it is, it is an environment variable required for running the Expo server on the Docker container and connecting to it over the host machine
+* ``EXPOSE 19000 19001 19002`` are the ports, used by Expo, which we have to expose to access the Docker container from the host machine
+* ``WORKDIR '/app'`` sets the directory where the contents of the image will be inside of the Linux OS
+* ``COPY package.json .`` and ``COPY app.json .`` copy the package.json and app.json files from the current local directory into the working directory on the Linux OS made above
+* ``RUN npm install --global expo-cli`` tells Docker to execute the command line argument npm install --global expo-cli, which installs the Expo command line tool into the Docker image
+* ``RUN npm install --legacy-peer-deps`` executes the command npm install with the option of ignoring legacy peer dependencies. This is an option that has to be turned on if using a Node version 7.0+, since the package.json dependencies were made using Node version 6.XX. This command will install all the required dependencies into the Docker image
+* ``COPY . .`` copies the contents from the frontend directory into the Docker image
+* ``CMD ["expo","start"]`` then executes the command line argument expo start to start the Expo server, after which a QR code is shown on the command prompt and users can access the Informfully application with Expo Go client on their iOS or Android phones
+
+**Build Docker Image** To run the following commands, open Docker Desktop to start the Docker service (or use systemctl, etc. for Linux).
+
+Navigate to the frontend folder on the command line and type the command ``docker build . -t informfullyfrontend`` which will locate the Dockerfile in the current directory and execute all commands written on that file.
 
 **Run Docker Container** ...
 
-**Save Docker Image** ...
+Once the Docker image is built, a Docker container of it can be run by typing the command ``docker run -p 19000:19000 -p 19001:19001 -p 19002:19002 informfullyfrontend``.
+This will start a Docker container (and the Expo service will get started on it). The ``-p 19000:19000`` is used to open the port 19000 from the container to be used on the ``localhost:19000`` on the host computer.
 
-**Load Docker Image** ...
+To access the Informfully application on an iOS or Android phone, scan the QR code shown in the command prompt.
 
-**Troubleshooting** ...
+**Save Docker Image** To save the created Docker image, type in the command prompt ``docker save -o informfullyfrontend.tar informfullyfrontend``.
+
+**Load Docker Image** Transfer the Docker image on your server, or where the Docker image needs to be opened, and ensure Docker is installed.
+To open the image, start the Docker service and type the following command from the directory where the Docker image is located: ``docker load -i <path to image tar file>``.
+
+Please note that it may take a few minutes to load the file and no progress bar will be shown in the command line.
+
+**Troubleshooting** 
+
+* ``Access is denied' error while building Docker image``: This might be caused either by a missing permissions problem or by the project path being too long.
+To solve it, we moved temporarily our whole frontend folder directly under the ``C:\`` directory.
+This resolver the issues for us and allowed us to successfully generate the backend Docker image.
+* ``Cannot successfully connect phone to Expo service``: If a QR code has been generated, however the user is facing problems connecting to the running Meteor service on the container, make sure that
+1) all antivirus programs on the host machine have been disabled,
+2) the firewall on the host machine has been disabled,
+3) the phone and the host machine share the same wireless network, and
+4) the wireless network is public.
 
 Setting Up the Back End
 -----------------------
