@@ -1,6 +1,10 @@
 Release on the Apple App Store
 ==============================
 
+Before deploying the mobile app to the Apple App Store, the back end of the mobile app has to be deployed to a server.
+For that, simply follow the same instructions as in `Website Deployment <https://informfully.readthedocs.io/en/latest/deployment.html>`_.
+Afterwards, make sure to change the SERVER constant in ``App.js`` (located `here <https://github.com/Informfully/Platform/blob/main/frontend/App.js>`_) to your server's address (e.g., ``wss://your.domain/websocket``).
+
 What you need to prepare the release:
 
 * Apple Developer Account and Apple device with XCode

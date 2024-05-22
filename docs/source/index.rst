@@ -11,6 +11,15 @@ Please visit the official `Informfully website <https://www.informfully.ch>`_ fo
 This is combined and official Informfully Documentation for all `code repositories <https://github.com/orgs/Informfully/repositories>`_.
 For a tutorial on how to use Informfully, start with the :doc:`setup` section and the :ref:`installation` instructions for the project.
 
+Overview
+--------
+
+**Getting Started** serves as the introduction to download and install the platform on your local machine.
+**General Information** outlines the various components and how/where you need to adjust things to make Informfully fit your needs.
+**Mobile App** and **Administration Website** provide a in-depth overview of the front end.
+**Database and Back End** provide the same insights for the back end components.
+Finally **Deployment** looks at how to move the back end to a server and how to publish the apps on the storefronts.
+
 .. note::
 
    This project is under active development.
@@ -19,9 +28,10 @@ For a tutorial on how to use Informfully, start with the :doc:`setup` section an
    :maxdepth: 1
    :caption: Getting Started
 
-   intall
+   install
    quick-front
    quick-back
+   development
 
 .. toctree::
    :maxdepth: 1
@@ -47,21 +57,17 @@ For a tutorial on how to use Informfully, start with the :doc:`setup` section an
    :caption: Database and Back End
 
    database
+   genesis
    scrapers
 
 .. toctree::
    :maxdepth: 1
-   :caption: Development and Deployment
+   :caption: Deployment
 
-   development
    docker
    deployment
    google
    apple
-
-.. image:: img/app_screens.png
-   :width: 700
-   :alt: Informfully app screenshots
 
 Citation
 --------
@@ -109,3 +115,7 @@ License
 -------
 
 Released under the `MIT License <https://github.com/Informfully/Documentation/blob/main/LICENSE>`_. (Please note that the respective copyright licenses of third-party libraries and dependencies apply.)
+
+.. image:: img/app_screens.png
+   :width: 700
+   :alt: Informfully app screenshots

@@ -85,7 +85,9 @@ Please note that it may take a few minutes to load the file and no progress bar 
 Setting Up the Back End
 -----------------------
 
-**Create Docker Image** ...
+Please note that before building the Docker image, the ``bundle folder`` (located `here <https://github.com/Informfully/Platform/tree/main/backend/bundle>`_) has to be generated and unpacked at the root of the backend directory.
+This can be done by following the first part of ``meteor build`` instructions for the back end (located `here <https://informfully.readthedocs.io/en/latest/install.html>`_) and unpacking the generated tar file in the root of the backend folder.
+To create the Dockerfile, open a text editor such as Notepad on Windows, and type in the following contents:
 
 .. code-block:: python
 
@@ -147,11 +149,11 @@ Follow the next steps to get the Backend running:
 
 #.  Type ``docker ps`` to see which containers are running.
 #.  Copy the container ID of the container that is running the back end.
-#.  Type ``docker exec -it [containerID] sh``, this will open the container and you will be able to execute commands on it
-#.  Run the command ``passenger start`` inside of the opened Docker container. This will start the phusion passenger service. The back end will be running now
+#.  Type ``docker exec -it [containerID] sh``, this will open the container and you will be able to execute commands on it.
+#.  Run the command ``passenger start`` inside of the opened Docker container. This will start the phusion passenger service. The back end will be running now.
 
 In order to open the back end server, running on the container, from the host computer, open an internet browser and type ``localhost:8020`` (which is the host port that was defined above).
-The passenger's port 8080 of the container can be changed by editing the ``Passengerfile.json`` in the backend directory.
+The passenger's port 8080 of the container can be changed by editing the ``Passengerfile.json`` (located `here <https://github.com/Informfully/Platform/blob/main/backend/Passengerfile.json>`_) in the backend directory.
 Additionally, any other unused port can be used for the localhost (the left-hand side of ``-p 8020:8080``), instead of 8020.
 
 **Save Docker Image** To save the created Docker image, type in the command prompt ``docker save -o informfullybackend.tar informfullybackend``.
