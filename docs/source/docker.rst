@@ -78,11 +78,8 @@ Please note that it may take a few minutes to load the file and no progress bar 
     ``Cannot successfully connect phone to Expo service`` If a QR code has been generated, however the user is facing problems connecting to the running Meteor service on the container, make sure that
     
     #.  all antivirus programs on the host machine have been disabled,
-    
     #.  the firewall on the host machine has been disabled,
-    
     #.  the phone and the host machine share the same wireless network, and
-    
     #.  the wireless network is public.
 
 Setting Up the Back End
@@ -149,11 +146,8 @@ The ``-p 8020:8080`` is used to open the port 8080 from the container to be used
 Follow the next steps to get the Backend running:
 
 #.  Type ``docker ps`` to see which containers are running.
-
 #.  Copy the container ID of the container that is running the back end.
-
 #.  Type ``docker exec -it [containerID] sh``, this will open the container and you will be able to execute commands on it
-
 #.  Run the command ``passenger start`` inside of the opened Docker container. This will start the phusion passenger service. The back end will be running now
 
 In order to open the back end server, running on the container, from the host computer, open an internet browser and type ``localhost:8020`` (which is the host port that was defined above).

@@ -16,33 +16,35 @@ For a tutorial on how to use Informfully, start with the :doc:`setup` section an
    This project is under active development.
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Project Overview
 
    architecture
    experiment
+   quick-front
+   quick-back
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Mobile App
 
    app
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Administration Website
 
    web
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Database and Back End
 
    database
    scrapers
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Development and Deployment
 
    development
