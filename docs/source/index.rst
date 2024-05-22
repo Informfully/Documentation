@@ -6,7 +6,7 @@ Informfully
    :alt: Informfully banner logo
 
 **Informfully** is a open-source reproducibility platform for content distribution and conducting user experiments.
-Please visit the official `Informfully website <https://github.com/Informfully>`_ for more information.
+Please visit the official `Informfully website <https://www.informfully.ch>`_ for more information.
 
 This is combined and official Informfully Documentation for all `code repositories <https://github.com/orgs/Informfully/repositories>`_.
 For a tutorial on how to use Informfully, start with the :doc:`setup` section and the :ref:`installation` instructions for the project.
@@ -45,7 +45,9 @@ For a tutorial on how to use Informfully, start with the :doc:`setup` section an
    :maxdepth: 2
    :caption: Development and Deployment
 
-   dev
+   development
+   deployment
+   docker
 
 Citation
 --------
