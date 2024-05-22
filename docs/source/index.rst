@@ -17,12 +17,18 @@ For a tutorial on how to use Informfully, start with the :doc:`setup` section an
 
 .. toctree::
    :maxdepth: 1
-   :caption: Project Overview
+   :caption: Getting Started
+
+   intall
+   quick-front
+   quick-back
+
+.. toctree::
+   :maxdepth: 1
+   :caption: General Information
 
    architecture
    experiment
-   quick-front
-   quick-back
 
 .. toctree::
    :maxdepth: 1
@@ -48,8 +54,10 @@ For a tutorial on how to use Informfully, start with the :doc:`setup` section an
    :caption: Development and Deployment
 
    development
-   deployment
    docker
+   deployment
+   google
+   apple
 
 Citation
 --------
