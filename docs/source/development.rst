@@ -2,7 +2,7 @@ Local Development
 =================
 
 This tutorial guides you through running the application with a local server for development and testing purposes.
-There two seperate components that need to be set up, the **front end ** and the **back end**.
+There two seperate components that need to be set up, the **front end** and the **back end**.
 You will need to install the following libraries and packages on your machine:
 
 * `Meteor <https://docs.meteor.com/install.html>`_. The globally installed Meteor version does not matter, as the project will use the project-specific one defined in ``./backend/.meteor/release`` (located `here <https://github.com/Informfully/Platform/blob/main/backend/.meteor/release>_, currently 2.14`_).
@@ -32,7 +32,7 @@ Also, do not forget that it is best if your development and production environme
 Running a Local Server
 ----------------------
 
-Using ``meteor npm install`` is the preferred way of installing new dependencies for the Meteor back end.
+``meteor npm install`` is the preferred way of installing new dependencies for the Meteor back end.
 
 .. code-block:: python
 
@@ -58,8 +58,8 @@ To start the back end on your machine:
     meteor --port 3008 --settings settings-dev.json
 
 
-If you want to access the server from within your network replace ``--port 3008`` with ``--port <your local ip>:3008``.
-The back end is now running and the administration website is accessible at the URL ``localhost:3008``.
+If you want to access the server from within your network replace ``--port 3008`` with ``--port <YOUR_LOCAL_IP_ADDRESS>:3008``.
+The back end is now running and the administration website is accessible at via ``localhost:3008``.
 
 .. note::
 
@@ -69,14 +69,14 @@ The back end is now running and the administration website is accessible at the 
 Connecting to Local Server
 --------------------------
 
-Inside the ``App.js configuration file`` (located `here <https://github.com/Informfully/Platform/blob/main/frontend/App.js>`_), change the ``SERVER`` constant so it will connect to your local server.
+Inside the ``App.js`` configuration file (located `here <https://github.com/Informfully/Platform/blob/main/frontend/App.js>`_), change the ``SERVER`` constant so it will connect to your local server.
 E.g., if the client runs on the same computer:
 
 .. code-block:: javascript
 
     const SERVER = 'localhost'
 
-If you want to use your client on a different computer in the same network, replace ``localhost:3008`` with ``<TARGET>:3008``.
+If you want to use your client on a different computer in the same network, replace ``localhost:3008`` with ``<YOUR_LOCAL_IP_ADDRESS>:3008``.
 
 After you have set the ``SERVER`` constant, you can do the following to start the client:
 
@@ -88,7 +88,7 @@ After you have set the ``SERVER`` constant, you can do the following to start th
     # Install all packages
     yarn install 
 
-    # start expo
+    # Start expo
     npx expo start
 
 .. note::

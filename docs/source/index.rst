@@ -9,16 +9,18 @@ Informfully
 Please visit the official `Informfully website <https://www.informfully.ch>`_ for more information.
 
 This is combined and official Informfully Documentation for all `code repositories <https://github.com/orgs/Informfully/repositories>`_.
-For a tutorial on how to use Informfully, start with the :doc:`setup` section and the :ref:`installation` instructions for the project.
+For a tutorial on how to use Informfully, start with the :doc:`quick` section and the :ref:`installation` instructions for the project.
 
 Overview
 --------
 
-**Getting Started** serves as the introduction to download and install the platform on your local machine.
-**General Information** outlines the various components and how/where you need to adjust things to make Informfully fit your needs.
-**Mobile App** and **Administration Website** provide a in-depth overview of the front end.
-**Database and Back End** provide the same insights for the back end components.
-Finally **Deployment** looks at how to move the back end to a server and how to publish the apps on the storefronts.
+This documentation provides you with all the information on successfully configure and deploy Informfully. It is structured as follows:
+
+* **Getting Started** serves as the introduction to download and install the platform on your local machine.
+* **General Information** outlines the various components and how/where you need to adjust things to make Informfully fit your needs.
+* **Mobile App** and **Administration Website** provide a in-depth overview of the front end.
+* **Database and Back End** provide the same insights for the back end components.
+* Finally **Deployment** looks at how to move the back end to a server and how to publish the apps on the storefronts.
 
 .. note::
 
@@ -28,9 +30,7 @@ Finally **Deployment** looks at how to move the back end to a server and how to 
    :maxdepth: 1
    :caption: Getting Started
 
-   install
-   quick-front
-   quick-back
+   quick
    development
 
 .. toctree::
@@ -64,10 +64,10 @@ Finally **Deployment** looks at how to move the back end to a server and how to 
    :maxdepth: 1
    :caption: Deployment
 
-   docker
    deployment
    google
    apple
+   docker
 
 Citation
 --------

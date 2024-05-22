@@ -1,5 +1,5 @@
 """
-Lumache - Python library for cooks and food lovers.
+Informfully - Open-source reproducibility platform for content distribution and user experiments.
 """
 
 __version__ = "0.1.0"

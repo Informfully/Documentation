@@ -75,7 +75,7 @@ Please note that it may take a few minutes to load the file and no progress bar 
     To solve it, we moved temporarily our whole frontend folder directly under the ``C:\`` directory.
     This resolver the issues for us and allowed us to successfully generate the backend Docker image.
 
-    ``Cannot successfully connect phone to Expo service`` If a QR code has been generated, however the user is facing problems connecting to the running Meteor service on the container, make sure that
+    ``Cannot successfully connect phone to Expo service`` If a QR code has been generated, however the user is facing problems connecting to the running Meteor service on the container, make sure that:
     
     #.  all antivirus programs on the host machine have been disabled,
     #.  the firewall on the host machine has been disabled,

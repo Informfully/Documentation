@@ -23,7 +23,7 @@ Architecture Overview
 
 Informfully is complemented by a dedicated content scraper.
 The entire content scraper pipeline is written in Python and uses MongoDB for persistent storage of news items.
-The individual scraper modules (called `scrape.py` or `scrape\_n.py` in the Figure above) are required to implement a scraping function `scrape()`.
+The individual scraper modules (called ``scrape.py`` or ``scrape\_n.py`` in the Figure above) are required to implement a scraping function ``scrape()``.
 There are two main parts to the scraper.
 The first part contains the scraper implementations that allow collecting/scraping online resources.
 The second part is the processing pipeline for text normalization, cleaning, and subsequent steps before storing them in the database.
@@ -35,8 +35,8 @@ First, they get a list of the most recent articles with either URLs or an identi
 Second, they iterate through the list and obtain the necessary information by scraping the HTML page or directly accessing the API if possible.
 
 By splitting the scraping task into independent modules, this allows for source-specific scrapers.
-The main program `main.py` will import all scraper modules and calls their `scrape()` function, expecting them to return a list of items.
-Functionalities shared among the scrapers are stored in a separate utility file (`utils.py`, e.g., a function to create an item object ensures uniformity in object field naming and default values).
+The main program ``main.py`` will import all scraper modules and calls their ``scrape()`` function, expecting them to return a list of items.
+Functionalities shared among the scrapers are stored in a separate utility file (``utils.py``, e.g., a function to create an item object ensures uniformity in object field naming and default values).
 Before storing the items to the document collections, the scraper performs a series of cleaning steps (e.g., duplication detection and text normalization).
 
 File Structure
@@ -54,8 +54,8 @@ Article Collection
 
 There are set default values for each field.
 By doing this, indexing can be used, improving the performance of queries.
-If we used non-existing fields to signify the absence of an attribute, we would have to use the `$exists` keyword to distinguish between articles that have a certain attribute.
-However, the `$exists` operator cannot use any index.
+If we used non-existing fields to signify the absence of an attribute, we would have to use the ``$exists`` keyword to distinguish between articles that have a certain attribute.
+However, the ``$exists`` operator cannot use any index.
 
 Duplication Detection
 -----------------
@@ -79,12 +79,12 @@ Database Manager
 ----------------
 
 This module simplifies to establish a connection the the MongoDB database.
-It retrieves the credentials as well as the SSH connection details from the `.env` file.
+It retrieves the credentials as well as the SSH connection details from the ``.env`` file.
 To use the MongoManager, first import it with ``From mongomanager import MongoManager``.
 
 Then use the with keyword to open the connection. MongoManager will return a MongoClient object.
 If the configuration uses SSH, it will automatically close the connection once outside the with block.
-If it configured without SSH, the manager will simply create a `MongoClient` object with the given address.
+If it configured without SSH, the manager will simply create a ``MongoClient`` object with the given address.
 
 .. code-block:: python
 

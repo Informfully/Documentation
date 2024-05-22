@@ -2,9 +2,9 @@
 
 ![Informfully](https://informfully.readthedocs.io/en/latest/_images/logo_banner.png)
 
-Welcome to the [Informfully](https://informfully.ch/)! Informfully is a open-source reproducibility platform for content distribution and conducting user experiments from the [University of Zurich](https://www.ifi.uzh.ch/en.html). Please visit the official [Informfully website](https://www.informfully.ch) for more information.
+Welcome to the [Informfully](https://informfully.ch/)! Informfully is a open-source reproducibility platform for content distribution and user experiments from the [University of Zurich](https://www.ifi.uzh.ch/en.html).
 
-To view the documentation, please visit [Informfully at Read the Docs](https://informfully.readthedocs.io/). It it the combined and official Informfully Documentation for all [code repositories](https://github.com/orgs/Informfully/repositories).
+To view the documentation, please visit [Informfully at Read the Docs](https://informfully.readthedocs.io/). It is the combined and official Informfully Documentation for all [code repositories](https://github.com/orgs/Informfully/repositories).
 
 The documentation in this repository here is identical to the online one and can be downloaded for local use.
 
