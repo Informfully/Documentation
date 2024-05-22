@@ -59,6 +59,10 @@ For a tutorial on how to use Informfully, start with the :doc:`setup` section an
    google
    apple
 
+.. image:: img/app_screens.png
+   :width: 700
+   :alt: Informfully app screenshots
+
 Citation
 --------
 

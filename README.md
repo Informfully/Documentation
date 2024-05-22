@@ -1,5 +1,6 @@
-# Documentation
-Informfully - Documentation
+# Informfully Documentation
+
+![Informfully](https://informfully.readthedocs.io/en/latest/_images/logo_banner.png)
 
 Welcome to the [Informfully](https://informfully.ch/)!
 
