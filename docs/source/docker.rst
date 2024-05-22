@@ -71,15 +71,11 @@ Please note that it may take a few minutes to load the file and no progress bar 
 
     **Troubleshooting** 
 
-    ``Access is denied' error while building Docker image``
-    
-    This might be caused either by a missing permissions problem or by the project path being too long.
+    ``Access is denied' error while building Docker image`` This might be caused either by a missing permissions problem or by the project path being too long.
     To solve it, we moved temporarily our whole frontend folder directly under the ``C:\`` directory.
     This resolver the issues for us and allowed us to successfully generate the backend Docker image.
 
-    ``Cannot successfully connect phone to Expo service``
-    
-    If a QR code has been generated, however the user is facing problems connecting to the running Meteor service on the container, make sure that
+    ``Cannot successfully connect phone to Expo service`` If a QR code has been generated, however the user is facing problems connecting to the running Meteor service on the container, make sure that
     
     #.  all antivirus programs on the host machine have been disabled,
     
@@ -150,8 +146,7 @@ Navigate to the back end folder on the command line and type the command docker 
 **Run Docker Container** Once the Docker image is built, a Docker container of it can be run by typing the command ``docker run -p 8020:8080 informfullybackend``.
 This will start a Docker container (and the MongoDB service will get started on it).
 The ``-p 8020:8080`` is used to open the port 8080 from the container to be used on the ``localhost:8020`` on the host computer.
-
-Important: follow the next steps to get the Backend running:
+Follow the next steps to get the Backend running:
 
 #.  Type ``docker ps`` to see which containers are running.
 
@@ -163,6 +158,9 @@ Important: follow the next steps to get the Backend running:
 
 In order to open the back end server, running on the container, from the host computer, open an internet browser and type ``localhost:8020`` (which is the host port that was defined above).
 
+The passenger's port 8080 of the container can be changed by editing the ``Passengerfile.json`` in the backend directory.
+Additionally, any other unused port can be used for the localhost (the left-hand side of ``-p 8020:8080``), instead of 8020.
+
 **Save Docker Image** To save the created Docker image, type in the command prompt ``docker save -o informfullybackend.tar informfullybackend``.
 
 **Load Docker Image** Transfer the Docker image on your server, or where the Docker image needs to be opened, and ensure Docker is installed.
@@ -173,13 +171,9 @@ Please note that it may take a few minutes to load the file and no progress bar 
 
     **Troubleshooting** 
 
-    ``Access is denied' error while building Docker image``
-    
-    See entry above in the front end section.
+    ``Access is denied' error while building Docker image`` See entry above in the front end section.
 
-    ``Node fibers issues``
-
-    Once the Docker container is running and you try to start the phusion passenger server, there may be an error message regarding node fibers.
+    ``Node fibers issues`` Once the Docker container is running and you try to start the phusion passenger server, there may be an error message regarding node fibers.
     This is most probably caused, because the Node.js version of Meteor, with which the bundle folder was generated, is different from the one in the Docker image, which the phusion passenger server uses.
 
     To solve this problem, you would have to upgrade the Meteor version of the project (by running ``meteor upgrade``) or using an older version of phusion passenger's base Docker image.
