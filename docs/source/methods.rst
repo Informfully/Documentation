@@ -12,28 +12,27 @@ answers
   * surveyId: Id of survey
   * surveyAnswers: Array with answers to the survey
 
-**archive**
+archive
+-------
 
-archive.article.add
--------------------
+**archive.article.add**
 
 * Add an article to the Favourites List of the current user
 * Input:
   
   * articleId: Id of article
 
-archive.article.remove
-----------------------
+**archive.article.remove**
 
 * Remove an article from the Favourites List of the current user
 * Input:
   
   * articleId: Id of article
 
-**articleLikes/articleTotalLikes**
+articleLikes/articleTotalLikes
+------------------------------
 
-articleLikes.insert
--------------------
+**articleLikes.insert**
 
 *  Adds a statement like from the current user for a particular article
 *  Adds the like to the total likes of all users participating in the experiment
@@ -43,8 +42,7 @@ articleLikes.insert
   * articleQuestionId: Id of statement
   * experimentId: Id of experiment user participates in
 
-articleLikes.remove
--------------------
+**articleLikes.remove**
 
 *  Removes a statement like from the current user for a particular article
 *  Subtracts the like from the total likes of all users participating in the experiment
@@ -54,8 +52,7 @@ articleLikes.remove
   * articleQuestionId: Id of statement
   * experimentId: Id of experiment user participates in
 
-articleDislikes.insert
-----------------------
+**articleDislikes.insert**
 
 *  Adds a statement dislike from the current user for a particular article
 *  Adds the dislike to the total dislikes of all users participating in the experiment
@@ -65,8 +62,7 @@ articleDislikes.insert
   * articleQuestionId: Id of statement
   * experimentId: Id of experiment user participates in
 
-articleDislikes.remove
-----------------------
+**articleDislikes.remove**
 
 *  Removes a statement dislike from the current user for a particular article
 *  Subtracts the dislike from the total dislikes of all users participating in the experiment
@@ -76,10 +72,10 @@ articleDislikes.remove
   * articleQuestionId: Id of statement
   * experimentId: Id of experiment user participates in
 
-**articles**
+articles
+---------
 
-newsArticles.bookmark.update
-----------------------------
+**newsArticles.bookmark.update**
 
 *  Toggles the *bookmark* state of an article for a user
 *  Cycles between **in readingList** and **not in readingList**
@@ -88,8 +84,7 @@ newsArticles.bookmark.update
 
   * articleId: Id of article
 
-newsArticles.favourite.update
------------------------------
+**newsArticles.favourite.update**
 
 *  Toggles the *favourite* state of an article for a user
 *  Cycles between **in favouritesList** and **not in favouritesList**
@@ -98,26 +93,24 @@ newsArticles.favourite.update
 
   * articleId: Id of article
 
-**articleViews**
+articleViews
+------------
 
-articleViews.add
-----------------
+**articleViews.add**
 
 *  Adds an additional article view for the current user
 *  Input:
 
   * articleId: Id of article
 
-articleViews.duration.update
-----------------------------
+**articleViews.duration.update**
 
 *  Adds time to view duration of a particular article for the current user
 *  Input:
 
   * articleId: Id of article
 
-articleViews.maxScrolledContent.update
---------------------------------------
+**articleViews.maxScrolledContent.update**
 
 *  Updates how much a user has scrolled down in a particular article, keeps the max value
 *  Input:
@@ -125,42 +118,38 @@ articleViews.maxScrolledContent.update
   * articleId: Id of article
   * maxScrolledContent: A value between 0 and 1, showing how much of the article content has been seen by the user
 
-**experiments**
+experiments
+-----------
 
-experiments.create
-------------------
+**experiments.create**
 
 *  Creates a new experiment and assigns the new experiment to the user (who now owns the experiment)
 *  Input:
 
   * name: name of new experiment
 
-experiments.remove
-------------------
+**experiments.remove**
 
 *  Deletes and experiment from database
 *  Input:
 
   * experimentId: Id of experiment to remove
 
-experiments.update
-------------------
+**experiments.update**
 
 *  Updates the name and launch status of an experiment
 *  Input:
 
   * experiment: experiment object
 
-experiments.launch
-------------------
+**experiments.launch**
 
 *  Launches an experiment (meaning some configurations cannot be changed any more)
 *  Input:
 
   * experimentId: Id of experiment
 
-experiments.likeSurvey.update
------------------------------
+**experiments.likeSurvey.update**
 
 *  Updates the likeSurvey (now known as 'statements', shown after each article) of an experiment
 *  Input:
@@ -168,16 +157,14 @@ experiments.likeSurvey.update
   * experimentId: Id of experiment the likeSurvey belongs to
   * likeSurvey: likeSurvey object
 
-experiments.likeSurvey.remove
------------------------------
+**experiments.likeSurvey.remove**
 
 *  Removes the likeSurvey (statements) of an experiment
 *  Input:
 
   * experimentId: Id of experiment the likeSurvey belongs to
 
-experiments.addUsers
---------------------
+**experiments.addUsers**
 
 *  Adds additional users to an experiment
 *  Input:
@@ -186,20 +173,20 @@ experiments.addUsers
   * amount: Number of new users
   * userGroup: Subgroup the users will be assigned to
 
-**explanationViews**
+explanationViews
+----------------
 
-explanationViews.insert
------------------------
+**explanationViews.insert**
 
 *  Adds a record in the database if a user has viewed the detailed recommendation explanations for an article
 *  Input:
 
   * articleId: Id of article
 
-**pageViews**
+pageViews
+---------
 
-pageViews.add
--------------
+**pageViews.add**
 
 *  Adds a page view of an article for a particular user
 *  Uses methods _articleViews.add_ and _articleViews.duration.update_
@@ -210,10 +197,10 @@ pageViews.add
   * currentParameters: navigation parameters of current page
   * prevParameters: navigation parameters of previous page
 
-**podcastAnalytics**
+podcastAnalytics
+----------------
 
-podcastAnalytics.insert
------------------------
+**podcastAnalytics.insert**
 
 *  Adds a record to the database of the type of action a user has performed when using the Audio player (including MiniPlayer)
 *  Input:
@@ -222,35 +209,34 @@ podcastAnalytics.insert
   * action: type of action performed by the user
   * podcastTimestamp: time in Audio player at which action was performed
 
-**readingList**
+readingList
+-----------
 
-readingList.article.add
------------------------
+**readingList.article.add**
 
 *  Add an article to the Reading List of the current user
 *  Input:
 
   * articleId: Id of article
 
-readingList.article.remove
---------------------------
+**readingList.article.remove**
 
 *  Remove an article from the Reading List of the current user
 *  Input:
 
   * articleId: Id of article
 
-**signins**
+signins
+-------
 
-signins.add
------------
+**signins.add**
 
 *  Add a signin log entry for the current user
 
-**surveys**
+surveys
+-------
 
-surveys.create
---------------
+**surveys.create**
 
 *  Create a new survey
 *  Input:
@@ -258,16 +244,14 @@ surveys.create
   * surveyName: Name of new survey
   * experimentId: Id of experiment the survey should belong to
 
-surveys.delete
---------------
+**surveys.delete**
 
 *  Deletes a survey
 *  Input:
 
   * surveyId: Id of survey
 
-surveys.update
---------------
+**surveys.update**
 
 *  Updates the activity status of a particular survey
 *  Input:
@@ -275,8 +259,7 @@ surveys.update
   * surveyId: Id of survey
   * isActive: New active value
 
-surveys.questions.update
-------------------------
+**surveys.questions.update**
 
 *  Updates the questions of a survey
 *  Input:
@@ -284,28 +267,25 @@ surveys.questions.update
   * surveyId: Id of survey
   * surveyQuestions: Array of questions
 
-**users** (default Meteor collection)
+users (default Meteor collection)
+---------------------------------
 
-user.sendVerificationMail
--------------------------
+**user.sendVerificationMail**
 
 *  Sends a verification mail to the current user
 
-user.surveys.reset
-------------------
+**user.surveys.reset**
 
 *  Removes any answers to surveys for the current user
 
-user.remove
------------
+**user.remove**
 
 *  Deletes a specific user from collection **users**
 *  Input:
   
   * userId: Id of user
 
-user.savePushToken
-------------------
+**user.savePushToken**
 
 *  Adds a notification token for the particular user in the database
 *  Input:
@@ -313,10 +293,10 @@ user.savePushToken
   * userId: Id of user
   * pushToken: Notification token
 
-**videoAnalytics**
+videoAnalytics
+--------------
 
-videoAnalytics.insert
----------------------
+**videoAnalytics.insert**
 
 *  Adds a record to the database of the type of action a user has performed when using the Video player
 *  Input:
