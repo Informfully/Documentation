@@ -8,8 +8,8 @@ Informfully
 **Informfully** is a open-source reproducibility platform for content distribution and conducting user experiments.
 Please visit the official `Informfully website <https://www.informfully.ch>`_ for more information.
 
-This is combined and official Informfully Documentation for all `code repositories <https://github.com/orgs/Informfully/repositories>`_.
-For a tutorial on how to use Informfully, start with the :doc:`quick` section and the :ref:`installation` instructions for the project.
+This is the combined and official Informfully Documentation for all `code repositories <https://github.com/orgs/Informfully/repositories>`_.
+For a tutorial on how to use Informfully, start with the :doc:`quick` section and the :ref:`installation` instructions of the project.
 
 Overview
 --------
