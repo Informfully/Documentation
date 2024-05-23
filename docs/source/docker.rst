@@ -75,7 +75,7 @@ Please note that it may take a few minutes to load the file and no progress bar 
     To solve it, we moved temporarily our whole frontend folder directly under the ``C:\`` directory.
     This resolver the issues for us and allowed us to successfully generate the backend Docker image.
 
-    ``Cannot successfully connect phone to Expo service`` If a QR code has been generated, however the user is facing problems connecting to the running Meteor service on the container, make sure that:
+    ``Cannot successfully connect phone to Expo service`` If a QR code has been generated, but you are facing problems connecting to the running Meteor service on the container, make sure that:
     
     #.  all antivirus programs on the host machine have been disabled,
     #.  the firewall on the host machine has been disabled,
@@ -171,5 +171,5 @@ Please note that it may take a few minutes to load the file and no progress bar 
     ``Node fibers issues`` Once the Docker container is running and you try to start the phusion passenger server, there may be an error message regarding node fibers.
     This is most probably caused, because the Node.js version of Meteor, with which the bundle folder was generated, is different from the one in the Docker image, which the phusion passenger server uses.
 
-    To solve this problem, you would have to upgrade the Meteor version of the project (by running ``meteor upgrade``) or using an older version of phusion passenger's base Docker image.
-    In our case, we used an older version of phusion passenger's base Docker image, which supports Node.js v14.
+    To solve this problem, you would have to upgrade the Meteor version of the project (by running ``meteor upgrade``) or using an older version of Phusion Passenger's base Docker image.
+    In our case, we used an older version of phusion passenger's base Docker image supporting Node v14.

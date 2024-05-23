@@ -5,7 +5,7 @@ Meteor encrypts all password of any users created using the `bcrypt <https://en.
 This protects against embarrassing password leaks in case the server’s database is compromised.
 When a user logs in, the Meteor Account System checks the encrypted password generated with its "salt".
 Trying to decrypt the salt is just as difficult to decrypt the password because of the nature of the bcrypt algorithm.
-This special `encryption mechanism <https://docs.meteor.com/api/passwords>`_ employed by Meteor makes it impossible to insert a new user into the database who can log in to the Meteor Account System without using Meteor itself.
+This special `encryption mechanism <https://docs.meteor.com/api/passwords>`_ employed by Meteor makes it impossible to insert a new user into the database without using Meteor itself.
 
 Therefore, to createe the very first ``Maintainer``, we provide the main.js and genesis.js scripts that was run when the app starts up.
 We connect (with ``main.js``) and check (with ``genesis.js``) if the database is empty and if yes, we insert a new user with the below user info (see again ``genesis.ja``).

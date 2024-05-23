@@ -16,11 +16,10 @@ Overview
 
 This documentation provides you with all the information on successfully configure and deploy Informfully. It is structured as follows:
 
-* **Getting Started** serves as the introduction to download and install the platform on your local machine.
-* **General Information** outlines the various components and how/where you need to adjust things to make Informfully fit your needs.
-* **Mobile App** and **Administration Website** provide a in-depth overview of the front end.
-* **Database and Back End** provide the same insights for the back end components.
-* Finally **Deployment** looks at how to move the back end to a server and how to publish the apps on the storefronts.
+* **Getting Started** serves as an overall introduction to install the platform and for setting up a development environment.
+* **Mobile App** and **Administration Website** provide a in-depth overview of the front end components
+* **Back End** provide the same insights for the back end components.
+* Finally **Platform Deployment** looks at how to move the back end to a server and how to publish the apps on the storefronts.
 
 .. note::
 
@@ -32,11 +31,7 @@ This documentation provides you with all the information on successfully configu
 
    quick
    development
-
-.. toctree::
-   :maxdepth: 1
-   :caption: General Information
-
+   source
    architecture
    experiment
 
@@ -51,18 +46,23 @@ This documentation provides you with all the information on successfully configu
    :caption: Administration Website
 
    web
+   users
+   surveys
 
 .. toctree::
    :maxdepth: 1
-   :caption: Database and Back End
+   :caption: Back End
 
+   backend
+   publications
+   methods
    database
    genesis
    scrapers
 
 .. toctree::
    :maxdepth: 1
-   :caption: Deployment
+   :caption: Platform Deployment
 
    deployment
    google
