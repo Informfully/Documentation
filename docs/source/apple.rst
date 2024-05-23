@@ -1,5 +1,5 @@
-Deploy to the Apple App Store
-=============================
+Apple App Store
+===============
 
 Before deploying the mobile app to the Apple App Store, the back end of the mobile app has to be deployed to a server.
 For that, simply follow the same instructions as in `Website Deployment <https://informfully.readthedocs.io/en/latest/deployment.html>`_.

@@ -12,7 +12,7 @@ Download Links
 --------------
 
 `Google Play Store (for Android devices) <https://play.google.com/store/apps/details?id=ch.uzh.ifi.news>`_
-Devices with at least Android 5`
+Devices with at least Android 5.1
 
 `Apple App Store (for iOS devices) <https://apps.apple.com/ch/app/ddis-news/id1460234202>`_
 Devices with at least iOS 13.0

@@ -6,9 +6,10 @@ All existing users are collected in the `users collection <https://informfully.r
 There are two types of users: regular users (data field ``roles`` of collection ``users`` has a value ``user``) and admin users (data field ``roles`` of collection ``users`` has a value ``['user', 'admin']``).
 Regular users can only access the Mobile App, whereas administrator users can access both the Mobile App and Administration Website.
 
-As we are using Meteor's default account and authentication system, there are currently two ways to create a new user: either through the [Admin Website](Experiment-Setup#users) or through the Mobile App (see screenshot below). Regular users can be created both through the Admin Website and the Mobile App, whereas admin users can currently be created only over the Mobile App. For more information on user creation, continue reading.
-
-<img src="uploads/a88007f9dec46c69c43b294c8c394cbc/MobileApp_Signin.jpg"  width="20%">
+As we are using Meteor's default account and authentication system, there are currently two ways to create a new user.
+You can do it either through the Administrator Website or through the Mobile App.
+Regular users can be created both through the Administrator Website and the Mobile App, whereas admin users can currently be created only over the Mobile App.
+The creation of user accounts through the Mobile App, however, is currently disabled (commented out in the sourcecode).
 
 Creation of Regular Users
 -------------------------
