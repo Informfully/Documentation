@@ -29,23 +29,24 @@ This documentation provides you with all the information on successfully configu
    :maxdepth: 1
    :caption: Getting Started
 
-   quick
+   install
    development
    source
    architecture
-   experiment
 
 .. toctree::
    :maxdepth: 1
    :caption: Mobile App
 
    app
+   interface
 
 .. toctree::
    :maxdepth: 1
    :caption: Administration Website
 
    web
+   experiment
    users
    surveys
 
@@ -54,20 +55,21 @@ This documentation provides you with all the information on successfully configu
    :caption: Back End
 
    backend
+   database
    publications
    methods
-   database
    genesis
-   scrapers
+   scraper
 
 .. toctree::
    :maxdepth: 1
    :caption: Platform Deployment
 
    deployment
+   native
+   docker
    google
    apple
-   docker
 
 Citation
 --------

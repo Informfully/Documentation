@@ -11,6 +11,7 @@ The remainder of this page outlines how the sample scrapers work and interface w
 
    The scripts for the content scrapers can run on the same or a different server than the remainder of the Informfully back end.
    Running the scripts is not controlled by any element of the back end.
+   There is no dedicated deployment step involved.
    Instead, the scrapers need to be part of a `cron job` running on the server.
    Communication with the other components of the back end is limited to writing items to the pre-defined document collection.
 

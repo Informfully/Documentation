@@ -5,7 +5,7 @@ This tutorial guides you through running the application with a local server for
 There two seperate components that need to be set up, the **front end** and the **back end**.
 You will need to install the following libraries and packages on your machine:
 
-* `Meteor <https://docs.meteor.com/install.html>`_. The globally installed Meteor version does not matter, as the project will use the project-specific one defined in ``./backend/.meteor/release`` (located `here <https://github.com/Informfully/Platform/blob/main/backend/.meteor/release>_, currently 2.14`_).
+* `Meteor <https://docs.meteor.com/install.html>`_. The globally installed Meteor version does not matter, as the project will use the project-specific one defined in ``./backend/.meteor/release`` (located `here <https://github.com/Informfully/Platform/blob/main/backend/.meteor/release>`_, currently v2.14`_).
 * XCode (macOS only) for iOS development and Android Studio for Android development.
 * `Node.js <https://nodejs.org/>`_ Version **16**.
 * `Yarn <https://classic.yarnpkg.com/lang/en/docs/install/>`_ Version **1.22 or higher**.
@@ -96,7 +96,7 @@ After you have set the ``SERVER`` constant, you can do the following to start th
     **Important** ``npx`` comes with ``npm`` and hence with ``Node.js``. ``npm`` will automatically fetch ``Expo``. If prompted, install ``npx`` and/or ``expo`` as required.
 
 Afterwards, you can scan the QR code that will show up, if you want to test the app on a physical device (recommended).
-Or you can connect to a device emulator/simulator (e.g., Android Studio or XCode).
+Or you can connect to a device emulator (e.g., Android Studio or XCode).
 
 .. image:: img/meteor_bundle.png
    :width: 700

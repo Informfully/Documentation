@@ -1,15 +1,10 @@
-Quick Start Guide
-=================
-
-Find below the install instructions for both the front end and back end.
-
+Installation Instructions
+=========================
 
 .. _installation:
 
-Instllation Instructions
-------------------------
-
-Download **Informfully Platform** repository to start your journey:
+Find below the install instructions for both the front end and back end.
+To start, download **Informfully Platform** repository to start your journey:
 
 .. code-block:: console
 
@@ -39,6 +34,11 @@ In general, whenever you install, remove or update packages for this project, yo
 
 For developing the app, you can chose between connecting to a local back end on your machine or a server.
 Please see the instruction on the pages for `the local deployment <https://informfully.readthedocs.io/en/latest/development.html>`_ and `online deployment <https://informfully.readthedocs.io/en/latest/deployment.html>`_ respectively.
+
+Deployment Modes
+----------------
+
+...
 
 Helper Scripts
 --------------
