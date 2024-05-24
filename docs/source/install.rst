@@ -42,7 +42,7 @@ Helper Scripts
 
 ...
 
-Next Stap: Run the Code
+Next Step: Run the Code
 -------------------------
 
-Please see the next instruction page for `Running the Code <https://informfully.readthedocs.io/en/latest/native.html>`_`Running the Code <https://informfully.readthedocs.io/en/latest/development.html>`_
+Please see the next instruction page for `Running the Code <https://informfully.readthedocs.io/en/latest/development.html>`_
