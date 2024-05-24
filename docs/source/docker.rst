@@ -1,7 +1,7 @@
 Docker Setup
 ============
 
-Installation guide to set up Informfully using Docker containers for both the front end and back end.
+This is the installation guide for Informfully with Docker containers for both the front end and back end.
 The following are instructions to set up Docker containers for Informfully on Windows 10 Home.
 A pre-requisite for Windows 10 Home users are to enable the WSL 2.0 feature.
 WSL is the Windows Subsystem for Linux and the instructions for enabling it can be found `here <https://docs.microsoft.com/en-us/windows/wsl/install-win10>`_.

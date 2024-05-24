@@ -3,19 +3,18 @@ Installation Instructions
 
 .. _installation:
 
-Find below the install instructions for both the front end and back end.
-To start, download **Informfully Platform** repository to start your journey:
+Informfully is a React Native app that uses a Meteor servers as back end. Download the code and Meteor as follows:
 
 .. code-block:: console
 
     # Download the source code
-    git clone https://gitlab.ifi.uzh.ch/ddis/Students/Projects/2021-multimedia-news-recommendations.git
+    git clone https://github.com/Informfully/Platform.git
 
     # Install all packages
     cd backend
     meteor npm install
 
-Informfully is a React Native app that uses a Meteor servers as back end. Here is an overview of the dependencies you need to install:
+Here is an overview of the dependencies you need to install:
 
 **Meteor** You do not have to install a specific version of meteor.
 When you run the application, Meteor will compare the version of the application with the version(s) you have installed locally.
@@ -28,15 +27,13 @@ If you want to deploy this application to production, however, a separate instal
 
 **NPM** Meteor comes with NPM and thus no manual installation is required.
 Additionally, Meteor uses a bundled version of NPM that is available using ``meteor npm``.
-In general, whenever you install, remove or update packages for this project, you should use ``meteor npm`` instead of ``npm`` (e.g. ``meteor npm install`` to install dependencies).
+In general, whenever you install, remove or update packages for this project, you should use ``meteor npm`` instead of ``npm`` (e.g., ``meteor npm install`` to install dependencies).
 
-**MongoDB**
+**MongoDB** Meteor is shipped with MongoDB and thus you do not have to install it yourself.
+If you still want to `install MongoDB yourself <https://docs.mongodb.com/manual/installation/>`_, please check whether the version you want to install is compatible with the Meteor version this project uses in `.meteor/release <https://github.com/Informfully/Platform/blob/main/backend/.meteor/release>`_ to find the Meteor version of this project.
 
-For developing the app, you can chose between connecting to a local back end on your machine or a server.
-Please see the instruction on the pages for `the local deployment <https://informfully.readthedocs.io/en/latest/development.html>`_ and `online deployment <https://informfully.readthedocs.io/en/latest/deployment.html>`_ respectively.
-
-Deployment Modes
-----------------
+Environment Configuration
+-------------------------
 
 ...
 
@@ -44,3 +41,8 @@ Helper Scripts
 --------------
 
 ...
+
+Next Stap: Run the Code
+-------------------------
+
+Please see the next instruction page for `Running the Code <https://informfully.readthedocs.io/en/latest/native.html>`_`Running the Code <https://informfully.readthedocs.io/en/latest/development.html>`_

@@ -3,11 +3,6 @@ App Overview
 
 ...
 
-Code Features
--------------
-
-...
-
 Download Links
 --------------
 

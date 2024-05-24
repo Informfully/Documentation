@@ -2,11 +2,22 @@
 
 ![Informfully](https://informfully.readthedocs.io/en/latest/_images/logo_banner.png)
 
-Welcome to the [Informfully](https://informfully.ch/)! Informfully is a open-source reproducibility platform for content distribution and user experiments from the [University of Zurich](https://www.ifi.uzh.ch/en.html).
+Welcome to the [Informfully](https://informfully.ch/)!
+Informfully is a open-source reproducibility platform for content distribution and user experiments.
 
-To view the documentation, please visit [Informfully at Read the Docs](https://informfully.readthedocs.io/). It is the combined and official Informfully Documentation for all [code repositories](https://github.com/orgs/Informfully/repositories).
+To view the full documentation, please visit [Informfully at Read the Docs](https://informfully.readthedocs.io/).
+It is the combined documentation for all [code repositories](https://github.com/orgs/Informfully/repositories).
 
-The documentation in this repository here is identical to the online one and can be downloaded for local use.
+**Links and Resources:** [Website](https://informfully.ch/) | [Documentation](https://informfully.readthedocs.io/) | [Informfully](https://github.com/orgs/Informfully/repositories) | [DDIS@UZH](https://www.ifi.uzh.ch/en/ddis.html)
+
+## Overview
+
+The documentation in this repository is the source for the online [Informfully documentation here](https://informfully.readthedocs.io/en/latest/quick.html). It can be downloaded for offline use. Otherwise, please use the online version instead.
+
+```bash
+# Download the documentation
+git clone https://github.com/Informfully/Documentation.git
+```
 
 ## Citation
 If you use any Informfully code/repository in a scientific publication, we ask you to cite the following papers:
@@ -38,7 +49,7 @@ If you use any Informfully code/repository in a scientific publication, we ask y
   }
   ```
 
-## Support
+## Contributing
 Your are welcome to contribute to the Informfully ecosystem and become a part of your cummunity. Feel free to:
   - fork any of the [Informfully repositories](https://github.com/Informfully/Documentation) and
   - make changes and create pull requests.

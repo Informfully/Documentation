@@ -5,11 +5,13 @@ Informfully
    :width: 700
    :alt: Informfully banner logo
 
-**Informfully** is a open-source reproducibility platform for content distribution and conducting user experiments.
-Please visit the official `Informfully website <https://www.informfully.ch>`_ for more information.
+Welcome to the `Informfully <https://informfully.ch/>`_!
+Informfully is a open-source reproducibility platform for content distribution and conducting user experiments.
 
 This is the combined and official Informfully Documentation for all `code repositories <https://github.com/orgs/Informfully/repositories>`_.
 For a tutorial on how to use Informfully, start with the :doc:`quick` section and the :ref:`installation` instructions of the project.
+
+**Links and Resources:** `Website <https://informfully.ch/>`_ | `Documentation <https://informfully.readthedocs.io/>`_ | `Informfully <https://github.com/orgs/Informfully/repositories>`_ | `DDIS@UZH <https://www.ifi.uzh.ch/en/ddis.html>`_
 
 Overview
 --------
@@ -31,8 +33,9 @@ This documentation provides you with all the information on successfully configu
 
    install
    development
-   source
-   architecture
+   deployment
+
+   native
 
 .. toctree::
    :maxdepth: 1
@@ -59,14 +62,14 @@ This documentation provides you with all the information on successfully configu
    publications
    methods
    genesis
-   scraper
+   scrapers
 
 .. toctree::
    :maxdepth: 1
-   :caption: Platform Deployment
+   :caption: General Information
 
-   deployment
-   native
+   source
+   architecture
    docker
    google
    apple
