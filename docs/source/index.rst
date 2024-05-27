@@ -69,7 +69,6 @@ This documentation provides you with all the information on successfully configu
    :caption: General Information
 
    source
-   architecture
    docker
    google
    apple
