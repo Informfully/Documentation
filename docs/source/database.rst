@@ -1,79 +1,288 @@
 Database Collections
 ====================
 
-Overview of all collections that exist.
-Can be accessed via MongoDB to run queries for recommender frameworks.
+Overview of all document collections (database tables) that exist.
+They can be accessed via MongoDB to run queries for recommender frameworks.
 All collections marked with a \*-symbol collect data through the user's interactions with the app.
 
-algorithms
-----------
-
-**Description** ...
-
-...
+In the examples given below, Informfully is used as a news recommendation app.
+For consistency reason (to map the use cases in the remainder of the documentation), items are referred to as articles.
+If Informfully is used in another capacity, all records labelled ``articleId`` can be simply renamed to ``itemId``.
 
 answers*
 --------
 
-**Description** ...
+**Description** Collects the survey results of all users.
 
-...
+.. list-table::
+   :widths: 25 25 50
+   :header-rows: 1
+
+   * - Attributes
+     - Type
+     - Description
+   * - ``_id``
+     - String
+     - ID of data record.
+   * - ``surveyId``
+     - String
+     - ID of survey.
+   * - ``userId``
+     - String
+     - ID of user.
+   * - ``answers``
+     - Array of Objects
+     - Answers of the user to all questions in the survey.
+   * - ``createdAt``
+     - Date
+     - Time at which data record was created.
 
 archive*
 --------
 
-**Description** ...
+**Description** Collects whether an article has been and whether it is a part of the user's favourites list.
 
-...
+.. list-table::
+   :widths: 25 25 50
+   :header-rows: 1
+
+   * - Attributes
+     - Type
+     - Description
+   * - ``_id``
+     - String
+     - ID of data record.
+   * - ``articleId``
+     - String
+     - ID of article.
+   * - ``userId``
+     - String
+     - ID of user.
+   * - ``articlePublishedDate``
+     - Date
+     - Date the article was published.
+   * - ``createdAt``
+     - Date
+     - Time at which data record was created.
+   * - ``removedAt``
+     - Date
+     - Time at which data record was removed.
+
 
 articleLikes*
 -------------
 
-**Description** ...
+**Description** Collects the like/dislike status (current and historical) of the statements after an article.
 
-...
+.. list-table::
+   :widths: 25 25 50
+   :header-rows: 1
+
+   * - Attributes
+     - Type
+     - Description
+   * - ``_id``
+     - String
+     - ID of data record.
+   * - ``articleId``
+     - String
+     - ID of article.
+   * - ``userId``
+     - String
+     - ID of user.
+   * - ``articleQuestionId``
+     - String
+     - ID of statement, comes from the objects in the answers array of the ``likeSurvey``-field of an experiments collection data record.
+   * - ``articleAnswer``
+     - Integer
+     - Can be either 1 or -1, 1 stands for a Like and -1 stands for a Dislike.
+   * - ``createdAt``
+     - Date
+     - Time at which data record was created.
+   * - ``removedAt``
+     - Date
+     - Time at which data record was removed.
 
 articleTotalLikes*
 ------------------
 
-**Description** ...
+**Description** The collection keeps track of the total likes/dislikes of the users in an experiment.
 
-...
+.. list-table::
+   :widths: 25 25 50
+   :header-rows: 1
+
+   * - Attributes
+     - Type
+     - Description
+   * - ``_id``
+     - String
+     - ID of data record.
+   * - ``articleId``
+     - String
+     - ID of article.
+   * - ``experimentId``
+     - String
+     - ID of experiment.
+   * - ``counts``
+     - String
+     - Contains the total likes/dislikes for each statement. For more information about how the array looks like, see below.
+   * - ``questions``
+     - Date
+     - Contains the ids of statements for which at least one like/dislike has been given.
 
 articleViews*
 -------------
 
-**Description** ...
+**Description** Contains various information about all articles a user has accessed.
 
-...
+.. list-table::
+   :widths: 25 25 50
+   :header-rows: 1
 
-articleViewsUpgrade*
---------------------
-
-**Description** ...
-
-...
+   * - Attributes
+     - Type
+     - Description
+   * - ``_id``
+     - String
+     - ID of data record.
+   * - ``articleId``
+     - String
+     - ID of article.
+   * - ``userId``
+     - String
+     - ID of user.
+   * - ``articlePublishedDate``
+     - Date
+     - Date the article was published (referred to as ``dateScraped`` of article)
+   * - ``duration``
+     - Integer
+     - Duration in ms for which article was open.
+   * - ``maxScrolledContent``
+     - Double
+     - Shows how much the user has seen from the article's content; can be between 0 and 1; a 0 indicates that the user has not scrolled down yet.
+   * - ``updatedAt``
+     - Date
+     - Date on which article was last accessed in case it has been opened multiple times.
+   * - ``views``
+     - Integer
+     - Number of times the article has been viewed by this user.
+   * - ``createdAt``
+     - Date
+     - Time at which data record was created.
 
 experiments
 -----------
 
-**Description** ...
+**Description** The ``experiments`` collection contains information(``_id``, ``name``, etc.) of these experiments and surveys set by the admin.
+The information can be modified on the ``Information`` page while ``likeSurvey`` can be set on the ``Feedback`` page.
 
-...
+.. list-table::
+   :widths: 25 25 50
+   :header-rows: 1
+
+   * - Attributes
+     - Type
+     - Description
+   * - ``_id``
+     - String
+     - ID of data record.
+   * - ``name``
+     - String
+     - Name of the experiment, which is first set at the creation of the experiment.
+   * - ``adminName``
+     - String
+     - Name of the admin of this experiment; by default, it is the string before ``@`` of the creator's email.
+   * - ``contactInfo``
+     - String
+     - Contact info of the admin of this experiment; by default, it is the creator's email.
+   * - ``description``
+     - String
+     - Text description of the experiments.
+   * - ``urlPP``
+     - String
+     - URL to the Privacy Policy.
+   * - ``urlTC``
+     - String
+     - URL to the Terms and Conditions.
+   * - ``testingPhase``
+     - Boolean
+     - Flag which indicates whether the experiment has launched or not. A true value means that the experiment has not launched yet. Once an experiment is launched, it cannot go back to the design phase, no additional users can be added, survey questions cannot be edited, and statements in Feedback surveys tab cannot be edited.
+   * - ``likeSurvey``
+     - Object
+     - This field contains the statements that are shown after each article and users can like or dislike. For more information about how the object looks like, see below.
+   * - ``feedbackEmail``
+     - String
+     - E-mail which is shown in the mobile app and users can contact in case of questions.
+   * - ``explanationTagsDef``
+     - Object
+     - Contains objects which define the explanation tags used in the experiment. For more information about how the object looks like, see below.
+   * - ``maxNrExplanationTags``
+     - Integer
+     - Limits the number of explanation tags that can be shown per article. Set to 0 in case you want to disable use of explanation tags for the experiment.
+   * - ``maxCharacterExplanationTagShort``
+     - Integer
+     - Limits the number of characters that are shown inside the explanation tags of each article preview.
+   * - ``maxNrFurtherRecArticles``
+     - Integer
+     - Limits the number of articles that are recommended at the end of the ``Article`` page/screen. Set to 0 in case you want to disable those recommendations.
+   * - ``totalLikesDislikesEnabled``
+     - Boolean
+     - Controls whether the total likes/dislikes are shown on the Article page/screen. Set to False to hide the total likes/dislikes.
+   * - ``previewTitleLineHeight``
+     - Integer
+     - Controls the number of lines that are used for the title of an article on the small article previews. It can be increased up to 3 in case that ``maxNrExplanationTags`` is set to 0.
+
 
 explanationViews*
 -----------------
 
-**Description** ...
+**Description** Whenever a user views the detailed recommendation explanations for an article, a record is created in the collection.
 
-...
+.. list-table::
+   :widths: 25 25 50
+   :header-rows: 1
+
+   * - Attributes
+     - Type
+     - Description
+   * - ``_id``
+     - String
+     - ID of data record.
+   * - ``articleId``
+     - String
+     - ID of article.
+   * - ``userId``
+     - String
+     - ID of user.
+   * - ``createdAt``
+     - Date
+     - Time at which data record was created.
 
 explanations
 ------------
 
-**Description** ...
+**Description** Contains the recommendation explanation tags for each article and user.
 
-...
+.. list-table::
+   :widths: 25 25 50
+   :header-rows: 1
+
+   * - Attributes
+     - Type
+     - Description
+   * - ``_id``
+     - String
+     - ID of data record.
+   * - ``articleId``
+     - String
+     - ID of article.
+   * - ``userId``
+     - String
+     - ID of user.
+   * - ``explanationTagsId``
+     - Array of Strings
+     - Contains the IDs of the explanation tags, which will be shown for this article and user. The possible explanation tag IDs are defined in the field ``explanationTagsDef``. The array can also be empty.
 
 newsArticles
 ------------
@@ -145,62 +354,287 @@ newsArticles
 pageViews*
 ----------
 
-**Description** ...
+**Description** Collects all the pages/menus a user has accessed.
 
-...
+.. list-table::
+   :widths: 25 25 50
+   :header-rows: 1
+
+   * - Attributes
+     - Type
+     - Description
+   * - ``_id``
+     - String
+     - ID of data record.
+   * - ``userId``
+     - String
+     - ID of user.
+   * - ``page``
+     - String
+     - Unique ID of each page/menu, e.g., ``Home`` for the home screen.
+   * - ``previousPage``
+     - String
+     - Same as ``page``, simply for the previous one (allows to track how the user has navigated through the menus).
+   * - ``parameters``
+     - Object
+     - Contains navigation parameters of the previous page (and sometimes of the current one), e.g., ``articleId``. It is empty if there are no parameters to pass (for example from ``Home`` to ``Settings``).
+   * - ``createdAt``
+     - Date
+     - Time at which data record was created.
 
 podcastAnalytics*
 -----------------
 
-**Description** ...
+**Description** Collects all actions performed with an audio (including MiniPlayer).
 
-...
+.. list-table::
+   :widths: 25 25 50
+   :header-rows: 1
+
+   * - Attributes
+     - Type
+     - Description
+   * - ``_id``
+     - String
+     - ID of data record.
+   * - ``articleId``
+     - String
+     - ID of article.
+   * - ``userId``
+     - String
+     - ID of user.
+   * - ``action``
+     - String
+     - The action performed at this step. Currently available: play/stop, backwards, fastforward, sliderSearchComplete, single-/doubleTapLeft, single-/doubleTapRight, heartbeat every 10 seconds, fullscreenExit/-activate.
+   * - ``videoTimestamp``
+     - Integer
+     - Position in ms in video at which this action was performed.
+   * - ``createdAt``
+     - Date
+     - Time at which data record was created.
 
 readingList*
 ------------
 
-**Description** ...
+**Description** Collects whether an article has been and whether it is a part of the user's bookmark list.
 
-...
+.. list-table::
+   :widths: 25 25 50
+   :header-rows: 1
+
+   * - Attributes
+     - Type
+     - Description
+   * - ``_id``
+     - String
+     - ID of data record.
+   * - ``articleId``
+     - String
+     - ID of article.
+   * - ``userId``
+     - String
+     - ID of user.
+   * - ``articlePublishedDate``
+     - Date
+     - Date the article was published.
+   * - ``createdAt``
+     - Date
+     - Time at which data record was created.
+   * - ``removedAt``
+     - Date
+     - Time at which data record was removed.
 
 recommendationLists*
 --------------------
 
-**Description** ...
+**Description** Collects that are shown on the home screen on a user in the exact ordering determined by the recommender system.
 
-...
+.. list-table::
+   :widths: 25 25 50
+   :header-rows: 1
+
+   * - Attributes
+     - Type
+     - Description
+   * - ``_id``
+     - String
+     - ID of data record.
+   * - ``articleId``
+     - String
+     - ID of article.
+   * - ``userId``
+     - String
+     - ID of user.
+   * - ``recommendationAlgorithm``
+     - String
+     - Name of the algorithm used to create the recommendation (optional).
+   * - ``prediction``
+     - Float
+     - Value that indicated the position of the item in the list (the higher the value, the further up in the list; no pre-defined range exists, is up to the recommender system).
+   * - ``isPreview``
+     - Boolean
+     - A flag which indicates whether the article should appear big on the screen with the title, lead, and image (if ``FALSE``, the feed will only show a thumbnail image and the title).
+   * - ``createdAt``
+     - Date
+     - Time at which data record was created.
 
 signins*
 --------
 
-**Description** ...
+**Description** Collects all times a user has accessed the app.
+A new record is added each time the user refreshes the browser tab.
+Hence, a record might not reflect the actual timestamp at which a given user has signed in (meaning the action of initially signing in).
+In return, for users that hardly ever sign out and hence hardly ever sign in, it (more) correctly reflects the last time the user has used the application.
 
-...
+.. list-table::
+   :widths: 25 25 50
+   :header-rows: 1
+
+   * - Attributes
+     - Type
+     - Description
+   * - ``_id``
+     - String
+     - ID of data record.
+   * - ``userId``
+     - String
+     - ID of user.
+   * - ``createdAt``
+     - Date
+     - Time at which data record was created.
 
 surveys
 -------
 
-**Description** ...
+**Description** Contains all surveys that admin users have defined (and not deleted).
 
-...
+.. list-table::
+   :widths: 25 25 50
+   :header-rows: 1
+
+   * - Attributes
+     - Type
+     - Description
+   * - ``_id``
+     - String
+     - ID of data record.
+   * - ``userId``
+     - String
+     - ID of user.
+   * - ``experiment``
+     - String
+     - ID of experiment
+   * - ``isActive``
+     - Boolean
+     - A flag which indicates whether the survey will be shown in the mobile app to participants in the experiment. A True means that the survey will be shown.
+   * - ``questions``
+     - Array of Objects
+     - Contains all the questions in the survey. For more information about how the array looks like, see below.
+   * - ``createdBy``
+     - String
+     - ID of user.
+   * - ``createdAt``
+     - Date
+     - Time at which data record was created.
 
 users*
 ------
 
 **Description** ...
 
-...
+.. list-table::
+   :widths: 25 25 50
+   :header-rows: 1
+
+   * - Attributes
+     - Type
+     - Description
+   * - ``_id``
+     - String
+     - ID of data record.
+   * - `username```
+     - String
+     - Username required for user to log in; username field can still be manually added, simply for display purposes in the app.
+   * - ``emails``
+     - Arra of Strings
+     - Only for maintainer.
+   * - ``roles``
+     - Array of Strings
+     - An Array consists of all the access rights of this account. This Array can be one of the following three: ``{0:"user"}``, ``{0:"user",1:"admin"}``, or ``{0:"user",1:"admin",2:"maintainer"}``.
+   * - ``profile``
+     - Object
+     - For Maintainers: ``{createdAccount:Integer,lastLogin:Time}``; for Admins: ``{maxUserAccount:Integer,createdAccount:Integer,plainTextInitialPassword:String,lastLogin:Time}``; for Users: ``Null``.
+   * - ``participatesIn``
+     - String
+     - For ``Users``: the experiment ``_id`` that the user is in; for ``Maintainers`` and ``Admins``: "default-experiment"
+   * - ``userGroup``
+     - String
+     - For ``Users``: the user group name that the user is in (only one group at each point in time); for ``Maintainers`` and ``Admins``: ``baseline``.
+   * - ``experiments``
+     - Array
+     - For ``Maintainers`` and ``Admins``: the experiment ``_id`` that they own;fFor Users: ``Null``.
+   * - ``createdBy``
+     - String
+     - ID of user.
+   * - ``services``
+     - Object
+     - Meteor default field for login, contains the password hash (bcrypt) and the loginTokens. They are used for authentication purposes.
+   * - ``services.password``
+     - Object
+     - Encrypted password.
+   * - ``createdAt``
+     - Date
+     - Time at which data record was created.
 
 userGroups
 ----------
 
 **Description** ...
 
-...
+.. list-table::
+   :widths: 25 25 50
+   :header-rows: 1
+
+   * - Attributes
+     - Type
+     - Description
+   * - ``_id``
+     - String
+     - ID of data record.
+   * - ``experimentId``
+     - String
+     - Experiment ``_id`` that this user group belongs to
+   * - ``name``
+     - String
+     - Name of this user group.
 
 videoAnalytics*
 ---------------
 
 **Description** ...
 
-...
+.. list-table::
+   :widths: 25 25 50
+   :header-rows: 1
+
+   * - Attributes
+     - Type
+     - Description
+   * - ``_id``
+     - String
+     - ID of data record.
+   * - ``articleId``
+     - String
+     - ID of article.
+   * - ``userId``
+     - String
+     - ID of user.
+   * - ``action``
+     - String
+     - The action performed at this step. Currently available: play/stop, backwards, fastforward, sliderSearchComplete, single-/doubleTapLeft, single-/doubleTapRight, heartbeat every 10 seconds, fullscreenExit/-activate.
+   * - ``videoTimestamp``
+     - Integer
+     - Position in ms in video at which this action was performed.
+   * - ``createdAt``
+     - Date
+     - Time at which data record was created.
