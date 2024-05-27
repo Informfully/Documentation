@@ -69,8 +69,8 @@ This had the advantage of reducing the load on the Informfully server as the med
 The disadvantage is that if the source removes the file in question, then users in Informfully can no longer access the item.
 If the item modelity is text, however, the system will create and store a copy after applying data augmentation/pre-processing steps.
 
-.. list-table:: newsArticles
-   :widths: 30 25 50
+.. list-table::
+   :widths: 25 25 50
    :header-rows: 1
 
    * - Attributes
