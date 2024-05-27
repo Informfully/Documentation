@@ -37,6 +37,23 @@ answers*
      - Date
      - Time at which data record was created.
 
+An example of how the answers field could look like is shown below:
+
+.. code-block:: json
+
+    "answers":[
+        {
+            "questionId": "dbEZHPsNryzY24vgP",
+            "questionText": "Soll der Staat Menschen in Armut stärker unterstützen (Ausbau der Sozialhilfe)?",
+            "selections": [{
+                "_id": "29NqGpYwaNwAQhTZw",
+                "text": "Eher ja",
+                "value": 0.75
+            }]
+        },
+    ...
+    ]
+
 archive*
 --------
 
@@ -130,6 +147,23 @@ articleTotalLikes*
    * - ``questions``
      - Date
      - Contains the ids of statements for which at least one like/dislike has been given.
+
+An example of how the answers field could look like is shown below:
+
+.. code-block:: json
+
+    "counts": [
+        {
+            "articleQuestionId": "u9CqoCRqG7LmiaKF3",
+            "countLikes": 5,
+            "countDislikes": 1,
+        },
+        {
+            "articleQuestionId": "br7CRMr3YeZdRedDd",
+            "countLikes": 0,
+            "countDislikes": 2,
+        }
+    ]
 
 articleViews*
 -------------
@@ -233,6 +267,43 @@ The information can be modified on the ``Information`` page while ``likeSurvey``
      - Integer
      - Controls the number of lines that are used for the title of an article on the small article previews. It can be increased up to 3 in case that ``maxNrExplanationTags`` is set to 0.
 
+An example of how the likeSurvey field could look like is shown below:
+
+.. code-block:: json
+
+    "likeSurvey": {
+        "question": "Wieso mögen Sie den Artikel nicht?",
+        "answers": [
+            {
+                "_id": "u9CqoCRqG7LmiaKF3",
+                "text": "Ich stimme den Aussagen des Artikels nicht zu.",
+                "value": 0
+            },
+            {
+                "_id": "br7CRMr3YeZdRedDd",
+                "text": "Ich mag den Schreibstil nicht.",
+                "value": 0
+            }
+        ]
+    }
+
+An example of how the explanationTagsDef field could look like is shown below:
+
+.. code-block:: json
+
+    "explanationTagsDef": {
+        "60feefd58bd1b5012ad6e689": {
+            "_id": "60feefd58bd1b5012ad6e689",
+            "textShort": "Int",
+            "textLong": "Interests",
+            "textColorLight": "#FFFFFF",
+            "textColorDark": "#FFFFFF",
+            "backgroundColorLight": "#44546A",
+            "backgroundColorDark": "#44546A",
+            "detailedExplanation": "Lorem ipsum dolor sit amet ..."
+        },
+        ...
+    }
 
 explanationViews*
 -----------------
@@ -350,6 +421,11 @@ newsArticles
    * - ``language``
      - String
      - Langauge code of the article (e.g., en-US, de-CH, etc.)
+
+.. note::
+
+    Be aware that Android devices can only handle websites secured by an SSL certificate (i.e., only https websites and no http websites). 
+    Therefore, data fields like url or multimediaURL should only contain https websites.
 
 pageViews*
 ----------
@@ -478,6 +554,32 @@ recommendationLists*
      - Date
      - Time at which data record was created.
 
+An example of how the recommendations need to be formatted is shown below:
+
+.. code-block:: json
+
+    "recommendationLists": [
+        {
+            "_id": ObjectId("dbdwHPsadszY24vgP"),
+            "userId": "ksgsouZYPvBA2GiQb",
+            "articleId": "632aa0137143f66fb32c0d63",
+            "recommendationAlgorithm": "Test Algorithm 1",
+            "prediction": 1000,
+            "createdAt": 2022-09-21T12:19:40.229+00:00,
+            "isPreview": True
+        },
+        {
+            "_id": ObjectId("dbEZHPsadszY24vgP"),
+            "userId": "ksgsouZYPvBA2GiQb",
+            "articleId": "632aa02f7143f66fb32c1125",
+            "recommendationAlgorithm": "Test Algorithm 1",
+            "prediction": 1001,
+            "createdAt": 2022-09-21T12:19:41.229+00:00,
+            "isPreview": False
+        },
+        ...
+    ]
+
 signins*
 --------
 
@@ -502,6 +604,43 @@ In return, for users that hardly ever sign out and hence hardly ever sign in, it
    * - ``createdAt``
      - Date
      - Time at which data record was created.
+
+An example of how the questions field could look like is shown below:
+
+.. code-block:: json
+
+    "questions": [
+        {
+            "_id": "dbEZHPsNryzY24vgP",
+            "text": "Are you in favor of voting or higher social benefits?",
+            "surveyId": "HKjXEn7cECXuqJig4",
+            "minSelect": 1,
+            "maxSelect": 1,
+            "answers": [
+                {
+                    "_id": "RG8QYzfBZWn94SfpQ",
+                    "text": "Yes",
+                    "value": 1
+                },
+                {
+                    "_id": "29NqGpYwaNwAQhTZw",
+                    "text": "Rather yes",
+                    "value": 0.75
+                },
+                {
+                    "_id": "Z4tz763dMMkWPFrTd",
+                    "text": "Rather no",
+                    "value": 0.5
+                },
+                {
+                    "_id": "NcMfsArhHXed8CSJR",
+                    "text": "No",
+                    "value": 0.25
+                }
+            ]
+        },
+        ...
+    ]
 
 surveys
 -------
@@ -585,6 +724,11 @@ users*
    * - ``createdAt``
      - Date
      - Time at which data record was created.
+
+.. note::
+
+    Regarding the ``plainTextInitialPassword``, when the account is initially created, a random ``plainTextInitialPassword`` is generated.
+    This password is then sent to the administrators, who are strongly advised to change it as soon as possible.
 
 userGroups
 ----------
