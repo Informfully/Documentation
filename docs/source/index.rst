@@ -23,10 +23,6 @@ This documentation provides you with all the information on successfully configu
 * **Back End** provide the same insights for the back end components.
 * Finally **Platform Deployment** looks at how to move the back end to a server and how to publish the apps on the storefronts.
 
-.. note::
-
-   This project is under active development.
-
 .. toctree::
    :maxdepth: 1
    :caption: Getting Started

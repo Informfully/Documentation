@@ -1,7 +1,7 @@
 Local Development
 =================
 
-Make sure that you are specifying the same port that you are using in the `React Native App `<https://github.com/Informfully/Platform/blob/main/frontend/App.js>`_.
+Make sure that you are specifying the same port that you are using in the `React Native App <https://github.com/Informfully/Platform/blob/main/frontend/App.js>`_.
 You can then start the server with:
 
 .. code-block:: console
@@ -26,7 +26,7 @@ The back end is now running and the administration website is accessible at via 
 
 You will need to install the following libraries and packages on your machine:
 
-* `Meteor <https://docs.meteor.com/install.html>`_. The globally installed Meteor version does not matter, as the project will use the project-specific one defined in ``./backend/.meteor/release`` (located `here <https://github.com/Informfully/Platform/blob/main/backend/.meteor/release>`_, currently v2.14`_).
+* `Meteor <https://docs.meteor.com/install.html>`_. The globally installed Meteor version does not matter, as the project will use the project-specific one defined in ``./backend/.meteor/release`` (`version note located here <https://github.com/Informfully/Platform/blob/main/backend/.meteor/release>`_, currently v2.14`_).
 * XCode (macOS only) for iOS development and Android Studio for Android development.
 * `Node.js <https://nodejs.org/>`_ Version **16**.
 * `Yarn <https://classic.yarnpkg.com/lang/en/docs/install/>`_ Version **1.22 or higher**.
@@ -53,7 +53,7 @@ Also, do not forget that it is best if your development and production environme
 Connecting to Local Server
 --------------------------
 
-Inside the ``App.js`` configuration file (located `here <https://github.com/Informfully/Platform/blob/main/frontend/App.js>`_), change the ``SERVER`` constant so it will connect to your local server.
+Inside the ``App.js`` configuration file (`file here <https://github.com/Informfully/Platform/blob/main/frontend/App.js>`_), change the ``SERVER`` constant so it will connect to your local server.
 E.g., if the client runs on the same computer:
 
 .. code-block:: javascript
@@ -99,6 +99,6 @@ Helper Scripts
 ...
 
 Next Step: Code Deployment
----------------
+--------------------------
 
 Please see the next instruction pages for `App Deployment <https://informfully.readthedocs.io/en/latest/native.html>`_ and `Website Deployment <https://informfully.readthedocs.io/en/latest/deployment.html>`_.

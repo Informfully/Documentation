@@ -85,8 +85,8 @@ Please note that it may take a few minutes to load the file and no progress bar 
 Setting Up the Back End
 -----------------------
 
-Please note that before building the Docker image, the ``bundle folder`` (located `here <https://github.com/Informfully/Platform/tree/main/backend/bundle>`_) has to be generated and unpacked at the root of the backend directory.
-This can be done by following the first part of ``meteor build`` instructions for the back end (located `here <https://informfully.readthedocs.io/en/latest/install.html>`_) and unpacking the generated tar file in the root of the backend folder.
+Please note that before building the Docker image, the ``bundle folder`` (`bundle located here <https://github.com/Informfully/Platform/tree/main/backend/bundle>`_) has to be generated and unpacked at the root of the backend directory.
+This can be done by following the first part of ``meteor build`` instructions for the back end (`meteor located here <https://informfully.readthedocs.io/en/latest/install.html>`_) and unpacking the generated tar file in the root of the backend folder.
 To create the Dockerfile, open a text editor such as Notepad on Windows, and type in the following contents:
 
 .. code-block:: python
@@ -132,7 +132,7 @@ To create the Dockerfile, open a text editor such as Notepad on Windows, and typ
 
 Explanation of the code:
 
-* The first set of instructions takes the base image of phusion passenger from the Docker repository. This image is configured with Node.js. More information can be found `here <https://github.com/phusion/passenger-docker>`_.
+* The first set of instructions takes the base image of phusion passenger from the Docker repository. This image is configured with Node.js (`more information here <https://github.com/phusion/passenger-docker>`_).
 * The next set of instructions are required to install the basic commands in order to download and configure the rest of the required software. Afterwards, MongoDB is installed.
 * The next set of instructions creates a folder called app and it copies the backend folder contents onto the image.
 * All dependencies of the bundle folder are installed, using the npm version of the base Docker image of phusion passenger.
@@ -153,7 +153,7 @@ Follow the next steps to get the Backend running:
 #.  Run the command ``passenger start`` inside of the opened Docker container. This will start the phusion passenger service. The back end will be running now.
 
 In order to open the back end server, running on the container, from the host computer, open an internet browser and type ``localhost:8020`` (which is the host port that was defined above).
-The passenger's port 8080 of the container can be changed by editing the ``Passengerfile.json`` (located `here <https://github.com/Informfully/Platform/blob/main/backend/Passengerfile.json>`_) in the backend directory.
+The passenger's port 8080 of the container can be changed by editing the ``Passengerfile.json`` (`file located here <https://github.com/Informfully/Platform/blob/main/backend/Passengerfile.json>`_) in the backend directory.
 Additionally, any other unused port can be used for the localhost (the left-hand side of ``-p 8020:8080``), instead of 8020.
 
 **Save Docker Image** To save the created Docker image, type in the command prompt ``docker save -o informfullybackend.tar informfullybackend``.

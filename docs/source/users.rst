@@ -23,7 +23,7 @@ Creation of Administrator Users
 
 Admin users are created manually by developers with access to the MongoDB. For that, a user account has to be created over the Mobile App and consequently its data fields in collection users have to be manually overwritten. Specifically, the following fields have to be overwritten:
 
-- _roles_: needs to be changed from ['user'] to ['user', 'admin']
-- _participatesIn_: this is the experiment to which the Mobile App will be connected (if an admin user owns a couple of experiments, only one of them can be shown in the user's Mobile App). Currently, there is an 'admins-experiment', to which this field can be overwritten
-- _userGroup_: you can assign any group name to the admin user, for example DE, if you want to separate researchers according to the country of their university
-- _experiments_ (optional): this field does not have to be overwritten. You can use it to control which experiments an admin user owns, i.e. can see and manipulate over the Admin Website. An experiment can be owned by multiple admin users. Be careful when allowing researches access to other experiments
+- ``roles``: needs to be changed from ``['user']`` to ``['user', 'admin']``
+- ``participatesIn``: this is the experiment to which the Mobile App will be connected (if an admin user owns a couple of experiments, only one of them can be shown in the user's Mobile App). Currently, there is an 'admins-experiment', to which this field can be overwritten
+- ``userGroup``: you can assign any group name to the admin user, for example DE, if you want to separate researchers according to the country of their university
+- ``experiments`` (optional): this field does not have to be overwritten. You can use it to control which experiments an admin user owns, i.e. can see and manipulate over the Admin Website. An experiment can be owned by multiple admin users. Be careful when allowing researches access to other experiments

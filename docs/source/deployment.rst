@@ -6,6 +6,7 @@ To run it, simply execute the following
 in a Terminal (with the current directory being the root of the back end repo):
 
 .. code-block:: console
+
     # Deploy back end on the server
     bash build.sh
 
