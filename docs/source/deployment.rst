@@ -6,6 +6,10 @@ This tutorial assumes basic knowledge of the React Native workflow for building 
 It is not intended as a tutorial.
 In case you need more information about React Native, the most recent version of this guide is available `here <https://github.com/expo/create-react-native-app/blob/master/README.md>`_.
 
+.. note::
+
+    A valid SSL certificate for all communications between the front end and back end is required (as demanded by most recent Google and Apple storefront publishing guidelines).
+
 Automatic Deployment
 --------------------
 

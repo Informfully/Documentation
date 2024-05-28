@@ -1,5 +1,5 @@
-Back End Overview
-=================
+Server Overview
+===============
 
 The Informfully back end user `Meteor <https://www.meteor.com/>`_.
 Meteor connects to clients using a websocket protocol, which is a full-duplex communication protocol that closes only once a connection state has died.

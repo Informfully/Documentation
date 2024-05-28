@@ -18,10 +18,10 @@ Overview
 
 This documentation provides you with all the information on successfully configure and deploy Informfully. It is structured as follows:
 
-* **Getting Started** serves as an overall introduction to install the platform and for setting up a development environment.
-* **Mobile App** and **Administration Website** provide a in-depth overview of the front end components
-* **Back End** provide the same insights for the back end components.
-* Finally **Platform Deployment** looks at how to move the back end to a server and how to publish the apps on the storefronts.
+* **Getting Started** serves as an overall introduction to install the codebase, create a development environment, and notes on the deployment.
+* **Running Experiments** provide a in-depth overview of how to use the Informfully platform to conduct user studies.
+* **Technical Documentation** provide the same insights for various technical aspects in order to customize and extend the platform.
+* **User Guides** prides tips and tricks into working with the codebase and provides useful links to tutorials (as this documenation is not a tutorial on how to use React Native and Meteor).
 
 .. toctree::
    :maxdepth: 1
@@ -45,17 +45,16 @@ This documentation provides you with all the information on successfully configu
 
 .. toctree::
    :maxdepth: 1
-   :caption: Back End
+   :caption: Technical Documentation
 
-   backend
+   server
    database
    publications
    methods
-   genesis
 
 .. toctree::
    :maxdepth: 1
-   :caption: General Information
+   :caption: User Guides
 
    source
    docker
