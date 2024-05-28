@@ -13,7 +13,7 @@ This content (text, video and audio) can be freely accessed and rated by the use
 The following guidelines provide a detailed overview of how to setup and configure such experiments.
 A sample experiment of launching Informfully as a news recommendations platform will be used as example to guide through each of the experiment's phases.
 
-.. image:: img/experiment_cycle.png
+.. image:: img/tutorial_screenshots/experiment_cycle.png
    :width: 700
    :alt: Overview of the phases of a user experiment
 
@@ -36,7 +36,7 @@ Select/Deselect an experiment by clicking on the large button on the left.
 Once an experiment has been selected, the tabs in the top menu bar are revealed (menu may be hidden behind a menu icon on smaller screens).
 The tabs in the top menu bar are described in the subsections below.
 
-.. image:: img/tutorial_1.jpg
+.. image:: img/tutorial_screenshots/tutorial_1.jpg
    :width: 700
    :alt: Experiments screen
 
@@ -58,7 +58,7 @@ The new users are created with randomized usernames and passwords.
 The passwords can be accessed by exporting a CSV file by pressing the ``CSV EXPORT``-button.
 A download prompt will pop up.
 
-.. image:: img/tutorial_2.jpg
+.. image:: img/tutorial_screenshots/tutorial_2.jpg
    :width: 700
    :alt: Users screen
 
@@ -78,7 +78,7 @@ We do understand that not ever use case will require surveys.
 It is for this reason that the inclusion of user surveys is an optional component.
 Researchers can skip this step is there is no requirement of getting user feedback.
 
-.. image:: img/tutorial_1.jpg
+.. image:: img/tutorial_screenshots/tutorial_1.jpg
    :width: 700
    :alt: Surveys screen
 
@@ -97,7 +97,7 @@ To populate this collection, we have provided a separate `Item Scraper <https://
 Please read the documentation on how to deploy it.
 The sourcode is available for download in the `Scrapers Repository <https://github.com/Informfully/Scrapers>`_.
 
-.. image:: img/tutorial_4.jpg
+.. image:: img/tutorial_screenshots/tutorial_4.jpg
    :width: 700
    :alt: Items screen
 

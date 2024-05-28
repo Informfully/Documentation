@@ -9,7 +9,7 @@ Below you can find a few screenshots outlining the features and functionalities 
 When the option is enabled, users will be prompted the survey immediately.
 They need to complete it in order to continue using the app.
 
-.. image:: img/survey_1.jpg
+.. image:: img/survey_screenshots/survey_1.jpg
    :width: 700
    :alt: Survey activation
 
@@ -18,7 +18,7 @@ They need to complete it in order to continue using the app.
 There is no question/answer limite in place.
 
 
-.. image:: img/survey_1.jpg
+.. image:: img/survey_screenshots/survey_1.jpg
    :width: 700
    :alt: Survey editor
 
@@ -26,7 +26,7 @@ There is no question/answer limite in place.
 There are a range of different questions to chose from.
 Free text, replies from previous question etc. can all be selected.
 
-.. image:: img/survey_1.jpg
+.. image:: img/survey_screenshots/survey_1.jpg
    :width: 700
    :alt: Survey Questions
 
