@@ -544,7 +544,7 @@ recommendationLists
      - String
      - ID of user.
    * - ``prediction``
-     - Float
+     - Double
      - Value that indicated the position of the item in the list (the higher the value, the further up in the list; no pre-defined range exists, is up to the recommender system).
    * - ``recommendationAlgorithm``
      - String
