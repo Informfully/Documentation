@@ -177,3 +177,4 @@ Deploy Apps
 -------------------------
 
 Please see the other instruction page for `App Deployment <https://informfully.readthedocs.io/en/latest/native.html>`_
+If you already have the apps up and running, go ahead and start your first `Use Experiment <https://informfully.readthedocs.io/en/latest/experiment.html>`_.

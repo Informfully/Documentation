@@ -96,8 +96,7 @@ Or you can connect to a device emulator (e.g., Android Studio or XCode).
 
 The app will run in the `Expo Go App <https://expo.dev/client>`_ and any changes to the source code will be automatically reflected in Expo Go.
 
-Next Step: Code Deployment
---------------------------
+Next Step: Platform Deployment
+------------------------------
 
 Please see the next instruction pages for `App Deployment <https://informfully.readthedocs.io/en/latest/native.html>`_ and `Website Deployment <https://informfully.readthedocs.io/en/latest/deployment.html>`_.
-If you already have the website up and running, go ahead and start your first `Use Experiment <https://informfully.readthedocs.io/en/latest/experiment.html>`_.

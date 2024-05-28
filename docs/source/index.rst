@@ -40,8 +40,6 @@ This documentation provides you with all the information on successfully configu
    users
    surveys
    scrapers
-   app
-   web
 
 .. toctree::
    :maxdepth: 1

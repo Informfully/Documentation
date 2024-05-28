@@ -520,7 +520,7 @@ readingList*
      - Date
      - Time at which data record was removed.
 
-recommendationLists*
+recommendationLists
 --------------------
 
 **Description** Collects that are shown on the home screen on a user in the exact ordering determined by the recommender system.
@@ -541,12 +541,12 @@ recommendationLists*
    * - ``userId``
      - String
      - ID of user.
-   * - ``recommendationAlgorithm``
-     - String
-     - Name of the algorithm used to create the recommendation (optional).
    * - ``prediction``
      - Float
      - Value that indicated the position of the item in the list (the higher the value, the further up in the list; no pre-defined range exists, is up to the recommender system).
+   * - ``recommendationAlgorithm``
+     - String
+     - Name of the algorithm used to create the recommendation (optional).
    * - ``isPreview``
      - Boolean
      - A flag which indicates whether the article should appear big on the screen with the title, lead, and image (if ``FALSE``, the feed will only show a thumbnail image and the title).
@@ -563,19 +563,19 @@ An example of how the recommendations need to be formatted is shown below:
             "_id": ObjectId("dbdwHPsadszY24vgP"),
             "userId": "ksgsouZYPvBA2GiQb",
             "articleId": "632aa0137143f66fb32c0d63",
-            "recommendationAlgorithm": "Test Algorithm 1",
             "prediction": 1000,
-            "createdAt": 2022-09-21T12:19:40.229+00:00,
-            "isPreview": True
+            "recommendationAlgorithm": "Test Algorithm 1",
+            "isPreview": True,
+            "createdAt": 2022-09-21T12:19:40.229+00:00
         },
         {
             "_id": ObjectId("dbEZHPsadszY24vgP"),
             "userId": "ksgsouZYPvBA2GiQb",
             "articleId": "632aa02f7143f66fb32c1125",
-            "recommendationAlgorithm": "Test Algorithm 1",
             "prediction": 1001,
-            "createdAt": 2022-09-21T12:19:41.229+00:00,
-            "isPreview": False
+            "recommendationAlgorithm": "Test Algorithm 1",
+            "isPreview": False,
+            "createdAt": 2022-09-21T12:19:41.229+00:00
         },
         ...
     ]
