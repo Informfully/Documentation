@@ -1,6 +1,14 @@
 Local Development
 =================
 
+This project was bootstrapped with `Create React Native App <https://github.com/react-community/create-react-native-app>`_.
+This tutorial assumes basic knowledge of the React Native workflow for building apps.
+It is not intended as a tutorial.
+In case you need more information about React Native, the most recent version of this guide is available `here <https://github.com/expo/create-react-native-app/blob/master/README.md>`_.
+
+Run a Local Server
+--------------------------
+
 Make sure that you are specifying the same port that you are using in the `React Native App <https://github.com/Informfully/Platform/blob/main/frontend/App.js>`_.
 You can then start the server with:
 
@@ -22,7 +30,7 @@ The back end is now running and the administration website is accessible at via 
 .. note::
 
     **Database Setup** You can connect to the database through ``mongodb://localhost:3009/`` if your Meteor server is running on port 3008.
-    If the users collection in the database is empty when starting up, a new user with Maintainer role is created automatically by the genesis.js script <located `here <https://informfully.readthedocs.io/en/latest/genesis.html>`_>.
+    If the users collection in the database is empty when starting up, a new user with Maintainer role is created automatically by the genesis.js script <`Genesis script located here <https://informfully.readthedocs.io/en/latest/genesis.html>`_>.
 
 You will need to install the following libraries and packages on your machine:
 
@@ -53,7 +61,7 @@ Also, do not forget that it is best if your development and production environme
 Connecting to Local Server
 --------------------------
 
-Inside the ``App.js`` configuration file (`file here <https://github.com/Informfully/Platform/blob/main/frontend/App.js>`_), change the ``SERVER`` constant so it will connect to your local server.
+Inside the ``App.js`` configuration file (`configuration file located here <https://github.com/Informfully/Platform/blob/main/frontend/App.js>`_), change the ``SERVER`` constant so it will connect to your local server.
 E.g., if the client runs on the same computer:
 
 .. code-block:: javascript
@@ -88,17 +96,8 @@ Or you can connect to a device emulator (e.g., Android Studio or XCode).
 
 The app will run in the `Expo Go App <https://expo.dev/client>`_ and any changes to the source code will be automatically reflected in Expo Go.
 
-Environment Configuration
--------------------------
-
-...
-
-Helper Scripts
---------------
-
-...
-
 Next Step: Code Deployment
 --------------------------
 
 Please see the next instruction pages for `App Deployment <https://informfully.readthedocs.io/en/latest/native.html>`_ and `Website Deployment <https://informfully.readthedocs.io/en/latest/deployment.html>`_.
+If you already have the website up and running, go ahead and start your first `Use Experiment <https://informfully.readthedocs.io/en/latest/experiment.html>`_.

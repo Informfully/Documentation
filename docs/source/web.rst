@@ -1,9 +1,4 @@
 Website Overview
 ================
 
-...
-
-Troubleshooting
----------------
-
-...
+See paper.

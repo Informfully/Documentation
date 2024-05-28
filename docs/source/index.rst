@@ -30,24 +30,18 @@ This documentation provides you with all the information on successfully configu
    install
    development
    deployment
-
    native
 
 .. toctree::
    :maxdepth: 1
-   :caption: Mobile App
+   :caption: Running Experiments
 
-   app
-   interface
-
-.. toctree::
-   :maxdepth: 1
-   :caption: Administration Website
-
-   web
    experiment
    users
    surveys
+   scrapers
+   app
+   web
 
 .. toctree::
    :maxdepth: 1
@@ -58,7 +52,6 @@ This documentation provides you with all the information on successfully configu
    publications
    methods
    genesis
-   scrapers
 
 .. toctree::
    :maxdepth: 1
