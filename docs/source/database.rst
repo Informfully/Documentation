@@ -5,9 +5,11 @@ Overview of all document collections (database tables) that exist.
 They can be accessed via MongoDB to run queries for recommender frameworks.
 All collections marked with a \*-symbol collect data through the user's interactions with the app.
 
-In the examples given below, Informfully is used as a news recommendation app.
-For consistency reason (to map the use cases in the remainder of the documentation), items are referred to as articles.
-If Informfully is used in another capacity, all records labelled ``articleId`` can be simply renamed to ``itemId``.
+.. note::
+
+  In the examples given below, Informfully is used as a news recommendation app.
+  For consistency reason (to map the use cases in the remainder of the documentation), items are referred to as articles.
+  If Informfully is used in another capacity, all records labelled ``articleId`` can be simply renamed to ``itemId``.
 
 answers*
 --------
