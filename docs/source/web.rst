@@ -1,4 +1,0 @@
-Website Overview
-================
-
-See paper.

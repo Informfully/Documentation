@@ -6,10 +6,21 @@ This tutorial assumes basic knowledge of the React Native workflow for building 
 It is not intended as a tutorial.
 In case you need more information about React Native, the most recent version of this guide is available `here <https://github.com/expo/create-react-native-app/blob/master/README.md>`_.
 
-If you only want to have a look at the app, then test versions are available for download here:
+App Preview
+-----------
 
-* `Google Play Store <https://informfully.readthedocs.io/en/latest/google.html>`_.
-* `Apple App Store <https://informfully.readthedocs.io/en/latest/apple.html>`_.
+Test versions are available for tree to download if you only want to have a quick look at the app.
+Reach out to use to get a demo account: info@informfully.ch
+
+* `Google Play Store (for Android devices, version 5.1 and newer) <https://play.google.com/store/apps/details?id=ch.uzh.ifi.news>`_
+
+* `Apple App Store (for iOS devices, version 13.0 and newer) <https://apps.apple.com/ch/app/ddis-news/id1460234202>`_
+
+.. note::
+
+    Theoretically, the mobile app should be supported by devices with iOS 11.0.
+    However, `TestFlight <https://developer.apple.com/testflight/>`_ (which was used for testing the beta version of the app) is only supported by devices with minimum iOS 13.0.
+    Therefore, we could not test whether the mobile app is actually compatible with iOS 11.0.
 
 Environmet Setup
 ----------------
