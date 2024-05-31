@@ -8,7 +8,8 @@ All collections marked with a \*-symbol collect data through the user's interact
 .. note::
 
   In the examples given below, Informfully is used as a news recommendation app.
-  For consistency reason (to map the use cases in the remainder of the documentation), items are referred to as articles.
+  For consistency reason (i.e., to be consistent with the use case of the other parts of the documentation), ``article`` is used instead of ``items``.
+  For exemple, this overview uses ``articleId`` as key attribute.
   If Informfully is used in another capacity, all records labelled ``articleId`` can be simply renamed to ``itemId``.
 
 answers*
