@@ -22,6 +22,7 @@ We will discard all changes after uploading the iOS app/testing the iOS app.
 
     # Install node modules
     npm install
+    
     # Switch from Expo's managed workflow to the bare workflow
     expo eject
 
