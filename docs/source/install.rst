@@ -6,7 +6,6 @@ This tutorial assumes basic knowledge of the React Native workflow for building 
 It is not intended as a tutorial.
 In case you need more information about React Native, the most recent version of this guide is available `here <https://github.com/expo/create-react-native-app/blob/master/README.md>`_.
 
-
 .. _installation:
 
 Download Codebase

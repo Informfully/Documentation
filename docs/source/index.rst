@@ -23,6 +23,14 @@ This documentation provides you with all the information on successfully configu
 * **Technical Documentation** provide the same insights for various technical aspects in order to customize and extend the platform.
 * **User Guides** prides tips and tricks into working with the codebase and provides useful links to tutorials (as this documenation is not a tutorial on how to use React Native and Meteor).
 
+.. note::
+
+    There are two different ways of how you can use Informfully: 
+    1) use the front end and back end deployed by the University of Zurich or 
+    2) deploy the whole application on your own.
+    The upcoming tutorial focuses on the self-hosted deployment of Informfully.
+    If you want to use the Informfully Platform as a cloud service, hosted at the University of Zurich, please reach out to us: info@informfully.ch
+
 .. toctree::
    :maxdepth: 1
    :caption: Getting Started
