@@ -20,7 +20,7 @@ Architecture Overview
 
 Informfully is complemented by a dedicated content scraper.
 The entire content scraper pipeline is written in Python and uses MongoDB for persistent storage of news items.
-All you need to do is to run add a scraper to `the scraper package <https://github.com/Informfully/Scrapers/tree/main/scraperpackage/scrapers> `_ and call it in ``main.py``.
+All you need to do is to run add a scraper to `the scraper package <https://github.com/Informfully/Scrapers/tree/main/scraperpackage/scrapers>`_ and call it in ``main.py``.
 You find sample implementations in this folder as well.
 
 The individual scraper modules (called ``scrape.py`` or ``scrape\_n.py``) are required to implement a scraping function ``scrape()``.
