@@ -38,10 +38,6 @@ The tabs in the top menu bar are described in the subsections below.
    :width: 700
    :alt: Experiments screen
 
-.. note::
-
-    Except through the tabs in the top menu bar, further experiment-specific configurations can be made directly over the MongoDB (check `Database Collections <https://informfully.readthedocs.io/en/latest/database.html>`_).
-
 .. _users:
 
 User Creation
