@@ -1,7 +1,7 @@
 User Creation
 =============
 
-User accounts for both the Mobile App and Admin Website are handled using Meteor's `Accounts system <https://docs.meteor.com/api/accounts.html>`_ and `password-based authentication <https://docs.meteor.com/api/passwords.html>`_.
+User accounts for both the Mobile App and Administrator Website are handled using Meteor's `Accounts system <https://docs.meteor.com/api/accounts.html>`_ and `password-based authentication <https://docs.meteor.com/api/passwords.html>`_.
 All existing users are collected in the `users collection <https://informfully.readthedocs.io/en/latest/database.html>`_. 
 There are two types of users: regular users (data field ``roles`` of collection ``users`` has a value ``user``) and admin users (data field ``roles`` of collection ``users`` has a value ``['user', 'admin']``).
 Regular users can only access the Mobile App, whereas administrator users can access both the Mobile App and Administration Website.
@@ -14,9 +14,12 @@ The creation of user accounts through the Mobile App, however, is currently disa
 Creation of Regular Users
 -------------------------
 
-Regular users are typically created over the [Admin Website](Experiment-Setup#users), after a researcher has decided how many users will participate in the experiment.
+Regular users are typically created over the tool for `User Creation <https://informfully.readthedocs.io/en/latest/experiment.html>`_ , after a researcher has decided how many users will participate in the experiment.
 
-Users could also try to create an account on their own, via the Mobile App. However, currently, such users will receive a survey after signing in, which will block their further access to the Mobile App (this is due to the fact that all such users are automatically assigned to the 'default-experiment', which has a blocking survey (_name_ 'Block User Survey' under [collection surveys](Database Collections#surveys)) attached to it).
+Users can also create an account on their own via the app.
+This feature, however, is currently disabled.
+When creating experiments with this option enabled, we recommend researchers creating a survey for the group ``default-experiment``, where people need to submit their e-mail address.
+This then allows for access control to the app.
 
 Creation of Administrator Users
 -------------------------------

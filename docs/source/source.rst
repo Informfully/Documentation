@@ -87,6 +87,7 @@ The Meteor framework is a JavaScript NodeJS backend solution which integrates we
 It includes a very special approach to project directories and files.
 There is a set of directory names that causes the framework to apply a predefined file load order and availability.
 For instance, a file that is inside a directory called ``server`` can only be loaded on the server, i.e. the backend code.
+
 Similarly, files that are inside a directory called ``startup`` are loaded during startup.
 In the `Meteor documentation <ttps://guide.meteor.com/structure.html>`_, Meteor explains and suggests a very clean project structure that considers their special file load behaviour.
 In the back end repo, we use the application structure as suggested by the Meteor documentation and have further separated the code semantically for different groups and types of components.
@@ -165,6 +166,7 @@ Again, it is separated into directories for client/server and components or conc
 The ``lib`` directory includes code that can be reused across the entire project and which is not specific to any of the environments.
 It consists of utility functions such as splitting strings, constructing arrays, sorting arrays and similar.
 Within the directory, the code is split again by components and concerns.
+
 The ``startup`` directory includes all files, for each directory, that are needed during startup.
 Particularly, there is an ``index.js`` for the server as well as the client that loads all files that are needed during startup.
 This simplifies the startup process and allows us to load the ``index.js`` files into the ``main.js`` files and split the complexity.

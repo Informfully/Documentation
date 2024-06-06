@@ -15,6 +15,8 @@ The remainder of this page outlines how the sample scrapers work and interface w
    Instead, the scrapers need to be part of a `cron job` running on the server.
    Communication with the other components of the back end is limited to writing items to the pre-defined document collection.
 
+.. _modules:
+
 Architecture Overview
 ---------------------
 
@@ -38,6 +40,8 @@ Specifically, the scrapers for each outlet consist of two parts.
 First, they get a list of the most recent articles with either URLs or an identifier for the API.
 Second, they iterate through the list and obtain the necessary information by scraping the HTML page or directly accessing the API if possible.
 
+.. _structure:
+
 File Structure
 --------------
 
@@ -59,6 +63,8 @@ If it configured without SSH, the manager will simply create a ``MongoClient`` o
 
    with MongoManager() as db:
       articles = db.articles.find({}).fetch()
+
+.. _article:
 
 Article Collection
 ------------------
@@ -140,6 +146,8 @@ By doing this, indexing can be used, improving the performance of queries.
 If we used non-existing fields to signify the absence of an attribute, we would have to use the ``$exists`` keyword to distinguish between articles that have a certain attribute.
 However, the ``$exists`` operator cannot use any index.
 
+.. _scraping:
+
 Scraping Pipeline
 -----------------
 
@@ -182,6 +190,8 @@ These anomalies may indicate the source of the article, which is undesirable.
 The goal of the normalization step is to remove them to ensure a uniform presentation for the app.
 The normalization process is implemented as a list of tuples.
 The first element in the tuple is a regular expression to detect the abnormalities, with the second element being the string of text that serves as the replacement.
+
+.. _logging:
 
 Logging Module
 --------------
