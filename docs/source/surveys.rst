@@ -1,9 +1,10 @@
 Survey Tool
 ===========
 
-Below you can find a few screenshots outlining the features and functionalities of the survey editor of the administrator website.
-
-
+Informfully has a fully integrated tool for user surveys.
+Below, you can find an overview of the features and functionalities of the survey editor.
+Any survey created this way will be added to the currently selected experiment.
+It is shown to all user groups within the experiment.
 
 **Screenshot Activation**: Activating/deactivating a survey and deleting it is done via the activation button.
 When the option is enabled, users will be prompted the survey immediately.
@@ -15,8 +16,8 @@ They need to complete it in order to continue using the app.
 
 
 **Screenshot Editor**: Adding questions and answers is done via the user interface.
-There is no question/answer limite in place.
-
+There is no limit of how many questions can be added to a survey.
+Similarly, there is no limit of how many pre-defined answers can be added to a question.
 
 .. image:: img/survey_screenshots/survey_1.jpg
    :width: 700
