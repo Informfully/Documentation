@@ -43,6 +43,7 @@ If you still want to `install MongoDB yourself <https://docs.mongodb.com/manual/
 Configuring Packager
 --------------------
 
+After you downloaded the code, you need to verify the React Native Packager Hostname. We have a small guide for Mac, Linux, and Windows.
 When starting your project, you will see something like this for your project URL:
 
 .. code-block:: console

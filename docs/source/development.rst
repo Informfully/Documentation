@@ -9,8 +9,9 @@ In case you need more information about React Native, the most recent version of
 Run a Local Server
 --------------------------
 
-Make sure that you are specifying the same port that you are using in the `React Native App <https://github.com/Informfully/Platform/blob/main/frontend/App.js>`_.
-You can then start the server with:
+After development and testing your instance of Informfully, you are ready to deploy your solution.
+For your convenience, we have created a script that automatically deploys the back end to any local or cloud server.
+Navigate to the main directory of your codebase end execute the following script:
 
 .. code-block:: console
 
@@ -24,13 +25,16 @@ You can then start the server with:
     # ...or by specifying --port directly to run the server with
     meteor --port 3008 --settings settings-dev.json
 
+Make sure that you are specifying the same port that you are using in the `React Native App <https://github.com/Informfully/Platform/blob/main/frontend/App.js>`_.
 If you want to access the server from within your network replace ``--port 3008`` with ``--port <YOUR_LOCAL_IP_ADDRESS>:3008``.
 The back end is now running and the administration website is accessible at via ``localhost:3008``.
 
 .. note::
 
-    **Database Setup** You can connect to the database through ``mongodb://localhost:3009/`` if your Meteor server is running on port 3008.
+    In terms of database setup, you can connect to the database through ``mongodb://localhost:3009/`` if your Meteor server is running on port 3008.
     If the users collection in the database is empty when starting up, a new user with Maintainer role is created automatically by the genesis.js script <`Genesis script located here <https://informfully.readthedocs.io/en/latest/genesis.html>`_>.
+    In this documentation, we use the naming convention of MongoDB. Tables are referred to as collections, and tuples as documents.
+    There is no need for you to create and document collection, as MongoDB will automatically create one when you insert the first document into a collection that does not yet exist.
 
 You will need to install the following libraries and packages on your machine:
 
@@ -95,6 +99,68 @@ Or you can connect to a device emulator (e.g., Android Studio or XCode).
    :alt: Screenshot of the Expo App
 
 The app will run in the `Expo Go App <https://expo.dev/client>`_ and any changes to the source code will be automatically reflected in Expo Go.
+
+Helper Scripts for Maintainers
+------------------------------
+
+Meteor encrypts all password of any users created using the `bcrypt <https://en.wikipedia.org/wiki/Bcrypt>`_ algorithm, which ensures that all passwords are encrypted a second time with an unknown "salt" value.
+This protects against embarrassing password leaks in case the server’s database is compromised.
+
+When a user logs in, the Meteor Account System checks the encrypted password generated with its "salt".
+Trying to decrypt the salt is just as difficult to decrypt the password because of the nature of the bcrypt algorithm.
+This special `encryption mechanism <https://docs.meteor.com/api/passwords>`_ employed by Meteor makes it impossible to insert a new user into the database without using Meteor.
+
+Therefore, to createe the very first ``Maintainer``, we provide the main.js and genesis.js scripts that was run when the app starts up.
+We connect (with ``main.js``) and check (with ``genesis.js``) if the database is empty and if yes, we insert a new user with the below user info (see again ``genesis.ja``).
+
+**main.js**
+
+.. code-block:: javascript
+
+    //backend/server/main.js
+    import { Meteor } from 'meteor/meteor';
+    import '../imports/startup/server';
+    import '../imports/api/server/publications';
+    import './genesis'
+
+    Meteor.startup(() => {
+
+        if (process.env.MAIL_URL === undefined || process.env.MAIL_URL.length === 0) {
+            process.env.MAIL_URL = 'smtp://localhost:25';
+        }
+
+    });
+
+**genesis.js**
+
+.. code-block:: javascript
+
+    import { Accounts } from 'meteor/accounts-base'
+    import { Meteor } from 'meteor/meteor';
+    import '../imports/startup/server';
+
+    
+    if (Meteor.users.find().count() === 0) {
+
+        const new_user = {
+            "username": "[USERNAME]",
+            "email": "[USERNAME]@[DOMAINN]",
+            "password": "[PASSWORD]",
+            "roles": [
+                "user", "admin", "maintainer"
+            ]   
+        };
+
+        Accounts.createUser(new_user);
+
+        console.log("First user created");
+
+    }
+
+.. note::
+
+    It is recommended to delete this user after other ``Maintainer`` has been created in order to ensure the safety of the system.
+    This applied to both the local and online deployment of the back end.
 
 Next Step: Platform Deployment
 ------------------------------
