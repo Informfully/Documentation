@@ -8,7 +8,8 @@ In case you need more information about React Native, the most recent version of
 
 .. note::
 
-    A valid SSL certificate for all communications between the front end and back end is required (as demanded by most recent Google and Apple storefront publishing guidelines).
+    A valid SSL certificate for all communications between the front end and back end is required.
+    Apps on Google and Apple storefront will no longer work if any URL is not using HTTPS.
 
 Automatic Deployment
 --------------------
