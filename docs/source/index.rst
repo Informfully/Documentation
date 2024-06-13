@@ -44,10 +44,12 @@ This documentation provides you with all the information on successfully configu
    :maxdepth: 1
    :caption: Running Experiments
 
+   overview
    experiment
    users
    surveys
    scrapers
+   app
 
 .. toctree::
    :maxdepth: 1
