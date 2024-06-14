@@ -6,8 +6,8 @@ project = 'Informfully'
 copyright = '2024, University of Zurich'
 author = 'Lucien Heitz'
 
-release = '0.1'
-version = '0.1.0'
+release = '4.1'
+version = '24.6.14'
 
 # -- General configuration
 
