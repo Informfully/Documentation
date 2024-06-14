@@ -4,6 +4,10 @@ Mobile App
 The screenshots below show how the app presents itself to the users and how the content is rendered on screen.
 The UI has additional light/dark mode features, can scale content and supports swipe commands (all screenshots are taken from an Android device with the dark mode enabled).
 
+.. image:: gif/animation.gif
+   :height: 720
+   :alt: App animation
+
 .. note::
 
    Please note that the user interface here is multi-lingual, reading out the default language of the device the app is installed on.
@@ -62,6 +66,8 @@ Settings Menu
 
 The app features a settings menu where researchers can post additional information about the experiment.
 Researchers can link the *Privacy Policy*, *Terms and Conditions*, a experiment website, support e-mail, and general information about the user study in a free text field.
+Furthermore, users can assess the built-in tutorial under *Operational Manual* in order to see how to nagivate and use the app.
+
 In this menu, users are also able to request the account deletion (this is a new requirement from Google and Apple).
 By default, users are forwarded to a separate URL where they can enter their username.
 This is then sent to the e-mail address of the responsible researcher.
