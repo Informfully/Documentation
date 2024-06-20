@@ -5,7 +5,7 @@ Informfully
    :width: 700
    :alt: Informfully banner logo
 
-Welcome to the `Informfully <https://informfully.ch/>`_!
+Welcome to `Informfully <https://informfully.ch/>`_!
 Informfully is a open-source reproducibility platform for content distribution and conducting user experiments.
 
 This is the combined and official Informfully Documentation for all `code repositories <https://github.com/orgs/Informfully/repositories>`_.
