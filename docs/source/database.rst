@@ -485,7 +485,7 @@ podcastAnalytics*
    * - ``action``
      - String
      - The action performed at this step. Currently available: play/stop, backwards, fastforward, sliderSearchComplete, single-/doubleTapLeft, single-/doubleTapRight, heartbeat every 10 seconds, fullscreenExit/-activate.
-   * - ``videoTimestamp``
+   * - ``podcastTimestamp``
      - Integer
      - Position in ms in video at which this action was performed.
    * - ``createdAt``
