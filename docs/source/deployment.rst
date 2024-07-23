@@ -9,12 +9,12 @@ In case you need more information about React Native, the most recent version of
 .. note::
 
     A valid SSL certificate for all communications between the front end and back end is required.
-    Apps on Google and Apple storefront will no longer work if any URL is not using HTTPS.
+    Apps on the Google Play Store and Apple Store will no longer work if any URL is not using HTTPS.
 
 Automatic Deployment
 --------------------
 
-After development and testing your instance of Informfully, you are ready to deploy your solution.
+After setting up and testing your instance of Informfully, you are ready to deploy your solution.
 For your convenience, we have created a script that automatically deploys the back end to any local or cloud server.
 Navigate to the main directory of your codebase end execute the following script:
 
@@ -23,12 +23,12 @@ Navigate to the main directory of your codebase end execute the following script
     # Deploy back end on the server
     bash build.sh
 
-There are two scripts in the root directory of the project, `.snippets.sh` and `build.sh`.
+There are two scripts in the root directory of the project, ``.snippets.sh`` and ``build.sh``.
 You find the shell script ``build.sh`` in the back end folder (`shell script located here <https://github.com/Informfully/Platform/blob/main/backend/build.sh>`_).
 Before the script can be used, the variables in the file ``.snippets.sh`` have to be set (`configuration file located here <https://github.com/Informfully/Platform/blob/main/backend/build.sh>`_).
 
 **.snippets.sh** This is the configuration file.
-In this file we store all variables used for deployment such as the app user,
+In this file we store all variables used for deployment, such as the app user,
 the temporary directory, the app directory, etc.
 
 **build.sh** This script builds the application and copies the bundle to the server. It also performs the tasks of extracting and
@@ -38,8 +38,8 @@ The script will also install npm dependencies and restart the app.
 In short, the script will automate the following steps:
 
 #.  Use the command ``meteor build`` to create the Node app bundle.
-#.  Upload the bundle to the server using ``scp`` (the password of back end server will be required).
-#.  SSH to remote machine (password required again).
+#.  Upload the bundle to the server using ``scp`` (the password of the back end server will be required).
+#.  SSH to the remote machine (password required again).
 #.  Unpack the tar.gz bundle created by using the ``build.sh`` script.
 #.  Run ``npm install`` inside ``bundle/programs/server`` to install dependencies.
 #.  Move the bundle folder to the ``/var/newsapp/`` location.
@@ -48,7 +48,7 @@ In short, the script will automate the following steps:
 Following these steps will deploy the new Administration Website.
 Please make sure to follow the instructions of the `Genesis Script <https://informfully.readthedocs.io/en/latest/docker.html>`_ to initialize the first users.
 
-This setup was succesfully tested on a server with the following software packages:
+This setup was successfully tested on a server with the following software packages:
 
 * Operating System: **Debian GNU/Linux 10 x86_64**
 * Node Version: **14.18.1**
@@ -69,7 +69,7 @@ The following command will create a file called ``backend.tar.gz`` in the ``.bui
     
     meteor build --server-only --architecture os.linux.x86_64 ./.build/
 
-Next, you upload the `backend.tar.gz` file to the server:
+Next, you upload the ``backend.tar.gz`` file to the server:
 
 .. code-block:: console
 

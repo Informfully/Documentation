@@ -11,7 +11,7 @@ In case you need more information about React Native, the most recent version of
 Download Codebase
 -----------------
 
-Informfully is a React Native app that uses a Meteor servers as back end. Download the code and Meteor as follows:
+Informfully is a React Native app that uses a Meteor server as the back end. Download the code and Meteor as follows:
 
 .. code-block:: console
 
@@ -24,7 +24,7 @@ Informfully is a React Native app that uses a Meteor servers as back end. Downlo
 
 Here is an overview of the dependencies you need to install:
 
-**Meteor** You do not have to install a specific version of meteor.
+**Meteor** You do not have to install a specific version of Meteor.
 When you run the application, Meteor will compare the version of the application with the version(s) you have installed locally.
 If you are missing the application version, Meteor will automatically download and install the correct version for you.
 Meteor and its command line tools are `available here <https://www.meteor.com/install>`_.
@@ -43,8 +43,8 @@ If you still want to `install MongoDB yourself <https://docs.mongodb.com/manual/
 Configuring Packager
 --------------------
 
-After you downloaded the code, you need to verify the React Native Packager Hostname. We have a small guide for Mac, Linux, and Windows.
-When starting your project, you will see something like this for your project URL:
+After downloading the code, you need to verify the React Native Packager Hostname. We have a brief guide for Mac, Linux, and Windows users.
+When starting your project, you will see something similar to the following for your project URL:
 
 .. code-block:: console
     
@@ -53,7 +53,7 @@ When starting your project, you will see something like this for your project UR
 The ``manifest`` at that URL tells the Expo app how to retrieve and load your app's JavaScript bundle, so even if you load it in the app via a URL like ``exp://localhost:19000``, the Expo client app will still try to retrieve your app at the IP address that the start script provides.
 In some cases, this is less than ideal.
 
-This might be the case if you need to run your project inside of a virtual machine and you have to access the packager via a different IP address than the one which prints by default.
+This might be the case if you need to run your project inside of a virtual machine and you have to access the packager via a different IP address than the one, which prints by default.
 In order to override the IP address or hostname that is detected by Create React Native App, you can specify your own hostname via the ``REACT_NATIVE_PACKAGER_HOSTNAME`` environment variable.
 
 Mac and Linux:
