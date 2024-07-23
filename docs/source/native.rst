@@ -9,8 +9,8 @@ In case you need more information about React Native, the most recent version of
 App Preview
 -----------
 
-Test versions are available for tree to download if you only want to have a quick look at the app.
-Reach out to use to get a demo account: info@informfully.ch
+Test versions are available for free download if you only want to preview the app. 
+Reach out to us to get a demo account: info@informfully.ch
 
 * `Google Play Store (for Android devices, version 5.1 and newer) <https://play.google.com/store/apps/details?id=ch.uzh.ifi.news>`_
 
@@ -19,10 +19,10 @@ Reach out to use to get a demo account: info@informfully.ch
 .. note::
 
     Theoretically, the mobile app should be supported by devices with iOS 11.0.
-    However, `TestFlight <https://developer.apple.com/testflight/>`_ (which was used for testing the beta version of the app) is only supported by devices with minimum iOS 13.0.
+    However, `TestFlight <https://developer.apple.com/testflight/>`_ (which was used for testing the beta version of the app) is only supported by devices with a minimum iOS 13.0.
     Therefore, we could not test whether the mobile app is actually compatible with iOS 11.0.
 
-Environmet Setup
+Environment Setup
 ----------------
 
 In order to build a release of the app, this tutorial assumes that you have already completed the previous steps.
@@ -39,7 +39,7 @@ If you do not apply these changes, then the app front end will not know what ser
 You can edit ``app.json`` to include `configuration keys <https://docs.expo.io/versions/latest/guides/configuration.html>`_ under the ``expo`` key.
 To change your app's display name, set the ``expo.name`` key in ``app.json`` to an appropriate string.
 To set an app icon, set the `expo.icon` key in `app.json` to be either a local path or a URL.
-It's recommended that you use a 512x512 png file with transparency.
+It's recommended that you use a 512x512 PNG file with transparency.
 
 Building Release
 ----------------
@@ -48,7 +48,7 @@ Create React Native App does a lot of work to make app setup and development sim
 We therefore recommend publishing to Expo's React Native Community.
 
 Expo provides free hosting for the JS-only apps created by CRNA, allowing you to share your app through the Expo client app. This requires registration for an Expo account.
-Install the ``exp`` command-line tool, and run the publish command:
+Install the ``exp`` command-line tool and run the publish command:
 
 .. code-block:: console
 
@@ -57,7 +57,7 @@ Install the ``exp`` command-line tool, and run the publish command:
 
 When it comes to building an Expo stand-alone app, you can also use a service like `Expo's standalone builds <https://docs.expo.io/versions/latest/guides/building-standalone-apps.html>`_ if you want to get an IPA/APK for distribution without having to build the native code yourself.
 
-And if you want to build and deploy your app yourself, you wil need to eject from CRNA and use XCode and Android Studio.
+And if you want to build and deploy your app yourself, you wil need to eject from CRNA and use Xcode and Android Studio.
 This is usually as simple as running ``npm run eject`` in your project, which will walk you through the process.
 Make sure to install ``react-native-cli`` and follow the `native code getting started guide for React Native <https://reactnative.dev/docs/getting-started>`_.
 

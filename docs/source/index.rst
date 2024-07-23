@@ -6,7 +6,7 @@ Informfully
    :alt: Informfully banner logo
 
 Welcome to `Informfully <https://informfully.ch/>`_!
-Informfully is a open-source reproducibility platform for content distribution and conducting user experiments.
+Informfully is an open-source reproducibility platform for content distribution and conducting user experiments.
 
 This is the combined and official Informfully Documentation for all `code repositories <https://github.com/orgs/Informfully/repositories>`_.
 For a tutorial on how to use Informfully, start with the :doc:`install` section and the :ref:`installation` instructions of the project.
@@ -16,18 +16,18 @@ For a tutorial on how to use Informfully, start with the :doc:`install` section 
 Overview
 --------
 
-This documentation provides you with all the information on successfully configure and deploy Informfully. It is structured as follows:
+This documentation provides you with all the information you need to successfully configure and deploy Informfully. It is structured as follows:
 
-* **Getting Started** serves as an overall introduction to install the codebase, create a development environment, and notes on the deployment.
-* **Running Experiments** provide a in-depth overview of how to use the Informfully platform to conduct user studies.
-* **Technical Documentation** provide the same insights for various technical aspects in order to customize and extend the platform.
-* **User Guides** prides tips and tricks into working with the codebase and provides useful links to tutorials (as this documenation is not a tutorial on how to use React Native and Meteor).
+* **Getting Started** serves as an overall introduction, including how to install the codebase, create a development environment, and notes on the deployment.
+* **Running Experiments** provide an in-depth overview of how to use the Informfully platform to conduct user studies.
+* **Technical Documentation** provides the same insights for various technical aspects in order to customize and extend the platform.
+* **User Guides** provide tips and tricks for working with the codebase and useful links to tutorials (as this documentation is not a tutorial on how to use React Native and Meteor).
 
 .. note::
 
-    There are two different ways of how you can use Informfully: 
-    1) use the front end and back end deployed by the University of Zurich or 
-    2) deploy the whole application on your own.
+    There are two different ways of that you can use Informfully: 
+    1) Use the front end and back end deployed by the University of Zurich or 
+    2) Deploy the whole application on your own.
     The upcoming tutorial focuses on the self-hosted deployment of Informfully.
     If you want to use the Informfully Platform as a cloud service, hosted at the University of Zurich, please reach out to us: info@informfully.ch
 
@@ -104,7 +104,7 @@ If you use any Informfully code/repository in a scientific publication, we ask y
 Support
 -------
 
-Your are welcome to contribute to the Informfully ecosystem and become a part of your cummunity. Feel free to:
+You are welcome to contribute to the Informfully ecosystem and become a part of the community. Feel free to:
 
 * fork any of the `Informfully repositories <https://github.com/Informfully/Documentation>`_ and
 * make changes and create pull requests.
