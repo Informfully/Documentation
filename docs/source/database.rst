@@ -487,7 +487,7 @@ podcastAnalytics*
      - The action performed at this step. Currently available: play/stop, backwards, fastforward, sliderSearchComplete, single-/doubleTapLeft, single-/doubleTapRight, heartbeat every 10 seconds, fullscreenExit/-activate.
    * - ``podcastTimestamp``
      - Integer
-     - Position in ms in video at which this action was performed.
+     - Position in ms in the podcast at which this action was performed.
    * - ``createdAt``
      - Date
      - Time at which data record was created.
@@ -781,7 +781,7 @@ videoAnalytics*
      - The action performed at this step. Currently available: play/stop, backwards, fastforward, sliderSearchComplete, single-/doubleTapLeft, single-/doubleTapRight, heartbeat every 10 seconds, fullscreenExit/-activate.
    * - ``videoTimestamp``
      - Integer
-     - Position in ms in video at which this action was performed.
+     - Position in ms in the video at which this action was performed.
    * - ``createdAt``
      - Date
      - Time at which data record was created.
