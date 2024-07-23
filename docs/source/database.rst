@@ -682,7 +682,7 @@ surveys
 users*
 ------
 
-**Description** ...
+**Description** Stores information of Maintainers, Admins, and Users.
 
 .. list-table::
    :widths: 25 25 50
@@ -736,7 +736,7 @@ users*
 userGroups
 ----------
 
-**Description** ...
+**Description** This collection maps the _id, name, of a user group to an algorithm.
 
 .. list-table::
    :widths: 25 25 50
@@ -758,7 +758,7 @@ userGroups
 videoAnalytics*
 ---------------
 
-**Description** ...
+**Description** Collects all actions performed with a video.
 
 .. list-table::
    :widths: 25 25 50
