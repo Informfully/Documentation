@@ -146,7 +146,7 @@ experiments
 
 **experiments.launch**
 
-* Launches an experiment (meaning some configurations cannot be changed any more)
+* Launches an experiment (meaning some configurations cannot be changed anymore)
 * Input:
 
   * experimentId: Id of experiment

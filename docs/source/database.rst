@@ -8,8 +8,8 @@ All collections marked with a \*-symbol collect data through the user's interact
 .. note::
 
   In the examples given below, Informfully is used as a news recommendation app.
-  For consistency reason (i.e., to be consistent with the use case of the other parts of the documentation), ``article`` is used instead of ``items``.
-  For exemple, this overview uses ``articleId`` as key attribute.
+  Out of consistency (i.e., to be consistent with the use case of the other parts of the documentation), ``article`` is used instead of ``items``.
+  For example, this overview uses ``articleId`` as key attribute.
   If Informfully is used in another capacity, all records labelled ``articleId`` can be simply renamed to ``itemId``.
 
 answers*
@@ -38,9 +38,9 @@ answers*
      - Answers of the user to all questions in the survey.
    * - ``createdAt``
      - Date
-     - Time at which data record was created.
+     - Time at which the data record was created.
 
-An example of how the answers field could look like is shown below:
+An example of what the answer field could look like is shown below:
 
 .. code-block:: json
 
@@ -60,7 +60,7 @@ An example of how the answers field could look like is shown below:
 archive*
 --------
 
-**Description** Collects whether an article has been and whether it is a part of the user's favourites list.
+**Description** Collects whether an article has been archived and whether it is a part of the user's favourites list.
 
 .. list-table::
    :widths: 25 25 50
@@ -83,10 +83,10 @@ archive*
      - Date the article was published.
    * - ``createdAt``
      - Date
-     - Time at which data record was created.
+     - Time at which the data record was created.
    * - ``removedAt``
      - Date
-     - Time at which data record was removed.
+     - Time at which the data record was removed.
 
 
 articleLikes*
@@ -118,10 +118,10 @@ articleLikes*
      - Can be either 1 or -1, 1 stands for a Like and -1 stands for a Dislike.
    * - ``createdAt``
      - Date
-     - Time at which data record was created.
+     - Time at which the data record was created.
    * - ``removedAt``
      - Date
-     - Time at which data record was removed.
+     - Time at which the data record was removed.
 
 articleTotalLikes*
 ------------------
@@ -151,7 +151,7 @@ articleTotalLikes*
      - Date
      - Contains the ids of statements for which at least one like/dislike has been given.
 
-An example of how the answers field could look like is shown below:
+An example of what the answer field could look like is shown below:
 
 .. code-block:: json
 
@@ -206,12 +206,12 @@ articleViews*
      - Number of times the article has been viewed by this user.
    * - ``createdAt``
      - Date
-     - Time at which data record was created.
+     - Time at which the data record was created.
 
 experiments
 -----------
 
-**Description** The ``experiments`` collection contains information(``_id``, ``name``, etc.) of these experiments and surveys set by the admin.
+**Description** The ``experiments`` collection contains information(``_id``, ``name``, etc.) about these experiments and surveys set by the admin.
 The information can be modified on the ``Information`` page while ``likeSurvey`` can be set on the ``Feedback`` page.
 
 .. list-table::
@@ -232,7 +232,7 @@ The information can be modified on the ``Information`` page while ``likeSurvey``
      - Name of the admin of this experiment; by default, it is the string before ``@`` of the creator's email.
    * - ``contactInfo``
      - String
-     - Contact info of the admin of this experiment; by default, it is the creator's email.
+     - Contact information of the admin of this experiment; by default, it is the creator's email.
    * - ``description``
      - String
      - Text description of the experiments.
@@ -270,7 +270,7 @@ The information can be modified on the ``Information`` page while ``likeSurvey``
      - Integer
      - Controls the number of lines that are used for the title of an article on the small article previews. It can be increased up to 3 in case that ``maxNrExplanationTags`` is set to 0.
 
-An example of how the likeSurvey field could look like is shown below:
+An example of what the likeSurvey field could look like is shown below:
 
 .. code-block:: json
 
@@ -290,7 +290,7 @@ An example of how the likeSurvey field could look like is shown below:
         ]
     }
 
-An example of how the explanationTagsDef field could look like is shown below:
+An example of what the explanationTagsDef field could look like is shown below:
 
 .. code-block:: json
 
@@ -331,7 +331,7 @@ explanationViews*
      - ID of user.
    * - ``createdAt``
      - Date
-     - Time at which data record was created.
+     - Time at which the data record was created.
 
 explanations
 ------------
@@ -427,8 +427,8 @@ newsArticles
 
 .. note::
 
-    Be aware that Android devices can only handle websites secured by an SSL certificate (i.e., only https websites and no http websites). 
-    Therefore, data fields like url or multimediaURL should only contain https websites.
+    Be aware that Android devices can only handle websites secured by an SSL certificate (i.e., only HTTPS websites and no HTTP websites). 
+    Therefore, data fields like URL or multimediaURL should only contain HTTPS websites.
 
 pageViews*
 ----------
@@ -459,7 +459,7 @@ pageViews*
      - Contains navigation parameters of the previous page (and sometimes of the current one), e.g., ``articleId``. It is empty if there are no parameters to pass (for example from ``Home`` to ``Settings``).
    * - ``createdAt``
      - Date
-     - Time at which data record was created.
+     - Time at which the data record was created.
 
 podcastAnalytics*
 -----------------
@@ -490,12 +490,12 @@ podcastAnalytics*
      - Position in ms in the podcast at which this action was performed.
    * - ``createdAt``
      - Date
-     - Time at which data record was created.
+     - Time at which the data record was created.
 
 readingList*
 ------------
 
-**Description** Collects whether an article has been and whether it is a part of the user's bookmark list.
+**Description** Collects whether an article has been read and whether it is a part of the user's bookmark list.
 
 .. list-table::
    :widths: 25 25 50
@@ -526,7 +526,7 @@ readingList*
 recommendationLists
 --------------------
 
-**Description** Collects that are shown on the home screen on a user in the exact ordering determined by the recommender system.
+**Description** Collects that are shown on the home screen of a user in the exact ordering determined by the recommender system.
 
 .. list-table::
    :widths: 25 25 50
@@ -555,9 +555,9 @@ recommendationLists
      - A flag which indicates whether the article should appear big on the screen with the title, lead, and image (if ``FALSE``, the feed will only show a thumbnail image and the title).
    * - ``createdAt``
      - Date
-     - Time at which data record was created.
+     - Time at which the data record was created.
 
-An example of how the recommendations need to be formatted is shown below:
+An example of what the recommendations need to be formatted is shown below:
 
 .. code-block:: json
 
@@ -606,9 +606,9 @@ In return, for users that hardly ever sign out and hence hardly ever sign in, it
      - ID of user.
    * - ``createdAt``
      - Date
-     - Time at which data record was created.
+     - Time at which the data record was created.
 
-An example of how the questions field could look like is shown below:
+An example of what the questions field could look like is shown below:
 
 .. code-block:: json
 
@@ -677,7 +677,7 @@ surveys
      - ID of user.
    * - ``createdAt``
      - Date
-     - Time at which data record was created.
+     - Time at which the data record was created.
 
 users*
 ------
@@ -699,7 +699,7 @@ users*
      - Username required for user to log in; username field can still be manually added, simply for display purposes in the app.
    * - ``emails``
      - Arra of Strings
-     - Only for maintainer.
+     - Only for maintainers.
    * - ``roles``
      - Array of Strings
      - An Array consists of all the access rights of this account. This Array can be one of the following three: ``{0:"user"}``, ``{0:"user",1:"admin"}``, or ``{0:"user",1:"admin",2:"maintainer"}``.
@@ -726,7 +726,7 @@ users*
      - Encrypted password.
    * - ``createdAt``
      - Date
-     - Time at which data record was created.
+     - Time at which the data record was created.
 
 .. note::
 
@@ -784,4 +784,4 @@ videoAnalytics*
      - Position in ms in the video at which this action was performed.
    * - ``createdAt``
      - Date
-     - Time at which data record was created.
+     - Time at which the data record was created.
