@@ -1,14 +1,14 @@
 User Creation
 =============
 
-User accounts for both the Mobile App and Administrator Website are handled using Meteor's `Accounts system <https://docs.meteor.com/api/accounts.html>`_ and `password-based authentication <https://docs.meteor.com/api/passwords.html>`_.
+User accounts for both the Mobile App and Administration Website are handled using Meteor's `Accounts system <https://docs.meteor.com/api/accounts.html>`_ and `password-based authentication <https://docs.meteor.com/api/passwords.html>`_.
 All existing users are collected in the `users collection <https://informfully.readthedocs.io/en/latest/database.html>`_. 
 There are two types of users: regular users (data field ``roles`` of collection ``users`` has a value ``user``) and admin users (data field ``roles`` of collection ``users`` has a value ``['user', 'admin']``).
-Regular users can only access the Mobile App, whereas administrator users can access both the Mobile App and Administrator Website.
+Regular users can only access the Mobile App, whereas administrator users can access both the Mobile App and Administration Website.
 
 As we are using Meteor's default account and authentication system, there are currently two ways to create a new user.
-You can do it either through the Administrator Website or through the Mobile App.
-Regular users can be created both through the Administrator Website and the Mobile App, whereas admin users can currently be created only through the Mobile App.
+You can do it either through the Administration Website or through the Mobile App.
+Regular users can be created both through the Administration Website and the Mobile App, whereas admin users can currently be created only through the Mobile App.
 The creation of user accounts through the Mobile App, however, is currently disabled (commented out in the source code).
 
 Creation of Regular Users
