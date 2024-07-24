@@ -136,10 +136,10 @@ Here is a summary of the backend repo structure:
     .snippets.sh
     build.sh
     ...
-
-The ``.build/`` directory is generated when running the ``build.sh`` script for the [deployment of the backend repo to production](Deployment of Admin Website: Frontend and Backend).
+https://informfully.readthedocs.io/en/latest/deployment.html
+The ``.build/`` directory is generated when running the ``build.sh`` script for the deployment of the `Administration Website <https://informfully.readthedocs.io/en/latest/deployment.html>`_.
 It contains the ``tarball`` (more information `here <https://docs.meteor.com/commandline.html#meteorbuild>`_), after having run the ``meteor build`` command in the terminal.
-The unpacked tarball is actually the ``bundle/`` folder, which is needed for [building the backend repo Docker Image](Docker Setup#building-the-backend-docker-image-and-loading-it-on-the-server).
+The unpacked tarball is actually the ``bundle/`` folder, which is needed for building the backend repo `Docker Image <https://informfully.readthedocs.io/en/latest/docker.html>`_.
 
 The ``.meteor/`` directory is also automatically generated when running Meteor locally and should not be manually changed.
 It contains a local copy of a MongoDB instance.

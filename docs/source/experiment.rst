@@ -120,7 +120,7 @@ Below this paragraph is a reference implementation of how to create a single use
 
     from bson.objectid import ObjectId
 
-    # Create a single recommendation for a user in the JREX format
+    # A single article recommendation for a user
     def create_recommendation(user, article_id, prediction, algorithm_id, preview):
 
         recommendation = {
@@ -141,7 +141,6 @@ Researchers can put this behind their own API or they can run the recommender sy
 
 This step then concludes the setup of the user experiment.
 Once you have completed this, the Informfully instance is ready to host and launch user experiments.
-You can go back to the experiment overview page and set the mode to 
 
 Once you have completed this setup, your Informfully instance is ready to host and launch user experiments.
 Please look at the `Experiment Overview <https://informfully.readthedocs.io/en/latest/overview.html>`_ to see how these components interact with each other over the course of the different experimental phases.
