@@ -9,17 +9,17 @@ Requirements
 ------------
 
 * Google Developer Account
-* Android keystore
+* Android Keystore
 
 Building the App
 ----------------
 
 We use Expo's bare workflow to generate native Android project code.
-This allows the application to be further developed using the native tools such as Android Studio.
+This allows the application to be further developed using the native tools, such as Android Studio.
 Follow these steps to build an APK:
 
     #. Make sure that all the changes are committed (e.g., that your working tree is clean).
-    #. Navigate to the frontend folder in the command line.
+    #. Navigate to the frontend folder on the command line.
     #. Type ``npm install`` in the command line.
     #. Type ``expo eject`` in the command line.
     #. Open the Android project with Android Studio.

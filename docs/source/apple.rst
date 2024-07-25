@@ -8,13 +8,13 @@ Afterwards, make sure to change the ``SERVER`` constant in ``App.js`` (located `
 Requirements
 ------------
 
-* Apple Developer Account and Apple device with XCode
+* Apple Developer Account and Apple device with Xcode
 * iPhone distribution certificate
 
 Building the App
 ----------------
 
-Navigate to the frontend folder in the command line.
+Navigate to the frontend folder on the command line.
 Run the following command on a clean working branch to create the temporary iOS project.
 We will discard all changes after uploading the iOS app/testing the iOS app.
 
@@ -29,6 +29,6 @@ We will discard all changes after uploading the iOS app/testing the iOS app.
 We used the following to successfully deploy to the App Store. In case you have errors, try using the same versions:
 
 * Operating System: **macOS Big Sur Version 11.6**
-* XCode: **13.0**
+* Xcode: **13.0**
 * Yarn: **1.22.11**
 * Watchman: **2021.09.13**
