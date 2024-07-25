@@ -1,16 +1,16 @@
-Sourcecode Overview
+Source Code Overview
 ===================
 
 The Informfully Platform combined both the app front end and website back end in one project.
 To get a better overview of how to write and extend this platform, we provide here a short project overview.
-The two parts we look at in more detail are the ``frontend``  and ``backend`` directory.
+The two parts we look at in more detail are the ``frontend``  and ``backend`` directories.
 
 ``frontend`` Directory
 ----------------------
 
 The mobile app is based on `React Native <https://reactnative.dev/>`_, a JavaScript framework for developing native applications for iOS and Android, and `Expo <https://expo.dev/>`_, a set of tools built on top of React Native.
 If you have no experience with React Native, it is recommended that you check out `Getting Started <https://reactnative.dev/docs/getting-started/>`_ and `Environment Setup <https://reactnative.dev/docs/environment-setup>`_.
-To get a feel about the difference between React Native and Expo, take a look at the following `Stackoverflow post <https://stackoverflow.com/questions/39170622/what-is-the-difference-between-expo-and-react-native>`_.
+To get a feel for the difference between React Native and Expo, take a look at the following `Stackoverflow post <https://stackoverflow.com/questions/39170622/what-is-the-difference-between-expo-and-react-native>`_.
 
 React Native does not impose any strict folder structure.
 Nevertheless, the structure of the frontend repo is heavily influenced by the default folder structure, which is generated when starting a new React Native project (using Expo CLI).
@@ -89,7 +89,7 @@ There is a set of directory names that causes the framework to apply a predefine
 For instance, a file that is inside a directory called ``server`` can only be loaded on the server, i.e. the backend code.
 
 Similarly, files that are inside a directory called ``startup`` are loaded during startup.
-In the `Meteor documentation <ttps://guide.meteor.com/structure.html>`_, Meteor explains and suggests a very clean project structure that considers their special file load behaviour.
+In the `Meteor documentation <https://guide.meteor.com/structure.html>`_, Meteor explains and suggests a very clean project structure that considers their special file load behaviour.
 In the back end repo, we use the application structure as suggested by the Meteor documentation and have further separated the code semantically for different groups and types of components.
 Furthermore, we very clearly distinguish between different layers and concepts inside the application.
 Here is a summary of the backend repo structure: 
@@ -148,10 +148,10 @@ The directories ``client/`` and ``server/`` in the root of the backend repo incl
 In both directories, there is a file called ``main.js`` which imports files from the ``imports/`` directory and loads everything that is needed in the environment.
 For the ``client/``, these are the routes that are available (i.e. the URLs).
 For the ``server/``, these are the set of database collections, the publications as well as some configurations.
-The configurations include so called fixtures as well as a configuration file for accounts management (e.g., signing in and registrations).
-A fixture is a set of records that is inserted to the database in the case that the database is empty.
+The configurations include so called fixtures as well as a configuration file for account management (e.g., signing in and registrations).
+A fixture is a set of records that is inserted into the database in the case that the database is empty.
 It is commonly used in software projects in which certain records need to be available for development (and possibly also in production).
-In our case this includes some news articles, a survey and an experiment.
+In our case, this includes some news articles, a survey and an experiment.
 
 On the client, stylesheets are bundled and loaded automatically.
 Since they need not be available on the server, they reside in the ``client/`` directory.
