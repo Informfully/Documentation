@@ -74,6 +74,17 @@ Citation
 
 If you use any Informfully code/repository in a scientific publication, we ask you to cite the following papers:
 
+* `heitz2024informfully <https://informfully.ch>`_, Heitz *et al.*, Proceedings of the 18th ACM Conference on Recommender Systems, 2023.
+
+.. code-block:: console
+
+   @inproceedings{heitz2024informfully,
+      title={Informfully - Research Platform for Reproducible User Studies},
+      author={Heitz, Lucien and Croci, Julian A and Sachdeva, Madhav and Bernstein, Abraham},
+      booktitle={Proceedings of the 18th ACM Conference on Recommender Systems},
+      year={2024}
+  }
+
 * `Deliberative Diversity for News Recommendations - Operationalization and Experimental User Study <https://dl.acm.org/doi/10.1145/3604915.3608834>`_, Heitz *et al.*, Proceedings of the 17th ACM Conference on Recommender Systems, 813–819, 2023.
 
 .. code-block:: console
