@@ -1,0 +1,50 @@
+[
+  {
+    "_id": {
+      "$oid": "66b1134d16e443af5a576555"
+    },
+    "userId": "LTuEwG8JKq2wYoKcR",
+    "articleId": "65725f877b7cac9e81bb8271",
+    "recommendationAlgorithm": "Default Algorithm",
+    "prediction": 1000,
+    "createdAt": {
+      "$date": 1722888045535
+    }
+  },
+  {
+    "_id": {
+      "$oid": "66b1134d16e443af5a576556"
+    },
+    "userId": "LTuEwG8JKq2wYoKcR",
+    "articleId": "65725f877b7cac9e81bb8272",
+    "recommendationAlgorithm": "Default Algorithm",
+    "prediction": 999,
+    "createdAt": {
+      "$date": 1722888045535
+    }
+  },
+  {
+    "_id": {
+      "$oid": "66b1134d16e443af5a576557"
+    },
+    "userId": "9cwgrvWwwh7oGKHoC",
+    "articleId": "65725f877b7cac9e81bb8271",
+    "recommendationAlgorithm": "Default Algorithm",
+    "prediction": 1000,
+    "createdAt": {
+      "$date": 1722888045535
+    }
+  },
+  {
+    "_id": {
+      "$oid": "66b1134d16e443af5a576558"
+    },
+    "userId": "9cwgrvWwwh7oGKHoC",
+    "articleId": "65725f877b7cac9e81bb8272",
+    "recommendationAlgorithm": "Default Algorithm",
+    "prediction": 999,
+    "createdAt": {
+      "$date": 1722888045535
+    }
+  }
+]
