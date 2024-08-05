@@ -3,6 +3,12 @@ Recommendation Lists
 
 This tutrial provides information on how to create the `recommendation list <https://informfully.readthedocs.io/en/latest/database.html>`_ in the back end.
 The `relevant code <https://github.com/Informfully/Documentation/tree/main/sample>`_ is shared separately.
+To forward item recommendations to the back end of Informfully, they must be in the JSON Recommendation Exchange Forat (JREX).
+
+Below, you find a reference implementation of how, starting with item and user pools, such a JREX list of recommendations is created using the function ``create_recommendation()``.
+The script will automatically export the results to a file.
+This file can be copied/sent to the database.
+Simply create a new document collection  ``recommendationLists`` and add the values of the recommendation file.
 
 .. code-block:: python
 

@@ -59,6 +59,7 @@ This documentation provides you with all the information you need to successfull
    database
    publications
    methods
+   recommendations
 
 .. toctree::
    :maxdepth: 1
