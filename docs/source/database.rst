@@ -585,6 +585,10 @@ An example of what the recommendations need to be formatted is shown below:
         ...
     ]
 
+.. note::
+
+    We provide an in-depth `recommendation list tutorial <https://informfully.readthedocs.io/en/latest/recommendations.html>`_ on how to connect your recommener framework with the Informfully back end with the `relevant code <https://github.com/Informfully/Documentation/tree/main/sample>`_.
+
 signins*
 --------
 
