@@ -74,11 +74,15 @@ We do understand that not every use case will require a survey.
 It is for this reason that the inclusion of user surveys is an optional component.
 Researchers can skip this step because there is no requirement for getting user feedback.
 
-.. image:: img/tutorial_screenshots/tutorial_1.jpg
+In addition to prompting in-app surveys, researchers have the option to add custom rating below items.
+The screenshot belows shows an overview on how to add these rating questions.
+Each question can be responded to with a thumbs up or thumbs down.
+
+.. image:: img/tutorial_screenshots/tutorial_3.jpg
    :width: 700
    :alt: Surveys screen
 
-Additionally, rating surveys/feedback can be defined as well.
+Additionally, rating surveys/feedback can be defined as well (displayed above).
 ``Feedback Surveys`` gives you the option to formulate statements about a news article, which every participant will see in the mobile application, positioned after a news article.
 The participants can agree to (like) or disagree with (dislike) a statement.
 The statements are the same for all the participants in an experiment.
