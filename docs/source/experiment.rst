@@ -112,7 +112,6 @@ By default, all items in  ``newsArticles``/``itemCollection`` will be shown in c
 However, there is the option to connect an external recommender system framework to the Informfully back end in order to have ranked user recommendations.
 
 To have users receive personalized recommendations, the collection ``recommendationLists`` (see `Database Collections <https://informfully.readthedocs.io/en/latest/database.html>`_) needs to be populated.
-
 Below this paragraph is a reference implementation of how to create a single user recommendations.
 (We advise using the official package for creating ``ObjectId``-records).
 
@@ -134,6 +133,10 @@ Below this paragraph is a reference implementation of how to create a single use
         }
 
         return recommendation
+
+.. note::
+
+    We provide an in-depth `recommendation list tutorial <https://informfully.readthedocs.io/en/latest/recommendations.html>`_ on how to connect your recommener framework with the Informfully back end and the `relevant code <https://github.com/Informfully/Documentation/tree/main/sample>`_.
 
 The implementation of the recommendation list is framework-agnostic.
 All that is needed is to write this data to ``recommendationLists`` in MongoDB.
