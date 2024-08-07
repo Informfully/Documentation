@@ -12,7 +12,7 @@ If Informfully is used in another capacity, all records labelled ``articleId`` c
 
 .. note::
 
-  Please visit the `Informfully Datasets Repositorz <https://github.com/Informfully/Datasets>`_ for an example of how the granularitz and quality of the data once it is exported.
+  Please visit the `Informfully Datasets Repository <https://github.com/Informfully/Datasets>`_ for an example of quality of the data once it is exported and the corresponding `Dataset Documentation <https://informfully.readthedocs.io/en/latest/recommendations.html>`_.
 
 answers*
 --------

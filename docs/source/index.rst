@@ -1,7 +1,7 @@
 Informfully
 ===========
 
-.. image:: img/logo_banner.png
+.. image:: img/logo_banner_v2.png
    :width: 700
    :alt: Informfully banner logo
 
@@ -12,6 +12,16 @@ This is the combined and official Informfully Documentation for all `code reposi
 For a tutorial on how to use Informfully, start with the :doc:`install` section and the :ref:`installation` instructions of the project.
 
 **Links and Resources:** `GitHub <https://github.com/orgs/Informfully>`_ | `Website <https://informfully.ch>`_ | `DDIS@UZH <https://www.ifi.uzh.ch/en/ddis.html>`_
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Technical Documentation
+
+   server
+   database
+   publications
+   methods
+   recommendations
 
 Overview
 --------
@@ -57,6 +67,7 @@ This documentation provides you with all the information you need to successfull
 
    server
    database
+   datasets
    publications
    methods
    recommendations
