@@ -1,7 +1,7 @@
 Informfully
 ===========
 
-.. image:: img/logo_banner_v2.png
+.. image:: img/logo_banner.png
    :width: 700
    :alt: Informfully banner logo
 
