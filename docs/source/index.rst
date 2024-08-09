@@ -71,6 +71,7 @@ This documentation provides you with all the information you need to successfull
    publications
    methods
    recommendations
+   compass
 
 .. toctree::
    :maxdepth: 1

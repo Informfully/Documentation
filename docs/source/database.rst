@@ -12,7 +12,9 @@ If Informfully is used in another capacity, all records labelled ``articleId`` c
 
 .. note::
 
-  Please visit the `Informfully Datasets Repository <https://github.com/Informfully/Datasets>`_ for an example of quality of the data once it is exported and the corresponding `Dataset Documentation <https://informfully.readthedocs.io/en/latest/recommendations.html>`_.
+  Please visit the `Informfully Datasets Repository <https://github.com/Informfully/Datasets>`_. 
+  For an example of quality of the data once it is exported and the corresponding `Dataset Documentation <https://informfully.readthedocs.io/en/latest/datasets.html>`_.
+  And read the `MongoDB Compass Tutotrial <https://informfully.readthedocs.io/en/latest/compass.html>`_ for instructions of how to interface/connect with the database in the back end.
 
 answers*
 --------
