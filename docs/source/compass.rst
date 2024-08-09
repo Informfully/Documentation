@@ -1,5 +1,3 @@
-link in recommendations, dataset, index
-
 Compass Interface
 =================
 
