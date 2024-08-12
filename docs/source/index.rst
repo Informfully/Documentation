@@ -13,16 +13,6 @@ For a tutorial on how to use Informfully, start with the :doc:`install` section 
 
 **Links and Resources:** `GitHub <https://github.com/orgs/Informfully>`_ | `Website <https://informfully.ch>`_ | `DDIS@UZH <https://www.ifi.uzh.ch/en/ddis.html>`_
 
-.. toctree::
-   :maxdepth: 1
-   :caption: Technical Documentation
-
-   server
-   database
-   publications
-   methods
-   recommendations
-
 Overview
 --------
 
