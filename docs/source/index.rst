@@ -21,6 +21,7 @@ This documentation provides you with all the information you need to successfull
 * **Getting Started** serves as an overall introduction, including how to install the codebase, create a development environment, and notes on the deployment.
 * **Running Experiments** provide an in-depth overview of how to use the Informfully platform to conduct user studies.
 * **Technical Documentation** provides the same insights for various technical aspects in order to customize and extend the platform.
+* **Customizing Recommendaiton** provides a tutorial on how to connect Informfully with your recommender framework for forwarding personalized recommendations.
 * **User Guides** provide tips and tricks for working with the codebase and useful links to tutorials (as this documentation is not a tutorial on how to use React Native and Meteor).
 
 .. note::
@@ -53,7 +54,7 @@ This documentation provides you with all the information you need to successfull
 
 .. toctree::
    :maxdepth: 1
-   :caption: Customizing Recommendation
+   :caption: Customizing Recommendations
 
    compass
    items
