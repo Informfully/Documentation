@@ -63,15 +63,21 @@ This documentation provides you with all the information you need to successfull
 
 .. toctree::
    :maxdepth: 1
+   :caption: Customizing Recommendation
+
+   compass
+   items
+   recommendations
+   database
+
+.. toctree::
+   :maxdepth: 1
    :caption: Technical Documentation
 
    server
-   database
-   datasets
    publications
    methods
-   recommendations
-   compass
+   datasets
 
 .. toctree::
    :maxdepth: 1
