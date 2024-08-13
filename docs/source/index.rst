@@ -16,6 +16,15 @@ For a tutorial on how to use Informfully, start with the :doc:`install` section 
 Overview
 --------
 
+The Informfully platform allows you to push algorithmically curated text, image, audio, and video content to users and automatically generates a detailed log of their consumption history.
+It is a domain-agnostic and platform-independent solution to fit your specific needs.
+The platform was designed to accommodate different experiment types through versatility, ease of use, and scalability.
+It features three core components: 
+
+* a front end for displaying and interacting with recommended items, 
+* a back end for researchers to create and maintain user experiments, and 
+* a simple JSON-based exchange format (JREX) for ranked item recommendations to interface with third-party services.
+
 This documentation provides you with all the information you need to successfully configure and deploy Informfully. It is structured as follows:
 
 * **Getting Started** serves as an overall introduction, including how to install the codebase, create a development environment, and notes on the deployment.
