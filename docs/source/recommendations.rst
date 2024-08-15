@@ -109,3 +109,9 @@ Simply create a new document collection  ``recommendationLists`` and add the val
 
     # Run example
     main()
+
+JREX allows you to add recommendations for a user.
+Editing and updating recommendations is done by moving old recommendations to a separate archive collection (recommended) or by deleting them from the recommendation list.
+The exact workflow is up to the researchers to define.
+Differente frameworks have different approaches.
+Editing can be done via  `MongoDB Compass <https://informfully.readthedocs.io/en/latest/compass.html>`_. 
