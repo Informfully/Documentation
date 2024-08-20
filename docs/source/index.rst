@@ -93,7 +93,7 @@ Citation
 
 If you use any Informfully code/repository in a scientific publication, we ask you to cite the following papers:
 
-* `heitz2024informfully <https://informfully.ch>`_, Heitz *et al.*, Proceedings of the 18th ACM Conference on Recommender Systems, 2023.
+* `Informfully - Research Platform for Reproducible User Studies <https://www.researchgate.net/publication/383261885_Informfully_-_Research_Platform_for_Reproducible_User_Studies>`_, Heitz *et al.*, Proceedings of the 18th ACM Conference on Recommender Systems, 2023.
 
 .. code-block:: console
 
