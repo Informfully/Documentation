@@ -33,6 +33,12 @@ This documentation provides you with all the information you need to successfull
 * **Technical Documentation** provides the same insights for various technical aspects in order to customize and extend the platform.
 * **User Guides** provide tips and tricks for working with the codebase and useful links to tutorials (as this documentation is not a tutorial on how to use React Native and Meteor).
 
+**Informfully Preview:**
+
+.. image:: img/informfully_assets/informfully_app_screens.png
+   :width: 700
+   :alt: Informfully app screenshots
+
 .. note::
 
     There are two different ways of that you can use Informfully: 
