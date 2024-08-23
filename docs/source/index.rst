@@ -13,6 +13,14 @@ For a tutorial on how to use Informfully, start with the :doc:`install` section 
 
 **Links and Resources:** `GitHub <https://github.com/orgs/Informfully>`_ | `Website <https://informfully.ch>`_ | `X <https://x.com/informfully>`_ | `DDIS@UZH <https://www.ifi.uzh.ch/en/ddis.html>`_ | `Google Play <https://play.google.com/store/apps/details?id=ch.uzh.ifi.news>`_ | `App Store <https://apps.apple.com/us/app/informfully/id1460234202>`_
 
+.. note::
+
+    There are two different ways of that you can use Informfully: 
+    1) Use the front end and back end deployed by the University of Zurich or 
+    2) Deploy the whole application on your own.
+    The upcoming tutorial focuses on the self-hosted deployment of Informfully.
+    If you want to use the Informfully Platform as a cloud service, hosted at the University of Zurich, please reach out to us: info@informfully.ch
+
 Overview
 --------
 
@@ -33,19 +41,9 @@ This documentation provides you with all the information you need to successfull
 * **Technical Documentation** provides the same insights for various technical aspects in order to customize and extend the platform.
 * **User Guides** provide tips and tricks for working with the codebase and useful links to tutorials (as this documentation is not a tutorial on how to use React Native and Meteor).
 
-**Informfully Preview:**
-
 .. image:: img/informfully_assets/informfully_app_screens.png
    :width: 700
    :alt: Informfully app screenshots
-
-.. note::
-
-    There are two different ways of that you can use Informfully: 
-    1) Use the front end and back end deployed by the University of Zurich or 
-    2) Deploy the whole application on your own.
-    The upcoming tutorial focuses on the self-hosted deployment of Informfully.
-    If you want to use the Informfully Platform as a cloud service, hosted at the University of Zurich, please reach out to us: info@informfully.ch
 
 .. toctree::
    :maxdepth: 1
@@ -75,6 +73,7 @@ This documentation provides you with all the information you need to successfull
    items
    recommendations
    database
+   explanations
 
 .. toctree::
    :maxdepth: 1

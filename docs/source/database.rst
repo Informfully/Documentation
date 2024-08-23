@@ -341,6 +341,7 @@ explanations
 ------------
 
 **Description** Contains the recommendation explanation tags for each article and user.
+See `Explainable Recommendations <https://github.com/Informfully/Explanations>`_ for how explanations are shown inside the app.
 
 .. list-table::
    :widths: 25 25 50
