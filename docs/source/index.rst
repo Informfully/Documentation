@@ -69,10 +69,10 @@ This documentation provides you with all the information you need to successfull
    :maxdepth: 1
    :caption: Customizing Recommendations
 
+   database
    compass
    items
    recommendations
-   database
    explanations
 
 .. toctree::
