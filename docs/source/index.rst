@@ -69,7 +69,6 @@ This documentation provides you with all the information you need to successfull
    :maxdepth: 1
    :caption: Customizing Recommendations
 
-   database
    compass
    items
    recommendations
@@ -82,6 +81,7 @@ This documentation provides you with all the information you need to successfull
    server
    publications
    methods
+   database
    datasets
 
 .. toctree::
