@@ -1,12 +1,16 @@
-Compass Interface
-=================
+Getting Started
+===============
 
 The dababase used for Informfully is MongoDB.
 In this overview, we will use `MongoDB Compass <https://www.mongodb.com/products/tools/compass>`_ a free GUI to explore the database and its collections.
 MongoDB Compass allows you to query the back end.
 (In the context of MongoDB a "table" in the database is referred to as "collection" and "entry/tupel" as "document" instead.)
 In order to customize the recommendations shown to users, you need to edit the following collections: ``users``, ``items``, and ``recommendations`` as shown below.
+
 Customization of recommendation list entries is done using three steps:
+* Create user account and retried thier IDs
+* Scrape/upload items to recommend and retrieve their IDs
+* Create item recommendaitons lists for users
 
 Retrieving User IDs
 -------------------
