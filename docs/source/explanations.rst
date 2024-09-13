@@ -1,5 +1,5 @@
-Explainable Recommendations
-===========================
+User Explanations
+=================
 
 Explanations within Informfully are available as tags below item recommendations.
 
