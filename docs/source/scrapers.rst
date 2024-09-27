@@ -113,6 +113,8 @@ The first element in the tuple is a regular expression to detect the abnormaliti
 .. note::
 
   Please visit the `Item Entry <https://informfully.readthedocs.io/en/latest/items.html>`_ page to see how a item is represented in the database.
+  We provide sample scrapers of how to create item entries that can be adapted for your specific use case.
+  One example is the  `BBC Scraper <https://github.com/Informfully/Scrapers/blob/main/scraperpackage/scrapers/bbcscraper.py>`_ (see line 130).
 
 .. _logging:
 
