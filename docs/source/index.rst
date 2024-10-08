@@ -98,7 +98,7 @@ Citation
 
 If you use any Informfully code/repository in a scientific publication, we ask you to cite the following papers:
 
-* `Informfully - Research Platform for Reproducible User Studies <https://www.researchgate.net/publication/383261885_Informfully_-_Research_Platform_for_Reproducible_User_Studies>`_, Heitz *et al.*, Proceedings of the 18th ACM Conference on Recommender Systems, 2024.
+* `Informfully - Research Platform for Reproducible User Studies <https://dl.acm.org/doi/10.1145/3640457.3688066>`_, Heitz *et al.*, Proceedings of the 18th ACM Conference on Recommender Systems, 2024.
 
 .. code-block:: console
 
@@ -106,6 +106,7 @@ If you use any Informfully code/repository in a scientific publication, we ask y
       title={Informfully - Research Platform for Reproducible User Studies},
       author={Heitz, Lucien and Croci, Julian A and Sachdeva, Madhav and Bernstein, Abraham},
       booktitle={Proceedings of the 18th ACM Conference on Recommender Systems},
+      pages={660--669},
       year={2024}
   }
 
