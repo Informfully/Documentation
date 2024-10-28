@@ -46,7 +46,8 @@ In short, the script will automate the following steps:
 #.  Restart the Phusion Passenger process to serve the Node app.
 
 Following these steps will deploy the new Administration Website.
-Please make sure to follow the instructions of the `Genesis Script <https://informfully.readthedocs.io/en/latest/docker.html>`_ to initialize the first users.
+Please make sure to follow the instructions of the `Genesis Script <https://github.com/Informfully/Platform/blob/main/backend/server/genesis.js>`_ to initialize the first users.
+You can then proceed to log in and access the website with the credentials stored in the script.
 
 This setup was successfully tested on a server with the following software packages:
 

@@ -32,7 +32,7 @@ The back end is now running and the administration website is accessible at via 
 .. note::
 
     In terms of database setup, you can connect to the database through ``mongodb://localhost:3009/`` if your Meteor server is running on port 3008.
-    If the user collection in the database is empty when starting up, a new user with Maintainer role is automatically created by the ``genesis.js`` script <`Genesis script located here <https://informfully.readthedocs.io/en/latest/genesis.html>`_>.
+    If the user collection in the database is empty when starting up, a new user with Maintainer role is automatically created by the ``genesis.js`` script `Genesis script located here <https://github.com/Informfully/Platform/blob/main/backend/server/genesis.js>`_.
     In this documentation, we use the naming convention of MongoDB. Tables are referred to as collections, and tuples as documents.
     There is no need for you to create and document collection, as MongoDB will automatically create one when you insert the first document into a collection that does not yet exist.
 
