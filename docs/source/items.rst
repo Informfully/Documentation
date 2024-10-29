@@ -75,7 +75,12 @@ If the item modality is text, however, the system will create and store a copy a
    Therefore, data fields like ``url`` or ``multimediaURL`` should only contain HTTPS websites.
    Please visit the `Scraper Documentation <https://informfully.readthedocs.io/en/latest/scrapers.html>`_ page to see get access to sample code that scrapes and adds item entries to the back end.
 
-There are set default values for each field.
-By doing this, indexing can be used, improving the performance of queries.
+When creating item entries, we recommend setting default values for each field.
 If we used non-existing fields to signify the absence of an attribute, we would have to use the ``$exists`` keyword to distinguish between articles that have a certain attribute.
 However, the ``$exists`` operator cannot use any index.
+
+The ``body`` consists of a list of elements.
+There are currently three types of elements that are supported:
+1) ``text`` for unformatted text, 
+2) ``subtitle`` for adding a new paragraph and subtitle to the text, and 
+3) ``quote`` for an cursive, indent quote block.
