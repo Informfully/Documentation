@@ -78,9 +78,17 @@ If the item modality is text, however, the system will create and store a copy a
 When creating item entries, we recommend setting default values for each field.
 If we used non-existing fields to signify the absence of an attribute, we would have to use the ``$exists`` keyword to distinguish between articles that do and do not feature certain attributes.
 This use of the ``$exists`` operator, however, cannot use any index and leads to an overall performance decrease.
+Items will be rendered as follows inside the app:
+
+.. image:: img/app_screenshots/app_screenshots_2.png
+   :height: 720
+   :alt: Article view
+
+In case of a text item, the top part of the interface will display a thumnbail preview that was specified in the ``image`` attribute.
+In case of a multimedia item (podcast or video), a multimedia player will be loaded with the above specified image as a thumbnail.
 
 The ``body`` consists of a list of elements.
 There are currently three types of elements that are supported:
-* 1) ``text`` for unformatted text, 
-* 2) ``subtitle`` for adding a new paragraph and subtitle to the text, and 
-* 3) ``quote`` for an cursive, indent quote block.
+- 1) ``text`` for unformatted text, 
+- 2) ``subtitle`` for adding a new paragraph and subtitle to the text, and 
+- 3) ``quote`` for an cursive, indent quote block.
