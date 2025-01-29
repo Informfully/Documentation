@@ -71,8 +71,10 @@ This documentation provides you with all the information you need to successfull
 
    compass
    items
+   recommenders
    recommendations
    explanations
+   tutorial
 
 .. toctree::
    :maxdepth: 1
@@ -82,7 +84,6 @@ This documentation provides you with all the information you need to successfull
    publications
    methods
    database
-   datasets
 
 .. toctree::
    :maxdepth: 1
