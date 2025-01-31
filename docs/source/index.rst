@@ -72,9 +72,9 @@ This documentation provides you with all the information you need to successfull
    compass
    items
    recommenders
+   tutorial
    recommendations
    explanations
-   tutorial
 
 .. toctree::
    :maxdepth: 1
