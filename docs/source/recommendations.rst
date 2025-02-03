@@ -1,7 +1,7 @@
 Recommendation Lists
 ====================
 
-This page provides information on how to populate the `recommendation list <https://informfully.readthedocs.io/en/latest/database.html>`_ in the back end and based on `user and item data <https://informfully.readthedocs.io/en/latest/compass.html>`_.
+This page provides information on how to populate the ``recommendationLists`` `data collection <https://informfully.readthedocs.io/en/latest/database.html>`_ in the back end and based on `user and item data <https://informfully.readthedocs.io/en/latest/compass.html>`_.
 The `relevant code <https://github.com/Informfully/Documentation/tree/main/sample>`_ is shared separately.
 To forward item recommendations to the back end of Informfully, they must be in the JSON Recommendation Exchange Forat (JREX):
 

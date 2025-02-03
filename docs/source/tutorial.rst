@@ -1,11 +1,10 @@
-Recommender Tutorial
-====================
+Tutorial Notebook
+=================
 
 .. note::
 
-  The recommender system outlined here is a stand-alone-component.
-  It can in combination with the Informfully platfrom to create recommendation lists.
-  (See `relevant documentation <https://informfully.readthedocs.io/en/latest/recommendations.html>`_ on how to forward recommendation lists to the Informfully front end).
-  Alternatively, it can be used on its own for offline testing and benchmarking.
+  This tutorial outlines the `Informfully Recommenders <https://github.com/Informfully/Recommenders>`_ repository. 
+  It can be used in combination with the Informfully platfrom or in a stand-alone component.
+  You can skip to the `relevant documentation <https://informfully.readthedocs.io/en/latest/recommendations.html>`_ on how to forward recommendation lists to the Informfully front end if you are using your own recommender system.
 
 Work in progress...

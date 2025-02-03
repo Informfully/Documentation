@@ -1,5 +1,5 @@
-Getting Started
-===============
+Collection Overview
+===================
 
 The dababase used for Informfully is MongoDB.
 In this overview, we will use `MongoDB Compass <https://www.mongodb.com/products/tools/compass>`_ a free GUI to explore the database and its collections.
