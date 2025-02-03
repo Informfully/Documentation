@@ -72,8 +72,8 @@ This documentation provides you with all the information you need to successfull
    recommenders
    items
    compass
-   tutorial
    recommendations
+   tutorial
    explanations
 
 .. toctree::

@@ -25,16 +25,16 @@ Recommendation Lists
 
 Work in progress...
 
-User Explanations
----------------------------
-
- `User explanations <https://informfully.readthedocs.io/en/latest/explanations.html>`_.
-
-Work in progress...
-
 Tutorial Notebook
 -----------------
 
  `Tutorial notebook <https://informfully.readthedocs.io/en/latest/tutorial.html>`_.
+
+Work in progress...
+
+User Explanations
+---------------------------
+
+ `User explanations <https://informfully.readthedocs.io/en/latest/explanations.html>`_.
 
 Work in progress...
