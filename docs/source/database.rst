@@ -195,7 +195,7 @@ articleViews*
      - ID of user.
    * - ``articlePublishedDate``
      - Date
-     - Date the article was published (referred to as ``dateScraped`` of article)
+     - Date the article was published (referred to as ``dateScraped`` of article).
    * - ``duration``
      - Integer
      - Duration in ms for which article was open.
@@ -717,7 +717,7 @@ users*
      - For Maintainers: ``{createdAccount:Integer,lastLogin:Time}``; for Admins: ``{maxUserAccount:Integer,createdAccount:Integer,plainTextInitialPassword:String,lastLogin:Time}``; for Users: ``Null``.
    * - ``participatesIn``
      - String
-     - For ``Users``: the experiment ``_id`` that the user is in; for ``Maintainers`` and ``Admins``: "default-experiment"
+     - For ``Users``: the experiment ``_id`` that the user is in; for ``Maintainers`` and ``Admins``: ``default-experiment``.
    * - ``userGroup``
      - String
      - For ``Users``: the user group name that the user is in (only one group at each point in time); for ``Maintainers`` and ``Admins``: ``baseline``.
@@ -759,7 +759,7 @@ userGroups
      - ID of data record.
    * - ``experimentId``
      - String
-     - Experiment ``_id`` that this user group belongs to
+     - Experiment ``_id`` that this user group belongs to.
    * - ``name``
      - String
      - Name of this user group.
