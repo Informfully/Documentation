@@ -13,8 +13,29 @@ The details on how to store items and their properties are documented in the `it
   It can be used in combination with the Informfully platfrom or in a stand-alone component.
   You can skip to the `relevant documentation <https://informfully.readthedocs.io/en/latest/recommendations.html>`_ on how to forward recommendation lists to the Informfully front end if you are using your own recommender system.
 
-Architecture Overview
----------------------
+Pipeline Overview
+-----------------
+
+* Pre-processing Stage
+* In-processing Stage
+* Post-processing Stage
+* Evaluation Stage
+
+Work in progress...
+
+Recommender Models
+------------------
+
+* Participatory Diversity
+* Deliberative Diversity
+
+Work in progress...
+
+Item Reranker
+-------------
+
+* Static Re-ranking
+* Dynamic Re-ranking
 
 Work in progress...
 
