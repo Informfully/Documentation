@@ -89,6 +89,6 @@ In case of a multimedia item (podcast or video), a multimedia player will be loa
 
 The ``body`` consists of a list of elements.
 There are currently three types of elements that are supported:
-- 1) ``text`` for unformatted text, 
-- 2) ``subtitle`` for adding a new paragraph and subtitle to the text, and 
-- 3) ``quote`` for an cursive, indent quote block.
+* ``text`` for unformatted text, 
+* ``subtitle`` for adding a new paragraph and subtitle to the text, and 
+* ``quote`` for an cursive, indent quote block.
