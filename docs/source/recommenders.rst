@@ -16,28 +16,27 @@ The details on how to store items and their properties are documented in the `it
 Pipeline Overview
 -----------------
 
+.. image:: img/recommender_assets/extended_pipeline.png
+   :width: 700
+   :alt: Informfully Recommenders Pipeline
+
 * Pre-processing Stage
 * In-processing Stage
 * Post-processing Stage
 * Evaluation Stage
-
-Work in progress...
 
 Recommender Models
 ------------------
 
 * Participatory Diversity
 * Deliberative Diversity
-
-Work in progress...
+* Random Walk
 
 Item Reranker
 -------------
 
 * Static Re-ranking
 * Dynamic Re-ranking
-
-Work in progress...
 
 Recommendation Lists
 --------------------
