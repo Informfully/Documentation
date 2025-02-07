@@ -39,7 +39,6 @@ This documentation provides you with all the information you need to successfull
 * **Running Experiments** provide an in-depth overview of how to use the Informfully platform to conduct user studies.
 * **Customizing Recommendaiton** provides a tutorial on how to connect Informfully with your recommender framework for forwarding personalized recommendations.
 * **Technical Documentation** provides the same insights for various technical aspects in order to customize and extend the platform.
-* **User Guides** provide tips and tricks for working with the codebase and useful links to tutorials (as this documentation is not a tutorial on how to use React Native and Meteor).
 
 .. image:: img/informfully_assets/informfully_app_screens.png
    :width: 700
@@ -80,16 +79,11 @@ This documentation provides you with all the information you need to successfull
    :maxdepth: 1
    :caption: Technical Documentation
 
+   source
    server
    publications
    methods
    database
-
-.. toctree::
-   :maxdepth: 1
-   :caption: User Guides
-
-   source
    docker
    google
    apple

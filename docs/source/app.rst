@@ -67,7 +67,6 @@ Settings Menu
 The app features a settings menu where researchers can post additional information about the experiment.
 Researchers can link the *Privacy Policy*, *Terms and Conditions*, a experiment website, support e-mail, and general information about the user study in a free text field.
 Furthermore, users can assess the built-in tutorial under *Operational Manual* in order to see how to navigate and use the app.
-
 In this menu, users are also able to request the account deletion (this is a new requirement from Google and Apple).
 By default, users are forwarded to a separate URL where they can enter their username.
 This is then sent to the e-mail address of the responsible researcher.
