@@ -79,7 +79,7 @@ This documentation provides you with all the information you need to successfull
 
    .. toctree::
    :maxdepth: 1
-   :caption: Creating Recommendations
+   :caption: Recommender Algorithms
    participatory
    deliberative
    randomwalk
