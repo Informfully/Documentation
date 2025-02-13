@@ -38,6 +38,8 @@ This documentation provides you with all the information you need to successfull
 * **Getting Started** serves as an overall introduction, including how to install the codebase, create a development environment, and notes on the deployment.
 * **Running Experiments** provide an in-depth overview of how to use the Informfully platform to conduct user studies.
 * **Customizing Recommendaiton** provides a tutorial on how to connect Informfully with your recommender framework for forwarding personalized recommendations.
+* **Recommender Algorithms** provides an overview of the in-house algorithms for diversity-optimized political news.
+* **Platform Deployment** provides a quick overview of the sourcecode of Informfully and a range of helper scripts to create a custom instance.
 * **Technical Documentation** provides the same insights for various technical aspects in order to customize and extend the platform.
 
 .. image:: img/informfully_assets/informfully_app_screens.png
@@ -75,18 +77,31 @@ This documentation provides you with all the information you need to successfull
    tutorial
    explanations
 
+   .. toctree::
+   :maxdepth: 1
+   :caption: Creating Recommendations
+   participatory
+   deliberative
+   randomwalk
+   diversitywalk
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Platform Deployment
+
+   source
+   docker
+   google
+   apple
+
 .. toctree::
    :maxdepth: 1
    :caption: Technical Documentation
 
-   source
    server
-   publications
    methods
+   publications
    database
-   docker
-   google
-   apple
 
 Citation
 --------
