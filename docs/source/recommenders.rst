@@ -28,9 +28,10 @@ Pipeline Overview
 Recommender Models
 ------------------
 
-* Participatory Diversity
-* Deliberative Diversity
-* Random Walk
+* `Participatory Diversity <https://informfully.readthedocs.io/en/latest/participatory.html>`_
+* `Deliberative Diversity <https://informfully.readthedocs.io/en/latest/deliberative.html>`_
+* `Random Walk (with Popularity Discount) <https://informfully.readthedocs.io/en/latest/randomwalk.html>`_
+* `Random Walk (with Diversity Optimization) <https://informfully.readthedocs.io/en/latest/diversitywalk.html>`_
 
 Item Reranker
 -------------
