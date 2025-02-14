@@ -1,5 +1,5 @@
-Source Code Overview
-===================
+Code Overview
+=============
 
 The Informfully Platform combined both the app front end and website back end in one project.
 To get a better overview of how to write and extend this platform, we provide here a short project overview.
