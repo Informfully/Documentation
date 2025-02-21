@@ -4,14 +4,15 @@ Recommender System
 This documentation provides an outline and tutorial on how to use `Informfully Recommenders <https://github.com/Informfully/Recommenders>`_.
 We recommend you start getting familiar with the underlying data first.
 To do so, we prepared two overview pages.
-Please see the `collection overview <https://informfully.readthedocs.io/en/latest/compass.html>`_ for details on how to retrieve the relevant user/item IDs.
-The details on how to store items and their properties are documented in the `item overview <https://informfully.readthedocs.io/en/latest/items.html>`_.
+Please see the `article and item ID overview page <https://informfully.readthedocs.io/en/latest/compass.html>`_ for details on how to access and retrieve the relevant user/item IDs used in this tutorial.
+The IDs ted in the .
 
 .. note::
 
   This tutorial outlines the `Informfully Recommenders <https://github.com/Informfully/Recommenders>`_ repository. 
-  It can be used in combination with the Informfully platfrom or in a stand-alone component.
-  You can skip to the `relevant documentation <https://informfully.readthedocs.io/en/latest/recommendations.html>`_ on how to forward recommendation lists to the Informfully front end if you are using your own recommender system.
+  It can be used in combination with the Informfully platfrom or in a stand-alone fashion.
+  You can skip this introduction here for creating recommendations and go directly to the `item overview <https://informfully.readthedocs.io/en/latest/items.html>`_ to look at how entries must be stored.
+  Afterwards, see the `relevant documentation <https://informfully.readthedocs.io/en/latest/recommendations.html>`_ on how to forward your item lists to the Informfully front end if you are using your own recommender system.
 
 Pipeline Overview
 -----------------
@@ -25,8 +26,18 @@ Pipeline Overview
 * Post-processing Stage
 * Evaluation Stage
 
-Recommender Models
-------------------
+Recommender Algorithms
+----------------------
+
+The ``Political Diversity`` algorithm is based on user scores and article scores.
+The user score can be calculated from a questionnaire survey or based on the user's historical browsing data as adopted in this project, while the article score is calculated from the user scores of all its readers.
+At the same time, the algorithm also requires a distribution to describe the number of articles that the system should recommend for a certain user score. 
+
+The ``Exposure Diversity`` algorithm is based on the articles of the majority party and the minority party and the user's attributes.
+It requires the user to pre-configure the party attributes and the user's political type (a random assignment strategy is adopted in this project, that is, randomly assigning a political type to the user).
+The continuous exposure length of majority party articles and minority party articles, political articles and non-political articles is controlled by parameters to increase the diversity of recommendation results. 
+
+For more information on the algorithms, please have a look at their dedicated pages:
 
 * `Participatory Diversity <https://informfully.readthedocs.io/en/latest/participatory.html>`_
 * `Deliberative Diversity <https://informfully.readthedocs.io/en/latest/deliberative.html>`_

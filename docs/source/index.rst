@@ -70,12 +70,12 @@ This documentation provides you with all the information you need to successfull
    :maxdepth: 1
    :caption: Creating Recommendations
 
-   recommenders
-   items
    compass
+   items
+   recommenders
    recommendations
-   tutorial
    explanations
+   tutorial
 
 .. toctree::
    :maxdepth: 1
