@@ -25,6 +25,9 @@ Pipeline Overview
 * In-processing Stage
 * Post-processing Stage
 * Evaluation Stage
+* Savestate Manager
+
+Work in progres...
 
 Recommender Algorithms
 ----------------------
@@ -42,31 +45,32 @@ For more information on the algorithms, please have a look at their dedicated pa
 * `Participatory Diversity <https://informfully.readthedocs.io/en/latest/participatory.html>`_
 * `Deliberative Diversity <https://informfully.readthedocs.io/en/latest/deliberative.html>`_
 * `Random Walk (with Popularity Discount) <https://informfully.readthedocs.io/en/latest/randomwalk.html>`_
-* `Random Walk (with Diversity Optimization) <https://informfully.readthedocs.io/en/latest/diversitywalk.html>`_
+* `Diversity Random Walk (for Political News) <https://informfully.readthedocs.io/en/latest/diversitywalk.html>`_
 
-Item Reranker
--------------
+Item Re-ranker
+--------------
 
-* Static Re-ranking
-* Dynamic Re-ranking
+`Item re-ranker <https://informfully.readthedocs.io/en/latest/reranker.html>`_.
+
+Work in progress...
+
+Savestate Manager
+-----------------
+
+`Savestate manager <https://informfully.readthedocs.io/en/latest/manager.html>`_.
+
+Work in progress...
 
 Recommendation Lists
 --------------------
 
- `Recommendation lists <https://informfully.readthedocs.io/en/latest/recommendations.html>`_.
+`Recommendation lists <https://informfully.readthedocs.io/en/latest/recommendations.html>`_.
 
 Work in progress...
 
 Tutorial Notebook
 -----------------
 
- `Tutorial notebook <https://informfully.readthedocs.io/en/latest/tutorial.html>`_.
-
-Work in progress...
-
-User Explanations
----------------------------
-
- `User explanations <https://informfully.readthedocs.io/en/latest/explanations.html>`_.
+`Tutorial notebook <https://informfully.readthedocs.io/en/latest/tutorial.html>`_.
 
 Work in progress...
