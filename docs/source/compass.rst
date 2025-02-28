@@ -1,6 +1,7 @@
-Retrieving IDs
-==============
+Processing Recommendations
+==========================
 
+This page presents an introduction of how Informfully manages recommendations and how you can connect your external recommender system to the front end.
 The dababase used for Informfully is MongoDB.
 In this overview, we will use `MongoDB Compass <https://www.mongodb.com/products/tools/compass>`_ a free GUI to explore the database and its collections.
 MongoDB Compass allows you to query the back end.
@@ -11,6 +12,10 @@ Customization of recommendation list entries is done using three steps:
 * Create user account and retried thier IDs
 * Scrape/upload items to recommend and retrieve their IDs
 * Create item recommendaitons lists for users
+
+.. note::
+
+  If you want to use the built-in Informfully Recommenders, please visit `recommender system tutorial page <https://informfully.readthedocs.io/en/latest/recommenders.html>`_ instead.
 
 Retrieving User IDs
 -------------------
@@ -40,7 +45,7 @@ Make sure that both the back end as well as your recommender framework use the s
 
 .. note::
 
-  Please visit the `Item Entries <https://informfully.readthedocs.io/en/latest/items.html>`_ page to see how you can create custom entries.
+  Please visit the `Item Entries <https://informfully.readthedocs.io/en/latest/items.html>`_ page to see how Informfully stores recommendations.
   We provide an example entry of a news article.
   The collection, however, can accomodate any item and be configured to match your use case.
 
@@ -57,4 +62,4 @@ You can add entries 1) manually via MongoDB compass, 2) import them via the inte
 
 .. note::
 
-  Please visit the `Recommendation List <https://informfully.readthedocs.io/en/latest/recommendations.html>`_ page to see how you can create entries with item and user IDs.
+  Please visit the `Recommendation List <https://informfully.readthedocs.io/en/latest/recommendations.html>`_ page to see how you can create custom entries and forward recommendations of your external system.

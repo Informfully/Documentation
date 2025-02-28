@@ -1,18 +1,12 @@
 Recommender System
 ==================
 
-This documentation provides an outline and tutorial on how to use `Informfully Recommenders <https://github.com/Informfully/Recommenders>`_.
-We recommend you start getting familiar with the underlying data first.
-To do so, we prepared two overview pages.
-Please see the `article and item ID overview page <https://informfully.readthedocs.io/en/latest/compass.html>`_ for details on how to access and retrieve the relevant user/item IDs used in this tutorial.
-The IDs ted in the .
+This tutorial outlines the `Informfully Recommenders <https://github.com/Informfully/Recommenders>`_ repository. 
+It can be used in combination with the Informfully platfrom or in a stand-alone fashion.
 
 .. note::
 
-  This tutorial outlines the `Informfully Recommenders <https://github.com/Informfully/Recommenders>`_ repository. 
-  It can be used in combination with the Informfully platfrom or in a stand-alone fashion.
-  You can skip this introduction here for creating recommendations and go directly to the `item overview <https://informfully.readthedocs.io/en/latest/items.html>`_ to look at how entries must be stored.
-  Afterwards, see the `relevant documentation <https://informfully.readthedocs.io/en/latest/recommendations.html>`_ on how to forward your item lists to the Informfully front end if you are using your own recommender system.
+  If you want to use the built-in Informfully Recommenders, please visit this `tutorial page <https://informfully.readthedocs.io/en/latest/compass.html>`_ instead.
 
 Pipeline Overview
 -----------------
@@ -29,8 +23,30 @@ Pipeline Overview
 
 Work in progres...
 
-Recommender Algorithms
-----------------------
+1. Data Loading
+---------------
+
+`Data loading <https://informfully.readthedocs.io/en/latest/data.html>`_.
+
+Work in progress...
+
+
+2. Data Augmentation
+--------------
+
+`Data augmentation <https://informfully.readthedocs.io/en/latest/augmentation.html>`_.
+
+Work in progress...
+
+3. Data Splitting
+--------------
+
+`Data splitting <https://informfully.readthedocs.io/en/latest/splitting.html>`_.
+
+Work in progress...
+
+4. Models
+--------------------
 
 The ``Political Diversity`` algorithm is based on user scores and article scores.
 The user score can be calculated from a questionnaire survey or based on the user's historical browsing data as adopted in this project, while the article score is calculated from the user scores of all its readers.
@@ -42,35 +58,45 @@ The continuous exposure length of majority party articles and minority party art
 
 For more information on the algorithms, please have a look at their dedicated pages:
 
-* `Participatory Diversity <https://informfully.readthedocs.io/en/latest/participatory.html>`_
-* `Deliberative Diversity <https://informfully.readthedocs.io/en/latest/deliberative.html>`_
-* `Random Walk (with Popularity Discount) <https://informfully.readthedocs.io/en/latest/randomwalk.html>`_
-* `Diversity Random Walk (for Political News) <https://informfully.readthedocs.io/en/latest/diversitywalk.html>`_
+* `Participatory diversity <https://informfully.readthedocs.io/en/latest/participatory.html>`_
+* `Deliberative diversity <https://informfully.readthedocs.io/en/latest/deliberative.html>`_
+* `Random walk (with popularity discount) <https://informfully.readthedocs.io/en/latest/randomwalk.html>`_
+* `Diversity random walk (for political news) <https://informfully.readthedocs.io/en/latest/diversitywalk.html>`_
 
-Item Re-ranker
---------------
+Work in progress...
 
-`Item re-ranker <https://informfully.readthedocs.io/en/latest/reranker.html>`_.
+5. Re-rankers
+-------------
+
+`Re-rankers <https://informfully.readthedocs.io/en/latest/reranker.html>`_.
+
+Work in progress...
+
+6. User Simulator
+-----------------
+
+`User simulator <https://informfully.readthedocs.io/en/latest/simulator.html>`_.
+
+Work in progress...
+
+7. Metrics
+----------
+
+`Metrics <https://informfully.readthedocs.io/en/latest/metrics.html>`_.
+
+Work in progress...
+
+8. Experiment
+-------------
+
+`Experiment (tutorial notebook) <https://informfully.readthedocs.io/en/latest/tutorial.html>`_.
 
 Work in progress...
 
 Savestate Manager
 -----------------
 
-`Savestate manager <https://informfully.readthedocs.io/en/latest/manager.html>`_.
+* Storing results
+* Retrieving results
 
-Work in progress...
-
-Recommendation Lists
---------------------
-
-`Recommendation lists <https://informfully.readthedocs.io/en/latest/recommendations.html>`_.
-
-Work in progress...
-
-Tutorial Notebook
------------------
-
-`Tutorial notebook <https://informfully.readthedocs.io/en/latest/tutorial.html>`_.
-
-Work in progress...
+Work in progres...
