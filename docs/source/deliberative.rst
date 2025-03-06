@@ -9,7 +9,7 @@ For example, if the interval parameter is set to 3, when generating the recommen
 Model
 -----
 
-Work in progres...
+Work in progress...
 
 Example
 -------
