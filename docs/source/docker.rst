@@ -1,5 +1,5 @@
-Docker Setup
-============
+Docker Deployment
+=================
 
 This is the installation guide for Informfully with Docker containers for both the front end and back end.
 The following are instructions to set up Docker containers for Informfully on Windows 10 Home.
@@ -128,8 +128,6 @@ To create the Dockerfile, open a text editor such as Notepad on Windows, and typ
     RUN sudo chown `id -u` /data/db/
 
     CMD ["mongod"]
-
-Explanation of the code:
 
 * The first set of instructions takes the base image of phusion passenger from the Docker repository. This image is configured with Node.js (`more information here <https://github.com/phusion/passenger-docker>`_).
 * The next set of instructions are required to install the basic commands in order to download and configure the rest of the required software. Afterwards, MongoDB is installed.
