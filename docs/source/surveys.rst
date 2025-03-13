@@ -27,6 +27,13 @@ Similarly, there is no limit to how many pre-defined answers can be added to a q
 There are a range of different questions to choose from.
 Free text, replies to previous questions, etc. can all be selected.
 
+.. note::
+
+    When creating surveys, every question is added to an experiment-specific question pool.
+    This allows experimenters to reuse existing questions.
+    When users answer the survey questions, the back end will store their answer together with a copy of the question string as well as the question ID.
+    This allows experimenters to edit the question pool while still preserving the original question asked to the users when they want to evaluate the answers.
+
 .. image:: img/survey_screenshots/survey_1.jpg
    :width: 700
    :alt: Survey Questions
