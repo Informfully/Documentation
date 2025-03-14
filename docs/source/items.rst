@@ -89,6 +89,28 @@ In case of a multimedia item (podcast or video), a multimedia player will be loa
 
 The ``body`` consists of a list of elements.
 There are currently three types of elements that are supported:
+
 * ``text`` for unformatted text, 
 * ``subtitle`` for adding a new paragraph and subtitle to the text, and 
 * ``quote`` for an cursive, indent quote block.
+
+A sample `body`` element of an item looks like this:
+
+.. code-block:: json
+
+  "body": [
+    {
+      "type": "text",
+      "text": "This is the normal \"text\" option used to show text within the item view."
+        ...
+    },
+    {
+      "type": "subtitle",
+      "text": "This is the \"subtitle\" option that creates a new paragraph with a larger font size compared regular text."
+        ...
+    },
+        {
+      "type": "quote",
+      "text": "This is the \"quote\" option that creates an indented paragaph with the same font size as regular text."
+        ...
+  ]
