@@ -102,15 +102,14 @@ A sample `body`` element of an item looks like this:
     {
       "type": "text",
       "text": "This is the normal \"text\" option used to show text within the item view."
-        ...
     },
     {
       "type": "subtitle",
-      "text": "This is the \"subtitle\" option that creates a new paragraph with a larger font size compared regular text."
-        ...
+      "text": "This is the \"subtitle\" option that creates a new paragraphs with a larger font size compared regular text."
     },
-        {
+    {
       "type": "quote",
       "text": "This is the \"quote\" option that creates an indented paragaph with the same font size as regular text."
-        ...
+    }
   ]
+
