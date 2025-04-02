@@ -7,7 +7,15 @@ This algorithm takes these user and article scores, computing the Euclidean dist
 Model
 -----
 
-Work in progres...
+There are three main issues that need to be addresses.
+1) How to determine the normative distribution of news articles.
+2) How to quantify and discretize this distribution into a 1D list or 2D grid.
+3) How to translate the distribution into a matrix for a recommendation.
+
+The model can calculate recommendations on a group level, reducing the overall runtime as it generates candidate lists.
+This is possible because the political user score is the only attribute that is considered.
+And this attribute can be defined in such a way that users are in pre-defined bins.
+Hence, users in the same bin share the same score and should therefore receive the same recommendations.
 
 Example
 -------
