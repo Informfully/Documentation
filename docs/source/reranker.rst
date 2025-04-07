@@ -6,7 +6,10 @@ Item re-ranking is an optional stage that takes the candidate list (i.e., model 
 Dynamic Re-ranking
 ------------------
 
-Work in progres...
+* User Simulator
+* Recommendation logic
+
+Work in progress...
 
 Static Re-ranking
 -----------------
@@ -14,9 +17,4 @@ Static Re-ranking
 * Recency baseline
 * Pubularity baseline
 
-Work in progres...
-
-User Simulator
---------------
-
-Work in progres...
+Work in progress...
