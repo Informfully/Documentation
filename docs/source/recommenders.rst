@@ -11,12 +11,12 @@ It can be used in combination with the Informfully platfrom or in a stand-alone 
 Pipeline Overview
 -----------------
 
-* Pre-processing Stage
-* In-processing Stage
-* Post-processing Stage
-* Evaluation and Visualization Stage
+* Pre-processing Stage: ...
+* In-processing Stage: ...
+* Post-processing Stage: ...
+* Evaluation and Visualization Stage: ...
+* Save state manager: Results of any stage can be stored and loaded. This allows re-using existing data, e.g., for applying different re-rankers to one and the same candidate list.
 
-Work in progres...
 
 1. Pre-processing Stage
 -----------------------
@@ -73,7 +73,14 @@ Work in progress...
 
 Work in progress...
 
-`Metrics <https://informfully.readthedocs.io/en/latest/metrics.html>`_.
+`Evaluation metrics <https://informfully.readthedocs.io/en/latest/metrics.html>`_.
+
+Work in progress...
+
+`Item visualization <https://informfully.readthedocs.io/en/latest/recommendations.html>`_.
+
+5. Example notebook
+-------------------
 
 Work in progress...
 

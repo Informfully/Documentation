@@ -7,7 +7,7 @@ Dynamic Re-ranking
 ------------------
 
 * User Simulator
-* Recommendation logic
+* Recommendation Logic
 
 Work in progress...
 
