@@ -18,7 +18,7 @@ You can download `MongoDB Compass <https://www.mongodb.com/products/compass>`_ t
 If you are running Meteor locally, you can connect MongoDB Compass to the database by following the instructions in `Local Development <https://informfully.readthedocs.io/en/latest/development.html>`_.
 If Meteor has been deployed to production, take a look at `Website Deployment <https://informfully.readthedocs.io/en/latest/deployment.html>`_ to connect to a remote database.
 
-`List of Database Collections: <https://informfully.readthedocs.io/en/latest/database.html>`_
+`List of Database Collections <https://informfully.readthedocs.io/en/latest/database.html>`_
 
 Meteor Publications
 -------------------
@@ -27,10 +27,10 @@ The Meteor server shares its data with the client through ``publications``.
 The client can ``subscribe`` to a publication to get the necessary data and copy it into its own local Minimongo database.
 The local database is updated automatically, always reflecting the most current changes.
 
-The files for the Meteor Publications are in the folder ``imports/api/server/publications`` and are split into files according to the related collections in MongoDB.
+The files for the Meteor Publications are in the folder ``backend/imports/api/server/publications`` and are split into files according to the related collections in MongoDB.
 These functions define what data will be synchronized to the client when it subscribes to one of the publications.
 
-`List of Meteor Publications: <https://informfully.readthedocs.io/en/latest/publications.html>`_
+`List of Meteor Publications <https://informfully.readthedocs.io/en/latest/publications.html>`_
 
 Meteor Methods
 --------------
@@ -42,4 +42,4 @@ This means that the client will simulate the outcome and update its UI with its 
 The methods can be found in the folder ``imports/api/``.
 In this folder, all the Meteor methods are split into JavaScript files and are named after the collections in MongoDB they are related to.
 
-`List of Meteor Methods: <https://informfully.readthedocs.io/en/latest/methods.html>`_
+`List of Meteor Methods <https://informfully.readthedocs.io/en/latest/methods.html>`_
