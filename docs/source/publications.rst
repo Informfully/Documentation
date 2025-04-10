@@ -76,7 +76,6 @@ furtherRecommendedNewsArticles
 
 * Publishes news articles which have the same primaryCategory as the article with articleId
 * Publishes either articles from Recommendations collection (sorted according to prediction score) or from newsArticles collection (sorted according to datePublished)
-* Reactive only to changes in Reading List
 * Arguments:
 
   * limit: Number of articles that should be returned

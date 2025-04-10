@@ -51,22 +51,22 @@ The continuous exposure length of majority party articles and minority party art
 
 Work in progress...
 
-`Random walk (with popularity discount) <https://informfully.readthedocs.io/en/latest/randomwalk.html>`_
+`Random walk (with popularity discount for generic items) <https://informfully.readthedocs.io/en/latest/randomwalk.html>`_
 
 Work in progress...
 
-`Diversity random walk (for political news) <https://informfully.readthedocs.io/en/latest/diversitywalk.html>`_
+`Diversity random walk (with normative distribution for political news) <https://informfully.readthedocs.io/en/latest/diversitywalk.html>`_
 
 3. Post-processing Stage
 ------------------------
 
 Work in progress...
 
-`Re-rankers <https://informfully.readthedocs.io/en/latest/reranker.html>`_.
+`Static re-rankers <https://informfully.readthedocs.io/en/latest/reranker.html>`_.
 
 Work in progress...
 
-`User simulator <https://informfully.readthedocs.io/en/latest/simulator.html>`_.
+`Dynamic re-rankers <https://informfully.readthedocs.io/en/latest/dynreranker.html>`_.
 
 4. Evaluation and Visualization Stage
 -------------------------------------

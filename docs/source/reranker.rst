@@ -1,20 +1,19 @@
-Item Re-ranker
+Static Re-ranker
 ==============
 
-Item re-ranking is an optional stage that takes the candidate list (i.e., model output) as input.
+Static item re-ranking is an optional stage that takes the candidate list (i.e., model output) as input.
 
-Dynamic Re-ranking
-------------------
-
-* User Simulator
-* Recommendation Logic
+G-KL
+----
 
 Work in progress...
 
-Static Re-ranking
------------------
+PM-2
+----
 
-* Recency baseline
-* Pubularity baseline
+Work in progress...
+
+MMR
+----
 
 Work in progress...
