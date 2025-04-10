@@ -3,7 +3,6 @@ Meteor Publications
 
 See `Server Overview <https://informfully.readthedocs.io/en/latest/server.html>`_ for more information on the back end.
 
-
 articleLikes
 ------------
 

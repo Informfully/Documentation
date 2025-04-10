@@ -57,6 +57,7 @@ Work in progress...
 
 `Diversity random walk (with normative distribution for political news) <https://informfully.readthedocs.io/en/latest/diversitywalk.html>`_
 
+
 3. Post-processing Stage
 ------------------------
 
@@ -67,6 +68,7 @@ Work in progress...
 Work in progress...
 
 `Dynamic re-rankers <https://informfully.readthedocs.io/en/latest/dynreranker.html>`_.
+
 
 4. Evaluation and Visualization Stage
 -------------------------------------
@@ -79,7 +81,8 @@ Work in progress...
 
 `Item visualization <https://informfully.readthedocs.io/en/latest/recommendations.html>`_.
 
-5. Example notebook
+
+5. Example Notebook
 -------------------
 
 Work in progress...

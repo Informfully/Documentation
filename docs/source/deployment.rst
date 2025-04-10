@@ -114,7 +114,7 @@ The Administration Website can also be deployed using a generated Docker image.
 To do that, simply follow the steps in the `Docker Setup <https://informfully.readthedocs.io/en/latest/docker.html>`_ for loading the image to the server.
 
 Deploy Apps
--------------------------
+------------
 
 Please see the other instruction page for `App Deployment <https://informfully.readthedocs.io/en/latest/native.html>`_
 If you already have the apps up and running, go ahead and start your first `Use Experiment <https://informfully.readthedocs.io/en/latest/experiment.html>`_.
