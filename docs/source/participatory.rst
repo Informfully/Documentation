@@ -20,7 +20,7 @@ Hence, users in the same bin share the same score and should therefore receive t
 Example
 -------
 
-Work in progres...
+Work in progress...
 
 Source
 ------
