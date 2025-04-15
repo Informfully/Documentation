@@ -115,8 +115,6 @@ This documentation provides you with all the information you need to successfull
    methods
    publications
    database
-   extensions
-   faq
 
 Citation
 --------

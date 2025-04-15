@@ -74,6 +74,10 @@ Windows:
 
 The above example would cause the development server to listen on ``exp://my-custom-ip-address-or-hostname:19000``.
 
+Informfully currently provides native Android and iOS apps. 
+The Android APK can also be distributed outside Google Play.
+It can be installes on Windows 11 and MacOS (e.g., with thirs-party software like `BlueStacks<https://www.bluestacks.com/>`_)
+
 
 Next Step: Run the Code
 -------------------------
