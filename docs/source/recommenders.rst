@@ -33,9 +33,10 @@ Work in progress...
 2. In-processing Stage
 ----------------------
 
-Work in progress...
-
-`Data splitting <https://informfully.readthedocs.io/en/latest/splitting.html>`_.
+Informfully Recommenders offers three families of recommenders:
+1) normative recommenders,
+2) random walks, and
+3) neural models.
 
 The ``Participatory Diversity`` algorithm is based on user scores and article scores.
 The user score can be calculated from a questionnaire survey or based on the user's historical browsing data as adopted in this project, while the article score is calculated from the user scores of all its readers.
@@ -51,11 +52,15 @@ The continuous exposure length of majority party articles and minority party art
 
 Work in progress...
 
-`Random walk (with popularity discount for generic items) <https://informfully.readthedocs.io/en/latest/randomwalk.html>`_
+`Random walks (RP3Beta/RWE-D) <https://informfully.readthedocs.io/en/latest/randomwalk.html>`_
 
 Work in progress...
 
-`Diversity random walk (with normative distribution for political news) <https://informfully.readthedocs.io/en/latest/diversitywalk.html>`_
+`Diversity-driven random walk (D-RDW) <https://informfully.readthedocs.io/en/latest/diversitywalk.html>`_
+
+Work in progress...
+
+`Data splitting <https://informfully.readthedocs.io/en/latest/splitting.html>`_.
 
 
 3. Post-processing Stage
