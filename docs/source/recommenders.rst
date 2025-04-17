@@ -15,8 +15,7 @@ Pipeline Overview
 * In-processing Stage: ...
 * Post-processing Stage: ...
 * Evaluation and Visualization Stage: ...
-* Save state manager: Results of any stage can be stored and loaded. This allows re-using existing data, e.g., for applying different re-rankers to one and the same candidate list.
-
+* Save state manager: Results of any stage can be stored and loaded.This allows re-using existing data, e.g., for applying different re-rankers to one and the same candidate list.
 
 1. Pre-processing Stage
 -----------------------
@@ -28,7 +27,6 @@ Work in progress...
 Work in progress...
 
 `Data augmentation <https://informfully.readthedocs.io/en/latest/augmentation.html>`_.
-
 
 2. In-processing Stage
 ----------------------
@@ -52,7 +50,7 @@ The continuous exposure length of majority party articles and minority party art
 
 Work in progress...
 
-`Random walks (RP3Beta/RWE-D) <https://informfully.readthedocs.io/en/latest/randomwalk.html>`_
+`Random walks (RP3Beta and RWE-D) <https://informfully.readthedocs.io/en/latest/randomwalk.html>`_
 
 Work in progress...
 
@@ -61,7 +59,6 @@ Work in progress...
 Work in progress...
 
 `Data splitting <https://informfully.readthedocs.io/en/latest/splitting.html>`_.
-
 
 3. Post-processing Stage
 ------------------------
@@ -74,7 +71,6 @@ Work in progress...
 
 `Dynamic re-rankers <https://informfully.readthedocs.io/en/latest/dynreranker.html>`_.
 
-
 4. Evaluation and Visualization Stage
 -------------------------------------
 
@@ -85,7 +81,6 @@ Work in progress...
 Work in progress...
 
 `Item visualization <https://informfully.readthedocs.io/en/latest/recommendations.html>`_.
-
 
 5. Example Notebook
 -------------------

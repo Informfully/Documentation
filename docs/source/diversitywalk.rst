@@ -1,5 +1,5 @@
-Random Walk (News Articles)
-===========================
+Diversity-Driven Random Walk
+============================
 
 The Diversity-Driven Random Walk Model (D-RDW) model aims to generate diverse recommendations that align with user-specified target distributions across multiple diversity dimensions.
 
@@ -11,4 +11,4 @@ Work in progress...
 Example
 -------
 
-Work in progres...
+Work in progress...
