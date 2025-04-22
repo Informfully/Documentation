@@ -16,11 +16,23 @@ The model can calculate recommendations on a group level, reducing the overall r
 This is possible because the political user score is the only attribute that is considered.
 And this attribute can be defined in such a way that users are in pre-defined bins.
 Hence, users in the same bin share the same score and should therefore receive the same recommendations.
+It is up to researchers to define the distribution (e.g., users can only receive items from nearby bins in close proximity or on the opposite side of the spectrum).
 
-Example
--------
+Using PLD for offline testing requires addressing one critical issue:
+There are no users that can take a survey.
+When starting the offline evaluation, users are assigned political scores on the basis of the ration of political actors items in their history.
+To that end, we introduce an offline-only step for annotating political actors/parties in news articles.
+They are automatically counted across all reading histories.
+The subsequent logic of PLD remains the same:
+1) Baseline users read articles.
+2) New articles get assigned a score on the basis of the average political score of its readership.
+3) Users in the experimental group receive article recommendations based on the distance between their own political score and the score of the article.
 
-Work in progress...
+Description
+-----------
+
+Input: ...
+Output: ...
 
 Source
 ------
