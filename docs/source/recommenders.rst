@@ -17,6 +17,10 @@ Pipeline Overview
 * Evaluation and Visualization Stage: ...
 * Save state manager: Results of any stage can be stored and loaded.This allows re-using existing data, e.g., for applying different re-rankers to one and the same candidate list.
 
+Cornac-internal representations are used for the item pool, candidate list, and recommendation lists across stages.
+However, within stages, you can use raw IDs.
+This allows you to reference external sources, as you can directly refer to them via IDs you already know (i.e., before Cornac assigns them an internal one), e.g., to make API calls for pre-calculating embeddings.
+
 1. Pre-processing Stage
 -----------------------
 
