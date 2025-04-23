@@ -81,7 +81,7 @@ This documentation provides you with all the information you need to successfull
    :caption: Recommender System
    
    recommenders
-   data
+   loading
    augmentation
    splitting
    reranker

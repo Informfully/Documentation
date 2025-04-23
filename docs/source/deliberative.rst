@@ -6,15 +6,16 @@ It emphasizes party visibility, particularly of minority parties, to enhance pub
 In each news recommendation list, articles with majority and minority views are displayed in the order of the interval set by the user.
 For example, if the interval parameter is set to 3, when generating the recommendation list, the model will extract 3 articles with majority views, followed by 3 articles with minority views, and then repeat this operation until the recommendation list is filled.
 
-Model
------
+Description
+-----------
 
 Work in progress...
 
 Example
 -------
 
-Work in progress...
+Input: ...
+Output: ...
 
 Source
 ------
