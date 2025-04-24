@@ -6,15 +6,31 @@ It emphasizes party visibility, particularly of minority parties, to enhance pub
 In each news recommendation list, articles with majority and minority views are displayed in the order of the interval set by the user.
 For example, if the interval parameter is set to 3, when generating the recommendation list, the model will extract 3 articles with majority views, followed by 3 articles with minority views, and then repeat this operation until the recommendation list is filled.
 
-Description
------------
+Overview
+--------
 
-Work in progress...
+EPD requires an annotated set with political parties.
+At the beginning of an experiment, users are assigned to one of three conditions:
+1) exposed to news on majority parties, 
+2) exposed to minority party news, or 
+3) exposed to other political news.
 
-Example
--------
+Articles in the majority party news must mention at least one majority/governing party and it must not mention any minority or opposition party.
+Minority party news feature at least one minority/opposition party.
+(Majority and minority parties are determined with respect to the source of the news.)
+Other political news consists of articles on political topics, not mentioning any majority or minority parties (this also includes mentions of any foreign parties).
+The list size of EPD determined the number of recommended articles, with a $k$ value used for grouping and interleaving non-political articles.
+E.g., with a list size of $20$ and a $k$ value of $2$, users in the minority party condition receive two minority party articles, followed by two non-political articles.
+This is repeated until $20$ articles are added to the feed.
+The news supply to EPD assumes items are from the most recent day.
+Articles get shuffled before being added to a recommendation list.
+This is done to avoid any outlet-based clustering as articles are scraped one outlet at a time.
+
+Implementation
+--------------
 
 Input: ...
+
 Output: ...
 
 Source

@@ -4,8 +4,8 @@ Participatory Diversity
 ``Political Diversity`` is an algorithm that creates recommendation list by using political user scores and political article scores.
 This algorithm takes these user and article scores, computing the Euclidean distance to generate candidate items, and filters.
 
-Model
------
+Overview
+--------
 
 There are three main issues that need to be addresses.
 1) How to determine the normative distribution of news articles.
@@ -18,7 +18,13 @@ And this attribute can be defined in such a way that users are in pre-defined bi
 Hence, users in the same bin share the same score and should therefore receive the same recommendations.
 It is up to researchers to define the distribution (e.g., users can only receive items from nearby bins in close proximity or on the opposite side of the spectrum).
 
-Using PLD for offline testing requires addressing one critical issue:
+PLD is supposed to be primarily used in an online setting.
+In a first step, (baseline) users take a survey and are assigned a political score and read article.
+In a second step, each article gets assigned the average political score of its readership.
+(Both user scores and article scores are mapped into the same political space.)
+Finally, users in the experimental group get recommended items based on user-item distance.
+
+When re-usingsing PLD for offline testing requires addressing one critical issue:
 There are no users that can take a survey.
 When starting the offline evaluation, users are assigned political scores on the basis of the ration of political actors items in their history.
 To that end, we introduce an offline-only step for annotating political actors/parties in news articles.
@@ -28,10 +34,11 @@ The subsequent logic of PLD remains the same:
 2) New articles get assigned a score on the basis of the average political score of its readership.
 3) Users in the experimental group receive article recommendations based on the distance between their own political score and the score of the article.
 
-Description
------------
+Implementation
+--------------
 
 Input: ...
+
 Output: ...
 
 Source
