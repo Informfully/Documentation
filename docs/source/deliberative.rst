@@ -20,6 +20,7 @@ Minority party news feature at least one minority/opposition party.
 (Majority and minority parties are determined with respect to the source of the news.)
 Other political news consists of articles on political topics, not mentioning any majority or minority parties (this also includes mentions of any foreign parties).
 The list size of EPD determined the number of recommended articles, with a slice value used for grouping and interleaving non-political articles.
+
 E.g., with a list size of 20 and a slice value of 2, users in the minority party condition receive two minority party articles, followed by two non-political articles.
 This is repeated until 20 articles are added to the feed.
 The news supply to EPD assumes items are from the most recent day.
