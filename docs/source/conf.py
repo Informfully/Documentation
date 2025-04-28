@@ -3,11 +3,11 @@
 # -- Project information
 
 project = 'Informfully'
-copyright = '2024, University of Zurich'
+copyright = '2025, University of Zurich'
 author = 'Lucien Heitz'
 
-release = '4.1'
-version = '24.6.14'
+release = '4.2'
+version = '25.4.28'
 
 # -- General configuration
 
