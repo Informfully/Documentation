@@ -2,12 +2,12 @@
 
 # -- Project information
 
-project = 'Informfully'
+project = 'Informfully Documentation'
 copyright = '2025, University of Zurich'
 author = 'Lucien Heitz'
 
 release = '4.2'
-version = '25.4.28'
+version = '25.5.1'
 
 # -- General configuration
 
