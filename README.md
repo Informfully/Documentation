@@ -18,7 +18,6 @@ The documentation in this repository is the source for the online [Informfully d
 # Download the documentation
 git clone https://github.com/Informfully/Documentation.git
 ```
-
 ## Citation
 
 If you use any code or data of this repository in a scientific publication, we ask you to cite the following papers:
