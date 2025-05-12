@@ -36,7 +36,8 @@ Work in progress...
 2. In-processing Stage
 ----------------------
 
-Informfully Recommenders offers three families of recommenders:
+Informfully Recommenders is an extension of [Cornac](https://github.com/PreferredAI/cornac).
+It support all existing algorithms and offers three new families of recommenders:
 1) normative recommenders,
 2) random walks, and
 3) neural models.
@@ -76,12 +77,12 @@ Work in progress...
 
 `Dynamic re-rankers <https://informfully.readthedocs.io/en/latest/dynreranker.html>`_.
 
-4. Evaluation and Visualization Stage
+4. Evaluation Stage
 -------------------------------------
 
 Work in progress...
 
-`Evaluation metrics <https://informfully.readthedocs.io/en/latest/metrics.html>`_.
+`Metrics assessment <https://informfully.readthedocs.io/en/latest/metrics.html>`_.
 
 Work in progress...
 
