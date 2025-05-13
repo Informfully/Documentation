@@ -15,7 +15,7 @@ Pipeline Overview
 * In-processing Stage: ...
 * Post-processing Stage: ...
 * Evaluation and Visualization Stage: ...
-* Save state manager: Results of any stage can be stored and loaded. This allows re-using existing data, e.g., for applying different re-rankers to one and the same candidate list.
+* Save state manager: Results of any stage can be stored and loaded; this allows re-using existing data, e.g., for applying different re-rankers to one and the same candidate list.
 
 Each stage is a self-contained unit.
 Cornac-internal representations are used for the item pool, candidate list, and recommendation lists across these stages.
@@ -36,7 +36,7 @@ Work in progress...
 2. In-processing Stage
 ----------------------
 
-Informfully Recommenders is an extension of [Cornac](https://github.com/PreferredAI/cornac).
+Informfully Recommenders is an extension of `Cornac <https://github.com/PreferredAI/cornac>`_.
 It support all existing algorithms and offers three new families of recommenders:
 1) normative recommenders,
 2) random walks, and
