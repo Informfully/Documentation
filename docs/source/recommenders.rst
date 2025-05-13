@@ -6,7 +6,7 @@ It can be used in combination with the Informfully platfrom or in a stand-alone 
 
 .. note::
 
-  If you want to use the built-in Informfully Recommenders, please visit this `tutorial page <https://informfully.readthedocs.io/en/latest/compass.html>`_ instead.
+  If you want to use the built-in Informfully Recommenders, please visit the `Visualization Tutorial <https://informfully.readthedocs.io/en/latest/compass.html>`_ instead.
 
 Pipeline Overview
 -----------------
@@ -20,7 +20,8 @@ Pipeline Overview
 Each stage is a self-contained unit.
 Cornac-internal representations are used for the item pool, candidate list, and recommendation lists across these stages.
 Within stages, however, you can use raw IDs.
-This allows you to reference external sources, as you can directly refer to them via IDs you already know (e.g., to combine with external resources.).
+This allows you to reference external sources, as you can directly refer to them via IDs you already know (e.g., to combine with external resources).
+And you can look at the `Tutorial Notebook <https://informfully.readthedocs.io/en/latest/tutorial.html>`_ for hands-on examples of everything outlined here.
 
 1. Pre-processing Stage
 -----------------------
@@ -87,10 +88,3 @@ Work in progress...
 Work in progress...
 
 `Item visualization <https://informfully.readthedocs.io/en/latest/recommendations.html>`_.
-
-5. Example Notebook
--------------------
-
-Work in progress...
-
-`Experiment (tutorial notebook) <https://informfully.readthedocs.io/en/latest/tutorial.html>`_.
