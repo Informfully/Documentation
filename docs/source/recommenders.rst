@@ -28,7 +28,7 @@ And you can look at the `Tutorial Notebook <https://informfully.readthedocs.io/e
 
 Work in progress...
 
-`Data loading <https://informfully.readthedocs.io/en/latest/data.html>`_.
+`Data loading <https://informfully.readthedocs.io/en/latest/loading.html>`_.
 
 Work in progress...
 
@@ -76,7 +76,7 @@ Work in progress...
 
 Work in progress...
 
-`Dynamic re-rankers <https://informfully.readthedocs.io/en/latest/dynreranker.html>`_.
+`Dynamic re-rankers <https://informfully.readthedocs.io/en/latest/dynamicreranker.html>`_.
 
 4. Evaluation Stage
 -------------------------------------
