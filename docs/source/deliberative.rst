@@ -27,13 +27,6 @@ The news supply to EPD assumes items are from the most recent day.
 Articles get shuffled before being added to a recommendation list.
 This is done to avoid any outlet-based clustering as articles are scraped one outlet at a time.
 
-Implementation
---------------
-
-Input: ...
-
-Output: ...
-
 Source
 ------
 

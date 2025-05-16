@@ -34,13 +34,6 @@ The subsequent logic of PLD remains the same:
 2) New articles get assigned a score on the basis of the average political score of its readership.
 3) Users in the experimental group receive article recommendations based on the distance between their own political score and the score of the article.
 
-Implementation
---------------
-
-Input: ...
-
-Output: ...
-
 Source
 ------
 

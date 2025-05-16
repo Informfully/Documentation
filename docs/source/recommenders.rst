@@ -1,12 +1,11 @@
 Recommender System
 ==================
 
-This tutorial outlines the `Informfully Recommenders <https://github.com/Informfully/Recommenders>`_ repository. 
-It can be used in combination with the Informfully platfrom or in a stand-alone fashion.
-
-.. note::
-
-  If you want to use the built-in Informfully Recommenders, please visit the `Visualization Tutorial <https://informfully.readthedocs.io/en/latest/compass.html>`_ instead.
+This overview outlines the `Informfully Recommenders <https://github.com/Informfully/Recommenders>`_ repository. 
+It can be used in combination with the Informfully Research Platfrom or in a stand-alone fashion.
+Informfully Recommenders is an extension of `Cornac <https://github.com/PreferredAI/cornac>`_.
+And you can look at the `Tutorial Notebook <https://github.com/Informfully/Experiments/tree/main/experiments/tutorial>`_ for hands-on examples of everything outlined here.
+Once you have developed your final pipeline, you can connect it to your database and rung it with, e.g., cron jobs.
 
 Pipeline Overview
 -----------------
@@ -17,11 +16,9 @@ Pipeline Overview
 * Evaluation and Visualization Stage: ...
 * Save state manager: Results of any stage can be stored and loaded; this allows re-using existing data, e.g., for applying different re-rankers to one and the same candidate list.
 
-Each stage is a self-contained unit.
 Cornac-internal representations are used for the item pool, candidate list, and recommendation lists across these stages.
 Within stages, however, you can use raw IDs.
 This allows you to reference external sources, as you can directly refer to them via IDs you already know (e.g., to combine with external resources).
-And you can look at the `Tutorial Notebook <https://informfully.readthedocs.io/en/latest/tutorial.html>`_ for hands-on examples of everything outlined here.
 
 1. Pre-processing Stage
 -----------------------
@@ -37,7 +34,6 @@ Work in progress...
 2. In-processing Stage
 ----------------------
 
-Informfully Recommenders is an extension of `Cornac <https://github.com/PreferredAI/cornac>`_.
 It support all existing algorithms and offers three new families of recommenders:
 1) normative recommenders,
 2) random walks, and

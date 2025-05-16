@@ -1,7 +1,8 @@
 Data Splitting
 ==============
 
-Work in progres...
+Different data splitting techniques are offered to test how the distribution of certain characteristing across the training and test set impact the recommendation outcome.
+The following list presents an overview of the available options.
 
 .. note::
 
@@ -12,17 +13,22 @@ Work in progres...
 Attribute-based Sorting
 -----------------------
 
-Work in progres...
+This method can be used to see if having more complex articles or articles with higher sentiment scores in the training set would lead the algorithm to recommend more complex or emotionally charged articles to users who prefer simpler content (thereby increasing the diversity of news that these users engage with).
+For complexity and sentiment score, this metods splits the dataset and only selects high-scoring items for the training set. 
+(This option matches news IDs from user interactions with their corresponding sentiment scores, sorts these scores from highest to lowest, and then allocate a certain percentage of the articles with the highest sentiment scores to the test set; the remaining articles with higher scores are used for the training set.)
 
 Diversity-based Subset Construction
 -----------------------------------
 
-Work in progres...
+This method can be used to investigate whether selecting more diverse data for training and testing can lead to more accurate and/or diverse recommendation results.
+This can be used, e.g., to increas diversity levels specifically for users who have already a history of consuming more diverse news than the average.
+The goal of this splittng approach to see if training the algorithm on specific user segments increases or decreases the diversity across the final recommendation results.
 
 Attribute-based Stratified Splitting
 ------------------------------------
 
-Work in progres...
+Splitting by attributes allows to (re-)balance the test and training set according to custom ratios.
+It is offered for user rating, news category, text complexity, and article sentiment.
 
 Diversity-based Stratified Splitting
 ------------------------------------

@@ -87,7 +87,7 @@ This documentation provides you with all the information you need to successfull
    reranker
    dynamicreranker
    metrics
-   tutorial
+   resources
 
 .. toctree::
    :maxdepth: 1
