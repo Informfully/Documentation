@@ -1,5 +1,5 @@
 Recommender Pipeline
-==================
+====================
 
 This overview outlines the `Informfully Recommenders <https://github.com/Informfully/Recommenders>`_ repository. 
 It can be used in combination with the Informfully Research Platfrom or in a stand-alone fashion.
