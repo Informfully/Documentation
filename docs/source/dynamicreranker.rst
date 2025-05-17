@@ -1,8 +1,6 @@
 Dynamic Re-ranker
 =================
 
-Dynamic item re-ranking is an optional stage that takes the candidate list (i.e., model output) as input.
-
 .. note::
 
   This tutorial outlines part of the workflow for the `Informfully Recommenders <https://github.com/Informfully/Recommenders>`_ repository.

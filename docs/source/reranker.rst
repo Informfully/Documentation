@@ -1,8 +1,6 @@
 Static Re-ranker
 ==============
 
-Static item re-ranking is an optional stage that takes the candidate list (i.e., model output) as input.
-
 .. note::
 
   This tutorial outlines part of the workflow for the `Informfully Recommenders <https://github.com/Informfully/Recommenders>`_ repository.
@@ -12,14 +10,17 @@ Static item re-ranking is an optional stage that takes the candidate list (i.e.,
 G-KL
 ----
 
-Work in progress...
+* `Implementation <https://github.com/Informfully/Recommenders/blob/main/cornac/metrics/diversity.py>`_
+* `Paper <https://dl.acm.org/doi/abs/10.1145/3240323.3240372>`_
 
 PM-2
 ----
 
-Work in progress...
+* `Implementation <https://github.com/Informfully/Recommenders/tree/main/cornac/rerankers/pm2>`_
+* `Paper <https://dl.acm.org/doi/abs/10.1145/2348283.2348296>`_
 
 MMR
 ----
 
-Work in progress...
+* `Implementation <https://github.com/Informfully/Recommenders/tree/main/cornac/rerankers/mmr>`_
+* `Paper <https://dl.acm.org/doi/pdf/10.1145/290941.291025>`_

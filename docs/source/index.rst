@@ -95,8 +95,9 @@ This documentation provides you with all the information you need to successfull
    
    participatory
    deliberative
-   randomwalk
    drdw
+   randomwalk
+   neural
 
 .. toctree::
    :maxdepth: 1

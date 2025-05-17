@@ -1,8 +1,6 @@
 Diiversity Metrics
 ==================
 
-The framework adds support for two new types of diversity.
-
 .. note::
 
   This tutorial outlines part of the workflow for the `Informfully Recommenders <https://github.com/Informfully/Recommenders>`_ repository.
@@ -13,9 +11,12 @@ The framework adds support for two new types of diversity.
 Traditional Diversity
 ---------------------
 
-Work in progress...
+* `Implementation <https://github.com/Informfully/Recommenders/blob/main/cornac/metrics/diversity.py>`_
+* `Paper <https://link.springer.com/chapter/10.1007/978-1-0716-2197-4_16>`_ (Gini)
+* `Paper <https://api.semanticscholar.org/CorpusID:11075976>`_ (ILD)
 
 Normative Diversity
 -------------------
 
-Work in progres...
+* `Implementation <https://github.com/Informfully/Recommenders/blob/main/cornac/metrics/diversity.py>`_
+* `Paper <https://dl.acm.org/doi/abs/10.1145/3523227.3546780>`_
