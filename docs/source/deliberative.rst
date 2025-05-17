@@ -10,6 +10,8 @@ The ``Deliberative Diversity`` algorithm is based on the articles of the majorit
 It requires the user to pre-configure the party attributes and the user's political type (a random assignment strategy is adopted in this project, that is, randomly assigning a political type to the user).
 The continuous exposure length of majority party articles and minority party articles, political articles and non-political articles is controlled by parameters to increase the diversity of recommendation results.
 
+For the code, please see the `EPD implementation <https://github.com/Informfully/Recommenders/tree/main/cornac/models/epd>`_ in the repository.
+
 Overview
 --------
 

@@ -8,6 +8,8 @@ The ``Participatory Diversity`` algorithm is based on user scores and article sc
 The user score can be calculated from a questionnaire survey or based on the user's historical browsing data as adopted in this project, while the article score is calculated from the user scores of all its readers.
 At the same time, the algorithm also requires a distribution to describe the number of articles that the system should recommend for a certain user score.
 
+For the code, please see the `PLD implementation <https://github.com/Informfully/Recommenders/tree/main/cornac/models/pld>`_ in the repository.
+
 Overview
 --------
 
