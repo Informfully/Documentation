@@ -6,14 +6,18 @@ It emphasizes party visibility, particularly of minority parties, to enhance pub
 In each news recommendation list, articles with majority and minority views are displayed in the order of the interval set by the user.
 For example, if the interval parameter is set to 3, when generating the recommendation list, the model will extract 3 articles with majority views, followed by 3 articles with minority views, and then repeat this operation until the recommendation list is filled.
 
+The ``Deliberative Diversity`` algorithm is based on the articles of the majority party and the minority party and the user's attributes.
+It requires the user to pre-configure the party attributes and the user's political type (a random assignment strategy is adopted in this project, that is, randomly assigning a political type to the user).
+The continuous exposure length of majority party articles and minority party articles, political articles and non-political articles is controlled by parameters to increase the diversity of recommendation results.
+
 Overview
 --------
 
 EPD requires an annotated set with political parties.
 At the beginning of an experiment, users are assigned to one of three conditions:
-1) exposed to news on majority parties, 
-2) exposed to minority party news, or 
-3) exposed to other political news.
+1. exposed to news on majority parties, 
+2. exposed to minority party news, or 
+3. exposed to other political news.
 
 Articles in the majority party news must mention at least one majority/governing party and it must not mention any minority or opposition party.
 Minority party news feature at least one minority/opposition party.

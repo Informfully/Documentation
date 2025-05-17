@@ -4,13 +4,17 @@ Participatory Diversity
 ``Political Diversity`` is an algorithm that creates recommendation list by using political user scores and political article scores.
 This algorithm takes these user and article scores, computing the Euclidean distance to generate candidate items, and filters.
 
+The ``Participatory Diversity`` algorithm is based on user scores and article scores.
+The user score can be calculated from a questionnaire survey or based on the user's historical browsing data as adopted in this project, while the article score is calculated from the user scores of all its readers.
+At the same time, the algorithm also requires a distribution to describe the number of articles that the system should recommend for a certain user score.
+
 Overview
 --------
 
 There are three main issues that need to be addresses.
-1) How to determine the normative distribution of news articles.
-2) How to quantify and discretize this distribution into a 1D list or 2D grid.
-3) How to translate the distribution into a matrix for a recommendation.
+1. How to determine the normative distribution of news articles.
+2. How to quantify and discretize this distribution into a 1D list or 2D grid.
+3. How to translate the distribution into a matrix for a recommendation.
 
 The model can calculate recommendations on a group level, reducing the overall runtime as it generates candidate lists.
 This is possible because the political user score is the only attribute that is considered.
@@ -30,9 +34,9 @@ When starting the offline evaluation, users are assigned political scores on the
 To that end, we introduce an offline-only step for annotating political actors/parties in news articles.
 They are automatically counted across all reading histories.
 The subsequent logic of PLD remains the same:
-1) Baseline users read articles.
-2) New articles get assigned a score on the basis of the average political score of its readership.
-3) Users in the experimental group receive article recommendations based on the distance between their own political score and the score of the article.
+1. Baseline users read articles.
+2. New articles get assigned a score on the basis of the average political score of its readership.
+3. Users in the experimental group receive article recommendations based on the distance between their own political score and the score of the article.
 
 Source
 ------
