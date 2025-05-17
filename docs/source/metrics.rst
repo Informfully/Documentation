@@ -8,15 +8,20 @@ Diiversity Metrics
   And you can look at the `Tutorial Notebook <https://github.com/Informfully/Experiments/tree/main/experiments/tutorial>`_ for hands-on examples of everything outlined here.
 
 
-Traditional Diversity
----------------------
+Gini Coefficient
+----------------
 
 * `Implementation <https://github.com/Informfully/Recommenders/blob/main/cornac/metrics/diversity.py>`_
-* `Paper <https://link.springer.com/chapter/10.1007/978-1-0716-2197-4_16>`_ (Gini)
-* `Paper <https://api.semanticscholar.org/CorpusID:11075976>`_ (ILD)
+* `Paper <https://api.semanticscholar.org/CorpusID:11075976>`_
 
-Normative Diversity
--------------------
+Intra-list Distance
+--------------------
+
+* `Implementation <https://github.com/Informfully/Recommenders/blob/main/cornac/metrics/diversity.py>`_
+* `Paper <https://api.semanticscholar.org/CorpusID:11075976>`_
+
+RADio Divergence
+----------------
 
 * `Implementation <https://github.com/Informfully/Recommenders/blob/main/cornac/metrics/diversity.py>`_
 * `Paper <https://dl.acm.org/doi/abs/10.1145/3523227.3546780>`_

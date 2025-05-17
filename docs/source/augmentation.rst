@@ -1,7 +1,7 @@
 Data Augmentation
 =================
 
-Work in progres...
+For the code, please see the `augmentation filder <https://github.com/Informfully/Recommenders/tree/main/cornac/augmentation>`_ in the repository.
 
 .. note::
 
