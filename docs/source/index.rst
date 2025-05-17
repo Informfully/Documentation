@@ -81,13 +81,11 @@ This documentation provides you with all the information you need to successfull
    :caption: Recommender System
    
    recommenders
-   loading
    augmentation
    splitting
    reranker
    dynamicreranker
    metrics
-   resources
 
 .. toctree::
    :maxdepth: 1

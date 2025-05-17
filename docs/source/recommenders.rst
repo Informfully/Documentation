@@ -15,9 +15,6 @@ It includes the four dedicated stages for pre-processing, in-processing, post-pr
 In addition to that, it features a save state manager where results of any stage can be stored and loaded (this allows re-using existing data, e.g., for applying different re-rankers to one and the same candidate list).
 Please find below an outline of the individual components and a link to their dedicated pages to provide additional information.
 
-Resource Overview
-------------------
-
 * `Data augmentation <https://informfully.readthedocs.io/en/latest/augmentation.html>`_
 * `Data splitting <https://informfully.readthedocs.io/en/latest/splitting.html>`_ 
 * `Participatory diversity <https://informfully.readthedocs.io/en/latest/participatory.html>`_

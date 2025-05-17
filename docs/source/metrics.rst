@@ -1,5 +1,5 @@
-Diiversity Metrics
-==================
+Diversity Metrics
+=================
 
 .. note::
 
