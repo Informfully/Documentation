@@ -18,14 +18,15 @@ Please find below an outline of the individual components and a link to their de
 1. Pre-processing Stage
 -----------------------
 
-* `Data loading <https://informfully.readthedocs.io/en/latest/loading.html>`_.
-* `Data augmentation <https://informfully.readthedocs.io/en/latest/augmentation.html>`_.
+* `Data loading <https://informfully.readthedocs.io/en/latest/loading.html>`_
+* `Data augmentation <https://informfully.readthedocs.io/en/latest/augmentation.html>`_
 
 2. In-processing Stage
 ----------------------
 
 * `Data splitting <https://informfully.readthedocs.io/en/latest/splitting.html>`_ 
 * Model Selection
+
   * `Participatory diversity <https://informfully.readthedocs.io/en/latest/participatory.html>`_
   * `Deliberative diversity <https://informfully.readthedocs.io/en/latest/deliberative.html>`_
   * `Random walks (RP3Beta and RWE-D) <https://informfully.readthedocs.io/en/latest/randomwalk.html>`_
@@ -35,11 +36,11 @@ Please find below an outline of the individual components and a link to their de
 3. Post-processing Stage
 ------------------------
 
-* `Static re-rankers <https://informfully.readthedocs.io/en/latest/reranker.html>`_.
-* `Dynamic re-rankers <https://informfully.readthedocs.io/en/latest/dynamicreranker.html>`_.
+* `Static re-rankers <https://informfully.readthedocs.io/en/latest/reranker.html>`_
+* `Dynamic re-rankers <https://informfully.readthedocs.io/en/latest/dynamicreranker.html>`_
 
 4. Evaluation Stage
 -------------------------------------
 
-* `Metrics assessment <https://informfully.readthedocs.io/en/latest/metrics.html>`_.
-* `Item visualization <https://informfully.readthedocs.io/en/latest/recommendations.html>`_.
+* `Metrics assessment <https://informfully.readthedocs.io/en/latest/metrics.html>`_
+* `Item visualization <https://informfully.readthedocs.io/en/latest/recommendations.html>`_
