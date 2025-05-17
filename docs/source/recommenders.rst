@@ -7,6 +7,10 @@ Informfully Recommenders is an extension of `Cornac <https://github.com/Preferre
 And you can look at the `Tutorial Notebook <https://github.com/Informfully/Experiments/tree/main/experiments/tutorial>`_ for hands-on examples of everything outlined here.
 Once you have developed your final pipeline, you can connect it to your database and rung it with, e.g., cron jobs.
 
+.. image:: assets/extension_overview.png
+   :width: 700
+   :alt: Overview of the extension stages
+
 * Pre-processing Stage: ...
 * In-processing Stage: ...
 * Post-processing Stage: ...
