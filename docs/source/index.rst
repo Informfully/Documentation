@@ -96,7 +96,7 @@ This documentation provides you with all the information you need to successfull
    participatory
    deliberative
    randomwalk
-   diversitywalk
+   drdw
 
 .. toctree::
    :maxdepth: 1

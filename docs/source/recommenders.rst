@@ -1,4 +1,4 @@
-Recommender System
+Recommender Pipeline
 ==================
 
 This overview outlines the `Informfully Recommenders <https://github.com/Informfully/Recommenders>`_ repository. 
@@ -6,9 +6,6 @@ It can be used in combination with the Informfully Research Platfrom or in a sta
 Informfully Recommenders is an extension of `Cornac <https://github.com/PreferredAI/cornac>`_.
 And you can look at the `Tutorial Notebook <https://github.com/Informfully/Experiments/tree/main/experiments/tutorial>`_ for hands-on examples of everything outlined here.
 Once you have developed your final pipeline, you can connect it to your database and rung it with, e.g., cron jobs.
-
-Pipeline Overview
------------------
 
 * Pre-processing Stage: ...
 * In-processing Stage: ...
