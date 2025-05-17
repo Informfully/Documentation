@@ -19,10 +19,8 @@ Please find below an outline of the individual components and a link to their de
 * `Data splitting <https://informfully.readthedocs.io/en/latest/splitting.html>`_ 
 * `Participatory diversity <https://informfully.readthedocs.io/en/latest/participatory.html>`_
 * `Deliberative diversity <https://informfully.readthedocs.io/en/latest/deliberative.html>`_
-* `Random walks (RP3Beta and RWE-D) <https://informfully.readthedocs.io/en/latest/randomwalk.html>`_
-* `Diversity-driven random walk (D-RDW) <https://informfully.readthedocs.io/en/latest/drdw.html>`_
+* `Random walks <https://informfully.readthedocs.io/en/latest/randomwalk.html>`_
 * `Neural baselines <https://informfully.readthedocs.io/en/latest/neural.html>`_
-* `Static re-rankers <https://informfully.readthedocs.io/en/latest/reranker.html>`_
-* `Dynamic re-rankers <https://informfully.readthedocs.io/en/latest/dynamicreranker.html>`_
+* `Re-rankers <https://informfully.readthedocs.io/en/latest/reranker.html>`_
 * `Metrics assessment <https://informfully.readthedocs.io/en/latest/metrics.html>`_
 * `Item visualization <https://informfully.readthedocs.io/en/latest/recommendations.html>`_
