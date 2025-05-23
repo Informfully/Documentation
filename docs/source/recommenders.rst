@@ -13,14 +13,14 @@ And you can look at the `Tutorial Notebook <https://github.com/Informfully/Exper
 The diagram above shows the extendedn framework Informfully Recommenders provides.
 It includes the four dedicated stages for pre-processing, in-processing, post-processing, and evaluation.
 In addition to that, it features a save state manager where results of any stage can be stored and loaded (this allows re-using existing data, e.g., for applying different re-rankers to one and the same candidate list).
-Please find below an outline of the individual components and a link to their dedicated pages to provide additional information.
+Please find below an outline of the individual components and a link to their dedicated wiki pages for more information.
 
-* `Data augmentation <https://informfully.readthedocs.io/en/latest/augmentation.html>`_
-* `Data splitting <https://informfully.readthedocs.io/en/latest/splitting.html>`_ 
-* `Participatory diversity <https://informfully.readthedocs.io/en/latest/participatory.html>`_
-* `Deliberative diversity <https://informfully.readthedocs.io/en/latest/deliberative.html>`_
-* `Random walks <https://informfully.readthedocs.io/en/latest/randomwalk.html>`_
-* `Neural baselines <https://informfully.readthedocs.io/en/latest/neural.html>`_
+* `Data Augmentation <https://informfully.readthedocs.io/en/latest/augmentation.html>`_
+* `Data Splitting <https://informfully.readthedocs.io/en/latest/splitting.html>`_ 
+* `Models - Participatory Diversity <https://informfully.readthedocs.io/en/latest/participatory.html>`_
+* `Models - Deliberative Diversity <https://informfully.readthedocs.io/en/latest/deliberative.html>`_
+* `Models - Random Walks <https://informfully.readthedocs.io/en/latest/randomwalk.html>`_
+* `Models - Neural Baselines <https://informfully.readthedocs.io/en/latest/neural.html>`_
 * `Re-rankers <https://informfully.readthedocs.io/en/latest/reranker.html>`_
-* `Metrics assessment <https://informfully.readthedocs.io/en/latest/metrics.html>`_
-* `Item visualization <https://informfully.readthedocs.io/en/latest/recommendations.html>`_
+* `Metrics Assessment <https://informfully.readthedocs.io/en/latest/metrics.html>`_
+* `Item Visualization <https://informfully.readthedocs.io/en/latest/recommendations.html>`_
