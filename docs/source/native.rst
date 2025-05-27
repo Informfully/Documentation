@@ -26,7 +26,7 @@ Environment Setup
 ----------------
 
 In order to build a release of the app, this tutorial assumes that you have already completed the previous steps.
-If not, make sure to install everything listes in the `Installation Instructions <https://informfully.readthedocs.io/en/latest/install.html>`_.
+If not, make sure to install everything listed in the `Installation Instructions <https://informfully.readthedocs.io/en/latest/install.html>`_.
 
 You should only need to update the global installation of ``create-react-native-app`` very rarely, ideally never.
 Upgrading to a new version of React Native requires updating the ``react-native``, ``react``, and ``expo`` package versions.
@@ -57,7 +57,7 @@ Install the ``exp`` command-line tool and run the publish command:
 
 When it comes to building an Expo stand-alone app, you can also use a service like `Expo's standalone builds <https://docs.expo.io/versions/latest/guides/building-standalone-apps.html>`_ if you want to get an IPA/APK for distribution without having to build the native code yourself.
 
-And if you want to build and deploy your app yourself, you wil need to eject from CRNA and use Xcode and Android Studio.
+And if you want to build and deploy your app yourself, you will need to eject from CRNA and use Xcode and Android Studio.
 This is usually as simple as running ``npm run eject`` in your project, which will walk you through the process.
 Make sure to install ``react-native-cli`` and follow the `native code getting started guide for React Native <https://reactnative.dev/docs/getting-started>`_.
 
@@ -72,7 +72,7 @@ Helper Scripts
 --------------
 
 If Yarn was installed when the project was initialized, then dependencies will have been installed via Yarn, and you should probably use it to run these commands as well.
-Unlike dependency installation, command running syntax is identical for Yarn and NPM at the time of this writing.
+Unlike dependency installation, the command running syntax is identical for Yarn and NPM at the time of this writing.
 
 .. code-block:: console
 
