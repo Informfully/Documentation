@@ -16,7 +16,7 @@ Automatic Deployment
 
 After setting up and testing your instance of Informfully, you are ready to deploy your solution.
 For your convenience, we have created a script that automatically deploys the back end to any local or cloud server.
-Navigate to the main directory of your codebase end execute the following script:
+Navigate to the main directory of your codebase and execute the following script:
 
 .. code-block:: console
 
@@ -28,7 +28,7 @@ You find the shell script ``build.sh`` in the back end folder (`shell script loc
 Before the script can be used, the variables in the file ``.snippets.sh`` have to be set (`configuration file located here <https://github.com/Informfully/Platform/blob/main/backend/build.sh>`_).
 
 **.snippets.sh** This is the configuration file.
-In this file we store all variables used for deployment, such as the app user,
+In this file, we store all variables used for deployment, such as the app user,
 the temporary directory, the app directory, etc.
 
 **build.sh** This script builds the application and copies the bundle to the server. It also performs the tasks of extracting and
