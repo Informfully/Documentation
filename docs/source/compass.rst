@@ -1,7 +1,7 @@
 Processing Recommendations
 ==========================
 
-This page presents an introduction of how Informfully manages recommendations and how you can connect your external recommender system to the front end.
+This page presents an introduction to how Informfully manages recommendations and how you can connect your external recommender system to the front end.
 The dababase used for Informfully is MongoDB.
 In this overview, we will use `MongoDB Compass <https://www.mongodb.com/products/tools/compass>`_ a free GUI to explore the database and its collections.
 MongoDB Compass allows you to query the back end.
@@ -9,13 +9,13 @@ MongoDB Compass allows you to query the back end.
 In order to customize the recommendations shown to users, you need to edit the following collections: ``users``, ``items``, and ``recommendations`` as shown below.
 
 Customization of recommendation list entries is done using three steps:
-* Create user account and retried thier IDs
+* Create user accounts and retrieve their IDs
 * Scrape/upload items to recommend and retrieve their IDs
-* Create item recommendaitons lists for users
+* Create item recommendation lists for users
 
 .. note::
 
-  If you want to use the built-in Informfully Recommenders, please visit `recommender system tutorial page <https://informfully.readthedocs.io/en/latest/recommenders.html>`_ instead.
+  If you want to use the built-in Informfully Recommenders, please visit the `recommender system tutorial page <https://informfully.readthedocs.io/en/latest/recommenders.html>`_ instead.
 
 Retrieving User IDs
 -------------------
@@ -25,7 +25,7 @@ Retrieving User IDs
    :alt: Home screen
 
 ``users`` collection:
-The first step of creating recommendation requires you to extract User IDs.
+The first step of creating a recommendation requires you to extract User IDs.
 In the user collection, you can filter by e-mail address or creation date.
 This allows you to retrieve the ObjectIDs of the users you have created on the `website earlier <https://informfully.readthedocs.io/en/latest/items.html>`_.
 Export the users and save the IDs.
@@ -47,7 +47,7 @@ Make sure that both the back end as well as your recommender framework use the s
 
   Please visit the `Item Entries <https://informfully.readthedocs.io/en/latest/items.html>`_ page to see how Informfully stores recommendations.
   We provide an example entry of a news article.
-  The collection, however, can accomodate any item and be configured to match your use case.
+  The collection, however, can accommodate any item and be configured to match your use case.
 
 Creating Recommendation Lists
 -----------------------------
@@ -58,7 +58,7 @@ Creating Recommendation Lists
 
 ``recommendationLists`` collection:
 The last step in creating custom recommendations is to bring together user IDs and item IDs.
-You can add entries 1) manually via MongoDB compass, 2) import them via the interface, or 3) add them using a script).
+You can add entries 1) manually via MongoDB Compass, 2) import them via the interface, or 3) add them using a script.
 
 .. note::
 
