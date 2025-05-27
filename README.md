@@ -20,7 +20,7 @@ git clone https://github.com/Informfully/Documentation.git
 ```
 ## Citation
 
-If you use any code or data of this repository in a scientific publication, we ask you to cite the following papers:
+If you use any code or data from this repository in a scientific publication, we ask you to cite the following papers:
 
 <!--Update once the final version of the paper has been published.-->
 
@@ -65,9 +65,9 @@ If you use any code or data of this repository in a scientific publication, we a
 
 ## Contributing
 
-Your are welcome to contribute to the Informfully ecosystem and become a part of our community. Feel free to:
+You are welcome to contribute to the Informfully ecosystem and become a part of our community. Feel free to:
   - fork any of the [Informfully repositories](https://github.com/Informfully)
-  - join and write on the [dicussion board](https://github.com/orgs/Informfully/discussions)
+  - join and write on the [discussion board](https://github.com/orgs/Informfully/discussions)
   - make changes and create pull requests
 
 Please post your feature requests and bug reports in our [GitHub issues](https://github.com/Informfully/Documentation/issues) section.
