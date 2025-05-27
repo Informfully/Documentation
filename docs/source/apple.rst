@@ -8,7 +8,7 @@ Afterwards, make sure to change the ``SERVER`` constant in ``App.js`` (located `
 Requirements
 ------------
 
-* Apple Developer Account and Apple device with Xcode
+* Apple Developer Account and an Apple device with Xcode
 * iPhone distribution certificate
 
 Building the App
