@@ -1,12 +1,12 @@
 Data Augmentation
 =================
 
-For the code, please see the `augmentation filder <https://github.com/Informfully/Recommenders/tree/main/cornac/augmentation>`_ in the repository.
+For the code, please see the `augmentation folder <https://github.com/Informfully/Recommenders/tree/main/cornac/augmentation>`_ in the repository.
 
 .. note::
 
   This tutorial outlines part of the workflow for the `Informfully Recommenders <https://github.com/Informfully/Recommenders>`_ repository.
-  The `Recommenders Pipeline <https://informfully.readthedocs.io/en/latest/recommenders.html>`_ provides and overview of all components.
+  The `Recommenders Pipeline <https://informfully.readthedocs.io/en/latest/recommenders.html>`_ provides an overview of all components.
   And you can look at the `Tutorial Notebook <https://github.com/Informfully/Experiments/tree/main/experiments/tutorial>`_ for hands-on examples of everything outlined here.
 
 Sentiment Analysis
@@ -26,7 +26,7 @@ Given the item ID, item text, item language, and the type of entities, named ent
 Users can specify the type of entities to extract, such as person, event, or location (spaCy, a Python NLP library, will extract the named entities from the given text).
 For English and Chinese datasets, entities can include: 'CARDINAL', 'DATE', 'EVENT', 'FAC', 'GPE', 'LANGUAGE', 'LAW', 'LOC', 'MONEY', 'NORP', 'ORDINAL', 'ORG', 'PERCENT', 'PERSON', 'PRODUCT', 'QUANTITY', 'TIME', and 'WORK_OF_ART'.
 For other datasets, entities can include: 'LOC', 'MISC', 'ORG', and 'PER'.
-Once entities are extracted, the function clusters similar named entities using the Louvain community detection algorithm and computes their frequency.
+Once entities are extracted, the function clusters similarly named entities using the Louvain community detection algorithm and computes their frequency.
 
 Political Actors
 ----------------
@@ -45,7 +45,7 @@ For example, the maximum possible readability score is 121.22 for an English tex
 Event Clusters
 --------------
 
-Event or story clusters is a feature used to assess fragmentation.
+Event or story clusters are a feature used to assess fragmentation.
 The story chain method groups articles reporting on the same news event into clusters, rather than broadly categorizing them by topic, which is a typical limitation of conventional clustering approaches.
 The method first transforms each article's text into a TF-IDF vector, capturing the unique relevance of words within the article.
 Next, it calculates the cosine similarity between articles within a 3-day time window, where articles with similar content are more likely to be related to the same news event.
