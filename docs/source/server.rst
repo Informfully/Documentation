@@ -2,12 +2,12 @@ Server Overview
 ===============
 
 The Informfully back end uses `Meteor <https://www.meteor.com/>`_.
-Meteor connects to clients using a web socket protocol, which is a full-duplex communication protocol that closes only once a connection state has died.
+Meteor connects to clients using a WebSocket protocol, which is a full-duplex communication protocol that closes only once the connection dies.
 That is, web socket connections are bidirectional and are kept open even after the response to a request is received by the client.
-The benefit of this is that after successfully connecting to a client, the server can “push” data to the client whereas over traditional protocols (HTTP), a connection to a client is closed once the response from the server is received.
+The benefit of this is that after successfully connecting to a client, the server can “push” data to the client, whereas over traditional protocols (HTTP), a connection to a client is closed once the response from the server is received.
 A traditional client receives data updates by re-requesting the same resources.
 
-For time-sensitive applications, this translates to requesting the same resources from a server in very short time intervals (polling) which unnecessarily increases the load on a server.
+For time-sensitive applications, this translates to requesting the same resources from a server in very short time intervals (polling), which unnecessarily increases the load on a server.
 It is encouraged to check out the Meteor documentation referenced below for more information.
 
 Database Collections
@@ -37,7 +37,7 @@ Meteor Methods
 
 Meteor ``methods`` are functions to call when modifying data. It is similar to POST requests with REST APIs.
 These methods are also available to the client as stub functions.
-This means that the client will simulate the outcome and update its UI with its local Minimongo database before a confirmation from the server (more info `here <https://docs.meteor.com/api/methods.html>`_).
+This means that the client will simulate the outcome and update its UI with its local Minimongo database before a confirmation from the server (more infos `here <https://docs.meteor.com/api/methods.html>`_).
 
 The methods can be found in the folder ``imports/api/``.
 In this folder, all the Meteor methods are split into JavaScript files and are named after the collections in MongoDB they are related to.
