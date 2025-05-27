@@ -3,7 +3,7 @@ Resource Overview
 
 To run Informfully Recommenders, you first need to download the codebase.
 We offer optional experiment configuration files as an example to start developing new workflows.
-All the necessary steps are highlightes in a custom tutorial.
+All the necessary steps are highlighted in a custom tutorial.
 The individual resources are all linked below.
 
 Informfully Recommenders
@@ -21,4 +21,4 @@ The main file relevant for the purpose of reproducing the results of this submis
 Tutorial Noteboook
 ------------------
 
-We provide an wiki with more background information on all the components and features implemented as part of our extended framework in the `Informfully Online Documentation <https://informfully.readthedocs.io/en/latest/recommenders.html>`_,
+We provide a wiki with more background information on all the components and features implemented as part of our extended framework in the `Informfully Online Documentation <https://informfully.readthedocs.io/en/latest/recommenders.html>`_,
