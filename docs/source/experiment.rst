@@ -25,7 +25,7 @@ After pressing ``CREATE EXPERIMENT``, you will see the new experiment on the scr
 On the right, the name can be changed by editing the text field and clicking the ``SAVE CHANGES``-button.
 
 The initial experiment status is ``DESIGN``.
-In this stage, the administrator can add users, change the surveys and experiment with the setup.
+In this stage, the administrator can add users, change the surveys, and experiment with the setup.
 Once the status is switched to ``LAUNCHED`` by clicking the button, the settings of the experiment are locked to preserve the integrity of the results.
 
 Select or deselect an experiment by clicking on the large button on the left.
@@ -54,10 +54,10 @@ A download prompt will pop up.
 
 .. image:: img/tutorial_screenshots/tutorial_2.jpg
    :width: 700
-   :alt: Users screen
+   :alt: User screen
 
 
-Each individual user can be deleted by clicking the trashcan on the right of the row.
+Each individual user can be deleted by clicking the trash can on the right of the row.
 We recommend exporting the user accounts as a CSV file and creating a backup copy.
 (E.g., for support purposes, in case users forget their password.)
 
@@ -74,16 +74,16 @@ We do understand that not every use case will require a survey.
 It is for this reason that the inclusion of user surveys is an optional component.
 Researchers can skip this step because there is no requirement for getting user feedback.
 
-In addition to prompting in-app surveys, researchers have the option to add custom rating below items.
-The screenshot belows shows an overview on how to add these rating questions.
-Each question can be responded to with a thumbs up or thumbs down.
+In addition to prompting in-app surveys, researchers have the option to add a custom rating below items.
+The screenshot below shows an overview of how to add these rating questions.
+Each question can be responded to with a thumbs-up or thumbs-down.
 
 .. image:: img/tutorial_screenshots/tutorial_3.jpg
    :width: 700
    :alt: Surveys screen
 
 Additionally, rating surveys/feedback can be defined as well (displayed above).
-``Feedback Surveys`` gives you the option to formulate statements about a news article, which every participant will see in the mobile application, positioned after a news article.
+``Feedback Surveys`` gives you the option to formulate statements about a news article, which every participant will see in the mobile application, positioned after the news article.
 The participants can agree to (like) or disagree with (dislike) a statement.
 The statements are the same for all the participants in an experiment.
 
@@ -93,7 +93,7 @@ Scraper Pipeline
 ----------------
 
 In order to create recommendations for users, you first need to have items to recommend.
-The item format is specified in the `Database Collections <https://informfully.readthedocs.io/en/latest/database.html>`_ (see ``newsArticles``, that serves as the item collection for the news aggregator use case in this online tutorial).
+The item format is specified in the `Database Collections <https://informfully.readthedocs.io/en/latest/database.html>`_ (see 'newsArticles ', which serves as the item collection for the news aggregator use case in this online tutorial).
 
 To populate this collection, we have provided a separate `Item Scraper <https://informfully.readthedocs.io/en/latest/scrapers.html>`_.
 Please read the documentation on how to deploy it.
@@ -105,7 +105,7 @@ The source code is available for download in the `Scrapers Repository <https://g
 
 We recommend running the scrapers on the same server as the other parts of the back end.
 There is no communication happening between the scraping modules and any other component of Informfully.
-You can set the scraper up in such a way that they write directly to MongoDB's document collection ``newsArticles``/``itemCollection``.
+You can set the scraper up in such a way that it writes directly to MongoDB's document collection ``newsArticles``/``itemCollection``.
 
 .. _recommender:
 
@@ -116,7 +116,7 @@ By default, all items in  ``newsArticles``/``itemCollection`` will be shown in c
 However, there is the option to connect an external recommender system framework to the Informfully back end in order to have ranked user recommendations.
 
 To have users receive personalized recommendations, the collection ``recommendationLists`` (see `Database Collections <https://informfully.readthedocs.io/en/latest/database.html>`_) needs to be populated.
-Below this paragraph is a reference implementation of how to create a single user recommendations.
+Below this paragraph is a reference implementation of how to create a single user's recommendations.
 (We advise using the official package for creating ``ObjectId``-records).
 
 .. code-block:: python
@@ -140,11 +140,11 @@ Below this paragraph is a reference implementation of how to create a single use
 
 .. note::
 
-    We provide an in-depth `recommendation list tutorial <https://informfully.readthedocs.io/en/latest/recommendations.html>`_ on how to connect your recommener framework with the Informfully back end and the `relevant code <https://github.com/Informfully/Documentation/tree/main/sample>`_.
+    We provide an in-depth `recommendation list tutorial <https://informfully.readthedocs.io/en/latest/recommendations.html>`_ on how to connect your recommender framework with the Informfully back end and the `relevant code <https://github.com/Informfully/Documentation/tree/main/sample>`_.
 
 The implementation of the recommendation list is framework-agnostic.
 All that is needed is to write this data to ``recommendationLists`` in MongoDB.
-Researchers can put this behind their own API or they can run the recommender system on the same back end server as the other components of Informfully (thus directly writing to the database).
+Researchers can put this behind their own API, or they can run the recommender system on the same back end server as the other components of Informfully (thus directly writing to the database).
 
 This step then concludes the setup of the user experiment.
 Once you have completed this, the Informfully instance is ready to host and launch user experiments.
@@ -157,7 +157,7 @@ Please look at the `Experiment Overview <https://informfully.readthedocs.io/en/l
 Dataset Example
 ---------------
 
-Visit the `Informfully Datasets Repository <https://github.com/Informfully/Datasets>`_ for getting access to the data and please see the `relevant database documentation <https://informfully.readthedocs.io/en/latest/database.html>`_ for the technical documentation of all collections.
+Visit the `Informfully Datasets Repository <https://github.com/Informfully/Datasets>`_ for getting access to the data, and please see the `relevant database documentation <https://informfully.readthedocs.io/en/latest/database.html>`_ for the technical documentation of all collections.
 Below, you find a quick overview of the dataset listing A) daily active users, B) daily interactions, C) topic overview, and D) word length distribution of news articles (referenced via URLs only).
 
 .. image:: img/database_screenshots/statistics_plot.png
