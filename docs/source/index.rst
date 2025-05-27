@@ -15,7 +15,7 @@ For a tutorial on how to use Informfully, start with the :doc:`install` section 
 
 .. note::
 
-    There are two different ways of that you can use Informfully: 
+    There are two different ways that you can use Informfully: 
     1) Use the front end and back end deployed by the University of Zurich or 
     2) Deploy the whole application on your own.
     The upcoming tutorial focuses on the self-hosted deployment of Informfully.
@@ -36,11 +36,11 @@ It features three core components:
 This documentation provides you with all the information you need to successfully configure and deploy Informfully. It is structured as follows:
 
 * **Getting Started** serves as an overall introduction, including how to install the codebase, create a development environment, and notes on the deployment.
-* **Running Experiments** provide an in-depth overview of how to use the Informfully platform to conduct user studies.
+* **Running Experiments** provides an in-depth overview of how to use the Informfully platform to conduct user studies.
 * **External Recommendations** provides a tutorial on how to connect Informfully with your recommender framework for forwarding personalized recommendations.
 * **Recommender System** provides a tutorial on how to use the built-in Informfully recommender framework.
 * **Diversity Algorithms** provides an overview of the in-house algorithms for diversity-optimized political news.
-* **Platform Deployment** provides a quick overview of the sourcecode of Informfully and a range of helper scripts to create a custom instance.
+* **Platform Deployment** provides a quick overview of the source code of Informfully and a range of helper scripts to create a custom instance.
 * **Technical Documentation** provides the same insights for various technical aspects in order to customize and extend the platform.
 
 .. image:: img/informfully_assets/informfully_app_screens.png
