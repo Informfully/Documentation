@@ -28,7 +28,7 @@ If the item modality is text, however, the system will create and store a copy a
      - Lead of the article.
    * - ``body``
      - Array of Objects
-     - Contains the article text as paragraphs. The paragraphs are objects of the array and they have two properties: type (String) and text.
+     - Contains the article text as paragraphs. The paragraphs are objects of the array, and they have two properties: type (String) and text.
    * - ``url``
      - String
      - URL through which the article can be accessed.
@@ -71,9 +71,9 @@ If the item modality is text, however, the system will create and store a copy a
 
 .. note::
    
-   Be aware that Android devices can only handle websites secured by an SSL certificate (i.e. only HTTPS websites and no HTTP websites).
+   Be aware that Android devices can only handle websites secured by an SSL certificate (i.e., only HTTPS websites and no HTTP websites).
    Therefore, data fields like ``url`` or ``multimediaURL`` should only contain HTTPS websites.
-   Please visit the `Scraper Documentation <https://informfully.readthedocs.io/en/latest/scrapers.html>`_ page to see get access to sample code that scrapes and adds item entries to the back end.
+   Please visit the `Scraper Documentation <https://informfully.readthedocs.io/en/latest/scrapers.html>`_ page to get access to sample code that scrapes and adds item entries to the back end.
 
 When creating item entries, we recommend setting default values for each field.
 If we used non-existing fields to signify the absence of an attribute, we would have to use the ``$exists`` keyword to distinguish between articles that do and do not feature certain attributes.
@@ -84,15 +84,15 @@ Items will be rendered as follows inside the app:
    :height: 720
    :alt: Article view
 
-In case of a text item, the top part of the interface will display a thumnbail preview that was specified in the ``image`` attribute.
-In case of a multimedia item (podcast or video), a multimedia player will be loaded with the above specified image as a thumbnail.
+In case of a text item, the top part of the interface will display a thumbnail preview that was specified in the ``image`` attribute.
+In case of a multimedia item (podcast or video), a multimedia player will be loaded with the above-specified image as a thumbnail.
 
 The ``body`` consists of a list of elements.
 There are currently three types of elements that are supported:
 
 * ``text`` for unformatted text, 
 * ``subtitle`` for adding a new paragraph and subtitle to the text, and 
-* ``quote`` for an cursive, indent quote block.
+* ``quote`` for a cursive, indented quote block.
 
 A sample `body`` element of an item looks like this:
 
@@ -105,7 +105,7 @@ A sample `body`` element of an item looks like this:
     },
     {
       "type": "subtitle",
-      "text": "This is the \"subtitle\" option that creates a new paragraphs with a larger font size compared regular text."
+      "text": "This is the \"subtitle\" option that creates a new paragraph with a larger font size compared to regular text."
     },
     {
       "type": "quote",
