@@ -27,7 +27,7 @@ Navigate to the main directory of your codebase and execute the following script
 
 Make sure that you are specifying the same port that you are using in the `React Native App <https://github.com/Informfully/Platform/blob/main/frontend/App.js>`_.
 If you want to access the server from within your network, replace ``--port 3008`` with ``--port <YOUR_LOCAL_IP_ADDRESS>:3008``.
-The back end is now running and the administration website is accessible at via ``localhost:3008``.
+The back end is now running and the administration website is accessible via ``localhost:3008``.
 
 .. note::
 
