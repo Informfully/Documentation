@@ -6,7 +6,7 @@ The entire platform is organized around experiments.
 Participants get access to the app by being assigned to a given experiment/research project.
 
 Depending on the group a participant is assigned to, the app can present them with unique, group-specific content.
-This content (text, video and audio) can be freely accessed and rated by the user.
+This content (text, video, and audio) can be freely accessed and rated by the user.
 Once an experiment is launched, it will follow the typical experimentation cycle described below.
 
 .. note::
@@ -41,14 +41,14 @@ Each user has to be part of one group (and one experiment) at each point in time
 Phase 2 - Experiment Phase
 --------------------------
 
-Once users are assigned to their respective groups they can be presented with group-specific content.
-This content can be text, video or audio. All content is stored in a schema-free MongoDB instance.
+Once users are assigned to their respective groups, they can be presented with group-specific content.
+This content can be text, video, or audio. All content is stored in a schema-free MongoDB instance.
 Content can be copied to the database before the start of the experiment or it can be added/expanded at any future point in time.
 In the sample above, we see how a cron job regularly scrapes online websites to add new items to the central database for recommendation purposes.
 
-Assigning content to participants in the groups of an experiment can be done simultaneously (everyone gets to see the content at the same point in time) or it can be stacked (groups receive content one after the other or in any custom fashion that can be controlled via a script).
+Assigning content to participants in the groups of an experiment can be done simultaneously (everyone gets to see the content at the same point in time) or it can be combined (groups receive content one after the other or in any custom fashion that can be controlled via a script).
 The example above shows one possible three-step process of what a stacked content assignment pipeline could look like.
-News articles are used as an example, but the content of the item can be any kind of text, video or audio.
+News articles are used as an example, but the content of the item can be any kind of text, video, or audio.
 
 In the example shown, we see that in the first step, the baseline group gets to read and rate news articles.
 In a second step, the recommender system on the server calculates two different item recommendations for the next two groups.
