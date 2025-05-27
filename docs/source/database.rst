@@ -7,14 +7,14 @@ All collections marked with a \*-symbol collect data through the user's interact
 
 In the examples given below, Informfully is used as a news recommendation app.
 Out of consistency (i.e., to be consistent with the use case of the other parts of the documentation), ``article`` is used instead of ``items``.
-For example, this overview uses ``articleId`` as key attribute.
+For example, this overview uses ``articleId`` as a key attribute.
 If Informfully is used in another capacity, all records labelled ``articleId`` can be simply renamed to ``itemId``.
 
 .. note::
 
   Please visit the `Informfully Datasets Repository <https://github.com/Informfully/Datasets>`_. 
-  For an example of quality of the data once it is exported and the corresponding `Dataset Documentation <https://informfully.readthedocs.io/en/latest/datasets.html>`_.
-  And read the `MongoDB Compass Tutotrial <https://informfully.readthedocs.io/en/latest/compass.html>`_ for instructions of how to interface/connect with the database in the back end.
+  For an example of the quality of the data once it is exported and the corresponding `Dataset Documentation <https://informfully.readthedocs.io/en/latest/datasets.html>`_.
+  And read the `MongoDB Compass Tutotrial <https://informfully.readthedocs.io/en/latest/compass.html>`_ for instructions on how to interface/connect with the database in the back end.
 
 answers*
 --------
@@ -116,10 +116,10 @@ articleLikes*
      - ID of user.
    * - ``articleQuestionId``
      - String
-     - ID of statement, comes from the objects in the answers array of the ``likeSurvey``-field of an experiments collection data record.
+     - ID of statement, comes from the objects in the answers array of the ``likeSurvey``-field of an experiment's collection data record.
    * - ``articleAnswer``
      - Integer
-     - Can be either 1 or -1, 1 stands for a Like and -1 stands for a Dislike.
+     - Can be either 1 or -1, 1 stands for a Like, and -1 stands for a Dislike.
    * - ``createdAt``
      - Date
      - Time at which the data record was created.
@@ -150,10 +150,10 @@ articleTotalLikes*
      - ID of experiment.
    * - ``counts``
      - String
-     - Contains the total likes/dislikes for each statement. For more information about how the array looks like, see below.
+     - Contains the total likes/dislikes for each statement. For more information about what the array looks like, see below.
    * - ``questions``
      - Date
-     - Contains the ids of statements for which at least one like/dislike has been given.
+     - Contains the IDs of statements for which at least one like/dislike has been given.
 
 An example of what the answer field could look like is shown below:
 
@@ -195,16 +195,16 @@ articleViews*
      - ID of user.
    * - ``articlePublishedDate``
      - Date
-     - Date the article was published (referred to as ``dateScraped`` of article).
+     - Date the article was published (referred to as ``dateScraped`` of the article).
    * - ``duration``
      - Integer
-     - Duration in ms for which article was open.
+     - Duration in ms for which the article was open.
    * - ``maxScrolledContent``
      - Double
      - Shows how much the user has seen from the article's content; can be between 0 and 1; a 0 indicates that the user has not scrolled down yet.
    * - ``updatedAt``
      - Date
-     - Date on which article was last accessed in case it has been opened multiple times.
+     - Date on which the article was last accessed in case it has been opened multiple times.
    * - ``views``
      - Integer
      - Number of times the article has been viewed by this user.
@@ -248,19 +248,19 @@ The information can be modified on the ``Information`` page while ``likeSurvey``
      - URL to the Terms and Conditions.
    * - ``testingPhase``
      - Boolean
-     - Flag which indicates whether the experiment has launched or not. A true value means that the experiment has not launched yet. Once an experiment is launched, it cannot go back to the design phase, no additional users can be added, survey questions cannot be edited, and statements in Feedback surveys tab cannot be edited.
+     - A flag that indicates whether the experiment has launched or not. A true value means that the experiment has not launched yet. Once an experiment is launched, it cannot go back to the design phase, no additional users can be added, survey questions cannot be edited, and statements in the Feedback surveys tab cannot be edited.
    * - ``likeSurvey``
      - Object
-     - This field contains the statements that are shown after each article and users can like or dislike. For more information about how the object looks like, see below.
+     - This field contains the statements that are shown after each article, and users can like or dislike them. For more information about what the object looks like, see below.
    * - ``feedbackEmail``
      - String
-     - E-mail which is shown in the mobile app and users can contact in case of questions.
+     - E-mail, which is shown in the mobile app, allows users to contact the researchers responsible for conducting the experiment in case of questions.
    * - ``explanationTagsDef``
      - Object
-     - Contains objects which define the explanation tags used in the experiment. For more information about how the object looks like, see below.
+     - Contains objects that define the explanation tags used in the experiment. For more information about what the object looks like, see below.
    * - ``maxNrExplanationTags``
      - Integer
-     - Limits the number of explanation tags that can be shown per article. Set to 0 in case you want to disable use of explanation tags for the experiment.
+     - Limits the number of explanation tags that can be shown per article. Set to 0 in case you want to disable the use of explanation tags for the experiment.
    * - ``maxCharacterExplanationTagShort``
      - Integer
      - Limits the number of characters that are shown inside the explanation tags of each article preview.
@@ -380,7 +380,7 @@ newsArticles
      - ID of article
    * - ``articleType``
      - String
-     - Can be one of three: text, video, or podcast. Indicates whether the article contains a video, an audio, or only text.
+     - Can be one of three: text, video, or podcast. Indicates whether the article contains a video, audio, or only text.
    * - ``title``
      - String
      - Title of the article.
@@ -389,7 +389,7 @@ newsArticles
      - Lead of the article.
    * - ``body``
      - Array of Objects
-     - Contains the article text as paragraphs. The paragraphs are objects of the array and they have two properties: type (String) and text.
+     - Contains the article text as paragraphs. The paragraphs are objects of the array, and they have two properties: type (String) and text.
    * - ``url``
      - String
      - URL through which the article can be accessed.
@@ -428,7 +428,7 @@ newsArticles
      - The sub-categories of an article. This information is not always provided.
    * - ``language``
      - String
-     - Langauge code of the article (e.g., en-US, de-CH, etc.)
+     - Language code of the article (e.g., en-US, de-CH, etc.)
 
 .. note::
 
@@ -458,10 +458,10 @@ pageViews*
      - Unique ID of each page/menu, e.g., ``Home`` for the home screen.
    * - ``previousPage``
      - String
-     - Same as ``page``, simply for the previous one (allows to track how the user has navigated through the menus).
+     - Same as ``page``, simply for the previous one (allows tracking how the user has navigated through the menus).
    * - ``parameters``
      - Object
-     - Contains navigation parameters of the previous page (and sometimes of the current one), e.g., ``articleId``. It is empty if there are no parameters to pass (for example from ``Home`` to ``Settings``).
+     - Contains navigation parameters of the previous page (and sometimes of the current one), e.g., ``articleId``. It is empty if there are no parameters to pass (for example, from ``Home`` to ``Settings``).
    * - ``createdAt``
      - Date
      - Time at which the data record was created.
@@ -523,10 +523,10 @@ readingList*
      - Date the article was published.
    * - ``createdAt``
      - Date
-     - Time at which data record was created.
+     - Time at which the data record was created.
    * - ``removedAt``
      - Date
-     - Time at which data record was removed.
+     - Time at which the data record was removed.
 
 recommendationLists
 --------------------
@@ -551,7 +551,7 @@ recommendationLists
      - ID of user.
    * - ``prediction``
      - Double
-     - Value that indicated the position of the item in the list (the higher the value, the further up in the list; no pre-defined range exists, is up to the recommender system).
+     - Value that indicates the position of the item in the list (the higher the value, the further up in the list; no pre-defined range exists, it is up to the recommender system).
    * - ``recommendationAlgorithm``
      - String
      - Name of the algorithm used to create the recommendation (optional).
@@ -590,7 +590,7 @@ An example of what the recommendations need to be formatted is shown below:
 
 .. note::
 
-    We provide an in-depth `recommendation list tutorial <https://informfully.readthedocs.io/en/latest/recommendations.html>`_ on how to connect your recommener framework and the Informfully back end with the `relevant code <https://github.com/Informfully/Documentation/tree/main/sample>`_.
+    We provide an in-depth `recommendation list tutorial <https://informfully.readthedocs.io/en/latest/recommendations.html>`_ on how to connect your recommender framework and the Informfully back end with the `relevant code <https://github.com/Informfully/Documentation/tree/main/sample>`_.
 
 signins*
 --------
@@ -680,7 +680,7 @@ surveys
      - A flag which indicates whether the survey will be shown in the mobile app to participants in the experiment. A True means that the survey will be shown.
    * - ``questions``
      - Array of Objects
-     - Contains all the questions in the survey. For more information about how the array looks like, see below.
+     - Contains all the questions in the survey. For more information about what the array looks like, see below.
    * - ``createdBy``
      - String
      - ID of user.
