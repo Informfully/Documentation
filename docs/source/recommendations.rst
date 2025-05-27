@@ -9,7 +9,7 @@ To forward item recommendations to the back end of Informfully, they must be in 
   ID (ObjectID): Unique Object ID used for indexing.
   userID (String): ID of the user.
   itemID (String): ID of the item.
-  prediction (Double): Prediction score that determines the position of the item within the recommendation list. The higher the score, the further up the item is placed in the news feed. Precision, upper- and lower limits of the score can be customized.
+  prediction (Double): Prediction score that determines the position of the item within the recommendation list. The higher the score, the further up the item is placed in the news feed. Precision, upper, and lower limits of the score can be customized.
   recommendationAlgorithm (String): Algorithm used to calculate the recommendation. Can optionally include an explanation of why this item was recommended.
   isPreview (Boolean): The front end can display (or feature) items in a preview mode (with the item text and image across the entire screen. Alternatively, items can be shown using a downsized image with a square aspect ratio and title-only.
   createdAt (Date): Timestamp that records when the item recommendation was created.
@@ -47,7 +47,7 @@ To forward item recommendations to the back end of Informfully, they must be in 
 
   Please note that ``isPreview`` is an optional parameter.
   If it is not set, then the item will always be displayed in the preview mode. 
-  I.e., with a small thumbnail and article title (unless it is the first item, then it has tha full preview image with title and lead).
+  I.e., with a small thumbnail and article title (unless it is the first item, then it has the full preview image with title and lead).
 
 Below, you find a reference implementation of how, starting with item and user pools, such a JREX list of recommendations is created using the function ``create_recommendation()``.
 The script will automatically export the results to a file.
@@ -98,7 +98,7 @@ Simply create a new document collection  ``recommendationLists`` and add the val
             print("Export failed.")
             pass
 
-    # Create a recommendations for each user
+    # Create a recommendation for each user
     def assign_articles(user_pool, article_pool, algorithm_name):
 
         recommendation_list = []
@@ -147,7 +147,7 @@ Simply create a new document collection  ``recommendationLists`` and add the val
 
 
 JREX allows you to add recommendations for a user.
-Editing and updating recommendations is done by moving old recommendations to a separate archive collection (recommended) or by deleting them from the recommendation list.
+Editing and updating recommendations are done by moving old recommendations to a separate archive collection (recommended) or by deleting them from the recommendation list.
 The exact workflow is up to the researchers to define.
-Differente frameworks have different approaches.
+Different frameworks have different approaches.
 Editing can be done via  `MongoDB Compass <https://informfully.readthedocs.io/en/latest/compass.html>`_. 
