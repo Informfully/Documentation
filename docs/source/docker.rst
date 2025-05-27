@@ -3,8 +3,8 @@ Docker Deployment
 
 This is the installation guide for Informfully with Docker containers for both the front end and back end.
 The following are instructions to set up Docker containers for Informfully on Windows 10 Home.
-A pre-requisite for Windows 10 Home users is to enable the WSL 2.0 feature.
-WSL is the Windows Subsystem for Linux and the instructions for enabling it can be found `here <https://docs.microsoft.com/en-us/windows/wsl/install-win10>`_.
+A prerequisite for Windows 10 Home users is to enable the WSL 2.0 feature.
+WSL is the Windows Subsystem for Linux, and the instructions for enabling it can be found `here <https://docs.microsoft.com/en-us/windows/wsl/install-win10>`_.
 These instructions should work for Linux and macOS as well.
 
 To start from scratch, please download and install `Docker <https://www.docker.com/products/docker-desktop>`_.
@@ -45,14 +45,14 @@ Explanation of the code:
 
 * ``FROM node:16.13.0-alpine`` imports a light-weight Linux distribution called Alpine with the Node.js v16.13.0 environment. This sets a base OS for the image on which the following processes and commands will operate on. We chose Node.js v16.13.0 as this was the local version of Node.js that we used to develop (`see here <https://informfully.readthedocs.io/en/latest/development.html>`_).
 * ``REACT_NATIVE_PACKAGER_HOSTNAME`` needs to be set equal to the IP address of the host machine, to which the iOS or Android phone will connect
-* ``EXPO_DEVTOOLS_LISTEN_ADDRESS`` should be left as it is, it is an environment variable required for running the Expo server on the Docker container and connecting to it over the host machine
+* ``EXPO_DEVTOOLS_LISTEN_ADDRESS`` should be left as it is; it is an environment variable required for running the Expo server on the Docker container and connecting to it over the host machine
 * ``EXPOSE 19000 19001 19002`` are the ports used by Expo, which we have to expose to access the Docker container from the host machine
 * ``WORKDIR '/app'`` sets the directory where the contents of the image will be located inside the Linux OS
-* ``COPY package.json .`` and ``COPY app.json .`` copy the package.json and app.json files from the current local directory into the working directory on the Linux OS made above
+* ``COPY package.json .`` and ``COPY app.json .``Copy the package.json and app.json files from the current local directory into the working directory on the Linux OS made above
 * ``RUN npm install --global expo-cli`` tells Docker to execute the command line argument ``npm install --global expo-cli``, which installs the Expo command line tool into the Docker image
 * ``RUN npm install --legacy-peer-deps`` executes the command npm install with the option of ignoring legacy peer dependencies. This is an option that has to be turned on if using a Node version 7.0+, since the package.json dependencies were made using Node version 6.XX. This command will install all the required dependencies into the Docker image
 * ``COPY . .`` copies the contents from the frontend directory into the Docker image
-* ``CMD ["expo","start"]`` then executes the command line argument expo start to start the Expo server, after which a QR code is shown on the command prompt and users can access the Informfully application with Expo Go client on their iOS or Android phones
+* ``CMD ["expo","start"]`` then executes the command line argument expo start to start the Expo server, after which a QR code is shown on the command prompt, and users can access the Informfully application with the Expo Go client on their iOS or Android phones
 
 **Build Docker Image** To run the following commands, open Docker Desktop to start the Docker service (or use systemctl, etc. for Linux).
 Navigate to the frontend folder on the command line and type the command ``docker build . -t informfullyfrontend`` which will locate the Dockerfile in the current directory and execute all commands defined in that file.
@@ -71,7 +71,7 @@ Please note that it may take a few minutes to load the file, and no progress bar
 
     **Troubleshooting** 
 
-    ``Access is denied' error while building Docker image``: This might be caused either by a missing permissions problem or by the project path being too long.
+    ``Access is denied' error while building Docker image``: This might be caused either by a missing permissions or by the project path being too long.
     To resolve this issue, temporarily move your entire frontend folder directly under the ``C:\`` directory. This solution has been effective in resolving the issue and successfully generating the backend Docker image.
 
     ``Cannot successfully connect phone to Expo service``: If a QR code has been generated but you are facing problems connecting to the running Meteor service on the container, make sure that:
@@ -123,17 +123,17 @@ To create the Dockerfile, open a text editor such as Notepad on Windows, and typ
     RUN npm install --only=prod
     WORKDIR '/home/app/'
 
-    # Make a database directory for MongoDB in the Docker image and change owner permissions for the directory to allow access
+    # Make a database directory for MongoDB in the Docker image and change the owner permissions for the directory to allow access
     RUN sudo mkdir -p /data/db
     RUN sudo chown `id -u` /data/db/
 
     CMD ["mongod"]
 
-* The first set of instructions takes the base image of phusion passenger from the Docker repository. This image is configured with Node.js (`more information here <https://github.com/phusion/passenger-docker>`_).
-* The next set of instructions are required to install the basic commands in order to download and configure the rest of the required software. Afterwards, MongoDB is installed.
-* The next set of instructions creates a folder called app and it copies the backend folder contents onto the image.
-* All dependencies of the bundle folder are installed, using the npm version of the base Docker image of phusion passenger.
-* A directory is created called ``/data/db`` from which MongoDB retrieves its database. The ownership permissions of the directory are set so MongoDb can access it.
+* The first set of instructions takes the base image of Phusion Passenger from the Docker repository. This image is configured with Node.js (`more information here <https://github.com/phusion/passenger-docker>`_).
+* The next set of instructions is required to install the basic commands in order to download and configure the rest of the required software. Afterwards, MongoDB is installed.
+* The next set of instructions creates a folder called app, and it copies the backend folder contents onto the image.
+* All dependencies of the bundle folder are installed, using the npm version of the base Docker image of Phusion Passenger.
+* A directory is created called ``/data/db`` from which MongoDB retrieves its database. The ownership permissions of the directory are set so MongoDB can access it.
 * Finally, the command ``mongod`` starts the MongoDB service.
 
 **Build Docker Image** To run the following commands, open Docker Desktop to start the Docker service (or use systemctl, etc. for Linux).
@@ -147,7 +147,7 @@ Follow the next steps to get the Backend running:
 #.  Type ``docker ps`` to see which containers are running.
 #.  Copy the container ID of the container that is running the back end.
 #.  Type ``docker exec -it [containerID] sh``, this will open the container and you will be able to execute commands on it.
-#.  Run the command ``passenger start`` inside the opened Docker container. This will start the phusion passenger service. The back end will be running now.
+#.  Run the command ``passenger start`` inside the opened Docker container. This will start the Phusion Passenger service. The back end will be running now.
 
 In order to open the back end server, running on the container, from the host computer, open an internet browser and type ``localhost:8020`` (which is the host port that was defined above).
 The passenger's port 8080 of the container can be changed by editing the ``Passengerfile.json`` (`file located here <https://github.com/Informfully/Platform/blob/main/backend/Passengerfile.json>`_) in the backend directory.
@@ -165,8 +165,8 @@ Please note that it may take a few minutes to load the file, and no progress bar
 
     ``Access is denied' error while building Docker image`` See entry above in the front end section.
 
-    ``Node fibers issues`` Once the Docker container is running and you try to start the phusion passenger server, there may be an error message regarding node fibers.
-    This is most probably caused by the fact that the Node.js version of Meteor, with which the bundle folder was generated, is different from the one in the Docker image, which the phusion passenger server uses.
+    ``Node fibers issues`` Once the Docker container is running and you try to start the Phusion Passenger server, there may be an error message regarding node fibers.
+    This is most probably caused by the fact that the Node.js version of Meteor, with which the bundle folder was generated, is different from the one in the Docker image, which the Phusion Passenger server uses.
 
     To solve this problem, you would have to upgrade the Meteor version of the project (by running ``meteor upgrade``) or use an older version of Phusion Passenger's base Docker image.
-    In our case, we used an older version of phusion passenger's base Docker image supporting Node v14.
+    In our case, we used an older version of Phusion Passenger's base Docker image supporting Node v14.
