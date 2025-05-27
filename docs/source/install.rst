@@ -35,9 +35,9 @@ If you want to deploy this application to production, however, a separate instal
 
 **NPM** Meteor comes with NPM and thus no manual installation is required.
 Additionally, Meteor uses a bundled version of NPM that is available using ``meteor npm``.
-In general, whenever you install, remove or update packages for this project, you should use ``meteor npm`` instead of ``npm`` (e.g., ``meteor npm install`` to install dependencies).
+In general, whenever you install, remove, or update packages for this project, you should use ``meteor npm`` instead of ``npm`` (e.g., ``meteor npm install`` to install dependencies).
 
-**MongoDB** Meteor is shipped with MongoDB and thus you do not have to install it yourself.
+**MongoDB** Meteor is shipped with MongoDB, and thus you do not have to install it yourself.
 If you still want to `install MongoDB yourself <https://docs.mongodb.com/manual/installation>`_, please check whether the version you want to install is compatible with the Meteor version this project uses in `.meteor/release <https://github.com/Informfully/Platform/blob/main/backend/.meteor/release>`_ to find the Meteor version of this project.
 
 **Expo** You can use `Expo Go <https://expo.dev/go>`_ as an emulator to test your apps.
@@ -56,7 +56,7 @@ When starting your project, you will see something similar to the following for 
 The ``manifest`` at that URL tells the Expo app how to retrieve and load your app's JavaScript bundle, so even if you load it in the app via a URL like ``exp://localhost:19000``, the Expo client app will still try to retrieve your app at the IP address that the start script provides.
 In some cases, this is less than ideal.
 
-This might be the case if you need to run your project inside of a virtual machine and you have to access the packager via a different IP address than the one, which prints by default.
+This might be the case if you need to run your project inside a virtual machine and you have to access the packager via a different IP address than the one that is printed by default.
 In order to override the IP address or hostname that is detected by Create React Native App, you can specify your own hostname via the ``REACT_NATIVE_PACKAGER_HOSTNAME`` environment variable.
 
 Mac and Linux:
@@ -76,7 +76,7 @@ The above example would cause the development server to listen on ``exp://my-cus
 
 Informfully currently provides native Android and iOS apps. 
 The Android APK can also be distributed outside Google Play.
-It can be installes on Windows 11 and MacOS (e.g., with thirs-party software like `BlueStacks<https://www.bluestacks.com/>`_)
+It can be installed on Windows 11 and MacOS (e.g., with third-party software like `BlueStacks<https://www.bluestacks.com/>`_)
 
 
 Next Step: Run the Code
