@@ -1,11 +1,11 @@
 Participatory Diversity
 =======================
 
-``Political Diversity`` is an algorithm that creates recommendation list by using political user scores and political article scores.
+``Political Diversity`` is an algorithm that creates a recommendation list by using political user scores and political article scores.
 This algorithm takes these user and article scores, computing the Euclidean distance to generate candidate items, and filters.
 
 The ``Participatory Diversity`` algorithm is based on user scores and article scores.
-The user score can be calculated from a questionnaire survey or based on the user's historical browsing data as adopted in this project, while the article score is calculated from the user scores of all its readers.
+The user score can be calculated from a questionnaire survey or based on the user's historical browsing data, as adopted in this project, while the article score is calculated from the user scores of all its readers.
 At the same time, the algorithm also requires a distribution to describe the number of articles that the system should recommend for a certain user score.
 
 For the code, please see the `PLD implementation <https://github.com/Informfully/Recommenders/tree/main/cornac/models/pld>`_ in the repository.
@@ -13,13 +13,13 @@ For the code, please see the `PLD implementation <https://github.com/Informfully
 .. note::
 
   This tutorial outlines part of the workflow for the `Informfully Recommenders <https://github.com/Informfully/Recommenders>`_ repository.
-  The `Recommenders Pipeline <https://informfully.readthedocs.io/en/latest/recommenders.html>`_ provides and overview of all components.
+  The `Recommenders Pipeline <https://informfully.readthedocs.io/en/latest/recommenders.html>`_ provides an overview of all components.
   And you can look at the `Tutorial Notebook <https://github.com/Informfully/Experiments/tree/main/experiments/tutorial>`_ for hands-on examples of everything outlined here.
 
 Overview
 --------
 
-There are three main issues that need to be addresses.
+There are three main issues that need to be addressed.
 1. How to determine the normative distribution of news articles.
 2. How to quantify and discretize this distribution into a 1D list or 2D grid.
 3. How to translate the distribution into a matrix for a recommendation.
@@ -31,19 +31,19 @@ Hence, users in the same bin share the same score and should therefore receive t
 It is up to researchers to define the distribution (e.g., users can only receive items from nearby bins in close proximity or on the opposite side of the spectrum).
 
 PLD is supposed to be primarily used in an online setting.
-In a first step, (baseline) users take a survey and are assigned a political score and read article.
+In a first step, (baseline) users take a survey and are assigned a political score, and read an article.
 In a second step, each article gets assigned the average political score of its readership.
 (Both user scores and article scores are mapped into the same political space.)
 Finally, users in the experimental group get recommended items based on user-item distance.
 
-When re-usingsing PLD for offline testing requires addressing one critical issue:
-There are no users that can take a survey.
-When starting the offline evaluation, users are assigned political scores on the basis of the ration of political actors items in their history.
+When re-using PLD for offline testing requires addressing one critical issue:
+There are no users who can take a survey.
+When starting the offline evaluation, users are assigned political scores on the basis of the ratio of political actors' items in their history.
 To that end, we introduce an offline-only step for annotating political actors/parties in news articles.
 They are automatically counted across all reading histories.
 The subsequent logic of PLD remains the same:
 1. Baseline users read articles.
-2. New articles get assigned a score on the basis of the average political score of its readership.
+2. New articles get assigned a score on the basis of the average political score of their readership.
 3. Users in the experimental group receive article recommendations based on the distance between their own political score and the score of the article.
 
 Source
