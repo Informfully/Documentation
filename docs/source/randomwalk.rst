@@ -4,8 +4,8 @@ Random Walks
 This recommendation algorithm uses random walk sampling technology to ensure the accuracy of the recommendation while taking into account the diversity of the recommendation list.
 The algorithms are all based on RP3's new graph vertex ranking algorithm.
 It re-ranks items based on n-hop random walk transition probabilities, which can provide highly accurate recommendations while increasing the prominence of long-tail items at the top of the recommendation list.
-Random walk with Erasure (RWE-D) adds popularity a popularity discount to items, for promoting the long-tail distribution.
-And Diversity-Driven Random Walk Model (D-RDW) model aims to generate diverse recommendations that align with user-specified target distributions across multiple diversity dimensions.
+Random walk with Erasure (RWE-D) adds a popularity discount to items, for promoting the long-tail distribution.
+The Diversity-Driven Random Walk Model (D-RDW) aims to generate diverse recommendations that align with user-specified target distributions across multiple diversity dimensions.
 
 RP3-β  
 -----
