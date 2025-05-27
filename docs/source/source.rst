@@ -41,10 +41,10 @@ Here is a summary of the frontend repo folder structure:
     package-lock.json
     ...
 
-The ``assets`` folder contains all static assets required by the application such as fonts, icons and images.
+The ``assets`` folder contains all static assets required by the application, such as fonts, icons, and images.
 
 The ``components`` folder contains all custom-built UI components.
-The subfolder ``screens`` holds all the main screens that the user can navigate to such as the ``Home`` screen, ``SignIn`` screen, or ``Settings`` screen.
+The subfolder ``screens`` holds all the main screens that the user can navigate to, such as the ``Home`` screen, ``SignIn`` screen, or ``Settings`` screen.
 The components used by these screens are located in the respective subfolder.
 For instance, the ``Survey`` screen (``components/screens/Survey.js``) makes use of a button component to display the possible answers to a question.
 This button component can be found in the ``components/survey/`` folder.
@@ -52,26 +52,26 @@ This button component can be found in the ``components/survey/`` folder.
 The ``config`` folder accommodates a configuration file ``index.js`` which stores the URL of the General Terms & Conditions and the Data Protection Regulations.
 This file can be used to define additional configuration options in the future.
 
-The ``lib`` folder houses code for the internationalization (``i18n/``) and offline functionality (``meteorOffline/``) of the app as well as some utility functions (``utils/``) and additional parameters (``parameters/``).
-The internationalization is implemented using the third party library ``react-native-i18n`` (`see here for more information <https://www.npmjs.com/package/react-native-i18n>`_).
-It can be configured in the ``i18n.js`` file and additional languages can be added in the ``locales`` subfolder.
-Currently, the app is fully translated in English, German and French.
+The ``lib`` folder houses code for the internationalization (``i18n/``) and offline functionality (``meteorOffline/``) of the app, as well as some utility functions (``utils/``) and additional parameters (``parameters/``).
+The internationalization is implemented using the third-party library ``react-native-i18n`` (`see here for more information <https://www.npmjs.com/package/react-native-i18n>`_).
+It can be configured in the ``i18n.js`` file, and additional languages can be added in the ``locales`` subfolder.
+Currently, the app is fully translated into English, German, and French.
 
-All the third party packages are managed in the ``package.json`` file.
-The Yarn Package manager is used to manage the dependencies.
+All the third-party packages are managed in the ``package.json`` file.
+The Yarn Package Manager is used to manage dependencies.
 
 The ``styles`` folder is where all the colours and fonts for the application are defined.
 Storing all styles in a single location ensures style consistency across the app (e.g., all screens using the same font family) and allows for easy customization.
 For example, the colours used in the app can simply be changed in the ``styles/variables/colors.js`` file.
 
 The ``.eslintrc.json`` file manages the `ESLint <https://eslint.org/>`_ configuration.
-ESLint is a linting utility which ensures consistent code style and better code quality.
+ESLint is a linting utility that ensures consistent code style and better code quality.
 
-The ``index.js`` denotes the entry point to the application, it is the file that is run when the application is launched.
+The ``index.js`` denotes the entry point to the application; it is the file that is run when the application is launched.
 In it, the App component, which is defined in the ``App.js`` file, is loaded.
 
 Finally, ``app.json`` is a configuration file used by Expo.
-It is the go-to place for configuring parts of the mobile app that do not belong in the code, like app name, icon or version number.
+It is the go-to place for configuring parts of the mobile app that do not belong in the code, like app name, icon, or version number.
 A full list of all available properties can be found in the `Expo documentation <https://docs.expo.dev/versions/latest/config/app/>`_.
 
 ``backend`` Directory
@@ -86,7 +86,7 @@ Below, a short overview of the structure is provided.
 The Meteor framework is a JavaScript NodeJS backend solution which integrates well with React and React Native and ships with `MongoDB <https://www.mongodb.com/>`_.
 It includes a very special approach to project directories and files.
 There is a set of directory names that causes the framework to apply a predefined file load order and availability.
-For instance, a file that is inside a directory called ``server`` can only be loaded on the server, i.e. the backend code.
+For instance, a file that is inside a directory called ``server`` can only be loaded on the server, i.e., the backend code.
 
 Similarly, files that are inside a directory called ``startup`` are loaded during startup.
 In the `Meteor documentation <https://guide.meteor.com/structure.html>`_, Meteor explains and suggests a very clean project structure that considers their special file load behaviour.
@@ -146,12 +146,12 @@ It contains a local copy of a MongoDB instance.
 
 The directories ``client/`` and ``server/`` in the root of the backend repo include all the code that needs to be available only in one of the environments.
 In both directories, there is a file called ``main.js`` which imports files from the ``imports/`` directory and loads everything that is needed in the environment.
-For the ``client/``, these are the routes that are available (i.e. the URLs).
-For the ``server/``, these are the set of database collections, the publications as well as some configurations.
-The configurations include so called fixtures as well as a configuration file for account management (e.g., signing in and registrations).
-A fixture is a set of records that is inserted into the database in the case that the database is empty.
+For the ``client/``, these are the routes that are available (i.e., the URLs).
+For the ``server/``, these are the set of database collections, the publications, as well as some configurations.
+The configurations include so-called fixtures as well as a configuration file for account management (e.g., signing in and registrations).
+A fixture is a set of records that is inserted into the database in case the database is empty.
 It is commonly used in software projects in which certain records need to be available for development (and possibly also in production).
-In our case, this includes some news articles, a survey and an experiment.
+In our case, this includes some news articles, a survey, and an experiment.
 
 On the client, stylesheets are bundled and loaded automatically.
 Since they need not be available on the server, they reside in the ``client/`` directory.
@@ -161,10 +161,10 @@ Examples of such groups are ``components``, ``elements``, ``layout``, and ``defa
 The ``imports/`` directory includes another very important segmentation.
 It includes the directories ``api``, ``lib``, ``startup``, and ``ui``.
 Inside ``api`` there are only files that make up the API of the server.
-That is, it includes all publications, collections and methods.
+That is, it includes all publications, collections, and methods.
 Again, it is separated into directories for client/server and components or concerns.
 The ``lib`` directory includes code that can be reused across the entire project and which is not specific to any of the environments.
-It consists of utility functions such as splitting strings, constructing arrays, sorting arrays and similar.
+It consists of utility functions such as splitting strings, constructing arrays, sorting arrays, and similar.
 Within the directory, the code is split again by components and concerns.
 
 The ``startup`` directory includes all files, for each directory, that are needed during startup.
@@ -175,7 +175,7 @@ The directory includes a very similar structure to the one applied to the ``clie
 There are again different groups of components such as ``layouts``, ``elements``, and ``modules``.
 Inside those directories, subdirectories for types of components were created, like ``survey``, ``articles``, and ``header``.
 
-All the third party packages are managed in the ``package.json`` file.
+All the third-party packages are managed in the ``package.json`` file.
 From it, the ``package-lock.json`` file will be generated when running ``meteor npm install``, which fetches all the required packages and stores them in the ``node_modules`` folder.
 
 For better code quality and consistency, the software project again includes an `ESLint <https://eslint.org/>`_ configuration (``.eslintrc.json``).
