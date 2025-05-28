@@ -12,7 +12,8 @@ And you can look at the `Tutorial Notebook <https://github.com/Informfully/Exper
 
 The diagram above shows the extended framework Informfully Recommenders provides.
 It includes the four dedicated stages for pre-processing, in-processing, post-processing, and evaluation.
-In addition to that, it features a save state manager where results of any stage can be stored and loaded (this allows reusing existing data, e.g., for applying different re-rankers to one and the same candidate list).
+In addition to that, it features a save state manager where results of any stage can be stored and loaded.
+This allows reusing existing data, e.g., for applying different re-rankers to one and the same candidate list.
 Please find below an outline of the individual components and a link to their dedicated wiki pages for more information.
 
 * `Data Augmentation <https://informfully.readthedocs.io/en/latest/augmentation.html>`_
