@@ -21,7 +21,6 @@ In order to assess these scores and apply PLD, the following three questions mus
 1. How to measure political scores of users?
 2. How to assign a political label to a news item?
 3. How many articles of what political positions should users receive? (I..e, quantify and discretize a normative target distribution across a 1D list or 2D grid.)
-
 The Figure below shows how PLD combined normative target distributions across two 1D lists into a 2D grid for recommendations.
 
 .. image:: img/algorithm_assets/pld.jpg
