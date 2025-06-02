@@ -1,12 +1,8 @@
 Participatory Diversity
 =======================
 
-``Political Diversity`` is an algorithm that creates a recommendation list by using political user scores and political article scores.
-This algorithm takes these user and article scores, computing the Euclidean distance to generate candidate items, and filters.
-
-The ``Participatory Diversity`` algorithm is based on user scores and article scores.
-The user score can be calculated from a questionnaire survey or based on the user's historical browsing data, as adopted in this project, while the article score is calculated from the user scores of all its readers.
-At the same time, the algorithm also requires a distribution to describe the number of articles that the system should recommend for a certain user score.
+The participatory ``Political Diversity`` (PLD) is an algorithm that creates a recommendation list by using political user scores and political article scores.
+PLD leverages user and article scores derived from interaction data to curate news feeds that reflect a broad spectrum of political views, thus supporting a healthier democratic environment.
 
 For the code, please see the `PLD implementation <https://github.com/Informfully/Recommenders/tree/main/cornac/models/pld>`_ in the repository.
 
@@ -19,10 +15,18 @@ For the code, please see the `PLD implementation <https://github.com/Informfully
 Overview
 --------
 
-There are three main issues that need to be addressed.
-1. How to determine the normative distribution of news articles.
-2. How to quantify and discretize this distribution into a 1D list or 2D grid.
-3. How to translate the distribution into a matrix for a recommendation.
+PLD is an algorithm that forms a recommendation list by using political user score and article score.
+The user score can be calculated from a questionnaire survey or based on the user's historical browsing data, as adopted in this project, while the article score is calculated from the user scores of all its readers.
+In order to assess these scores and apply PLD, the following three questions must be answered:
+1. How to measure political scores of users?
+2. How to assign a political label to a news item?
+3. How many articles of what political positions should users receive? (I..e, quantify and discretize a normative target distribution across a 1D list or 2D grid.)
+
+The Figure below shows how PLD combined normative target distributions across two 1D lists into a 2D grid for recommendations.
+
+.. image:: img/algorithms_assets/pld.jpg
+   :width: 700
+   :alt: Normative distribution for recommendations with PLD
 
 The model can calculate recommendations on a group level, reducing the overall runtime as it generates candidate lists.
 This is possible because the political user score is the only attribute that is considered.
