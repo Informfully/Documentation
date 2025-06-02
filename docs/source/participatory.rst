@@ -24,7 +24,7 @@ In order to assess these scores and apply PLD, the following three questions mus
 
 The Figure below shows how PLD combined normative target distributions across two 1D lists into a 2D grid for recommendations.
 
-.. image:: img/algorithms_assets/pld.jpg
+.. image:: img/algorithm_assets/pld.jpg
    :width: 700
    :alt: Normative distribution for recommendations with PLD
 

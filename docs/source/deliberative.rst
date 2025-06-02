@@ -37,7 +37,7 @@ This is done to avoid any outlet-based clustering, as articles are scraped one o
 
 The Figure below shows an overview of how EPD builds the recommendation list one slide at a time.
 
-.. image:: img/algorithms_assets/epd.jpg
+.. image:: img/algorithm_assets/epd.jpg
    :width: 700
    :alt: Generating recommendation lists with EPD
 
