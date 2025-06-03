@@ -12,8 +12,8 @@ For the code, please see the `PLD implementation <https://github.com/Informfully
   The `Recommenders Pipeline <https://informfully.readthedocs.io/en/latest/recommenders.html>`_ provides an overview of all components.
   And you can look at the `Tutorial Notebook <https://github.com/Informfully/Experiments/tree/main/experiments/tutorial>`_ for hands-on examples of everything outlined here.
 
-Overview
---------
+Algorithm Overview
+------------------
 
 PLD is an algorithm that forms a recommendation list by using political user score and article score.
 The user score can be calculated from a questionnaire survey or based on the user's historical browsing data, as adopted in this project, while the article score is calculated from the user scores of all its readers.
@@ -27,11 +27,17 @@ The Figure below shows how PLD combined normative target distributions across tw
    :width: 700
    :alt: Normative distribution for recommendations with PLD
 
+Articles are classified based on the frequency of mentions of political parties, categorized to one party according to predefined settings.
+Details can be found in the `Configuration File <https://github.com/Informfully/Recommenders/blob/main/tests/configs/model_configs/parameters.ini>`_.
+
 The model can calculate recommendations on a group level, reducing the overall runtime as it generates candidate lists.
 This is possible because the political user score is the only attribute that is considered.
 And this attribute can be defined in such a way that users are in pre-defined bins.
 Hence, users in the same bin share the same score and should therefore receive the same recommendations.
 It is up to researchers to define the distribution (e.g., users can only receive items from nearby bins in close proximity or on the opposite side of the spectrum).
+
+Article Classification
+----------------------
 
 PLD is supposed to be primarily used in an online setting.
 In a first step, (baseline) users take a survey and are assigned a political score, and read an article.
