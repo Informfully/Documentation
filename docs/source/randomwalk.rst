@@ -26,4 +26,4 @@ Algorithm Overview
 
 * RP3-β: Random walk that re-ranks items based on n-hop random walk transition probabilities, which can provide highly accurate and diverst recommendations. (`Implementation <https://github.com/Informfully/Recommenders/tree/main/cornac/models/rp3_beta>`_, `Paper <https://dl.acm.org/doi/abs/10.1145/2792838.2800180>`_)
 * RWE-D: Random walk with Erasure (RWE-D) adds a popularity discount to items, for promoting the long-tail distribution. (`Implementation <https://github.com/Informfully/Recommenders/tree/main/cornac/models/rwe_d>`_, `Paper <https://dl.acm.org/doi/abs/10.1145/3442381.3449970>`_)
-* D-RDW: Diversity-Driven Random Walks (D-RDW) aims to generate diverse recommendations that align with user-specified target distributions across multiple diversity dimensions. ( `Implementation <https://github.com/Informfully/Recommenders/tree/main/cornac/models/drdw>`_)
+* D-RDW: Diversity-Driven Random Walks (D-RDW) aims to generate diverse recommendations that align with user-specified target distributions across multiple diversity dimensions. (`Implementation <https://github.com/Informfully/Recommenders/tree/main/cornac/models/drdw>`_)
