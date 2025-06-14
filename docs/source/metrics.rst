@@ -25,3 +25,43 @@ RADio Divergence
 
 * `Implementation <https://github.com/Informfully/Recommenders/blob/main/cornac/metrics/diversity.py>`_
 * `Paper <https://dl.acm.org/doi/abs/10.1145/3523227.3546780>`_
+
+.. list-table::
+   :widths: 25 25 25 25 75
+   :header-rows: 1
+
+   * - Metric
+     - Item Feature
+     - Value Range
+     - Details
+     - Interpretation
+   * - Activation
+     - Sentiment
+     - [0,1]
+     - Compares the sentiment distribution between the recommendation list and the article pool.
+     - A higher value indicates greater divergence in sentiment distribution between the recommendation list and the item pool.
+   * - Calibration Category
+     - Category
+     - [0,1]
+     - Compares the complexity distribution of the recommendation list with the user's category preferences (bases on their reading history).
+     - A higher value indicates greater deviation from the user's category preferences.
+   * - Calibration Category
+     - Complexity
+     - [0,1]
+     - Compares the complexity distribution of the recommendation list with the user's complexity preferences (bases on their reading history).
+     - A higher value indicates greater deviation from the user's complexity preferences.
+   * - Fragmentation
+     - Story
+     - [0,1]
+     - Quantifies the differences between story chain distributions in recommendation lists across users.
+     - A higher value indicates greater variation in news story chains for the recommendation lists.
+   * - Alternative Voices
+     - Minority and majority ratio
+     - [0,1]
+     - Compares the proportion of minority and majority viewpoints between the recommendation list and the item pool.
+     - A higher value indicated greater disparity between minority and majority representation in the recommendation list and item pool.
+   * - Representation
+     - Party mentions
+     - [0,1]
+     - Measures divergence in representation of political parties in the recommendation list and item pool.
+     - A higher value indicates greater divergence between the party mentions in the recommended articles and the item pool.
