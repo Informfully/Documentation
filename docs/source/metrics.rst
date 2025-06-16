@@ -7,15 +7,28 @@ Diversity Metrics
   The `Recommenders Pipeline <https://informfully.readthedocs.io/en/latest/recommenders.html>`_ provides an overview of all components.
   And you can look at the `Tutorial Notebook <https://github.com/Informfully/Experiments/tree/main/experiments/tutorial>`_ for hands-on examples of everything outlined here.
 
-
 Gini Coefficient
 ----------------
+
+The Gini coefficient is calculated for three different features: category, sentiment, and party.
+It quantifies the inequality across these three dimensions within a given recommendation list.
+The smaller the value indicated, the higher the equality.
+A value of 0 means perfect equality, a value of 1 means perfect inequality.
+(In this context, diversity is equated to equality.)
 
 * `Implementation <https://github.com/Informfully/Recommenders/blob/main/cornac/metrics/diversity.py>`_
 * `Paper <https://api.semanticscholar.org/CorpusID:11075976>`_
 
-Intra-list Distance
+(Expected) Intra-List Distance
 --------------------
+
+The intra-list distance is somputer for four different features: category, title (embeddings), sentiment, and party.
+It calculates the average pairwise dissimilarity between items in the recommendation list.
+The smaller the value indicated, the higher the similarity.
+A value of 0 means perfect similarity, a value of 1 means perfect dissimilarity.
+(In this context, diversity is equated to dissimilarity.)
+Expected intra-list distance is a rank-warare version of intra-list distance, the same principles and interpretation applies.
+The main difference is that it considers the position an relevance of an item for assigning a value.
 
 * `Implementation <https://github.com/Informfully/Recommenders/blob/main/cornac/metrics/diversity.py>`_
 * `Paper <https://api.semanticscholar.org/CorpusID:11075976>`_
@@ -65,3 +78,4 @@ RADio Divergence
      - [0,1]
      - Measures divergence in representation of political parties in the recommendation list and item pool.
      - A higher value indicates greater divergence between the party mentions in the recommended articles and the item pool.
+     
