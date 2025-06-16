@@ -36,9 +36,6 @@ The main difference is that it considers the position an relevance of an item fo
 RADio Divergence
 ----------------
 
-* `Implementation <https://github.com/Informfully/Recommenders/blob/main/cornac/metrics/diversity.py>`_
-* `Paper <https://dl.acm.org/doi/abs/10.1145/3523227.3546780>`_
-
 .. list-table::
    :widths: 25 25 25 25 75
    :header-rows: 1
@@ -79,3 +76,5 @@ RADio Divergence
      - Measures divergence in representation of political parties in the recommendation list and item pool.
      - A higher value indicates greater divergence between the party mentions in the recommended articles and the item pool.
      
+* `Implementation <https://github.com/Informfully/Recommenders/blob/main/cornac/metrics/diversity.py>`_
+* `Paper <https://dl.acm.org/doi/abs/10.1145/3523227.3546780>`_
