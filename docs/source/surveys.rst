@@ -18,7 +18,7 @@ They need to complete it in order to continue using the app.
 There is no limit to how many questions can be added to a survey.
 Similarly, there is no limit to how many pre-defined answers can be added to a question.
 
-.. image:: img/survey_screenshots/survey_1.jpg
+.. image:: img/survey_screenshots/survey_2.jpg
    :width: 700
    :alt: Survey editor
 
@@ -33,7 +33,7 @@ Free text, replies to previous questions, etc., can all be selected.
     When users answer the survey questions, the back end will store their answers together with a copy of the question string as well as the question ID.
     This allows experimenters to edit the question pool while still preserving the original question asked of the users when they want to evaluate the answers.
 
-.. image:: img/survey_screenshots/survey_1.jpg
+.. image:: img/survey_screenshots/survey_3.jpg
    :width: 700
    :alt: Survey Questions
 
