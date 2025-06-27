@@ -136,7 +136,7 @@ Here is a summary of the backend repo structure:
     .snippets.sh
     build.sh
     ...
-https://informfully.readthedocs.io/en/latest/deployment.html
+
 The ``.build/`` directory is generated when running the ``build.sh`` script for the deployment of the `Administration Website <https://informfully.readthedocs.io/en/latest/deployment.html>`_.
 It contains the ``tarball`` (more information `here <https://docs.meteor.com/commandline.html#meteorbuild>`_), after having run the ``meteor build`` command in the terminal.
 The unpacked tarball is actually the ``bundle/`` folder, which is needed for building the backend repo `Docker Image <https://informfully.readthedocs.io/en/latest/docker.html>`_.

@@ -48,7 +48,7 @@ Explanation of the code:
 * ``EXPO_DEVTOOLS_LISTEN_ADDRESS`` should be left as it is; it is an environment variable required for running the Expo server on the Docker container and connecting to it over the host machine
 * ``EXPOSE 19000 19001 19002`` are the ports used by Expo, which we have to expose to access the Docker container from the host machine
 * ``WORKDIR '/app'`` sets the directory where the contents of the image will be located inside the Linux OS
-* ``COPY package.json .`` and ``COPY app.json .``Copy the package.json and app.json files from the current local directory into the working directory on the Linux OS made above
+* ``COPY package.json`` and ``COPY app.json``. Copy the package.json and app.json files from the current local directory into the working directory on the Linux OS made above
 * ``RUN npm install --global expo-cli`` tells Docker to execute the command line argument ``npm install --global expo-cli``, which installs the Expo command line tool into the Docker image
 * ``RUN npm install --legacy-peer-deps`` executes the command npm install with the option of ignoring legacy peer dependencies. This is an option that has to be turned on if using a Node version 7.0+, since the package.json dependencies were made using Node version 6.XX. This command will install all the required dependencies into the Docker image
 * ``COPY . .`` copies the contents from the frontend directory into the Docker image
