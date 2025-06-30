@@ -28,13 +28,26 @@ The Figure below shows how PLD combined normative target distributions across tw
    :alt: Normative distribution for recommendations with PLD
 
 Articles are classified based on the frequency of mentions of political parties, categorized to one party according to predefined settings.
-Details can be found in the `Configuration File <https://github.com/Informfully/Recommenders/blob/main/tests/configs/model_configs/parameters.ini>`_.
-
 The model can calculate recommendations on a group level, reducing the overall runtime as it generates candidate lists.
 This is possible because the political user score is the only attribute that is considered.
 And this attribute can be defined in such a way that users are in pre-defined bins.
 Hence, users in the same bin share the same score and should therefore receive the same recommendations.
 It is up to researchers to define the distribution (e.g., users can only receive items from nearby bins in close proximity or on the opposite side of the spectrum).
+
+Open Parameters
+---------------
+
+Details can be found in the `Configuration File <https://github.com/Informfully/Recommenders/blob/main/tests/configs/model_configs/parameters.ini>`_.
+
+* name: string, default: 'PLD'. The name of the recommender model.
+* trainable: boolean, optional, default: True. When False, the model is not trained and Cornac assumes that the model already is pre-trained. (U and V are not 'None').
+* verbose: boolean, optional, default: False.  When True, running logs are displayed.
+* num_users: int, default: 0. The number of users in dataset.
+* num_items: int, default: 0. The number of items in dataset.
+* party_dict: dict. A dictionary whose keys are article ids and values are references of this articles.
+* distribution: Nested Lists. Every elment in outer layer is a list which includes user group type and a list of the article distribution for this user type.  Example is as the {project_path}/examples/pld_mind.py.
+* update_score: boolean, default: True. When 'False', use existed score files under the folder './cornac/models/pld'.
+* configure_path: str, default: './parameters.ini'. Configure file which includes parties to be calculated.
 
 Article Classification
 ----------------------
