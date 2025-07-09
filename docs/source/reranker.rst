@@ -1,5 +1,5 @@
-Static Re-ranker
-==============
+Re-rankers
+==========
 
 .. note::
 

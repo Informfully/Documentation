@@ -58,7 +58,7 @@ This documentation provides you with all the information you need to successfull
 
 .. toctree::
    :maxdepth: 1
-   :caption: Running Experiments
+   :caption: Managing Experiments
 
    overview
    experiment
@@ -66,15 +66,6 @@ This documentation provides you with all the information you need to successfull
    surveys
    scrapers
    app
-
-.. toctree::
-   :maxdepth: 1
-   :caption: Visualizing Recommendations
-
-   compass
-   items
-   recommendations
-   explanations
 
 .. toctree::
    :maxdepth: 1
@@ -96,6 +87,15 @@ This documentation provides you with all the information you need to successfull
    drdw
    randomwalk
    neural
+
+.. toctree::
+   :maxdepth: 1
+   :caption: User Studies
+
+   compass
+   items
+   recommendations
+   explanations
 
 .. toctree::
    :maxdepth: 1
