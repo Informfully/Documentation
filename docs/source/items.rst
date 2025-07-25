@@ -80,7 +80,7 @@ If we used non-existing fields to signify the absence of an attribute, we would 
 This use of the ``$exists`` operator, however, cannot use any index and leads to an overall performance decrease.
 Items will be rendered as follows inside the app:
 
-.. image:: img/app_screenshots/app_screenshots_2.png
+.. image:: img/screenshots_app/app_screenshots_2.png
    :height: 720
    :alt: Article view
 
