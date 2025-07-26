@@ -62,4 +62,4 @@ You can add entries 1) manually via MongoDB Compass, 2) import them via the inte
 
 .. note::
 
-  Please visit the `Recommendation List <https://informfully.readthedocs.io/en/latest/recommendations.html>`_ page to see how you can create custom entries and forward recommendations of your external system.
+  Please visit the `Item Visualization <https://informfully.readthedocs.io/en/latest/recommendations.html>`_ page to see how you can create custom entries and forward recommendations of your external system.

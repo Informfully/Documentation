@@ -141,11 +141,6 @@ Simply create a new document collection  ``recommendationLists`` and add the val
     # Run example
     main()
 
-.. note::
-
-  Please visit the `User Explanations <https://informfully.readthedocs.io/en/latest/explanations.html>`_ page to see how you can add explanations to the recommendation list.
-
-
 JREX allows you to add recommendations for a user.
 Editing and updating recommendations are done by moving old recommendations to a separate archive collection (recommended) or by deleting them from the recommendation list.
 The exact workflow is up to the researchers to define.

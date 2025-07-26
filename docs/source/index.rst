@@ -35,13 +35,10 @@ It features three core components:
 
 This documentation provides you with all the information you need to successfully configure and deploy Informfully. It is structured as follows:
 
-* **Getting Started** serves as an overall introduction, including how to install the codebase, create a development environment, and notes on the deployment.
-* **Running Experiments** provides an in-depth overview of how to use the Informfully platform to conduct user studies.
-* **External Recommendations** provides a tutorial on how to connect Informfully with your recommender framework for forwarding personalized recommendations.
+* **Getting Started** serves as an overall introduction for installing the codebase, creating a development environment, and notes on the platform deployment.
+* **Managing Experiments** provides an in-depth overview of how to use the Informfully platform to conduct user studies.
 * **Recommender System** provides a tutorial on how to use the built-in Informfully recommender framework.
-* **Diversity Algorithms** provides an overview of the in-house algorithms for diversity-optimized political news.
-* **Platform Deployment** provides a quick overview of the source code of Informfully and a range of helper scripts to create a custom instance.
-* **Technical Documentation** provides the same insights for various technical aspects in order to customize and extend the platform.
+* **Technical Documentation** provides insights for various technical aspects in order to customize and extend the platform.
 
 .. image:: img/informfully_assets/informfully_app_screens.png
    :width: 700
@@ -66,6 +63,8 @@ This documentation provides you with all the information you need to successfull
    surveys
    scrapers
    app
+   compass
+   items
 
 .. toctree::
    :maxdepth: 1
@@ -74,37 +73,13 @@ This documentation provides you with all the information you need to successfull
    recommenders
    augmentation
    splitting
-   reranker
-   dynamicreranker
-   metrics
-
-.. toctree::
-   :maxdepth: 1
-   :caption: Diversity Algorithms
-   
    participatory
    deliberative
-   drdw
    randomwalk
    neural
-
-.. toctree::
-   :maxdepth: 1
-   :caption: User Studies
-
-   compass
-   items
+   reranker
+   metrics
    recommendations
-   explanations
-
-.. toctree::
-   :maxdepth: 1
-   :caption: Platform Deployment
-
-   source
-   docker
-   google
-   apple
 
 .. toctree::
    :maxdepth: 1
@@ -114,6 +89,10 @@ This documentation provides you with all the information you need to successfull
    methods
    publications
    database
+   source
+   docker
+   google
+   apple
 
 Citation
 --------
