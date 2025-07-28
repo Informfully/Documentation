@@ -16,12 +16,29 @@ In addition to that, it features a save state manager where results of any stage
 This allows reusing existing data, e.g., for applying different re-rankers to one and the same candidate list.
 Please find below an outline of the individual components and a link to their dedicated wiki pages for more information.
 
+Pre-processing Stage
+--------------------
+
+* `Data Loading <https://informfully.readthedocs.io/en/latest/loading.html>`_
 * `Data Augmentation <https://informfully.readthedocs.io/en/latest/augmentation.html>`_
+
+In-processing Stage
+-------------------
+
 * `Data Splitting <https://informfully.readthedocs.io/en/latest/splitting.html>`_ 
-* `Model Selection - Participatory Diversity <https://informfully.readthedocs.io/en/latest/participatory.html>`_
-* `Model Selection - Deliberative Diversity <https://informfully.readthedocs.io/en/latest/deliberative.html>`_
-* `Model Selection - Random Walks <https://informfully.readthedocs.io/en/latest/randomwalk.html>`_
-* `Model Selection - Neural Baselines <https://informfully.readthedocs.io/en/latest/neural.html>`_
-* `Re-rankers Selection <https://informfully.readthedocs.io/en/latest/reranker.html>`_
-* `Metrics Assessment <https://informfully.readthedocs.io/en/latest/metrics.html>`_
-* `Item Visualization <https://informfully.readthedocs.io/en/latest/recommendations.html>`_
+* `Participatory Diversity <https://informfully.readthedocs.io/en/latest/participatory.html>`_
+* `Deliberative Diversity <https://informfully.readthedocs.io/en/latest/deliberative.html>`_
+* `Random Walks <https://informfully.readthedocs.io/en/latest/randomwalk.html>`_
+* `Neural Baselines <https://informfully.readthedocs.io/en/latest/neural.html>`_
+
+Post-processing Stage
+---------------------
+
+* `Re-rankers <https://informfully.readthedocs.io/en/latest/reranker.html>`_
+* `User Simulator <https://informfully.readthedocs.io/en/latest/reranker.html>`_
+
+Evaluation Stage
+----------------
+
+* `Metrics <https://informfully.readthedocs.io/en/latest/metrics.html>`_
+* `Visualization <https://informfully.readthedocs.io/en/latest/recommendations.html>`_

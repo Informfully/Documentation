@@ -62,9 +62,9 @@ This documentation provides you with all the information you need to successfull
    users
    surveys
    scrapers
+   items
    app
    compass
-   items
 
 .. toctree::
    :maxdepth: 1
