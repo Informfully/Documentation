@@ -75,7 +75,7 @@ This documentation provides you with all the information you need to successfull
    splitting
    participatory
    deliberative
-   randomwalk
+   randomwalks
    neural
    reranker
    metrics

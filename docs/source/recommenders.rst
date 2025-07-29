@@ -28,7 +28,7 @@ In-processing Stage
 * `Data Splitting <https://informfully.readthedocs.io/en/latest/splitting.html>`_ 
 * `Participatory Diversity <https://informfully.readthedocs.io/en/latest/participatory.html>`_
 * `Deliberative Diversity <https://informfully.readthedocs.io/en/latest/deliberative.html>`_
-* `Random Walks <https://informfully.readthedocs.io/en/latest/randomwalk.html>`_
+* `Random Walks <https://informfully.readthedocs.io/en/latest/randomwalks.html>`_
 * `Neural Baselines <https://informfully.readthedocs.io/en/latest/neural.html>`_
 
 Post-processing Stage
