@@ -35,7 +35,7 @@ Post-processing Stage
 ---------------------
 
 * `Re-rankers <https://informfully.readthedocs.io/en/latest/reranker.html>`_
-* `User Simulator <https://informfully.readthedocs.io/en/latest/reranker.html>`_
+* `User Simulator <https://informfully.readthedocs.io/en/latest/simulator.html>`_
 
 Evaluation Stage
 ----------------
