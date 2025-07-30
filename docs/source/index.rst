@@ -33,7 +33,8 @@ It features three core components:
 * a back end for researchers to create and maintain user experiments, and 
 * a simple JSON-based exchange format (JREX) for ranked item recommendations to interface with third-party services.
 
-This documentation provides you with all the information you need to successfully configure and deploy Informfully. It is structured as follows:
+This documentation provides you with all the information you need to successfully configure and deploy Informfully.
+It is structured as follows:
 
 * **Getting Started** serves as an overall introduction for installing the codebase, creating a development environment, and notes on the platform deployment.
 * **Managing Experiments** provides an in-depth overview of how to use the Informfully platform to conduct user studies.

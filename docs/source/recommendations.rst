@@ -3,7 +3,16 @@ Recommendation Lists
 
 This page provides information on how to populate the ``recommendationLists`` `data collection <https://informfully.readthedocs.io/en/latest/database.html>`_ in the back end and based on `user and item data <https://informfully.readthedocs.io/en/latest/compass.html>`_.
 The `relevant code <https://github.com/Informfully/Documentation/tree/main/sample>`_ is shared separately.
-To forward item recommendations to the back end of Informfully, they must be in the JSON Recommendation Exchange Forat (JREX):
+
+.. note::
+
+  This tutorial outlines part of the workflow for the `Informfully Recommenders <https://github.com/Informfully/Recommenders>`_ repository.
+  The `Recommenders Pipeline <https://informfully.readthedocs.io/en/latest/recommenders.html>`_ provides an overview of all components.
+  And you can look at the `Tutorial Notebook <https://github.com/Informfully/Experiments/tree/main/experiments/tutorial>`_ for hands-on examples of everything outlined here.
+
+Informfully uses a JSON Recommendation Exchange Format (JREX) to visualize iteem recommendations.
+JREX allows you to add recommendations for any user containing any item that is your document collection.
+It allows for specifying the following properties of the recommendation list:
 
 ..
   ID (ObjectID): Unique Object ID used for indexing.
@@ -38,21 +47,13 @@ To forward item recommendations to the back end of Informfully, they must be in 
      - Algorithm used to calculate the recommendation. Can optionally include an explanation of why this item was recommended.
    * - ``isPreview``
      - Boolean
-     - The front end can display (or feature) items in a preview mode (with the item text and image across the entire screen. Alternatively, items can be shown using a downsized image with a square aspect ratio and title-only.
+     - If set to TRUE, the front end displays items in a preview mode (with the item text and image across the entire screen). If set to FALSE, items are shown using a downsized image (with a square aspect ratio and title-only).
    * - ``createdAt``
      - Date
      - Timestamp that records when the item recommendation was created.
 
-.. note::
-
-  Please note that ``isPreview`` is an optional parameter.
-  If it is not set, then the item will always be displayed in the preview mode. 
-  I.e., with a small thumbnail and article title (unless it is the first item, then it has the full preview image with title and lead).
-
 Below, you find a reference implementation of how, starting with item and user pools, such a JREX list of recommendations is created using the function ``create_recommendation()``.
-The script will automatically export the results to a file.
-This file can be copied/sent to the database.
-Simply create a new document collection  ``recommendationLists`` and add the values of the recommendation file.
+Again, you can use the `reference implementation <https://github.com/Informfully/Documentation/tree/main/sample>`_ mentioned above to turn the user-item recommendations into JREX.
 
 .. code-block:: python
 
@@ -141,8 +142,11 @@ Simply create a new document collection  ``recommendationLists`` and add the val
     # Run example
     main()
 
-JREX allows you to add recommendations for a user.
-Editing and updating recommendations are done by moving old recommendations to a separate archive collection (recommended) or by deleting them from the recommendation list.
-The exact workflow is up to the researchers to define.
-Different frameworks have different approaches.
-Editing can be done via  `MongoDB Compass <https://informfully.readthedocs.io/en/latest/compass.html>`_. 
+By default, the front end requires the output of this function to be stored in a document collection with the name ``recommendationLists``.
+The name of the collection can be changed (`see codebase <https://github.com/Informfully/Platform/blob/main/backend/imports/api/recommendations.js>`_).
+
+The workflow for managing the recommendation list is left open.
+For example, updating recommendations for a given user can be done by simply inserting new recommendations with a higher prediction score.
+This will to preserve existing/old entries and moves them to the bottom of the recommendation list.
+Alternatively, all existing items for a given user can removed before updating the list to make sure that only new items are shown.
+To preserve the recommendation history, this second approach would require moving old recommendations to a separate collection before each update.
