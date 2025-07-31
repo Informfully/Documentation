@@ -1,21 +1,19 @@
-Processing Recommendations
-==========================
+Database Tutorial
+=================
 
-This page presents an introduction to how Informfully manages recommendations and how you can connect your external recommender system to the front end.
-The dababase used for Informfully is MongoDB.
-In this overview, we will use `MongoDB Compass <https://www.mongodb.com/products/tools/compass>`_ a free GUI to explore the database and its collections.
-MongoDB Compass allows you to query the back end.
+This page presents an introduction to retrieving user and items IDs from the MongoDB back end of Informfully for creating recommendation lists.
+In the example shown on this page, we use `MongoDB Compass <https://www.mongodb.com/products/tools/compass>`_ to explore the database and its collections.
 (In the context of MongoDB a "table" in the database is referred to as "collection" and "entry/tupel" as "document" instead.)
-In order to customize the recommendations shown to users, you need to edit the following collections: ``users``, ``items``, and ``recommendations`` as shown below.
-
-Customization of recommendation list entries is done using three steps:
-* Create user accounts and retrieve their IDs
-* Scrape/upload items to recommend and retrieve their IDs
-* Create item recommendation lists for users
 
 .. note::
 
   If you want to use the built-in Informfully Recommenders, please visit the `recommender system tutorial page <https://informfully.readthedocs.io/en/latest/recommenders.html>`_ instead.
+
+In order to customize the recommendations shown to users, you need to edit the following collections: ``users``, ``items``, and ``recommendations`` outlined below.
+Customization of recommendation list entries is done using three steps:
+* Create user accounts and retrieve their IDs
+* Scrape/upload items to recommend and retrieve their IDs
+* Create item recommendation lists for users
 
 Retrieving User IDs
 -------------------

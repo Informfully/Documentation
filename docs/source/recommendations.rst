@@ -53,6 +53,7 @@ It allows for specifying the following properties of the recommendation list:
      - Timestamp that records when the item recommendation was created.
 
 Below, you find a reference implementation of how, starting with item and user pools, such a JREX list of recommendations is created using the function ``create_recommendation()``.
+(If you are unfamiliar with MongoDB and how to retrieve user and itemd IDs, please see the `MongoDB tutorial page <https://informfully.readthedocs.io/en/latest/compass.html>`_ on how to retrieve them.)
 Again, you can use the `reference implementation <https://github.com/Informfully/Documentation/tree/main/sample>`_ mentioned above to turn the user-item recommendations into JREX.
 
 .. code-block:: python
