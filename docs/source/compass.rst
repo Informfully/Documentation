@@ -5,10 +5,6 @@ This page presents an introduction to retrieving user and items IDs from the Mon
 In the example shown on this page, we use `MongoDB Compass <https://www.mongodb.com/products/tools/compass>`_ to explore the database and its collections.
 (In the context of MongoDB a "table" in the database is referred to as "collection" and "entry/tupel" as "document" instead.)
 
-.. note::
-
-  If you want to use the built-in Informfully Recommenders, please visit the `recommender system tutorial page <https://informfully.readthedocs.io/en/latest/recommenders.html>`_ instead.
-
 In order to customize the recommendations shown to users, you need to edit the following collections: ``users``, ``items``, and ``recommendations`` outlined below.
 Customization of recommendation list entries is done using three steps:
 * Create user accounts and retrieve their IDs

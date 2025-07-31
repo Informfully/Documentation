@@ -63,9 +63,7 @@ It is structured as follows:
    users
    surveys
    scrapers
-   items
    app
-   compass
 
 .. toctree::
    :maxdepth: 1
@@ -86,6 +84,8 @@ It is structured as follows:
    :maxdepth: 1
    :caption: Technical Documentation
 
+   items
+   compass
    server
    methods
    publications
