@@ -70,6 +70,7 @@ It is structured as follows:
    :caption: Recommender System
    
    recommenders
+   loading
    augmentation
    splitting
    participatory
@@ -77,6 +78,7 @@ It is structured as follows:
    randomwalks
    neural
    reranker
+   simulator
    metrics
    recommendations
 
