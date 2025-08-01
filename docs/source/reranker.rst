@@ -1,5 +1,9 @@
-Re-rankers
-==========
+Re-ranker Selection
+===================
+
+This overview presents the static re-rankers included in Informfully Recommenders.
+In this context, static means that the re-rankers are applied only once per user session.
+They take the candidate list from the model and re-rank items based on predefined target metrics.
 
 .. note::
 
@@ -24,3 +28,8 @@ Maximal Marginal Relevance (MMR)
 
 * `Implementation <https://github.com/Informfully/Recommenders/tree/main/cornac/rerankers/mmr>`_
 * `Paper <https://dl.acm.org/doi/pdf/10.1145/290941.291025>`_
+
+Dynamic Attribute Penalization (DAP)
+
+* `Implementation <https://github.com/Informfully/Recommenders/tree/main/cornac/rerankers/dynamic_attribute_penalization>`_
+*  Please see the `User Simulator <https://informfully.readthedocs.io/en/latest/simulator.html>`_ for the details on the dynamic re-ranking approach using DAP.
