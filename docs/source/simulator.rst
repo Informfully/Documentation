@@ -14,14 +14,17 @@ To that end, the simulator allows to define these intra-session browsing behavio
 
 User Simulator
 
-* `Implementation <TBD>`_
-*  Dynamic re-ranking requires an underlying user model that specifies how the item feed is being browsed.
+Dynamic re-ranking requires an underlying user model that specifies how the item feed is being browsed.
 We provide a sample template that can be customized and extended.
 In the context of NRSs, the two default behaviors included in the framework are:
 1) Users are more likely to click on articles from a category that they have previously read, and
 2) Items higher up in the recommendation list are more likely to be clicked.
 
+`Implementation <TBD>`_  
+
 Dynamic Attribute Penalization (DAP)
 
-* `Implementation <https://github.com/Informfully/Recommenders/tree/main/cornac/rerankers/dynamic_attribute_penalization>`_
-*  Work in progress...
+DAP provices a dynamic intra-session re-ranking option that updates recommendations based on user interaction.
+It diversifies the recommendation list by penalizing items in upcoming sessions that share attributes with clicked ones.
+
+`Implementation <https://github.com/Informfully/Recommenders/tree/main/cornac/rerankers/dynamic_attribute_penalization>`_
