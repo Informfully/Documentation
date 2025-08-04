@@ -16,7 +16,6 @@ The following three algorithms are available:
   The `Recommenders Pipeline <https://informfully.readthedocs.io/en/latest/recommenders.html>`_ provides an overview of all components.
   And you can look at the `Tutorial Notebook <https://github.com/Informfully/Experiments/tree/main/experiments/tutorial>`_ for hands-on examples of everything outlined here.
 
-
 User Scoring
 ------------
 
@@ -37,8 +36,8 @@ Normative Target Distributions
 ------------------------------
 
 User scoring and graph constructions are features shared among all three algorithms.
-D-RDW, however, has an extra post-processing step for item re-ranking that allows to fulfill certain normative target distributions.
-A normative target distribution (NTD) is similar to a kernel function that defined a set a distribution across a set of target dimensions.
+D-RDW, however, has an extra post-processing step for item re-ranking that allows it to fulfill certain normative target distributions.
+A normative target distribution (NTD) is similar to a kernel function that defines a set of distributions across a set of target dimensions.
 They are normative insofar as the example provided in the `Online Tutorial <https://github.com/Informfully/Experiments/tree/main/experiments/tutorial>`_ specified an NTD across a political space.
 This NTS ought to increase viewpoint and topic diversity to promote opinion formation when reading news.
 As such, it operationalizes a societal value as part of a recommender regime.
