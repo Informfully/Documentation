@@ -1,7 +1,7 @@
 Database Tutorial
 =================
 
-This page presents an introduction to retrieving user and items IDs from the MongoDB back end of Informfully for creating recommendation lists.
+This page presents an introduction to retrieving user and item IDs from the MongoDB back end of Informfully for creating recommendation lists.
 In the example shown on this page, we use `MongoDB Compass <https://www.mongodb.com/products/tools/compass>`_ to explore the database and its collections.
 (In the context of MongoDB a "table" in the database is referred to as "collection" and "entry/tupel" as "document" instead.)
 
