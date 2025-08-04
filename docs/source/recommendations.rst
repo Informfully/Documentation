@@ -10,8 +10,8 @@ The `relevant code <https://github.com/Informfully/Documentation/tree/main/sampl
   The `Recommenders Pipeline <https://informfully.readthedocs.io/en/latest/recommenders.html>`_ provides an overview of all components.
   And you can look at the `Tutorial Notebook <https://github.com/Informfully/Experiments/tree/main/experiments/tutorial>`_ for hands-on examples of everything outlined here.
 
-Informfully uses a JSON Recommendation Exchange Format (JREX) to visualize iteem recommendations.
-JREX allows you to add recommendations for any user containing any item that is your document collection.
+Informfully uses a JSON Recommendation Exchange Format (JREX) to visualize item recommendations.
+JREX allows you to add recommendations for any user containing any item that is in your document collection.
 It allows for specifying the following properties of the recommendation list:
 
 ..
@@ -53,7 +53,7 @@ It allows for specifying the following properties of the recommendation list:
      - Timestamp that records when the item recommendation was created.
 
 Below, you find a reference implementation of how, starting with item and user pools, such a JREX list of recommendations is created using the function ``create_recommendation()``.
-(If you are unfamiliar with MongoDB and how to retrieve user and itemd IDs, please see the `MongoDB tutorial page <https://informfully.readthedocs.io/en/latest/compass.html>`_ on how to retrieve them.)
+(If you are unfamiliar with MongoDB and how to retrieve user and item IDs, please see the `MongoDB tutorial page <https://informfully.readthedocs.io/en/latest/compass.html>`_ on how to retrieve them.)
 Again, you can use the `reference implementation <https://github.com/Informfully/Documentation/tree/main/sample>`_ mentioned above to turn the user-item recommendations into JREX.
 
 .. code-block:: python
@@ -148,6 +148,6 @@ The name of the collection can be changed (`see codebase <https://github.com/Inf
 
 The workflow for managing the recommendation list is left open.
 For example, updating recommendations for a given user can be done by simply inserting new recommendations with a higher prediction score.
-This will to preserve existing/old entries and moves them to the bottom of the recommendation list.
-Alternatively, all existing items for a given user can removed before updating the list to make sure that only new items are shown.
+This will preserve existing/old entries and move them to the bottom of the recommendation list.
+Alternatively, all existing items for a given user can be removed before updating the list to make sure that only new items are shown.
 To preserve the recommendation history, this second approach would require moving old recommendations to a separate collection before each update.
