@@ -39,9 +39,9 @@ For JSON files, the expected format is ``{item id: item sentiment_value}``. For 
 
 In this structure, the keys represent the raw IDs of the items, while the corresponding values denote the sentiment values attributed to the articles.
 
-Alternatively, if opting for a CSV file, the first column should contain the item IDs, and the second column contains the corresponding sentiment values.
+Alternatively, if opting for a CSV file, the first column should contain the item IDs, and the second column should contain the corresponding sentiment values.
 
-The output of this function is a dictionary containing item and item sentiment.
+The output of this function is a dictionary containing items and their sentiment.
 
 **load_category**
 
@@ -63,7 +63,7 @@ The output of this function is a dictionary containing item and item category in
 
 **load_category_multi**
 
-This function differs from **load_category** in two ways: it can accommodate either a single or multiple categories per item, and the output is a dictionary mapping items to encoded category vectors.
+This function differs from **load_category** in two ways: it can accommodate either a single category or multiple categories per item, and the output is a dictionary mapping items to encoded category vectors.
 
 Input can be JSON (recommended) or CSV.
 
