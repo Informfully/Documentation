@@ -15,7 +15,7 @@ Sentiment Analysis
 The sentiment feature assesses the emotional tone or polarity expressed in a text. 
 It generates a compound score that integrates individual scores for positivity, negativity, and neutrality, offering a comprehensive evaluation of the sentiment.
 This compound score ranges from -1 (extremely negative) to 1 (extremely positive), reflecting the intensity of the sentiment expressed in the text.
-In Informfully, the sentiment analysis is performed using a multilingual sentiment analysis model, namely `cardiffnlp/twitter-xlm-roberta-base-sentiment <https://huggingface.co/cardiffnlp/twitter-xlm-roberta-base-sentiment>`, based on `XLM-RoBERTa <https://huggingface.co/docs/transformers/en/model_doc/xlm-roberta>` and pre-trained on eight languages (i.e., English, French, German, Arabic, Hindi, Italian, Portuguese, and Spanish).
+In Informfully, the sentiment analysis is performed using a multilingual sentiment analysis model, namely `cardiffnlp/twitter-xlm-roberta-base-sentiment <https://huggingface.co/cardiffnlp/twitter-xlm-roberta-base-sentiment>`_, based on `XLM-RoBERTa <https://huggingface.co/docs/transformers/en/model_doc/xlm-roberta>`_ and pre-trained on eight languages (i.e., English, French, German, Arabic, Hindi, Italian, Portuguese, and Spanish).
 The model is able to automatically detect the language of the input text and provide sentiment analysis accordingly.
 
 Sentiment analysis is employed to calculate the activation metric, assessing the emotional tone or polarity expressed in a piece of text.
@@ -26,15 +26,14 @@ Input:
 Output:
   * A value representing the sentiment score, which is a float between -1 and 1.
 
-* `Implementation <https://github.com/Informfully/Recommenders/tree/main/cornac/augmentation/sentiment.py>`
-
+`Implementation available online. <https://github.com/Informfully/Recommenders/tree/main/cornac/augmentation/sentiment.py>`_
 
 Named Entities
 --------------
 
 The Named Entity Recognition (NER) feature identifies and counts named entities in the text.
 The output requires post-processing to be used as a metric.
-The NER feature is implemented using the `spaCy <https://spacy.io/>` library, which supports the extraction of named entities from texts in various languages, such as English, Catalan, Chinese, Croatian, Danish, Dutch, Finnish, French, German, Greek, Italian, Japanese, Korean, Lithuanian, Macedonian, Norwegian, Polish, Portuguese, Romanian, Russian, Slovenian, Spanish, Swedish, Ukrainian, and multilingual datasets.
+The NER feature is implemented using the `spaCy <https://spacy.io/>`_ library, which supports the extraction of named entities from texts in various languages, such as English, Catalan, Chinese, Croatian, Danish, Dutch, Finnish, French, German, Greek, Italian, Japanese, Korean, Lithuanian, Macedonian, Norwegian, Polish, Portuguese, Romanian, Russian, Slovenian, Spanish, Swedish, Ukrainian, and multilingual datasets.
 Users can specify the type of entities to extract, such as person, event, or location.
 For English and Chinese datasets, entities can include: 'CARDINAL', 'DATE', 'EVENT', 'FAC', 'GPE', 'LANGUAGE', 'LAW', 'LOC', 'MONEY', 'NORP', 'ORDINAL', 'ORG', 'PERCENT', 'PERSON', 'PRODUCT', 'QUANTITY', 'TIME', and 'WORK_OF_ART'.
 For other datasets, entities can include: 'LOC', 'MISC', 'ORG', and 'PER'.
@@ -51,9 +50,9 @@ Output:
     * `frequency`: The number of times the entity appears in the text.
     * `label`: The type of the entity (e.g., 'PER', 'LOC', 'ORG', etc.).
 
-* `Implementation <https://github.com/Informfully/Recommenders/tree/main/cornac/augmentation/ner.py>` 
+`Implementation available online. <https://github.com/Informfully/Recommenders/tree/main/cornac/augmentation/ner.py>`_
 
-Once named entities are identified, they can be further enriched by querying `Wikidata <https://www.wikidata.org/wiki/Wikidata:Main_Page>` for additional information.
+Once named entities are identified, they can be further enriched by querying `Wikidata <https://www.wikidata.org/wiki/Wikidata:Main_Page>`_ for additional information.
 This additional pipeline can extend person entities with their given name, family name, occupation, political party, gender, citizenship, ethnicity, and place of birth, as well as political parties with their ideology. 
 These enriched named entities can serve as a valuable resource for calculating various features, such as political viewpoints based on a person's party if they are a politician.
 
@@ -63,8 +62,7 @@ Input:
 Output:
   * A list of dictionaries with person and organization as key and their extended information as values.
 
-* `Implementation <https://github.com/Informfully/Recommenders/tree/main/cornac/augmentation/enrich_ne.py>`
-
+`Implementation available online. <https://github.com/Informfully/Recommenders/tree/main/cornac/augmentation/enrich_ne.py>`_
 
 Political Actors
 ----------------
@@ -82,15 +80,14 @@ Input:
 Output:
   * A dictionary with the party names as keys and their corresponding frequencies as values, such as {'Democratic Party': 5, 'Republican Party': 3}.
 
-* `Implementation: <https://github.com/Informfully/Recommenders/tree/main/cornac/augmentation/party.py>`
-
+`Implementation available online. <https://github.com/Informfully/Recommenders/tree/main/cornac/augmentation/party.py>`_
 
 Text Complexity or Readability
 ------------------------------
 
 The readability feature assesses the complexity of a text. 
-The complexity score is computed using the Python library `textstat <https://pypi.org/project/textstat/>` which implements the Flesch-Kincaid score. 
-The library supports multiple languages including English (US, UK), Afrikaans, Bulgarian, Catalan, Croatian, Czech, Danish, Dutch, Estonian, French, Galician, German (Germany, Swiss, Austrian), Greek, Hungarian, Italian, Latvian, Lithuanian, Norwegian Bokmål, Norwegian Nynorsk, Polish, Portuguese (Portugal, Brazil), Romanian, Russian, Serbian (official, Latin), Slovak, Slovenian, Spanish, Swedish, Telugu, Ukrainian, and Zulu.
+The complexity score is computed using the Python library `textstat <https://pypi.org/project/textstat/>`_ which implements the Flesch-Kincaid score. 
+The library supports multiple languages including English (US and UK), Afrikaans, Bulgarian, Catalan, Croatian, Czech, Danish, Dutch, Estonian, French, Galician, German (Germany, Swiss, Austrian), Greek, Hungarian, Italian, Latvian, Lithuanian, Norwegian Bokmål, Norwegian Nynorsk, Polish, Portuguese (Portugal, Brazil), Romanian, Russian, Serbian (official, Latin), Slovak, Slovenian, Spanish, Swedish, Telugu, Ukrainian, and Zulu.
 The parameters of the Flesch-Kincaid formula differ across languages and are adjusted based on linguistic research.
 A lower score indicates a more complex text, while a higher score suggests greater readability.
 
@@ -102,8 +99,7 @@ Input:
 Output:
   * A float representing the complexity score, such as 60.0.
 
-* `Implementation <https://github.com/Informfully/Recommenders/tree/main/cornac/augmentation/readability.py>`
-
+`Implementation available online. <https://github.com/Informfully/Recommenders/tree/main/cornac/augmentation/readability.py>`_
 
 Event Clusters
 --------------
@@ -112,7 +108,7 @@ The event cluster feature groups news articles reporting on the same news event 
 The method first transforms each article's text into a TF-IDF vector, capturing the unique relevance of words within the article.
 Next, it calculates the cosine similarity between articles within a 3-day time window, where articles with similar content are more likely to be related to the same news event.
 These pairwise similarities are represented as a graph, where each article is a node, and edges between nodes indicate textual similarity. 
-The `Louvain heuristic algorithm <https://python-louvain.readthedocs.io/en/latest/>` is then applied to partition the graph into clusters. 
+The `Louvain heuristic algorithm <https://python-louvain.readthedocs.io/en/latest/>`_ is then applied to partition the graph into clusters. 
 Each cluster represents a "story chain", grouping articles that report on the same event over time. 
 
 Event or story clusters are used to assess fragmentation.
@@ -123,8 +119,7 @@ Input:
 Output:
   * For each news article, a number indicating the cluster name.
 
-* `Implementation <https://github.com/Informfully/Recommenders/tree/main/cornac/augmentation/story.py>`
-
+`Implementation available online. <https://github.com/Informfully/Recommenders/tree/main/cornac/augmentation/story.py>`_
 
 Category Assignment
 -------------------
@@ -137,7 +132,7 @@ The category of a text can be extracted using two methods:
   Output:
     * A string or a list of strings representing the category, such as 'Finance' or ['Finance', 'Health'].
 
-* Using Zero-Shot Classification: When metadata is unavailable, users can specify a list of potential category labels. A pre-trained zero-shot classifier, `bart-large-mnli <https://huggingface.co/facebook/bart-large-mnli>`, stored locally and downloaded from `Hugging Face <https://huggingface.co>`, can be used to analyze the item's text and assign the most suitable category.
+* Using Zero-Shot Classification: When metadata is unavailable, users can specify a list of potential category labels. A pre-trained zero-shot classifier, `bart-large-mnli <https://huggingface.co/facebook/bart-large-mnli>`_, stored locally and downloaded from `Hugging Face <https://huggingface.co>`_, can be used to analyze the item's text and assign the most suitable category.
   Input:
     * A string representing the text to be analyzed, such as a news article and a list of potential categories.
   Output:
@@ -145,4 +140,4 @@ The category of a text can be extracted using two methods:
 
 The category feature is used for calculating several diversity metrics, such as calibration, binomial diversity, the Gini coefficient, intra-list diversity, and expected intra-list diversity.
 
-* `Implementation <https://github.com/Informfully/Recommenders/tree/main/cornac/augmentation/category.py>`
+`Implementation available online. <https://github.com/Informfully/Recommenders/tree/main/cornac/augmentation/category.py>`_

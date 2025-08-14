@@ -12,7 +12,7 @@ They take the candidate list from the model and re-rank items based on predefine
   And you can look at the `Tutorial Notebook <https://github.com/Informfully/Experiments/tree/main/experiments/tutorial>`_ for hands-on examples of everything outlined here.
 
 Greedy Kullback-Leibler Divergence (G-KL)
-----------------------------------------
+-----------------------------------------
 
 The Greedy-KL method re-ranks recommendations to closely match a user-defined target distribution, which can cover several dimensions.
 More precisely, the G-KL re-ranker enhances the diversity of recommendation lists by minimizing the Kullback-Leibler (KL) divergence between the actual distribution of recommended items and a user-defined target distribution.
@@ -46,6 +46,7 @@ The MMR algorithm greedily selects the document with the highest marginal releva
 * `Paper <https://dl.acm.org/doi/pdf/10.1145/290941.291025>`_
 
 Dynamic Attribute Penalization (DAP)
+------------------------------------
 
 * `Implementation <https://github.com/Informfully/Recommenders/tree/main/cornac/rerankers/dynamic_attribute_penalization>`_
 *  Please see the `User Simulator <https://informfully.readthedocs.io/en/latest/simulator.html>`_ for the details on the dynamic re-ranking approach using DAP.

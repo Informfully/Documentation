@@ -8,7 +8,7 @@ Neural Models
   And you can look at the `Tutorial Notebook <https://github.com/Informfully/Experiments/tree/main/experiments/tutorial>`_ for hands-on examples of everything outlined here.
 
 Efficient Neural Matrix Factorization without Sampling (ENMF)
--------------------------------------
+-------------------------------------------------------------
 
 The ENMF model is a neural recommendation approach that combines the strengths of matrix factorization and neural networks, which learns user and item representations from the entire training data, without sampling.
 In other words, it does not rely on sampling techniques to learn user and item representations.
@@ -18,7 +18,7 @@ To be able to learn from the entire training data, the model implements three op
 * `Paper <https://dl.acm.org/doi/abs/10.1145/3373807>`_
 
 Long- and Short-Term User Representation (LSTUR)
-----------------------------------------
+------------------------------------------------
 
 LSTUR is a neural news recommendation approach that can learn both long- and short-term user representations. 
 The core of this model is a news encoder and a user encoder. 
@@ -30,7 +30,7 @@ It consists of two modules, i.e., a short-term user representation model (STUR) 
 * `Paper <https://aclanthology.org/P19-1033>`_
 
 Neural News Recommendation with Personalized Attention (NPA)
-------------------------------------------------------
+------------------------------------------------------------
 
 The NPA model is a neural news recommendation approach that uses personalized attention to learn user and news representations.
 It employs a CNN news encoder to learn hidden representations of news articles (from news article titles).
@@ -41,7 +41,7 @@ Both word- and news-level attention mechanisms are utilized to improve the repre
 * `Paper <https://dl.acm.org/doi/abs/10.1145/3292500.3330665>`_
 
 Neural News Recommendation with Multi-Head Self-Attention (NRMS)
----------------------------------------------------------
+----------------------------------------------------------------
 
 The NRMS model is a neural news recommendation approach that uses multi-head self-attention to learn representations of news and users. 
 The news encoder learns news representations from news article titles by modelling word interactions. 
@@ -52,7 +52,7 @@ In addition, the model incorporates an attention mechanism that focuses on ident
 * `Paper <https://aclanthology.org/D19-1671>`_
 
 Variational Autoencoders for Collaborative Filtering (DAE)
-------------------------
+----------------------------------------------------------
 
 The DAE algorithm extends variational autoencoders to collaborative filtering for implicit feedback by applying a non-linear probabilistic model. 
 This generative model uses multinomial likelihood to model the users' interaction history and Bayesian inference for parameter estimation.
