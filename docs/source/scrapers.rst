@@ -22,7 +22,7 @@ Architecture Overview
 
 Informfully is complemented by a dedicated content scraper.
 The entire content scraper pipeline is written in Python and uses MongoDB for persistent storage of news items.
-All you need to do is to add a scraper to `the scraper package <https://github.com/Informfully/Scrapers/tree/main/scraperpackage/scrapers>`_ and call it in ``main.py``.
+All you need to do is add a scraper to `the scraper package <https://github.com/Informfully/Scrapers/tree/main/scraperpackage/scrapers>`_ and call it in ``main.py``.
 You can find sample implementations in this folder as well.
 
 The individual scraper modules (called ``scrape.py`` or ``scrape_n.py``) are required to implement the scraping function ``scrape()``.
@@ -64,7 +64,6 @@ If it is configured without SSH, the manager will simply create a ``MongoClient`
    with MongoManager() as db:
       articles = db.articles.find({}).fetch()
 
-
 .. _scraping:
 
 Scraping Pipeline
@@ -104,7 +103,7 @@ Afterwards, a percentage is calculated for how many sentences are shared between
 If the percentage is over a certain threshold, the two articles will be considered duplicates.
 Every new article from the scrapers will undergo this step.
 The articles are compared against each other and also with the existing articles in the database.
-Due to the time relevancy of news articles, duplicates typically do not have a large time span between them, so the selection of articles from the database is limited by a time window of a few days.
+Due to the time relevance of news articles, duplicates typically do not have a large time span between them, so the selection of articles from the database is limited by a time window of a few days.
 
 **Text Normalization** Especially when directly scraped from the websites, news articles may contain idiosyncrasies such as spelling variants of words, formatting (numbers, dates, and headlines), as well as self-references (names of the publication).
 These anomalies may indicate the source of the article, which is undesirable.
