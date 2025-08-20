@@ -2,7 +2,7 @@ Code Overview
 =============
 
 The Informfully Platform combined both the app front end and website back end in one project.
-To get a better overview of how to write and extend this platform, we provide here a short project overview.
+To get a better overview of how to write and extend this platform, we provide a short project overview here.
 The two parts we look at in more detail are the ``frontend``  and ``backend`` directories.
 
 ``frontend`` Directory
@@ -81,7 +81,7 @@ The backend repo is based on `Meteor <https://www.meteor.com/>`_ with `React <ht
 It is highly encouraged to complete the following `Tutorial <https://react-tutorial.meteor.com/>`_, to get a better understanding of Meteor and how it can be used together with React (which is the framework used for the development of the admin website user interface) or React Native (which is the framework used for the development of the mobile app user interface).
 The back end repo contains both the Meteor backend (``server``) and the React-based admin website (``client``).
 Complete the abovementioned Tutorial to better understand why the backend repo is structured like it is. 
-Below, a short overview of the structure is provided.
+Below is a short overview of the structure.
 
 The Meteor framework is a JavaScript NodeJS backend solution which integrates well with React and React Native and ships with `MongoDB <https://www.mongodb.com/>`_.
 It includes a very special approach to project directories and files.
