@@ -14,7 +14,7 @@ The creation of user accounts through the Mobile App, however, is currently disa
 Creation of Regular Users
 -------------------------
 
-Regular users are typically created over the tool for `User Creation <https://informfully.readthedocs.io/en/latest/experiment.html>`_ , after a researcher has decided how many users will participate in the experiment.
+Regular users are typically created over the tool for `User Creation <https://informfully.readthedocs.io/en/latest/experiment.html>`_, after a researcher has decided how many users will participate in the experiment.
 
 Users can also create an account on their own via the app.
 This feature, however, is currently disabled.
