@@ -1,10 +1,10 @@
 User Simulator
 ==============
 
-This overview present the user simulator and its dynamic re-rankers included in Informfully Recommenders.
-In this context, danymic means that the re-rankers are applied multiple times per user session.
+This overview presents the user simulator and its dynamic re-rankers included in Informfully Recommenders.
+In this context, dynamic means that the re-rankers are applied multiple times per user session.
 They take the candidate list from the model and re-rank the items based on intra-session user feedback.
-To that end, the simulator allows to define these intra-session browsing behavior/patterns to mock user interactions.
+To that end, the simulator allows for defining these intra-session browsing behavior/patterns to mock user interactions.
 
 .. note::
 
@@ -24,7 +24,7 @@ In the context of NRSs, the two default behaviors included in the framework are:
 
 Dynamic Attribute Penalization (DAP)
 
-DAP provices a dynamic intra-session re-ranking option that updates recommendations based on user interaction.
+DAP provides a dynamic intra-session re-ranking option that updates recommendations based on user interaction.
 It diversifies the recommendation list by penalizing items in upcoming sessions that share attributes with clicked ones.
 
 `Implementation <https://github.com/Informfully/Recommenders/tree/main/cornac/rerankers/dynamic_attribute_penalization>`_
