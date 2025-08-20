@@ -37,7 +37,7 @@ Meteor Methods
 
 Meteor ``methods`` are functions to call when modifying data. It is similar to POST requests with REST APIs.
 These methods are also available to the client as stub functions.
-This means that the client will simulate the outcome and update its UI with its local Minimongo database before a confirmation from the server (more infos `here <https://docs.meteor.com/api/methods.html>`_).
+This means that the client will simulate the outcome and update its UI with its local Minimongo database before a confirmation from the server (visit the `official website <https://docs.meteor.com/api/methods.html>`_ for more information).
 
 The methods can be found in the folder ``imports/api/``.
 In this folder, all the Meteor methods are split into JavaScript files and are named after the collections in MongoDB they are related to.
