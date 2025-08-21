@@ -14,7 +14,7 @@ If Informfully is used in another capacity, all records labelled ``articleId`` c
 
   Please visit the `Informfully Datasets Repository <https://github.com/Informfully/Datasets>`_. 
   For an example of the quality of the data once it is exported and the corresponding `Dataset Documentation <https://informfully.readthedocs.io/en/latest/datasets.html>`_.
-  And read the `MongoDB Compass Tutotrial <https://informfully.readthedocs.io/en/latest/compass.html>`_ for instructions on how to interface/connect with the database in the back end.
+  And read the `MongoDB Compass Tutorial <https://informfully.readthedocs.io/en/latest/compass.html>`_ for instructions on how to interface/connect with the database in the back end.
 
 answers*
 --------
@@ -422,7 +422,7 @@ newsArticles
      - Current options include BLICK, NZZ, TAGI, SRF, WOZ, or WW.
    * - ``primaryCategory``
      - String
-     - The categoriy of an item.
+     - The category of an item.
    * - ``subCategories``
      - Array of Strings
      - The sub-categories of an article. This information is not always provided.
@@ -531,7 +531,7 @@ readingList*
 recommendationLists
 --------------------
 
-**Description** Collects that are shown on the home screen of a user in the exact ordering determined by the recommender system.
+**Description** Collections that are shown on the home screen of a user in the exact ordering determined by the recommender system.
 
 .. list-table::
    :widths: 25 25 50
@@ -598,7 +598,7 @@ signins*
 **Description** Collects all times a user has accessed the app.
 A new record is added each time the user refreshes the browser tab.
 Hence, a record might not reflect the actual timestamp at which a given user has signed in (meaning the action of initially signing in).
-In return, for users that hardly ever sign out and hence hardly ever sign in, it (more) correctly reflects the last time the user has used the application.
+In return, for users who hardly ever sign out and hence hardly ever sign in, it (more) correctly reflects the last time the user has used the application.
 
 .. list-table::
    :widths: 25 25 50
@@ -677,7 +677,7 @@ surveys
      - ID of experiment
    * - ``isActive``
      - Boolean
-     - A flag which indicates whether the survey will be shown in the mobile app to participants in the experiment. A True means that the survey will be shown.
+     - A flag that indicates whether the survey will be shown in the mobile app to participants in the experiment. A True means that the survey will be shown.
    * - ``questions``
      - Array of Objects
      - Contains all the questions in the survey. For more information about what the array looks like, see below.
