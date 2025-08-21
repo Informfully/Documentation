@@ -37,7 +37,7 @@ articleLikes/articleTotalLikes
 **articleLikes.insert**
 
 * Adds a statement of the current user for a particular article
-* Adds the like to the total likes of all users participating in the experiment
+* Adds the likes to the total likes of all users participating in the experiment
 * Input:
   
   * articleId: ID of the article
@@ -233,7 +233,7 @@ signins
 
 **signins.add**
 
-* Add a signin log entry for the current user
+* Add a sign-in log entry for the current user
 
 surveys
 -------
@@ -274,7 +274,7 @@ users (default Meteor collection)
 
 **user.sendVerificationMail**
 
-* Sends a verification mail to the current user
+* Sends a verification email to the current user
 
 **user.surveys.reset**
 
@@ -306,4 +306,3 @@ videoAnalytics
   * articleId: ID of the article
   * action: type of action performed by the user
   * videoTimestamp: time in the video player at which the action was performed
-  
