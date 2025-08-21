@@ -61,13 +61,13 @@ If the item modality is text, however, the system will create and store a copy a
      - Current options include BLICK, NZZ, TAGI, SRF, WOZ, or WW.
    * - ``primaryCategory``
      - String
-     - The categoriy of an item.
+     - The category of an item.
    * - ``subCategories``
      - Array of Strings
      - The sub-categories of an article. This information is not always provided.
    * - ``language``
      - String
-     - Langauge code of the article (e.g., en-US, de-CH, etc.)
+     - Language code of the article (e.g., en-US, de-CH, etc.)
 
 .. note::
    
@@ -109,7 +109,7 @@ A sample `body`` element of an item looks like this:
     },
     {
       "type": "quote",
-      "text": "This is the \"quote\" option that creates an indented paragaph with the same font size as regular text."
+      "text": "This is the \"quote\" option that creates an indented paragraph with the same font size as regular text."
     }
   ]
 
