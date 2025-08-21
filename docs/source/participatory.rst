@@ -18,16 +18,16 @@ Algorithm Overview
 PLD is an algorithm that forms a recommendation list by using political user score and article score.
 The user score can be calculated from a questionnaire survey or based on the user's historical browsing data, as adopted in this project, while the article score is calculated from the user scores of all its readers.
 In order to assess these scores and apply PLD, the following three questions must be answered:
-1. How to measure political scores of users?
+1. How to measure the political scores of users?
 2. How to assign a political label to a news item?
-3. How many articles of what political positions should users receive? (I..e, quantify and discretize a normative target distribution across a 1D list or 2D grid.)
+3. How many articles on what political positions should users receive? (I..e, quantify and discretize a normative target distribution across a 1D list or 2D grid.)
 The Figure below shows how PLD combined normative target distributions across two 1D lists into a 2D grid for recommendations.
 
 .. image:: img/algorithm_assets/pld.jpg
    :width: 700
    :alt: Normative distribution for recommendations with PLD
 
-Articles are classified based on the frequency of mentions of political parties, categorized to one party according to predefined settings.
+Articles are classified based on the frequency of mentions of political parties, categorized into one party according to predefined settings.
 The model can calculate recommendations on a group level, reducing the overall runtime as it generates candidate lists.
 This is possible because the political user score is the only attribute that is considered.
 And this attribute can be defined in such a way that users are in pre-defined bins.
@@ -40,14 +40,14 @@ Open Parameters
 Details can be found in the `Configuration File <https://github.com/Informfully/Recommenders/blob/main/tests/configs/model_configs/parameters.ini>`_.
 
 * name: string, default: 'PLD'. The name of the recommender model.
-* trainable: boolean, optional, default: True. When False, the model is not trained and Cornac assumes that the model already is pre-trained. (U and V are not 'None').
+* trainable: boolean, optional, default: True. When False, the model is not trained, and Cornac assumes that the model is already pre-trained. (U and V are not 'None').
 * verbose: boolean, optional, default: False.  When True, running logs are displayed.
-* num_users: int, default: 0. The number of users in dataset.
-* num_items: int, default: 0. The number of items in dataset.
-* party_dict: dict. A dictionary whose keys are article ids and values are references of this articles.
-* distribution: Nested Lists. Every elment in outer layer is a list which includes user group type and a list of the article distribution for this user type.  Example is as the {project_path}/examples/pld_mind.py.
-* update_score: boolean, default: True. When 'False', use existed score files under the folder './cornac/models/pld'.
-* configure_path: str, default: './parameters.ini'. Configure file which includes parties to be calculated.
+* num_users: int, default: 0. The number of users in the dataset.
+* num_items: int, default: 0. The number of items in the dataset.
+* party_dict: dict. A dictionary whose keys are article IDs and values are references to these articles.
+* distribution: Nested Lists. Every element in the outer layer is a list that includes the user group type and a list of the article distribution for this user type.  An example is the {project_path}/examples/pld_mind.py.
+* update_score: boolean, default: True. When 'False', use existing score files under the folder './cornac/models/pld'.
+* configure_path: str, default: './parameters.ini'. Configure a file that includes parties to be calculated.
 
 Article Classification
 ----------------------
