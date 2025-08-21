@@ -41,20 +41,20 @@ Open Parameters
 Details can be found in the `Configuration File <https://github.com/Informfully/Recommenders/blob/main/tests/configs/model_configs/parameters.ini>`_.
 
 * name: string, default: 'EPD'. The name of the recommender model.
-* articles_collection: list. The list of whole articles, with article political reference.
-* political_type_dict: dict. The dictionary of political classes, keys are indices, values are political type of articles.
+* articles_collection: list. The list of whole articles, with the article's political reference.
+* political_type_dict: dict. The dictionary of political classes, keys are indices, values are political types of articles.
 * num_items: int. The number of items(here are articles) in one experiment.
 * k: int, optional, default: 3. The number of political and non-political articles each time added into recommendation collection.
 * pageWidth: int, optional, default: 24. The maximum number of articles added for each user group.
-* trainable: boolean, optional, default: True. When False, the model is not trained and Cornac assumes that the model is already pre-trained. (U and V are not 'None'.)
+* trainable: boolean, optional, default: True. When False, the model is not trained, and Cornac assumes that the model is already pre-trained. (U and V are not 'None'.)
 * verbose: boolean, optional, default: False.When 'True', running logs are displayed.
 
 Article Classification
 ----------------------
 
 Articles in the majority party's news must mention at least one majority/governing party, and they must not mention any minority or opposition party.
-Minority party news feature at least one minority/opposition party.
-Other political news consists of articles on political topics, not mentioning any majority or minority parties or mentions of foreign political parties.
+Minority party news features at least one minority/opposition party.
+Other political news consists of articles on political topics, not mentioning any majority or minority parties or mentioning foreign political parties.
 The list size of EPD determined the number of recommended articles, with a slice value used for grouping and interleaving non-political articles.
 
 Source
