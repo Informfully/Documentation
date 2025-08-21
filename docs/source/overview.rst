@@ -21,7 +21,7 @@ Phase 1 - Enrollment Phase
 --------------------------
 
 Participants download the app from the respective storefronts (**Android** or **iOS**).
-Once the app is installed, users sign in using either experiment-specific credentials that were provided to them or they create a new account.
+Once the app is installed, users sign in using either experiment-specific credentials that were provided to them or they creating a new account.
 User credentials/accounts can be generated in batches when setting up an experiment.
 
 In a subsequent step, users can be prompted to complete an intake survey to create a detailed user profile.
@@ -43,7 +43,7 @@ Phase 2 - Experiment Phase
 
 Once users are assigned to their respective groups, they can be presented with group-specific content.
 This content can be text, video, or audio. All content is stored in a schema-free MongoDB instance.
-Content can be copied to the database before the start of the experiment or it can be added/expanded at any future point in time.
+Content can be copied to the database before the start of the experiment, or it can be added to/expanded at any future point in time.
 In the sample above, we see how a cron job regularly scrapes online websites to add new items to the central database for recommendation purposes.
 
 Assigning content to participants in the groups of an experiment can be done simultaneously (everyone gets to see the content at the same point in time) or it can be combined (groups receive content one after the other or in any custom fashion that can be controlled via a script).
