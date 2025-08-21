@@ -57,7 +57,7 @@ Variational Autoencoders for Collaborative Filtering (DAE)
 The DAE algorithm extends variational autoencoders to collaborative filtering for implicit feedback by applying a non-linear probabilistic model. 
 This generative model uses multinomial likelihood to model the users' interaction history and Bayesian inference for parameter estimation.
 DAE reconstructs clean inputs from deliberately corrupted versions.
-By learning to remove or to model the noise in the input data, DAE can learn more robust representations.
+By learning to remove or model the noise in the input data, DAE can learn more robust representations.
 
 * `Implementation <https://github.com/Informfully/Recommenders/tree/main/cornac/models/dae>`_
 * `Paper <https://dl.acm.org/doi/abs/10.1145/3178876.3186150>`_
