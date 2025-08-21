@@ -18,7 +18,7 @@ Experiment Files
 We created a dedicated GitHub repository where we share all the `workflows of experiments <https://github.com/Informfully/Experiments>`_.
 The main file relevant for the purpose of reproducing the results of this submission is in the `Informfully Recommenders Tutorial <https://github.com/Informfully/Experiments/tree/main/experiments/tutorial>`_.
 
-Tutorial Noteboook
-------------------
+Tutorial Notebook
+-----------------
 
 We provide a wiki with more background information on all the components and features implemented as part of our extended framework in the `Informfully Online Documentation <https://informfully.readthedocs.io/en/latest/recommenders.html>`_,
