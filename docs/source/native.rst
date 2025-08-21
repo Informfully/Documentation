@@ -113,7 +113,6 @@ You will be asked a couple of questions about how you'd like to build your proje
     Running eject is a permanent action (aside from whatever version control system you use).
     An ejected app will require you to have an `XCode and/or Android Studio environment <https://reactnative.dev/docs/environment-setup>`_) set up.
 
-
 Deploy Website
 -------------------------
 
