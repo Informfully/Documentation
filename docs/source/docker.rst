@@ -71,7 +71,7 @@ Please note that it may take a few minutes to load the file, and no progress bar
 
     **Troubleshooting** 
 
-    ``Access is denied' error while building Docker image``: This might be caused either by a missing permissions or by the project path being too long.
+    ``Access is denied' error while building Docker image``: This might be caused either by a missing permission or by the project path being too long.
     To resolve this issue, temporarily move your entire frontend folder directly under the ``C:\`` directory. This solution has been effective in resolving the issue and successfully generating the backend Docker image.
 
     ``Cannot successfully connect phone to Expo service``: If a QR code has been generated but you are facing problems connecting to the running Meteor service on the container, make sure that:
