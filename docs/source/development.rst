@@ -34,7 +34,7 @@ The back end is now running and the administration website is accessible via ``l
     In terms of database setup, you can connect to the database through ``mongodb://localhost:3009/`` if your Meteor server is running on port 3008.
     If the user collection in the database is empty when starting up, a new user with Maintainer role is automatically created by the ``genesis.js`` script `Genesis script located here <https://github.com/Informfully/Platform/blob/main/backend/server/genesis.js>`_.
     In this documentation, we use the naming convention of MongoDB. Tables are referred to as collections, and tuples as documents.
-    There is no need for you to create and document collection, as MongoDB will automatically create one when you insert the first document into a collection that does not yet exist.
+    There is no need for you to create a document collection, as MongoDB will automatically create one when you insert the first document into a collection that does not yet exist.
 
 You will need to install the following libraries and packages on your machine:
 
@@ -111,7 +111,8 @@ Trying to decrypt the salt is just as difficult as decrypting the password becau
 This special `encryption mechanism <https://docs.meteor.com/api/passwords>`_ employed by Meteor makes it impossible to insert a new user into the database without using Meteor.
 
 Therefore, to create the very first ``Maintainer``, we provide the ``main.js`` and ``genesis.js`` scripts that were run when the server was initialized.
-We connect (with ``main.js``) and check (with ``genesis.js``) if the database is empty and if yes, we insert a new user with the below user info (see again ``genesis.ja``).
+We connect (with ``main.js``) and check (with ``genesis.js``) if the database is empty.
+If yes, we insert a new user with the below user info (see again ``genesis.ja``).
 
 **main.js**
 
