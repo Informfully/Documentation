@@ -58,7 +58,8 @@ The output of this function is a dictionary containing item and item category in
 load_category_multi
 -------------------
 
-This function differs from **load_category** in two ways: it can accommodate either a single category or multiple categories per item, and the output is a dictionary mapping items to encoded category vectors.
+This function differs from **load_category** in two ways: it can accommodate either a single category or multiple categories per item.
+The output is a dictionary mapping items to encoded category vectors.
 Input can be JSON (recommended) or CSV.
 For JSON input, the expected format is ``{item id: item categories}``.
 For example::
