@@ -37,11 +37,12 @@ Once entities are extracted, the function clusters similarly named entities usin
 
 * Input: A string representing the text to be analyzed, such as a news article and a list of entity types, such as ['PER', 'LOC', 'ORG', 'MISC'].
 * Output: A list of dictionaries, each representing a named entity and its attributes, such as:
-    * `text`: The text of the entity.
-    * `alternative`: A list of alternative names or aliases for the entity.
-    * `spans`: A list of tuples representing the start and end character indices of the entity in the input text.
-    * `frequency`: The number of times the entity appears in the text.
-    * `label`: The type of the entity (e.g., 'PER', 'LOC', 'ORG', etc.).
+
+  * `text`: The text of the entity.
+  * `alternative`: A list of alternative names or aliases for the entity.
+  * `spans`: A list of tuples representing the start and end character indices of the entity in the input text.
+  * `frequency`: The number of times the entity appears in the text.
+  * `label`: The type of the entity (e.g., 'PER', 'LOC', 'ORG', etc.).
 
 `Implementation available online. <https://github.com/Informfully/Recommenders/tree/main/cornac/augmentation/ner.py>`_
 
@@ -79,7 +80,7 @@ A lower score indicates a more complex text, while a higher score suggests great
 The text complexity or readability feature is used to calculate the calibration metric.
 
 * Input: A string representing the text to be analyzed, such as a news article.
-* Output:A float representing the complexity score, such as 60.0.
+* Output: A float representing the complexity score, such as 60.0.
 
 `Implementation available online. <https://github.com/Informfully/Recommenders/tree/main/cornac/augmentation/readability.py>`_
 
@@ -106,10 +107,12 @@ The category assignment feature determines the category or topic of an item, suc
 The category of a text can be extracted using two different methods.
 
 Using Metadata Information: If an external metadata file containing item IDs and corresponding categories is available, the system can merge the metadata with the dataset by linking the item IDs, similar to joining tables in a database.
+
 * Input: A string representing the text to be analyzed, such as a news article and a corresponding metadata file.
 * Output: A string or a list of strings representing the category, such as 'Finance' or ['Finance', 'Health'].
 
 Using Zero-Shot Classification: When metadata is unavailable, users can specify a list of potential category labels. A pre-trained zero-shot classifier, `bart-large-mnli <https://huggingface.co/facebook/bart-large-mnli>`_, stored locally and downloaded from `Hugging Face <https://huggingface.co>`_, can be used to analyze the item's text and assign the most suitable category.
+
 * Input: A string representing the text to be analyzed, such as a news article and a list of potential categories.
 * Output: A string representing the category, such as 'Finance', 'Health', or 'Sport'.
 
