@@ -56,6 +56,12 @@ Below, you find a reference implementation of how, starting with item and user p
 (If you are unfamiliar with MongoDB and how to retrieve user and item IDs, please see the `MongoDB tutorial page <https://informfully.readthedocs.io/en/latest/compass.html>`_ on how to retrieve them.)
 Again, you can use the `reference implementation <https://github.com/Informfully/Documentation/tree/main/sample>`_ mentioned above to turn the user-item recommendations into JREX.
 
+.. note::
+
+  The app will automatically download all images of articles shown in in the news feed.
+  We, therefore, recommend including URLs to downsizes images.
+  This makes loading items faster and avoids potential server bottlenecks.  
+
 .. code-block:: python
 
     # Sample script for generating recommendations

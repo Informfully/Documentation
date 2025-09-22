@@ -2,7 +2,7 @@ Data Splitting
 ==============
 
 Different data splitting techniques are offered to test how the distribution of certain characteristics across the training and test sets impacts the recommendation outcome.
-The following list presents an overview of the available options.
+The following list presents an overview of the available options that we have implemented in a separate `Splitting Script <https://github.com/Informfully/Recommenders/blob/main/cornac/eval_methods/stratified_split_diversity.py>`_
 
 .. note::
 
