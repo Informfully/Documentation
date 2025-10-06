@@ -19,6 +19,18 @@ The documentation in this repository is the source for the online [Informfully D
 git clone https://github.com/Informfully/Documentation.git
 ```
 
+## Presentations
+
+| Title | Venue |
+|-|-|
+| [Informfully Platform](https://github.com/Informfully/Documentation/blob/main/docs/source/presentations/RecSys24_Resource.pdf) | RecSys '24 (Resource) |
+| [Diversity in News Recommendations](https://github.com/Informfully/Documentation/blob/main/docs/source/presentations/RecSys24_Challenge.pdf) | RecSys '24 (Challenge) |
+| [Informfully Recommenders](https://github.com/Informfully/Documentation/blob/main/docs/source/presentations/RecSys25_Framework.pdf) | RecSys '25 (Resource) |
+| [D-RDW Algorithm](https://github.com/Informfully/Documentation/blob/main/docs/source/presentations/RecSys25_Algorithm.pdf) | RecSys '25 (Main) |
+<!-- | ... | NORMalie '23 | -->
+<!-- | ... | NORMalie '24 | -->
+<!-- | ... | NORMalie '25 | -->
+
 ## Citation
 
 If you use any code or data from this repository in a scientific publication, we ask you to cite the following papers:
