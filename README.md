@@ -24,12 +24,14 @@ git clone https://github.com/Informfully/Documentation.git
 
 | Title | Venue |
 |-|-|
-| [Informfully Platform](https://github.com/Informfully/Documentation/blob/main/docs/source/presentations/RecSys24_Resource.pdf) | RecSys '24 (Resource) |
-| [Diversity in News Recommendations](https://github.com/Informfully/Documentation/blob/main/docs/source/presentations/RecSys24_Challenge.pdf) | RecSys '24 (Challenge) |
-| [Informfully Dataset](https://github.com/Informfully/Documentation/blob/main/docs/source/presentations/NORMalize24_Dataset.pdf) | NORMalize '24 Workshop |
-| [Informfully Recommenders](https://github.com/Informfully/Documentation/blob/main/docs/source/presentations/RecSys25_Framework.pdf) | RecSys '25 (Resource) |
-| [D-RDW Algorithm](https://github.com/Informfully/Documentation/blob/main/docs/source/presentations/RecSys25_Algorithm.pdf) | RecSys '25 (Main) |
-| [Nudges for News Recommenders](github.com/Informfully/Documentation/blob/main/docs/source/presentations/NORMalize25_Nudges.pdf) | NORMalize '25 Workshop |
+| [Policital News Recommender](https://github.com/Informfully/Documentation/blob/main/docs/source/presentations/ICA23_Study.pdf) | ICA '23 |
+| [Informfully Platform](https://github.com/Informfully/Documentation/blob/main/docs/source/presentations/RecSys24_Resource.pdf) | RecSys '24 |
+| [Diversity in News Recommendations](https://github.com/Informfully/Documentation/blob/main/docs/source/presentations/RecSys24_Challenge.pdf) | RecSys '24 |
+| [Nudging News Engagement](https://github.com/Informfully/Documentation/blob/main/docs/source/presentations/ICA24_Study.pdf) | ICA '24 |
+| [Informfully Dataset](https://github.com/Informfully/Documentation/blob/main/docs/source/presentations/NORMalize24_Dataset.pdf) | NORMalize '24 |
+| [Informfully Recommenders](https://github.com/Informfully/Documentation/blob/main/docs/source/presentations/RecSys25_Framework.pdf) | RecSys '25 |
+| [D-RDW Algorithm](https://github.com/Informfully/Documentation/blob/main/docs/source/presentations/RecSys25_Algorithm.pdf) | RecSys '25 |
+| [Nudges for News Recommenders](github.com/Informfully/Documentation/blob/main/docs/source/presentations/NORMalize25_Nudges.pdf) | NORMalize '25 |
 
 ## Citation
 
