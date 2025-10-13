@@ -33,7 +33,17 @@ It features three core components:
 * a back end for researchers to create and maintain user experiments, and 
 * a simple JSON-based exchange format (JREX) for ranked item recommendations to interface with third-party services.
 
-This documentation provides you with all the information you need to successfully configure and deploy Informfully.
+Architecture
+------------
+
+.. image:: img/uml/application_architecture_v4.2.png
+   :width: 700
+   :alt: Informfully application architecture
+
+Informfully features a fully modular design.
+The app/web interfaces, the content scrapers, the recommender system, and any other part listed here in this documentation can be used together or in a stand-alone fashion.
+There is no dependency across these components, as they communicate exclusively via shared document collections.
+This documentation provides you with all the information you need to successfully configure and the Informfully as a whole or individually.
 It is structured as follows:
 
 * **Getting Started** serves as an overall introduction for installing the codebase, creating a development environment, and notes on the platform deployment.
