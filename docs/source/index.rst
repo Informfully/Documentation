@@ -36,7 +36,7 @@ It features three core components:
 Architecture
 ------------
 
-.. image:: img/uml/application_architecture_v4.2.png
+.. image:: uml/application_architecture_v4.2.png
    :width: 700
    :alt: Informfully application architecture
 
