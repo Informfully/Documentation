@@ -24,6 +24,10 @@ For a tutorial on how to use Informfully, start with the :doc:`install` section 
 Overview
 --------
 
+.. image:: img/informfully_assets/informfully_app_screens.png
+   :width: 700
+   :alt: Informfully app screenshots
+
 The Informfully platform allows you to push algorithmically curated text, image, audio, and video content to users and automatically generates a detailed log of their consumption history.
 It is a domain-agnostic and platform-independent solution to fit your specific needs.
 The platform was designed to accommodate different experiment types through versatility, ease of use, and scalability.
@@ -50,10 +54,6 @@ It is structured as follows:
 * **Managing Experiments** provides an in-depth overview of how to use the Informfully platform to conduct user studies.
 * **Recommender System** provides a tutorial on how to use the built-in Informfully recommender framework.
 * **Technical Documentation** provides insights for various technical aspects in order to customize and extend the platform.
-
-.. image:: img/informfully_assets/informfully_app_screens.png
-   :width: 700
-   :alt: Informfully app screenshots
 
 .. toctree::
    :maxdepth: 1
