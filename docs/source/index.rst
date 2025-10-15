@@ -112,6 +112,20 @@ Citation
 
 If you use any Informfully code/repository in a scientific publication, we ask you to cite the following papers:
 
+* * `Informfully Recommenders – Reproducibility Framework for Diversity-aware Intra-session Recommendations <https://doi.org/10.1145/3705328.3748148>`_, Heitz *et al.*, Proceedings of the 19th ACM Conference on Recommender Systems, 2025.
+
+.. code-block:: console
+
+   @inproceedings{heitz2025recommenders,
+      title={Informfully Recommenders – Reproducibility Framework for Diversity-aware Intra-session Recommendations},
+     author={Heitz, Lucien and Li, Runze and Inel, Oana and Bernstein, Abraham},
+     booktitle={Proceedings of the 19th ACM Conference on Recommender Systems},
+     pages={792--801},
+     year={2025},
+     publisher={ACM New York, NY, USA},
+     url={https://doi.org/10.1145/3705328.3748148}
+   }
+
 * `Informfully - Research Platform for Reproducible User Studies <https://dl.acm.org/doi/10.1145/3640457.3688066>`_, Heitz *et al.*, Proceedings of the 18th ACM Conference on Recommender Systems, 2024.
 
 .. code-block:: console
@@ -121,35 +135,10 @@ If you use any Informfully code/repository in a scientific publication, we ask y
       author={Heitz, Lucien and Croci, Julian A and Sachdeva, Madhav and Bernstein, Abraham},
       booktitle={Proceedings of the 18th ACM Conference on Recommender Systems},
       pages={660--669},
-      year={2024}
+      year={2024},
+      publisher={ACM New York, NY, USA},
+      url={https://doi.org/10.1145/3640457.3688066}
   }
-
-* `Deliberative Diversity for News Recommendations - Operationalization and Experimental User Study <https://dl.acm.org/doi/10.1145/3604915.3608834>`_, Heitz *et al.*, Proceedings of the 17th ACM Conference on Recommender Systems, 813–819, 2023.
-
-.. code-block:: console
-
-   @inproceedings{heitz2023deliberative,
-      title={Deliberative Diversity for News Recommendations: Operationalization and Experimental User Study},
-      author={Heitz, Lucien and Lischka, Juliane A and Abdullah, Rana and Laugwitz, Laura and Meyer, Hendrik and Bernstein, Abraham},
-      booktitle={Proceedings of the 17th ACM Conference on Recommender Systems},
-      pages={813--819},
-      year={2023}
-   }
-
-* `Benefits of Diverse News Recommendations for Democracy: A User Study <https://www.tandfonline.com/doi/full/10.1080/21670811.2021.2021804>`_, Heitz *et al.*, Digital Journalism, 10(10): 1710–1730, 2022.
-
-.. code-block:: console
-
-   @article{heitz2022benefits,
-      title={Benefits of diverse news recommendations for democracy: A user study},
-      author={Heitz, Lucien and Lischka, Juliane A and Birrer, Alena and Paudel, Bibek and Tolmeijer, Suzanne and Laugwitz, Laura and Bernstein, Abraham},
-      journal={Digital Journalism},
-      volume={10},
-      number={10},
-      pages={1710--1730},
-      year={2022},
-      publisher={Taylor \& Francis}
-   }
 
 Support
 -------
