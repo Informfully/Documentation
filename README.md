@@ -24,7 +24,9 @@ git clone https://github.com/Informfully/Documentation.git
 
 | Title | Venue |
 |-|-|
-| [Policital News Recommender](https://github.com/Informfully/Documentation/blob/main/docs/source/presentations/ICA23_Study.pdf) | ICA '23 |
+| [Diverse News Recommendations](https://github.com/Informfully/Documentation/blob/main/docs/source/presentations/FOJ21_Study.pdf) | FOJ '21 |
+| [Algorithmic Content Curation](https://github.com/Informfully/Documentation/blob/main/docs/source/presentations/ICA22_Study.pdf) | ICA '22 |
+| [Policital News Recommendations](https://github.com/Informfully/Documentation/blob/main/docs/source/presentations/ICA23_Study.pdf) | ICA '23 |
 | [Informfully Platform](https://github.com/Informfully/Documentation/blob/main/docs/source/presentations/RecSys24_Resource.pdf) | RecSys '24 |
 | [Diversity in News Recommendations](https://github.com/Informfully/Documentation/blob/main/docs/source/presentations/RecSys24_Challenge.pdf) | RecSys '24 |
 | [Nudging News Engagement](https://github.com/Informfully/Documentation/blob/main/docs/source/presentations/ICA24_Study.pdf) | ICA '24 |
