@@ -21,12 +21,12 @@ git clone https://github.com/Informfully/Documentation.git
 
 ## Presentations and Posters
 
-
 | Title | Venue |
 |-|-|
 | [Diverse News Recommendations](https://github.com/Informfully/Documentation/blob/main/docs/source/presentations/FOJ21_Study.pdf) | FOJ '21 |
 | [Algorithmic Content Curation](https://github.com/Informfully/Documentation/blob/main/docs/source/presentations/ICA22_Study.pdf) | ICA '22 |
 | [Deliberateive Diversity for News Recommendations](https://github.com/Informfully/Documentation/blob/main/docs/source/presentations/RecSys23_Poster.pdf) | RecSys '23 |
+| [Classification of Recommender Systems](https://github.com/Informfully/Documentation/blob/main/docs/source/presentations/NORMalize23_Framework.pdf) | NORMalize '23 |
 | [Policital News Recommendations](https://github.com/Informfully/Documentation/blob/main/docs/source/presentations/ICA23_Study.pdf) | ICA '23 |
 | [Informfully Platform](https://github.com/Informfully/Documentation/blob/main/docs/source/presentations/RecSys24_Resource.pdf) | RecSys '24 |
 | [Diversity in News Recommendations](https://github.com/Informfully/Documentation/blob/main/docs/source/presentations/RecSys24_Challenge.pdf) | RecSys '24 |
@@ -64,20 +64,6 @@ If you use any code or data from this repository in a scientific publication, we
   }
   ```
 
-* [Benefits of Diverse News Recommendations for Democracy: A User Study](https://doi.org/10.1080/21670811.2021.2021804), Heitz *et al.*, Digital Journalism, 10(10): 1710–1730, 2022.
-
-  ```tex
-  @article{heitz2022benefits,
-    title={Benefits of diverse news recommendations for democracy: A user study},
-    author={Heitz, Lucien and Lischka, Juliane A and Birrer, Alena and Paudel, Bibek and Tolmeijer, Suzanne and Laugwitz, Laura and Bernstein, Abraham},
-    journal={Digital Journalism},
-    volume={10},
-    number={10},
-    pages={1710--1730},
-    year={2022},
-    publisher={Taylor \& Francis}
-  }
-  ```
 
 ## Contributing
 
