@@ -32,6 +32,7 @@ git clone https://github.com/Informfully/Documentation.git
 | [Diversity in News Recommendations](https://github.com/Informfully/Documentation/blob/main/docs/source/presentations/RecSys24_Challenge.pdf) | RecSys '24 |
 | [Nudging News Engagement](https://github.com/Informfully/Documentation/blob/main/docs/source/presentations/ICA24_Study.pdf) | ICA '24 |
 | [Informfully Dataset](https://github.com/Informfully/Documentation/blob/main/docs/source/presentations/NORMalize24_Dataset.pdf) | NORMalize '24 |
+| [Beyond-Accuracy Objectives for AI in News](https://github.com/Informfully/Documentation/blob/main/docs/source/presentations/AMLD25_Workshop.pdf) | AMLD '25 |
 | [Informfully Recommenders](https://github.com/Informfully/Documentation/blob/main/docs/source/presentations/RecSys25_Framework.pdf) | RecSys '25 |
 | [Diversity-Driven Random Walks (D-RDW)](https://github.com/Informfully/Documentation/blob/main/docs/source/presentations/RecSys25_Algorithm.pdf) | RecSys '25 |
 | [Nudges for News Recommenders](github.com/Informfully/Documentation/blob/main/docs/source/presentations/NORMalize25_Nudges.pdf) | NORMalize '25 |
