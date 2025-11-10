@@ -66,3 +66,12 @@ The debriefing survey can be combined with an event trigger that automatically b
 
 After the completion of the experiment, any of the recorded data points can be exported as either **CSV** or **JSON**.
 Since the app is using MongoDB for the database part, it is also possible to export or create a separate instance with copies of all collections/documents for further analysis and evaluation purposes.
+
+There are two ways to deactivate/close experiment.
+First, you can move all user accounts from the experiment in question into a separate userArchive collection.
+By doing so, your experiment participants will no longer be able to access the app.
+This is the prefered option in case there are no plans to have the panelists take part in subsequent experiments.
+Second, you can create a lock out survey.
+This is a survey without any questions/buttons, but a text that inform participants about the end of the survey.
+Such a survey presents a screen overlay that cannot be closed, effectively locking out participants from the app.
+This is the prefered option in case panelists take place in subsequent experiments, as this is only a temporary solution that can be easily undone.
