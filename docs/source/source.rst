@@ -168,8 +168,8 @@ It consists of utility functions such as splitting strings, constructing arrays,
 Within the directory, the code is further divided into components and concerns.
 
 The ``startup`` directory includes all files, for each directory, that are needed during startup.
-Specifically, there is an ``index.js``file for both the server and the client that loads all necessary files during startup.
-This simplifies the startup process and allows us to load the ``index.js`` files into the ``main.js``file, splitting the complexity.
+Specifically, there is an ``index.js`` file for both the server and the client that loads all necessary files during startup.
+This simplifies the startup process and allows us to load the ``index.js`` files into the ``main.js`` file, splitting the complexity.
 The ``ui`` directory contains all React components used for the user interface of the admin website.
 The directory includes a very similar structure to the one applied to the ``client/stylesheets/`` directory.
 There are again different groups of components such as ``layouts``, ``elements``, and ``modules``.
