@@ -4,16 +4,16 @@ Data Loading
 This page provides an example for loading the MIND news dataset into the Cornac framework.
 Users can similarly load their own datasets and create other loading functions. 
 The functions detailed in the subsequent sections are available within the **``cornac/datasets/mind.py``** module.
-The aim is to transform externally enhanced data into the requisite format required by the diversity framework.
-Prior to employing functions, it is strongly advised to review the structure and content of the provided data file.
+The aim is to transform externally enhanced data into the required format for the diversity framework.
+Before using functions, it is strongly recommended to review the structure and content of the provided data file.
 The following sections will provide an overview of all the functions offered.
 
 load_feedback
 -------------
 
-This function is designed to handle rating data loading.
+This function is designed to handle loading rating data.
 The necessary format involves a CSV file that includes three essential columns: user, item, and rating.
-These columns must follow a specific order: user first, followed by item, and then rating.
+These columns must follow a specific order: user, then item, and finally rating.
 However, if the CSV file contains an index and consequently has four columns, the ``load_feedback`` function will exclude the first column.
 The output is a list of tuples containing all user-item-rating pairs.
 
@@ -39,7 +39,7 @@ load_category
 -------------
 
 The purpose of this function is to load item categories into a dictionary.
-This function pertains to scenarios where each item is linked to a single category.
+This function applies to scenarios where each item is associated with a single category.
 The input can be provided in either a JSON format (recommended) or a CSV format.
 When using a JSON file as input, the expected format is ``{item id: item category}``.
 For example::
@@ -52,7 +52,7 @@ For example::
         "N43955": "entertainment"
     }
 
-Alternatively, if opting for a CSV file as input, the first column should contain the item raw IDs, and the second column the corresponding category.
+Alternatively, if opting for a CSV file as input, the first column should contain the item's raw IDs, and the second column should contain the corresponding category.
 The output of this function is a dictionary containing item and item category information.
 
 load_category_multi
@@ -75,7 +75,7 @@ For example::
 
 For single-category items: ``{"N2073": "sports"}``  
 For multi-category items: ``{"N55528": ["lifestyle", "health"]}``
-For CSV input, the first column should list item raw IDs, and the second column should contain a single category or a comma-separated list.
+For CSV input, the first column should list the item's raw IDs, and the second column should contain a single category or a comma-separated list of categories.
 
 load_complexity
 ---------------
@@ -147,7 +147,7 @@ JSON input will filter out items with empty data. Output is a dictionary with li
 load_min_maj
 ------------
 
-This function manages minority/majority scores based on a protected attribute like gender, ethnicity, or mainstream status.
+This function manages minority/majority scores based on a protected attribute, such as gender, ethnicity, or mainstream status.
 The ``data_type`` parameter can be set to one of these.
 Expected JSON format::
 
