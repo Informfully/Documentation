@@ -15,8 +15,8 @@ For the code, please see the `PLD implementation <https://github.com/Informfully
 Algorithm Overview
 ------------------
 
-PLD is an algorithm that forms a recommendation list by using political user score and article score.
-The user score can be calculated from a questionnaire survey or based on the user's historical browsing data, as adopted in this project, while the article score is calculated from the user scores of all its readers.
+PLD is an algorithm that generates a recommendation list by combining political user scores and article scores.
+The user score can be calculated from a questionnaire survey or based on the user's historical browsing data, as adopted in this project. The article score, on the other hand, is calculated from the user scores of all its readers.
 In order to assess these scores and apply PLD, the following three questions must be answered:
 1. How to measure the political scores of users?
 2. How to assign a political label to a news item?
@@ -30,7 +30,7 @@ The Figure below shows how PLD combined normative target distributions across tw
 Articles are classified based on the frequency of mentions of political parties, categorized into one party according to predefined settings.
 The model can calculate recommendations on a group level, reducing the overall runtime as it generates candidate lists.
 This is possible because the political user score is the only attribute that is considered.
-And this attribute can be defined in such a way that users are in pre-defined bins.
+This attribute can be defined in a way that users are assigned to pre-defined bins.
 Hence, users in the same bin share the same score and should therefore receive the same recommendations.
 It is up to researchers to define the distribution (e.g., users can only receive items from nearby bins in close proximity or on the opposite side of the spectrum).
 
@@ -45,8 +45,8 @@ Details can be found in the `Configuration File <https://github.com/Informfully/
 * num_users: int, default: 0. The number of users in the dataset.
 * num_items: int, default: 0. The number of items in the dataset.
 * party_dict: dict. A dictionary whose keys are article IDs and values are references to these articles.
-* distribution: Nested Lists. Every element in the outer layer is a list that includes the user group type and a list of the article distribution for this user type.  An example is the {project_path}/examples/pld_mind.py.
-* update_score: boolean, default: True. When 'False', use existing score files under the folder './cornac/models/pld'.
+* distribution: Nested Lists. Every element in the outer layer is a list that includes the user group type and a list of articles distributed to this user type. An example is the {project_path}/examples/pld_mind.py.
+* update_score: boolean, default: True. When 'False', use the existing score files located in the folder './cornac/models/pld'.
 * configure_path: str, default: './parameters.ini'. Configure a file that includes parties to be calculated.
 
 Article Classification
@@ -58,9 +58,9 @@ In a second step, each article gets assigned the average political score of its 
 (Both user scores and article scores are mapped into the same political space.)
 Finally, users in the experimental group get recommended items based on user-item distance.
 
-When re-using PLD for offline testing requires addressing one critical issue:
-There are no users who can take a survey.
-When starting the offline evaluation, users are assigned political scores on the basis of the ratio of political actors' items in their history.
+When reusing PLD for offline testing requires addressing one critical issue:
+There are no users available to take the survey.
+When starting the offline evaluation, users are assigned political scores based on the ratio of political actors' items in their history.
 To that end, we introduce an offline-only step for annotating political actors/parties in news articles.
 They are automatically counted across all reading histories.
 The subsequent logic of PLD remains the same:
