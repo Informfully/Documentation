@@ -18,13 +18,13 @@ We use Expo's bare workflow to generate native Android project code.
 This allows the application to be further developed using the native tools, such as Android Studio.
 Follow these steps to build an APK:
 
-    #. Make sure that all the changes are committed (e.g., that your working tree is clean).
+    #. Ensure that all changes are committed (e.g., that your working tree is clean).
     #. Navigate to the frontend folder on the command line.
     #. Type ``npm install`` in the command line.
     #. Type ``expo eject`` in the command line.
     #. Open the Android project with Android Studio.
     #. Configure the project.
-    #. Open AndroidManifest.xml using the file browser in Android Studio and add/remove permissions (look below for more details).
+    #. Open the AndroidManifest.xml file using the file browser in Android Studio and add/remove permissions (see below for more details).
     #. Build -> Generate Signed Bundle/APK -> APK -> Give the key store path and enter credentials -> Release with both V1 (JAR Signature) and V2 (Full APK Signature) -> Finish.
     #. The APK will be generated in ``/android/app/release/app-release.apk``.
 
