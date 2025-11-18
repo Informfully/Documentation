@@ -16,7 +16,7 @@ Building the App
 
 Navigate to the frontend folder on the command line.
 Run the following command on a clean working branch to create the temporary iOS project.
-We will discard all changes after uploading the iOS app/testing the iOS app.
+We will discard all changes after uploading the iOS app and testing it.
 
 .. code-block:: console
 
