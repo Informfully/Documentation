@@ -16,7 +16,7 @@ Greedy Kullback-Leibler Divergence (G-KL)
 
 The Greedy-KL method re-ranks recommendations to closely match a user-defined target distribution, which can cover several dimensions.
 More precisely, the G-KL re-ranker enhances the diversity of recommendation lists by minimizing the Kullback-Leibler (KL) divergence between the actual distribution of recommended items and a user-defined target distribution.
-The Greedy-KL method allows end-users to define a custom target distribution and specify the diversity dimensions they are interested in (e.g., sentiment, category, political mentions, etc.). 
+The Greedy-KL method enables end-users to define a custom target distribution and specify the diversity dimensions they are interested in (e.g., sentiment, category, political mentions). 
 Users can also assign weights to these dimensions, prioritizing certain dimensions of diversity over others. 
 This method incrementally builds a ranked list of recommendations by iteratively selecting items that best achieve the target distribution.
 
