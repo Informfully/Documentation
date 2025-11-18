@@ -130,7 +130,7 @@ articleLikes*
 articleTotalLikes*
 ------------------
 
-**Description** The collection keeps track of the total likes/dislikes of the users in an experiment.
+**Description** The collection tracks the total likes/dislikes of users in an experiment.
 
 .. list-table::
    :widths: 25 25 50
@@ -204,7 +204,7 @@ articleViews*
      - Shows how much the user has seen from the article's content; can be between 0 and 1; a 0 indicates that the user has not scrolled down yet.
    * - ``updatedAt``
      - Date
-     - Date on which the article was last accessed in case it has been opened multiple times.
+     - Date on which the article was last accessed, in case it has been opened multiple times.
    * - ``views``
      - Integer
      - Number of times the article has been viewed by this user.
@@ -216,7 +216,7 @@ experiments
 -----------
 
 **Description** The ``experiments`` collection contains information(``_id``, ``name``, etc.) about these experiments and surveys set by the admin.
-The information can be modified on the ``Information`` page while ``likeSurvey`` can be set on the ``Feedback`` page.
+The information can be modified on the ``Information`` page, while ``likeSurvey`` can be set on the ``Feedback`` page.
 
 .. list-table::
    :widths: 25 25 50
@@ -248,16 +248,16 @@ The information can be modified on the ``Information`` page while ``likeSurvey``
      - URL to the Terms and Conditions.
    * - ``testingPhase``
      - Boolean
-     - A flag that indicates whether the experiment has launched or not. A true value means that the experiment has not launched yet. Once an experiment is launched, it cannot go back to the design phase, no additional users can be added, survey questions cannot be edited, and statements in the Feedback surveys tab cannot be edited.
+     - A flag that indicates whether the experiment has launched or not. A true value means that the experiment has not been launched yet. Once an experiment is launched, it cannot be returned to the design phase; no additional users can be added, survey questions cannot be edited, and statements in the Feedback surveys tab cannot be modified.
    * - ``likeSurvey``
      - Object
-     - This field contains the statements that are shown after each article, and users can like or dislike them. For more information about what the object looks like, see below.
+     - This field contains the statements that are shown after each article, and users can like or dislike them. For more information about the object's appearance, see below.
    * - ``feedbackEmail``
      - String
      - E-mail, which is shown in the mobile app, allows users to contact the researchers responsible for conducting the experiment in case of questions.
    * - ``explanationTagsDef``
      - Object
-     - Contains objects that define the explanation tags used in the experiment. For more information about what the object looks like, see below.
+     - Contains objects that define the explanation tags used in the experiment. For more information about the object's appearance, see below.
    * - ``maxNrExplanationTags``
      - Integer
      - Limits the number of explanation tags that can be shown per article. Set to 0 in case you want to disable the use of explanation tags for the experiment.
@@ -266,7 +266,7 @@ The information can be modified on the ``Information`` page while ``likeSurvey``
      - Limits the number of characters that are shown inside the explanation tags of each article preview.
    * - ``maxNrFurtherRecArticles``
      - Integer
-     - Limits the number of articles that are recommended at the end of the ``Article`` page/screen. Set to 0 in case you want to disable those recommendations.
+     - Limits the number of articles that are recommended at the end of the ``Article`` page/screen. Set to 0 to disable those recommendations.
    * - ``totalLikesDislikesEnabled``
      - Boolean
      - Controls whether the total likes/dislikes are shown on the Article page/screen. Set to False to hide the total likes/dislikes.
@@ -597,7 +597,7 @@ signins*
 
 **Description** Collects all times a user has accessed the app.
 A new record is added each time the user refreshes the browser tab.
-Hence, a record might not reflect the actual timestamp at which a given user has signed in (meaning the action of initially signing in).
+Hence, a record may not accurately reflect the actual timestamp at which a given user signed in (i.e., the initial sign-in action).
 In return, for users who hardly ever sign out and hence hardly ever sign in, it (more) correctly reflects the last time the user has used the application.
 
 .. list-table::
