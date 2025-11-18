@@ -10,9 +10,9 @@ Neural Models
 Efficient Neural Matrix Factorization without Sampling (ENMF)
 -------------------------------------------------------------
 
-The ENMF model is a neural recommendation approach that combines the strengths of matrix factorization and neural networks, which learns user and item representations from the entire training data, without sampling.
+The ENMF model is a neural recommendation approach that combines the strengths of matrix factorization and neural networks, learning user and item representations from the entire training data without sampling.
 In other words, it does not rely on sampling techniques to learn user and item representations.
-To be able to learn from the entire training data, the model implements three optimization methods: user-based, item-based, and alternating. 
+To learn from the entire training data, the model employs three optimization methods: user-based, item-based, and alternating. 
 
 * `Implementation <https://github.com/Informfully/Recommenders/tree/main/cornac/models/enmf>`_
 * `Paper <https://dl.acm.org/doi/abs/10.1145/3373807>`_
@@ -55,7 +55,7 @@ Variational Autoencoders for Collaborative Filtering (DAE)
 ----------------------------------------------------------
 
 The DAE algorithm extends variational autoencoders to collaborative filtering for implicit feedback by applying a non-linear probabilistic model. 
-This generative model uses multinomial likelihood to model the users' interaction history and Bayesian inference for parameter estimation.
+This generative model employs a multinomial likelihood to model users' interaction histories and utilizes Bayesian inference for parameter estimation.
 DAE reconstructs clean inputs from deliberately corrupted versions.
 By learning to remove or model the noise in the input data, DAE can learn more robust representations.
 
