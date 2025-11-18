@@ -11,10 +11,10 @@ And you can look at the `Tutorial Notebook <https://github.com/Informfully/Exper
    :alt: Overview of the extension stages
 
 The diagram above shows the extended framework Informfully Recommenders provides.
-It includes the four dedicated stages for pre-processing, in-processing, post-processing, and evaluation.
-In addition to that, it features a save state manager where the results of any stage can be stored and loaded.
-This allows reusing existing data, e.g., for applying different re-rankers to one and the same candidate list.
-Please find below an outline of the individual components and a link to their dedicated wiki pages for more information.
+It includes four dedicated stages: pre-processing, in-processing, post-processing, and evaluation.
+Additionally, it features a save state manager that allows the results of any stage to be stored and loaded.
+This allows for reusing existing data, e.g., applying different re-rankers to the same candidate list.
+Please find below an outline of the individual components, along with a link to their dedicated wiki pages for further information.
 
 Pre-processing Stage
 --------------------
