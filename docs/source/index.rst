@@ -45,9 +45,9 @@ Architecture
    :alt: Informfully application architecture
 
 Informfully features a fully modular design.
-The app/web interfaces, the content scrapers, the recommender system, and any other part listed here in this documentation can be used together or in a stand-alone fashion.
+The app/web interfaces, content scrapers, recommender system, and any other components listed in this documentation can be used together or in a standalone fashion.
 There is no dependency across these components, as they communicate exclusively via shared document collections.
-This documentation provides you with all the information you need to successfully configure and the Informfully as a whole or individually.
+This documentation provides you with all the information you need to successfully configure Informfully as a whole or individually.
 It is structured as follows:
 
 * **Getting Started** serves as an overall introduction for installing the codebase, creating a development environment, and notes on the platform deployment.
