@@ -10,7 +10,8 @@ Informfully Recommenders
 ------------------------
 
 The code of Informfully Recommenders is open-source and publicly available on the `official GitHub repository <https://github.com/Informfully/Recommenders>`_.
-Our framework presents an extension of Cornac. For installation instructions, we refer to the `Cornac User Guide <https://cornac.readthedocs.io/en/v2.3.0/user/index.html>`_.
+Our framework presents an extension of Cornac.
+For installation instructions, we refer to the `Cornac User Guide <https://cornac.readthedocs.io/en/v2.3.0/user/index.html>`_.
 
 Experiment Files
 -----------------
