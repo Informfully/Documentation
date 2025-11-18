@@ -33,7 +33,7 @@ The back end is now running and the administration website is accessible via ``l
 
     In terms of database setup, you can connect to the database through ``mongodb://localhost:3009/`` if your Meteor server is running on port 3008.
     If the user collection in the database is empty when starting up, a new user with Maintainer role is automatically created by the ``genesis.js`` script `Genesis script located here <https://github.com/Informfully/Platform/blob/main/backend/server/genesis.js>`_.
-    In this documentation, we use the naming convention of MongoDB. Tables are referred to as collections, and tuples as documents.
+    In this documentation, we adhere to the naming convention used by MongoDB. Tables are referred to as collections, and tuples are referred to as documents.
     There is no need for you to create a document collection, as MongoDB will automatically create one when you insert the first document into a collection that does not yet exist.
 
 You will need to install the following libraries and packages on your machine:
@@ -91,7 +91,7 @@ After you have set the ``SERVER`` constant, you can do the following to start th
 
     **Important** ``npx`` comes with ``npm`` and hence with ``Node.js``. ``npm`` will automatically fetch ``Expo``. If prompted, install ``npx`` and/or ``expo`` as required.
 
-Afterwards, you can scan the QR code that will show up, if you want to test the app on a physical device (recommended).
+Afterwards, you can scan the QR code that appears, if you want to test the app on a physical device (recommended).
 Or you can connect to a device emulator (e.g., Android Studio or Xcode).
 
 .. image:: img/meteor_bundle.png
@@ -104,7 +104,7 @@ Helper Scripts for Maintainers
 ------------------------------
 
 Meteor encrypts all passwords of any users created using the `bcrypt <https://en.wikipedia.org/wiki/Bcrypt>`_ algorithm, which ensures that all passwords are encrypted a second time with an unknown "salt" value.
-This protects against embarrassing password leaks in case the server's database is compromised.
+This protects against embarrassing password leaks in the event that the server's database is compromised.
 
 When a user logs in, the Meteor Account System checks the encrypted password generated with its "salt".
 Trying to decrypt the salt is just as difficult as decrypting the password because of the nature of the bcrypt algorithm.
@@ -112,7 +112,7 @@ This special `encryption mechanism <https://docs.meteor.com/api/passwords>`_ emp
 
 Therefore, to create the very first ``Maintainer``, we provide the ``main.js`` and ``genesis.js`` scripts that were run when the server was initialized.
 We connect (with ``main.js``) and check (with ``genesis.js``) if the database is empty.
-If yes, we insert a new user with the below user info (see again ``genesis.ja``).
+If so, we insert a new user with the information below (see again ``genesis.ja``).
 
 **main.js**
 
@@ -160,7 +160,7 @@ If yes, we insert a new user with the below user info (see again ``genesis.ja``)
 
 .. note::
 
-    It is recommended to delete this user after another ``Maintainer`` has been created in order to ensure the safety of the system.
+    It is recommended to delete this user after another ``Maintainer`` has been created to ensure the system's security.
     This applies to both the local and online deployment of the back end.
 
 Next Step: Platform Deployment
