@@ -16,8 +16,8 @@ The sentiment feature assesses the emotional tone or polarity expressed in a tex
 It generates a compound score that integrates individual scores for positivity, negativity, and neutrality, offering a comprehensive evaluation of the sentiment.
 This compound score ranges from -1 (extremely negative) to 1 (extremely positive), reflecting the intensity of the sentiment expressed in the text.
 In Informfully, the sentiment analysis is performed using a multilingual sentiment analysis model, namely `cardiffnlp/twitter-xlm-roberta-base-sentiment <https://huggingface.co/cardiffnlp/twitter-xlm-roberta-base-sentiment>`_, based on `XLM-RoBERTa <https://huggingface.co/docs/transformers/en/model_doc/xlm-roberta>`_ and pre-trained on eight languages (i.e., English, French, German, Arabic, Hindi, Italian, Portuguese, and Spanish).
-The model is able to automatically detect the language of the input text and provide sentiment analysis accordingly.
-Sentiment analysis is employed to calculate the activation metric, assessing the emotional tone or polarity expressed in a piece of text.
+The model can automatically detect the language of the input text and provide sentiment analysis accordingly.
+Sentiment analysis is used to calculate the activation metric, which assesses the emotional tone or polarity expressed in a piece of text.
 
 * Input: A string representing the text to be analyzed, such as a news article.
 * Output: A value representing the sentiment score, which is a float between -1 and 1.
@@ -30,12 +30,12 @@ Named Entities
 The Named Entity Recognition (NER) feature identifies and counts named entities in the text.
 The output requires post-processing to be used as a metric.
 The NER feature is implemented using the `spaCy <https://spacy.io/>`_ library, which supports the extraction of named entities from texts in various languages, such as English, Catalan, Chinese, Croatian, Danish, Dutch, Finnish, French, German, Greek, Italian, Japanese, Korean, Lithuanian, Macedonian, Norwegian, Polish, Portuguese, Romanian, Russian, Slovenian, Spanish, Swedish, Ukrainian, and multilingual datasets.
-Users can specify the type of entities to extract, such as person, event, or location.
+Users can specify the type of entities to extract, such as people, events, or locations.
 For English and Chinese datasets, entities can include: 'CARDINAL', 'DATE', 'EVENT', 'FAC', 'GPE', 'LANGUAGE', 'LAW', 'LOC', 'MONEY', 'NORP', 'ORDINAL', 'ORG', 'PERCENT', 'PERSON', 'PRODUCT', 'QUANTITY', 'TIME', and 'WORK_OF_ART'.
 For other datasets, entities can include: 'LOC', 'MISC', 'ORG', and 'PER'.
 Once entities are extracted, the function clusters similarly named entities using the Louvain community detection algorithm and computes their frequency.
 
-* Input: A string representing the text to be analyzed, such as a news article and a list of entity types, such as ['PER', 'LOC', 'ORG', 'MISC'].
+* Input: A string representing the text to be analyzed, such as a news article, and a list of entity types, such as ['PER', 'LOC', 'ORG', 'MISC'].
 * Output: A list of dictionaries, each representing a named entity and its attributes, such as:
 
   * `text`: The text of the entity.
@@ -47,11 +47,11 @@ Once entities are extracted, the function clusters similarly named entities usin
 `Implementation available online. <https://github.com/Informfully/Recommenders/tree/main/cornac/augmentation/ner.py>`_
 
 Once named entities are identified, they can be further enriched by querying `Wikidata <https://www.wikidata.org/wiki/Wikidata:Main_Page>`_ for additional information.
-This additional pipeline can extend person entities with their given name, family name, occupation, political party, gender, citizenship, ethnicity, and place of birth, as well as political parties with their ideology. 
+This additional pipeline can extend person entities with their given name, family name, occupation, political party affiliation, gender, citizenship, ethnicity, and place of birth, as well as political parties with their respective ideologies. 
 These enriched named entities can serve as a valuable resource for calculating various features, such as political viewpoints based on a person's party if they are a politician.
 
 * Input: A list of dictionaries, each representing a named entity and its attributes.
-* Output: A list of dictionaries with person and organization as key and their extended information as values.
+* Output: A list of dictionaries with person and organization as keys and their extended information as values.
 
 `Implementation available online. <https://github.com/Informfully/Recommenders/tree/main/cornac/augmentation/enrich_ne.py>`_
 
@@ -60,8 +60,8 @@ Political Actors
 
 The political actors feature identifies and quantifies the political affiliations and ideologies expressed in the text, whether through individuals or organizations.
 More precisely, it detects political parties and candidates mentioned in the text and calculates their frequency.
-This feature makes use of the named entity recognition feature and queries Wikidata to consolidate party aliases and abbreviations, thus, minimizing redundancy. 
-These enhancements yield a more precise and concise output, providing a clearer representation of political party frequencies within the text.
+This feature utilizes the named entity recognition feature and queries Wikidata to consolidate party aliases and abbreviations, thereby minimizing redundancy. 
+These enhancements yield a more precise and concise output, providing a clearer representation of the frequencies of political parties within the text.
 The political actors/parties feature is used to calculate the representation metrics.
 
 * Input: A list of dictionaries with named entities, the language of the text, and a dictionary with possible translations of parties. 
@@ -108,14 +108,15 @@ The category of a text can be extracted using two different methods.
 
 Using Metadata Information: If an external metadata file containing item IDs and corresponding categories is available, the system can merge the metadata with the dataset by linking the item IDs, similar to joining tables in a database.
 
-* Input: A string representing the text to be analyzed, such as a news article and a corresponding metadata file.
+* Input: A string representing the text to be analyzed, such as a news article, and a corresponding metadata file.
 * Output: A string or a list of strings representing the category, such as 'Finance' or ['Finance', 'Health'].
 
-Using Zero-Shot Classification: When metadata is unavailable, users can specify a list of potential category labels. A pre-trained zero-shot classifier, `bart-large-mnli <https://huggingface.co/facebook/bart-large-mnli>`_, stored locally and downloaded from `Hugging Face <https://huggingface.co>`_, can be used to analyze the item's text and assign the most suitable category.
+Using Zero-Shot Classification: When metadata is unavailable, users can specify a list of potential category labels to guide the classification process.
+A pre-trained zero-shot classifier, `bart-large-mnli <https://huggingface.co/facebook/bart-large-mnli>`_, stored locally and downloaded from `Hugging Face <https://huggingface.co>`_, can be used to analyze the item's text and assign the most suitable category.
 
-* Input: A string representing the text to be analyzed, such as a news article and a list of potential categories.
+* Input: A string representing the text to be analyzed, such as a news article, and a list of potential categories.
 * Output: A string representing the category, such as 'Finance', 'Health', or 'Sport'.
 
-The category feature is used for calculating several diversity metrics, such as calibration, binomial diversity, the Gini coefficient, intra-list diversity, and expected intra-list diversity.
+The category feature is used to calculate several diversity metrics, including calibration, binomial diversity, the Gini coefficient, intra-list diversity, and expected intra-list diversity.
 
 `Implementation available online. <https://github.com/Informfully/Recommenders/tree/main/cornac/augmentation/category.py>`_
