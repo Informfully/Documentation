@@ -8,7 +8,7 @@ In case you need more information about React Native, the most recent version of
 
 .. note::
 
-    A valid SSL certificate for all communications between the front end and back end is required.
+    A valid SSL certificate is required for all communications between the front end and back end.
     Apps on the Google Play Store and Apple Store will no longer work if any URL is not using HTTPS.
 
 Automatic Deployment
@@ -23,7 +23,7 @@ Navigate to the main directory of your codebase and execute the following script
     # Deploy back end on the server
     bash build.sh
 
-There are two scripts in the root directory of the project, ``.snippets.sh`` and ``build.sh``.
+There are two scripts in the project's root directory: ``.snippets.sh`` and ``build.sh``.
 You find the shell script ``build.sh`` in the back end folder (`shell script located here <https://github.com/Informfully/Platform/blob/main/backend/build.sh>`_).
 Before the script can be used, the variables in the file ``.snippets.sh`` have to be set (`configuration file located here <https://github.com/Informfully/Platform/blob/main/backend/build.sh>`_).
 
@@ -39,7 +39,7 @@ In short, the script will automate the following steps:
 
 #.  Use the command ``meteor build`` to create the Node app bundle.
 #.  Upload the bundle to the server using ``scp`` (the password of the back end server will be required).
-#.  SSH to the remote machine (password required again).
+#.  SSH to the remote machine (a password is required again).
 #.  Unpack the tar.gz bundle created by using the ``build.sh`` script.
 #.  Run ``npm install`` inside ``bundle/programs/server`` to install dependencies.
 #.  Move the bundle folder to the ``/var/newsapp/`` location.
