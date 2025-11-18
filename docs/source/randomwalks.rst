@@ -21,15 +21,15 @@ User Scoring
 
 With random walks, the user score functions as a representation of each user's weight within the recommendation graph, influencing their impact on the recommendation results.
 Given that we employ the random walk algorithm within the Cornac framework to produce randomized recommendations, we initialize the scores of all known users to 0 in this study.
-This initialization ensures that, at the outset, each user is assigned an equal weight, effectively treating all users equally within the recommendation process and minimizing any bias in the initial state of the algorithm.
+This initialization ensures that, at the outset, each user is assigned an equal weight, effectively treating all users equally within the recommendation process and minimizing any bias in the algorithm's initial state.
 
 Graph Construction
 ------------------
 
 The input data required by this algorithm includes the user reading history, a mapping table for user IDs and indices, and a mapping table for article IDs and indices.
-The latter two are stored in the object after Radiosplit, making them easy to retrieve and use.
+The latter two are stored in the object after Radiosplit, making them easily retrievable and usable.
 However, for the reading history, we need to construct it using the user-item rating matrix as a triple.
-We load the triple data into a data frame and then use grouping and filtering functions to isolate the articles that each user has read (where rating=1), forming the reading history list.
+We load the triple data into a data frame and then use grouping and filtering functions to isolate the articles that each user has read (where rating = 1), forming the reading history list.
 By processing the entire DataFrame, we can extract the reading history for each user from the user-item interaction rating triple.
 
 Normative Target Distributions
@@ -39,5 +39,5 @@ User scoring and graph constructions are features shared among all three algorit
 D-RDW, however, has an extra post-processing step for item re-ranking that allows it to fulfill certain normative target distributions.
 A normative target distribution (NTD) is similar to a kernel function that defines a set of distributions across a set of target dimensions.
 They are normative insofar as the example provided in the `Online Tutorial <https://github.com/Informfully/Experiments/tree/main/experiments/tutorial>`_ specified an NTD across a political space.
-This NTS ought to increase viewpoint and topic diversity to promote opinion formation when reading news.
+This NTS should increase viewpoint and topic diversity to promote informed opinion formation when reading news.
 As such, it operationalizes a societal value as part of a recommender regime.
