@@ -7,8 +7,8 @@ There are two types of users: regular users (data field ``roles`` of collection 
 Regular users can only access the Mobile App, whereas administrator users can access both the Mobile App and the Administration Website.
 
 As we are using Meteor's default account and authentication system, there are currently two ways to create a new user.
-You can do it either through the Administration Website or through the Mobile App.
-Regular users can be created both through the Administration Website and the Mobile App, whereas admin users can currently be created only through the Mobile App.
+You can complete this task either through the Administration Website or the Mobile App.
+Regular users can be created through both the Administration Website and the Mobile App, whereas admin users can currently only be created through the Mobile App.
 The creation of user accounts through the Mobile App, however, is currently disabled (commented out in the source code).
 
 Creation of Regular Users
@@ -16,15 +16,16 @@ Creation of Regular Users
 
 Regular users are typically created over the tool for `User Creation <https://informfully.readthedocs.io/en/latest/experiment.html>`_, after a researcher has decided how many users will participate in the experiment.
 
-Users can also create an account on their own via the app.
+Users can also create an account independently through the app.
 This feature, however, is currently disabled.
-When creating experiments with this option enabled, we recommend that researchers create a survey for the group ``default-experiment``, where people need to submit their e-mail address.
+When creating experiments with this option enabled, we recommend that researchers create a survey for the group ``default-experiment``, where participants need to submit their email address.
 This then allows for access control over the app.
 
 Creation of Administrator Users
 -------------------------------
 
-Admin users are created manually by developers with access to the MongoDB. For that, a user account has to be created over the Mobile App, and consequently, its data fields in the user collection have to be manually overwritten. Specifically, the following fields have to be overwritten:
+Admin users are created manually by developers with access to the MongoDB. For this, a user account must be created through the Mobile App, and consequently, its data fields in the user collection must be manually updated. 
+Specifically, the following fields have to be overwritten:
 
 - ``roles``: needs to be changed from ``['user']`` to ``['user', 'admin']``
 - ``participatesIn``: this is the experiment to which the Mobile App will be connected (if an admin user owns a couple of experiments, only one of them can be shown in the user's Mobile App). Currently, there is an 'admins-experiment', to which this field can be overwritten
