@@ -1,11 +1,11 @@
 Docker Deployment
 =================
 
-This is the installation guide for Informfully with Docker containers for both the front end and back end.
-The following are instructions to set up Docker containers for Informfully on Windows 10 Home.
+This is the installation guide for Informfully, which utilizes Docker containers for both the front-end and back-end.
+The following instructions outline the process of setting up Docker containers for Informfully on Windows 10 Home.
 A prerequisite for Windows 10 Home users is to enable the WSL 2.0 feature.
 WSL is the Windows Subsystem for Linux, and the instructions for enabling it can be found `here <https://docs.microsoft.com/en-us/windows/wsl/install-win10>`_.
-These instructions should work for Linux and macOS as well.
+These instructions should also work for Linux and macOS.
 
 To start from scratch, please download and install `Docker <https://www.docker.com/products/docker-desktop>`_.
 Check if Docker has been set up by opening the command prompt/terminal (CMD on Windows) and type ``docker -v`` to check your Docker version.
@@ -16,7 +16,7 @@ Setting Up the Front End
 ------------------------
 
 This is the file that Docker uses to build the Docker image.
-It gives instructions to Docker on how to build the image and what to include in the image.
+It provides instructions to Docker on how to build the image and what to include in it.
 To create a Dockerfile, open a text editor, such as Notepad on Windows, and type the following contents:
 
 .. code-block:: python
@@ -50,7 +50,7 @@ Explanation of the code:
 * ``WORKDIR '/app'`` sets the directory where the contents of the image will be located inside the Linux OS
 * ``COPY package.json`` and ``COPY app.json``. Copy the package.json and app.json files from the current local directory into the working directory on the Linux OS made above
 * ``RUN npm install --global expo-cli`` tells Docker to execute the command line argument ``npm install --global expo-cli``, which installs the Expo command line tool into the Docker image
-* ``RUN npm install --legacy-peer-deps`` executes the command npm install with the option of ignoring legacy peer dependencies. This is an option that has to be turned on if using a Node version 7.0+, since the package.json dependencies were made using Node version 6.XX. This command will install all the required dependencies into the Docker image
+* ``RUN npm install --legacy-peer-deps`` executes the command npm install with the option of ignoring legacy peer dependencies. This option must be enabled if using Node version 7.0 or higher, as the package.json dependencies were created with Node version 6.XX. This command will install all the required dependencies into the Docker image
 * ``COPY . .`` copies the contents from the frontend directory into the Docker image
 * ``CMD ["expo","start"]`` then executes the command line argument expo start to start the Expo server, after which a QR code is shown on the command prompt, and users can access the Informfully application with the Expo Go client on their iOS or Android phones
 
@@ -58,14 +58,14 @@ Explanation of the code:
 Navigate to the frontend folder on the command line and type the command ``docker build . -t informfullyfrontend`` which will locate the Dockerfile in the current directory and execute all commands defined in that file.
 
 **Run Docker Container** Once the Docker image is built, a Docker container of it can be run by typing the command ``docker run -p 19000:19000 -p 19001:19001 -p 19002:19002 informfullyfrontend``.
-This will start a Docker container (and the Expo service will get started on it). The ``-p 19000:19000`` is used to open the port 19000 from the container to be used on the ``localhost:19000`` on the host computer.
+This will start a Docker container (and the Expo service will get started on it). The ``-p 19000:19000`` is used to open port 19000 from the container to be accessible on the host computer at ``localhost:19000``.
 To access the Informfully application on an iOS or Android phone, scan the QR code shown in the command line.
 
 **Save Docker Image** To save the created Docker image, type in the command prompt ``docker save -o informfullyfrontend.tar informfullyfrontend``.
 
-**Load Docker Image** Transfer the Docker image to your server, or where the Docker image needs to be opened, and ensure Docker is installed.
+**Load Docker Image** Transfer the Docker image to your server or the location where it needs to be opened, and ensure Docker is installed.
 To open the image, start the Docker service and type the following command from the directory where the Docker image is located: ``docker load -i <path to image tar file>``.
-Please note that it may take a few minutes to load the file, and no progress bar will be shown on the command line.
+Please note that loading the file may take a few minutes, and no progress bar will be displayed on the command line.
 
 .. note::
 
@@ -91,7 +91,7 @@ To create the Dockerfile, open a text editor such as Notepad on Windows, and typ
 .. code-block:: python
 
     # Configuration from phusion passenger docker, "https://github.com/phusion/passenger-docker"
-    # Version 2.0.0 still has a Node version 14, which is compatible with the local Meteor Node version 12.
+    # Version 2.0.0 still uses Node version 14, which is incompatible with the local Meteor Node version 12.
     # If you want to generate the Docker image with the latest Node version, you need to make sure that the
     # local Meteor Node version is compatible with it (or even better, it is the same)
     FROM phusion/passenger-nodejs:2.0.0
@@ -141,13 +141,13 @@ Navigate to the back end folder on the command line and type the command docker 
 
 **Run Docker Container** Once the Docker image is built, a Docker container of it can be run by typing the command ``docker run -p 8020:8080 informfullybackend``.
 This will start a Docker container (and the MongoDB service will get started on it).
-The ``-p 8020:8080`` is used to open the port 8080 from the container to be used on the ``localhost:8020`` on the host computer.
+The ``-p 8020:8080`` is used to open port 8080 from the container to be accessible on the host computer at ``localhost:8020``.
 Follow the next steps to get the Backend running:
 
 #.  Type ``docker ps`` to see which containers are running.
 #.  Copy the container ID of the container that is running the back end.
 #.  Type ``docker exec -it [containerID] sh``, this will open the container and you will be able to execute commands on it.
-#.  Run the command ``passenger start`` inside the opened Docker container. This will start the Phusion Passenger service. The back end will be running now.
+#.  Run the command ``passenger start`` inside the opened Docker container. This will start the Phusion Passenger service; the back end will now be running.
 
 In order to open the back end server, running on the container, from the host computer, open an internet browser and type ``localhost:8020`` (which is the host port that was defined above).
 The passenger's port 8080 of the container can be changed by editing the ``Passengerfile.json`` (`file located here <https://github.com/Informfully/Platform/blob/main/backend/Passengerfile.json>`_) in the backend directory.
@@ -155,9 +155,9 @@ Additionally, any other unused port can be used for the localhost (the left-hand
 
 **Save Docker Image** To save the created Docker image, type in the command prompt ``docker save -o informfullybackend.tar informfullybackend``.
 
-**Load Docker Image** Transfer the Docker image to your server, or where the Docker image needs to be opened, and ensure Docker is installed.
+**Load Docker Image** Transfer the Docker image to your server or the location where it needs to be opened, and ensure Docker is installed.
 To open the image, start the Docker service and type the following command from the directory where the Docker image is located: ``docker load -i <path to image tar file>``.
-Please note that it may take a few minutes to load the file, and no progress bar will be shown on the command line.
+Please note that loading the file may take a few minutes, and no progress bar will be displayed on the command line.
 
 .. note::
 
@@ -166,7 +166,7 @@ Please note that it may take a few minutes to load the file, and no progress bar
     ``Access is denied' error while building Docker image`` See entry above in the front end section.
 
     ``Node fibers issues`` Once the Docker container is running and you try to start the Phusion Passenger server, there may be an error message regarding node fibers.
-    This is most probably caused by the fact that the Node.js version of Meteor, with which the bundle folder was generated, is different from the one in the Docker image, which the Phusion Passenger server uses.
+    This is most likely caused by the fact that the Node.js version of Meteor, with which the bundle folder was generated, differs from the one used by the Phusion Passenger server in the Docker image.
 
     To solve this problem, you would have to upgrade the Meteor version of the project (by running ``meteor upgrade``) or use an older version of Phusion Passenger's base Docker image.
-    In our case, we used an older version of Phusion Passenger's base Docker image supporting Node v14.
+    In our case, we used an older version of Phusion Passenger's base Docker image, which supports Node v14.
