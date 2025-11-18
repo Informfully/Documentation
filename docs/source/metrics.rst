@@ -13,7 +13,7 @@ Gini Coefficient
 The Gini coefficient is calculated for three different features: category, sentiment, and party.
 It quantifies the inequality across these three dimensions within a given recommendation list.
 The smaller the value indicated, the higher the equality.
-A value of 0 means perfect equality, a value of 1 means perfect inequality.
+A value of 0 indicates perfect equality, while a value of 1 indicates perfect inequality.
 (In this context, diversity is equated to equality.)
 
 * `Implementation <https://github.com/Informfully/Recommenders/blob/main/cornac/metrics/diversity.py>`_
@@ -22,13 +22,13 @@ A value of 0 means perfect equality, a value of 1 means perfect inequality.
 (Expected) Intra-List Distance
 --------------------
 
-The intra-list distance is somputer for four different features: category, title (embeddings), sentiment, and party.
+The intra-list distance is computed for four different features: category, title (embeddings), sentiment, and party.
 It calculates the average pairwise dissimilarity between items in the recommendation list.
 The smaller the value indicated, the higher the similarity.
-A value of 0 means perfect similarity, a value of 1 means perfect dissimilarity.
+A value of 0 indicates perfect similarity, while a value of 1 indicates perfect dissimilarity.
 (In this context, diversity is equated to dissimilarity.)
-Expected intra-list distance is a rank-warare version of intra-list distance, the same principles and interpretation applies.
-The main difference is that it considers the position an relevance of an item for assigning a value.
+Expected intra-list distance is a rank-warfare version of intra-list distance; the same principles and interpretation apply.
+The main difference is that it considers the position and relevance of an item for assigning a value.
 
 * `Implementation <https://github.com/Informfully/Recommenders/blob/main/cornac/metrics/diversity.py>`_
 * `Paper <https://api.semanticscholar.org/CorpusID:11075976>`_
@@ -53,12 +53,12 @@ RADio Divergence
    * - Calibration Category
      - Category
      - [0,1]
-     - Compares the complexity distribution of the recommendation list with the user's category preferences (bases on their reading history).
+     - Compares the complexity distribution of the recommendation list with the user's category preferences (based on their reading history).
      - A higher value indicates greater deviation from the user's category preferences.
    * - Calibration Category
      - Complexity
      - [0,1]
-     - Compares the complexity distribution of the recommendation list with the user's complexity preferences (bases on their reading history).
+     - Compares the complexity distribution of the recommendation list with the user's complexity preferences (based on their reading history).
      - A higher value indicates greater deviation from the user's complexity preferences.
    * - Fragmentation
      - Story
