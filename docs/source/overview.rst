@@ -36,17 +36,17 @@ There is no restriction on how many surveys a user is required/able to take at a
 Furthermore, it is possible to have a script running on the server that takes the survey answers of an individual or an entire group as input to calculate additional user profile values (e.g., political scores), which will be automatically added to the database.
 
 Once user accounts are created, they can be separated into specific user groups.
-Each user has to be part of one group (and one experiment) at each point in time. Access to the app can be enabled or revoked instantly via this group membership; temporal restrictions can also be placed.
+Each user has to be part of one group (and one experiment) at each point in time. Access to the app can be enabled or revoked instantly via this group membership, and temporal restrictions can also be applied.
 
 Phase 2 - Experiment Phase
 --------------------------
 
 Once users are assigned to their respective groups, they can be presented with content tailored to their specific group.
 This content can be text, video, or audio. All content is stored in a schema-free MongoDB instance.
-Content can be copied to the database before the experiment begins, or it can be added to/expanded at any future point in time.
+Content can be copied to the database before the experiment begins or added to/expanded at any future point in time.
 In the sample above, we see how a cron job regularly scrapes online websites to add new items to the central database for recommendation purposes.
 
-Assigning content to participants in the groups of an experiment can be done simultaneously (everyone receives the content at the same point in time) or it can be staggered (groups receive content one after the other or in any custom fashion that can be controlled via a script).
+Assigning content to participants in the groups of an experiment can be done simultaneously (everyone receives the content at the same point in time) or staggered (groups receive content one after the other or in any custom fashion that can be controlled via a script).
 The example above shows one possible three-step process of what a stacked content assignment pipeline could look like.
 News articles are used as an example, but the content of the item can be any kind of text, video, or audio.
 
