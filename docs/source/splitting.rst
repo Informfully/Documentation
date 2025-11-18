@@ -22,18 +22,18 @@ Diversity-based Subset Construction
 
 This method can be used to investigate whether selecting more diverse data for training and testing can lead to more accurate and/or diverse recommendation results.
 This can be used, e.g., to increase diversity levels specifically for users who already have a history of consuming more diverse news than the average.
-The goal of this splitting approach is to see if training the algorithm on specific user segments increases or decreases the diversity across the final recommendation results.
+The goal of this splitting approach is to determine whether training the algorithm on specific user segments increases or decreases diversity across the final recommendation results.
 
 Attribute-based Stratified Splitting
 ------------------------------------
 
-Splitting by attributes allows for (re-) balancing the test and training set according to custom ratios.
+Splitting by attributes allows for (re-)balancing the test and training sets according to custom ratios.
 It is offered for user rating, news category, text complexity, and article sentiment.
 
 Diversity-based Stratified Splitting
 ------------------------------------
 
-This method can be used to determine whether introducing diversity metrics into splitting the dataset will increase the diversity of news that users engage with.
+This method can be used to determine whether introducing diversity metrics into the dataset splitting process will increase the diversity of news that users engage with.
 The aim is to explore whether these diversity metrics can effectively broaden the range of content presented to users, enhancing their engagement by introducing them to varied types of news.
 
 Clustering-based Stratified Splitting
@@ -41,4 +41,4 @@ Clustering-based Stratified Splitting
 
 By categorizing the data into clusters based on their similarities and principal components, we can create subsets that are representative of different segments within the data.
 We then perform a stratified sampling within each cluster, ensuring that the training and test sets reflect the distribution of the clustered data.
-This approach allows us to analyze the effects of clustering-based segmentation on model performance, enabling us to understand how well the model can generalize across different user segments or content groups identified by the clustering algorithms.
+This approach enables us to analyze the effects of clustering-based segmentation on model performance, allowing us to understand how well the model generalizes across different user segments or content groups identified by the clustering algorithms.
