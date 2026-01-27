@@ -12,7 +12,12 @@ It is the combined documentation for all [code repositories](https://github.com/
 
 ## Overview
 
-The documentation in this repository is the source for the online [Informfully Documentation](https://informfully.readthedocs.io/). It can be downloaded for offline use. Otherwise, please use the online version instead.
+> Note: We moved the website and documentation to [GitHub Pages](https://github.com/Informfully/Informfully.github.io/tree/main/docs).
+This repository here is no longer actively maintained and is for archival purposes only.
+
+The documentation in this repository is the source for the online [Informfully Documentation](https://informfully.readthedocs.io/).
+It can be downloaded for offline use.
+Otherwise, please use the online version instead.
 
 ```bash
 # Download the documentation
