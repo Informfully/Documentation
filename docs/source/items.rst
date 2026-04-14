@@ -80,7 +80,7 @@ If we used non-existing fields to signify the absence of an attribute, we would 
 This use of the ``$exists`` operator, however, cannot utilize any index and results in a decrease in overall performance.
 Items will be rendered as follows inside the app:
 
-.. image:: img/screenshots_app/app_screenshots_2.png
+.. image:: img/app_screenshots/app_2.png
    :height: 720
    :alt: Article view
 
@@ -90,8 +90,8 @@ For a multimedia item (podcast or video), a multimedia player will be loaded wit
 The ``body`` consists of a list of elements.
 There are currently three types of elements that are supported:
 
-* ``text`` for unformatted text, 
-* ``subtitle`` for adding a new paragraph and subtitle to the text, and 
+* ``text`` for unformatted text,
+* ``subtitle`` for adding a new paragraph and subtitle to the text, and
 * ``quote`` for a cursive, indented quote block.
 
 A sample `body`` element of an item looks like this:
