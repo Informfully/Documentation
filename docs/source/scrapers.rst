@@ -85,7 +85,7 @@ When scraping, the system ensures that all the necessary fields are initialized 
 
 **RSS Scraper** Within the small selection of scrapers, a few do not precisely follow the pattern of RSS feeds.
 We provided a sample implementation for cases where the page's actual content is not directly included in the initial HTML data, i.e., whenever the content is dynamically loaded later on using JavaScript.
-To automate this process, `Selenium <https:// www.selenium.dev>`_ along with `Geckodriver <https:// github.com/mozilla/geckodriver>`_ is used to open a browser, navigate to the URL, and execute the JavaScript to get a finalized page, from which the article list can be extracted using Beautiful Soup.
+To automate this process, `Selenium <https://www.selenium.dev>`_ along with `Geckodriver <https://github.com/mozilla/geckodriver>`_ is used to open a browser, navigate to the URL, and execute the JavaScript to get a finalized page, from which the article list can be extracted using Beautiful Soup.
 The scraping of individual articles follows the same procedure as other HTML-based scrapers. 
 Naturally, scraping feeds takes more time than RSS feeds, as more processing is required to render a dynamic website.
 After all articles have been scraped and are in a single list, the scraper will apply content preprocessing steps before writing them to the database.

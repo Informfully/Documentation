@@ -94,7 +94,7 @@ After you have set the ``SERVER`` constant, you can do the following to start th
 Afterwards, you can scan the QR code that appears, if you want to test the app on a physical device (recommended).
 Or you can connect to a device emulator (e.g., Android Studio or Xcode).
 
-.. image:: img/meteor_bundle.png
+.. image:: img/meteor_assets/meteor_bundle.png
    :width: 700
    :alt: Screenshot of the Expo App
 
