@@ -3,7 +3,7 @@ User Explanations
 
 Explanations within Informfully are available as tags below item recommendations.
 
-.. image:: img/explanation_screen.png
+.. image:: img/explanation_assets/explanation_screen.png
    :width: 350
    :alt: Informfully app screenshots
 
@@ -12,5 +12,5 @@ Explanations within Informfully are available as tags below item recommendations
 
 Note that tags can be defined separately for each user-item pair.
 
- Please see ``experiments``, ``explanations``, and ``explanationViews`` in the `Database Documentation <https://github.com/Informfully/Database>`_ on how to set up explanations for your experiment. 
+ Please see ``experiments``, ``explanations``, and ``explanationViews`` in the `Database Documentation <https://github.com/Informfully/Database>`_ on how to set up explanations for your experiment.
  
