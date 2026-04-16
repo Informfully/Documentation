@@ -3,7 +3,7 @@ User Explanations
 
 Explanations within Informfully are available as tags below item recommendations.
 
-.. image:: img/explanation_assets/explanation_screen.png
+.. image:: img/explanation_assets/explanation_tags.png
    :width: 350
    :alt: Informfully app screenshots
 
