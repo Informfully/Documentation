@@ -12,7 +12,7 @@ It is the combined documentation for all [code repositories](https://github.com/
 
 ## Overview
 
-> Note: We moved the website and documentation to [GitHub Pages](https://github.com/Informfully/Informfully.github.io/tree/main/docs).
+> Note: We moved the website and documentation to [GitHub Pages](http://informfully.ch/docs).
 This repository here is no longer actively maintained and is for archival purposes only.
 
 The documentation in this repository is the source for the online [Informfully Documentation](https://informfully.readthedocs.io/).
